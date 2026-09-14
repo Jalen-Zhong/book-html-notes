@@ -1,0 +1,23 @@
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal_Reserve_Bank_of_New_York.jpg" alt="Federal Reserve Bank of New York" loading="lazy" />
+        <figcaption>Federal Reserve Bank of New York — institutional stage for the 1998 private LTCM coordination. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn2">
+          <strong>² <em>When Genius Failed</em></strong>
+          Roger Lowenstein’s classic narrative of LTCM’s rise and fall: Salomon arb culture, star partners, the Russia shock, correlation breakdown, and the Wall Street rescue. Not a regulatory report, yet it shaped the popular memory that “quant genius” can fail collectively.
+          <div class="why">Why it matters: the shared “dress-rehearsal script” many readers bring to this chapter arrives through such public storytelling.</div>
+          <div class="src">Sources: Lowenstein, <em>When Genius Failed</em> (2000); public reviews and crisis-history citations</div>
+        </div>
+        <div class="fn-item" id="fn3">
+          <strong>³ Black–Scholes–Merton option pricing</strong>
+          The continuous-time option framework associated with Fischer Black, Myron Scholes, and Robert Merton — work that helped earn Scholes and Merton the 1997 Nobel Prize in Economics. Idealizing assumptions often include continuous trading, lognormal dynamics, and Brownian-like noise. When liquidity snaps and crowds stampede, those assumptions shatter first.
+          <div class="why">Why it matters: LTCM’s scientific halo sets up the later line that people are not Brownian particles.</div>
+          <div class="src">Sources: Nobel Prize materials; standard textbook statements of BSM assumptions</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s4">Russia default: correlations → 1</h2>

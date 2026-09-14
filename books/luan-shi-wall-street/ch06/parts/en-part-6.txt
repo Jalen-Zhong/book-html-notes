@@ -1,0 +1,19 @@
+      <p>Early returns look surgically bright: volatility seems tamed, spread trades tick like a precision clock. Outsiders treat the firm as proof that markets can be domesticated by equations.</p>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ LTCM (Long-Term Capital Management)</strong>
+          A Connecticut hedge fund founded in 1994, famous for fixed-income relative-value / convergence trades. In 1998 it nearly failed, prompting a Fed-coordinated private rescue among major Wall Street counterparties at the New York Fed. It was not a government equity nationalization — yet it showed regulators and markets that a single fund could become too large to exit cleanly.
+          <div class="why">Why it matters: this chapter treats LTCM as the historical rhyme for Amaranth in 2006 — the same play in preview.</div>
+          <div class="src">Sources: public crisis histories; Roger Lowenstein, <em>When Genius Failed</em>, and related secondary narratives</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">Spreads, leverage, and the “genius” brand</h2>
+      <p>LTCM’s core script is not mystical: bet that spreads between related bonds or instruments will converge, then amplify thin edges with financing and derivatives<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a><a class="fn-link" href="#fn3"><sup class="fn">³</sup></a>. Success eats itself — copycats crowd in, spreads compress; to keep the same profit, leverage must rise. Public post-mortems often cite balance-sheet leverage around ~25×, with derivatives notionals pushing “invisible leverage” still higher.</p>
+      <p>The more genius in the room, the less room left; the more confident the model, the thinner the margin for error.</p>
+
+      <figure class="figure">
