@@ -1,0 +1,18 @@
+          The chapter juxtaposes Street ROE contests with broader financing/capital-flow observations, using hedge-fund imagery for leverage-and-spread thinking at scale. Treat the national metaphor as interpretive: helpful for “why everyone geared up,” not as a substitute for balance-of-payments statistics. Desk DuPont arithmetic is checkable; the country-as-HF image is thesis-shaped.
+          <div class="why">Why it matters: restates the China/US critique carefully, as requested, without laundering rhetoric into “proven fact.”</div>
+          <div class="src">Source: public trial-read narrative points; BOP/capital-flow literacy for contrast</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s9">Greenspan, cheap liquidity, bonus myopia</h2>
+      <p>On the backdrop: the Greenspan-era path of relatively low policy rates — cheap money → abundant liquidity → leverage that “pencils” → a fiercer peer race to gear up<a class="fn-link" href="#fn9"><sup class="fn">⁹</sup></a>. Layer firm incentives: bonuses clear annually; risks clear on a cycle. Myopia is not only a moral insult — it is the pay calendar written into DuPont’s third factor.</p>
+
+      <div class="footnotes" id="fn-block-7">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn9">
+          <strong>⁹ Greenspan-era low rates</strong>
+          After the 2001 recession, the Fed cut the funds rate to a postwar low and held it down for an extended period before hiking in 2004–06. Crisis literature widely discusses how long low rates and Great Moderation expectations fed housing credit, securitization, and leverage. That is fuel for an arms race — not a single-villain theory of the crisis.
+          <div class="why">Why it matters: plugs the Hyper Goldman boardroom back into a checkable policy timeline.</div>
+          <div class="src">Source: FRED federal funds series; Fed minutes and crisis chronologies</div>

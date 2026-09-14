@@ -1,0 +1,24 @@
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s10">A ~$1B muni book on overnight repo</h2>
+      <p>Cut back to Lucy: in the telling, the muni book runs on the order of a billion dollars, mostly financed by rolling overnight repo; dealers haircut the collateral, cash arrives, and tomorrow you roll again<a class="fn-link" href="#fn10"><sup class="fn">¹⁰</sup></a>. In calm weather, carry and turnover feel like free lunch. If the repo market refuses to roll — haircuts jump, eligible collateral narrows — a billion of inventory becomes a stone with nowhere to fund.</p>
+      <p>This is the chapter’s clearest crisis foreshadow: not a date for house prices, but a map of where the ROE machine’s power cord plugs in — a socket that must be reinserted every night.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wall_Street_Sign_New_York_2005.jpg" alt="Wall Street street sign" loading="lazy" />
+        <figcaption>Wall Street sign — overnight funding and daytime myth share one street name. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-8">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn10">
+          <strong>¹⁰ Repo and haircuts</strong>
+          A repurchase agreement sells securities with a promise to buy them back — economically, secured short-term borrowing. The haircut is the gap between collateral market value and cash advanced, buffering price moves; rising haircuts in stress equal forced delevering. Dealers depend on rolling short repo; Gorton and others describe 2007–08 partly as a run on repo.
+          <div class="why">Why it matters: turns the “billion-dollar book” from a brag into a breakable funding structure.</div>
+          <div class="src">Source: NY Fed repo explainers; Gorton &amp; Metrick on the run on repo</div>
+        </div>
+      </div>
+
