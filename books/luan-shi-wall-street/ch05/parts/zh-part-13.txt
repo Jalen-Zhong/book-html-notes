@@ -1,0 +1,21 @@
+          2001 年衰退后，美联储将联邦基金利率降至战后低位并维持较长时间，2004–06 年才逐步加息。危机文献普遍讨论：长期低利率与「大稳健」预期，鼓励了住房信贷扩张、证券化繁荣与杠杆上升。这不等于「一人造成危机」，而是杠杆军备赛的宏观燃料之一。
+          <div class="why">为何重要：把超盛寓言从董事会会议室，接回可查的货币政策时间线。</div>
+          <div class="src">来源：FRED 联邦基金利率序列；美联储公开会议纪要与危机编年</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s10">十亿美元市政账本与隔夜回购</h2>
+      <p>镜头拉回鲁西：作者叙述中，市政台账本规模可到约十亿美元量级，绝大部分靠回购（repo）隔夜滚动融资；券商给一个折扣率（haircut），你用抵押券换现金，明天再续<a class="fn-link" href="#fn10"><sup class="fn">¹⁰</sup></a>。利差与周转在平静日子里像免费午餐；若回购市场突然不肯续——haircut 上升、合格抵押变窄——十亿库存会在一夜之间变成「无处融」的石头。</p>
+      <p>这是本章最清楚的危机伏笔：不是预言房价哪天跌，而是指出 ROE 机器的电源插头，插在每晚要重新插一次的插座上。</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wall_Street_Sign_New_York_2005.jpg" alt="华尔街路牌" loading="lazy" />
+        <figcaption>华尔街路牌——隔夜融资与白日神话共享同一条街名。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-8">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn10">
+          <strong>¹⁰ 回购（repo）与折扣率（haircut）</strong>
