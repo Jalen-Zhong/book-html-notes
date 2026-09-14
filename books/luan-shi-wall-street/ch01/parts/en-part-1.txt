@@ -1,0 +1,78 @@
+ay: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin: 16px 0 22px;
+    }
+    .event-card {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+    .event-card .yr { color: var(--gold); font-weight: 700; font-size: 14px; }
+    .event-card .ev { color: #c9d4e8; font-size: 13px; margin-top: 4px; line-height: 1.5; }
+    .diagrams-section { margin-top: 32px; padding-top: 8px; }
+    footer {
+      margin-top: 28px; color: var(--muted);
+      font-size: 13px; text-align: center;
+    }
+    @media (max-width: 560px) {
+      article.story { padding: 20px 16px 12px; }
+      .wrap { padding: 24px 14px 60px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="lang-switch" aria-label="Language">
+        <a href="casino-to-wall-street-zh.html">中文</a>
+        <a class="active" href="casino-to-wall-street-en.html">English</a>
+      </div>
+      <div class="badge">Story guide · Retold from public trial-read beats · Off-book research notes</div>
+      <h1>The Gilded Age<br />From the Casino Floor to Wall Street</h1>
+      <p class="subtitle"><em>Wall Street in Chaos</em> (《乱世华尔街》) · Chapter 1 “Casino to Wall Street” · Yuyang · story retelling + footnote research</p>
+      <div class="note">
+        Below is a story-first retelling in the author’s chronological order — original paraphrase for reading along, not a verbatim copy of the book. Footnotes, images, and knowledge graphs are public off-book supplements for background the chapter only brushes past. Please support the official edition for the full text.
+      </div>
+      <nav class="toc" aria-label="Section notes">
+        Section notes
+        <ul>
+          <li><a href="#s1">The road to Wall Street begins in a casino</a></li>
+          <li><a href="#s2">On Wall Street — but not at the table</a></li>
+          <li><a href="#s3">Las Vegas: a week of blackjack “street sweeps”</a></li>
+          <li><a href="#s4">Texas Hold’em: outthinking other people</a></li>
+          <li><a href="#s5">Berkeley: a one-year MFE</a></li>
+          <li><a href="#s6">Professor Rubinstein and Black Monday</a></li>
+          <li><a href="#s7">A cold start on the job hunt</a></li>
+          <li><a href="#s8">Goldman interviews and emerging-market bonds</a></li>
+          <li><a href="#diagrams">People / timeline / knowledge graph</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER ONE · CASINO TO WALL STREET</div>
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/New_York_Stock_Exchange_Exterior.jpg" alt="New York Stock Exchange exterior" loading="lazy" />
+        <figcaption>New York Stock Exchange exterior on Broad Street — Wall Street’s public face. Source: Wikimedia Commons (Kidfly182, CC BY-SA 4.0)</figcaption>
+      </figure>
+      <h2 id="s1">The road to Wall Street begins in a casino</h2>
+      <p>Looking back, the author finds an unglamorous starting point: years earlier he was still sitting in American casinos, counting red and green chips for pocket money; years later he was running trading books in the hundreds of millions and generating tens of millions in profit a year for a bank. The span sounds huge; to him it did not feel that far — both sides were gambling, only the stakes had changed<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a>.</p>
+      <p>He jokes about a gambling gene — a great-grandfather who loved to gamble, another who ran a mahjong house. Growing up in New China, that impulse was suppressed for years, which somehow fed a passion for math and a place at Peking University. After four years he had mainly learned one thing: real mathematics was deep; what he was good at was arithmetic. He joined the wave of students going abroad, switched to computer science, aimed at Silicon Valley — and somehow landed in an investment bank’s IT group instead.</p>
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ From the felt to the trading desk: the same mental model</strong>
+          Edward Thorp first showed in <em>Beat the Dealer</em> that card counting can beat blackjack, then carried the same probabilistic thinking into convertible bonds and quantitative trading. Treating the casino as “Wall Street prep” is a personal version of that historical thread: practice expected value and position size in repeatable small games, then migrate the same language to markets.
+          <div class="why">Why it matters: “Both sides are gambling” is not cynicism — it seeds later hedge-fund talk of expected value, volatility, and leverage.</div>
+          <div class="src">Source: Edward O. Thorp site / Beat the Dealer; public notes on A Man for All Markets</div>
+        </div>
+      </div>
+      <h2 id="s2">On Wall Street — but not at the table</h2>
+      <p>At first he barely knew what an investment bank did — only that living next to markets sounded cool. Once inside, he learned he was in the “back office”<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a>. Front office raises capital and places real bets; back office keeps the machine running. Compensation felt like wartime: the fighters get the glory and the bigger bonus pool; support gets the leftover care packages.</p>
+      <p>After a while he wanted the front. Money was one reason; more than that, he wanted the feeling of surfing the market and putting his arithmetic to the edge. Moving from back to front is notoriously hard. A common path is the “second pass”: a brand-name business school, then re-enter for a revenue seat. He had wanted that route early, but a green-card wait dragged on for years. He did not sit idle — he went to the casino and gave himself a course in Wall Street prep.</p>
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn2">
+          <strong>² Front office vs back office</strong>
+          In an investment bank, “front office” usually means revenue lines: sales &amp; trading, investment banking (IPO, M&amp;A advisory), prop or market-making. “Middle office” covers risk, compliance, product control. “Back office” covers clearing/settlement, tech ops, finance operations, IT support. In the

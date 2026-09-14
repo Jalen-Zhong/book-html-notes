@@ -1,0 +1,45 @@
+ 2000s, front-office bonus pools dwarfed the back — and the status gap often stung more than the dollar gap.
+          <div class="why">Why it matters: the anxiety of being “on Wall Street but not at the table” drives the whole chapter’s pivot toward MFE and Goldman.</div>
+          <div class="src">Source: public explainers on front/middle/back office (e.g. Investopedia-style overviews)</div>
+        </div>
+      </div>
+      <hr class="divider" />
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Las_Vegas_Strip_at_night.jpg" alt="Las Vegas Strip at night" loading="lazy" />
+        <figcaption>Las Vegas Strip at night — the stage for a week of blackjack “street sweeps.” Source: Wikimedia Commons</figcaption>
+      </figure>
+      <h2 id="s3">Las Vegas: a week of blackjack “street sweeps”</h2>
+      <p>American casinos looked to him like Ali Baba’s cave: chips sliding, slots ringing, money seemingly everywhere. Most games, though, are “play long enough and you lose.” He first mastered one rule: never bet without an edge.</p>
+      <p>The crack in the house wall was blackjack<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a>. Skilled counters can beat the casino; many Wall Street elders had done it young. House edge is already small; with basic strategy it is roughly half a percent, and it drifts with the mix of remaining high and low cards. The secret is simple and hard: bet small when the house has the edge, bet big when the player does.</p>
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/DelLagoCasinoBlackjackTable.jpg" alt="Casino blackjack table" loading="lazy" />
+        <figcaption>A casino blackjack table. Counters track remaining-card composition to adjust bets and plays. Source: Wikimedia Commons (DanielPenfield, CC BY-SA 4.0)</figcaption>
+      </figure>
+      <p>A chance pamphlet on beating blackjack sent him into late-night study. Feeling “ready,” he raided Las Vegas. It was a glorious week: sweeping casino after casino, flying back to New York with hundred-dollar bills stuffed in both pockets. For a moment he thought blackjack could be an ATM — later he understood Lady Luck had merely smiled once.</p>
+      <div class="scene">
+        Afterward he could still win on average, but the ride was violent; no more win-every-session streak. Mathematically he saw it: risk was huge relative to reward. To make about twenty dollars an hour on average, you might endure swings of roughly a thousand — in market language, a terrible Sharpe ratio<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a>. Bet small and you never get rich; bet big and you can go broke. Blackjack became a game that “couldn’t make real money.” Inside those twists already sit the three hedge-fund keywords of later chapters: risk, return, leverage.
+      </div>
+      <p>When casinos changed the rules, counting blackjack almost died. Texas Hold’em was rising across America, so he switched tables.</p>
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ Card counting, Thorp, and the casino arms race</strong>
+          In 1962 MIT mathematician Edward Thorp published <em>Beat the Dealer</em>, bringing a computer-verified point-count system to the public: when remaining cards are rich in tens and aces, player expectation turns positive and bets should rise. Casinos answered with multi-deck shoes, early shuffles, limits on doubles and splits, bet-spread surveillance, and simply asking winners to leave. Nevada briefly changed rules in 1964, then reversed after traffic collapsed — the tension between “beatable” and “casino business” never went away.
+          <div class="why">Why it matters: the thrill of a “week of street sweeps” sits on half a century of math-vs-house warfare — and explains why a rule change kills the ATM narrative overnight.</div>
+          <div class="src">Source: edwardothorp.com; UCI Thorp exhibit; Las Vegas Review-Journal coverage of Thorp</div>
+        </div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ Sharpe ratio in one line</strong>
+          Sharpe ≈ (average excess return) ÷ (standard deviation of returns). Numerator: how much extra you earned. Denominator: how hard you shook. A low ratio means poor return per unit of risk — even a positive long-run expectation may not be survivable psychologically or in capital terms. “Want $20/hour but endure ±$1,000 swings” is exactly that intuition.
+          <div class="why">Why it matters: first translation of casino experience into hedge-fund language; later talk of leverage, sizing, and drawdowns all orbits return-per-unit-risk.</div>
+          <div class="src">Source: traditional reading of William F. Sharpe; CFA / investments textbooks</div>
+        </div>
+      </div>
+      <h2 id="s4">Texas Hold’em: outthinking other people</h2>
+      <p>Compared with blackjack’s mechanical tactics, Texas Hold’em is more like chess against other minds<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a>. You do not need the best cards — only worse opponents. You cannot stare only at your own hand; you must guess theirs. You cannot always bluff or always play honest — roughly seven parts substance, three parts bluff. Beginners bet their cards; advanced players bet the range and psychology of the opponent.</p>
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Two_poker_cards_and_poker_chips_20170611.jpg" alt="Poker cards and chips" loading="lazy" />
+        <figcaption>Cards and chips — visual shorthand for the mid-2000s online poker boom. Source: Wikimedia Commons (Santeri Viinamäki, CC BY-SA 4.0)</figcaption>
+      </figure>
+      <p>Online rooms and TV broadcasts made poker a national craze. He got hooked enough to consider quitting for a pro-player life. Poker taught a principle he reused forever: money is easiest in a <em>new</em> game — study the strategy before others wake up; move while they still hesitate.</p>
+      <p>When online casinos rolled out no-limit, many still played with limit-hold’em habits — easy money for a while; then competition sharpened. Next came single-table tournaments: ten players, fixed chips, bust and leave, top three paid. That is math. While most people were still guessing, he distilled a simple method, multi-tabled five or six games to raise 
