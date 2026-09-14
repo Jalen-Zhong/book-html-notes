@@ -1,0 +1,20 @@
+      <p>Meanwhile government-linked issuers paired floaters with swaps until balance-sheet management looked hedge-fundized. Borrowing was no longer only for bridges and schools; it was also curve and basis. Economy-wide leverage seeped from Street desks into public issuers’ toolkits.</p>
+
+      <hr class="divider" />
+
+      <h2 id="s11">First ship on fire: Bear’s related funds</h2>
+      <p>In June 2007, Bear Stearns–related high-grade structured-credit hedge funds hit the wall: subprime-linked holdings, leverage, and margin calls shredded the “high grade” story<a class="fn-link" href="#fn9"><sup class="fn">⁹</sup></a>. The parent pledged billions to slow a fire sale—on the interlocking fleet, one ship finally burned in public.</p>
+      <p>Chapter 7’s stratagem-within-stratagem lands cold: tranching does not cancel risk; it only reorders who burns first. When housing, funding, and correlation turn together, chained ships light together.</p>
+
+      <div class="footnotes" id="fn-block-6">
+        <div class="fn-head">Footnotes</div>
+        <div class="fn-item" id="fn9">
+          <strong>⁹ Bear Stearns related hedge-fund crisis (June 2007)</strong>
+          The Bear Stearns High-Grade Structured Credit Strategies Fund and its Enhanced Leverage sister held large CDO/mortgage structured-credit books funded partly via repo. In June 2007, falling subprime-related prices and creditor margin calls pushed the funds toward collapse; Bear ultimately pledged up to about $3.2 billion to rescue one fund while the other faced deeper liquidation. Histories treat this as a hinge from “originators/small market” stress into core Street funding and fund structures.
+          <div class="why">Why it matters: chapter landing—the interlocking fleet’s first open fire.</div>
+          <div class="src">Sources: NYT 23 Jun 2007 and peers; standard crisis narratives of the Bear funds</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+

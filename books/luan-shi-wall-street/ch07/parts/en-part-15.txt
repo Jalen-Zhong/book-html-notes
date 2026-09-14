@@ -1,0 +1,56 @@
+      <section class="diagrams-section" id="diagrams">
+        <h2>Map / timeline / knowledge graph</h2>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Map: subprime feedstock → tranching → institutions &amp; funds</div>
+          <div class="mermaid">
+flowchart LR
+  POL[Homeownership politics] --> SUB[Subprime origination]
+  GSE[GSE / MBS success] --> SUB
+  SUB --> POOL[Loan pools]
+  POOL --> TRANCHE[Tranching]
+  TRANCHE --> AAA[AAA to pensions etc.]
+  TRANCHE --> EQ[Equity/mezz to HF/prop]
+  TRANCHE --> BOOK[Residual on IB books]
+  BOOK --> CDO2[CDO / CDO²]
+  CDO2 --> BEAR[Bear-related funds Jun 2007]
+  HSBC[HSBC Household] -.-> SUB
+  NC[New Century] -.-> SUB
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Timeline: feast to first ship on fire</div>
+          <div class="mermaid">
+timeline
+  title Interlocking stratagem timeline
+  Late 2006 : Party contrast · record bonuses
+            : Tiny house-price dip barely noticed
+  2007-02 : HSBC Household provisioning alert
+  2007-04 : New Century bankruptcy
+  Spring-summer 2007 : Mega-LBOs / bridge financing
+                     : CIC precursor stake in Blackstone
+  2007-06 : Bear-related funds in distress
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Knowledge graph: dose, chains, east wind</div>
+          <div class="mermaid">
+flowchart TB
+  SEC[Securitization in moderation] --> USE[Disperse risk]
+  SEC --> OVER[Excess repackaging]
+  OVER --> CHAIN[CDO to CDO² to funding chain]
+  CHAIN --> SHIPS[Interlocking-ships metaphor]
+  PRICE[Rising house-price narrative] -->|suppresses| SYS[Systemic-risk talk]
+  SHIPS --> FIRE[One ship burns → contagion]
+  BRIDGE[LBO bridges / global liquidity] --> DISTRACT[Attention on mega-deals]
+  FIRE --> BEAR2[Bear HF open fire]
+  WIND[East wind = liquidity and refinance turn] --> FIRE
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer>
