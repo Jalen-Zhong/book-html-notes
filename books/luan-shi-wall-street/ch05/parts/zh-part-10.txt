@@ -1,14 +1,21 @@
-  </div>
+      <p>周转数字漂亮时，ROE 可以在利润率一般的情况下仍然好看。但仓库的前提是：下游买盘不断、短期融资不断。一旦管道堵塞，所谓周转就变成库存积压。</p>
 
-  <script>
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: "dark",
-      securityLevel: "loose",
-      timeline: { useMaxWidth: true },
-      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
-    });
-  </script>
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal_Reserve_Board_Building.jpg" alt="美联储大楼" loading="lazy" />
+        <figcaption>美联储 Eccles 大楼——廉价流动性与杠杆环境的制度背景板。来源：Wikimedia Commons</figcaption>
+      </figure>
 
-</body>
-</html>
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ ABS/CDO 仓库（warehouse）</strong>
+          证券化「仓库」指在正式发行 CDO/ABS 之前，安排行用短期融资囤积底层资产的过渡账户。仓库提高资产周转与手续费收入，却把管道风险留在表内或准表内：若发行窗口关闭，仓库资产就要按市值记损或被迫甩卖。危机文献里，仓库与未售出份额是结构化信用崩塌的重要传播点。
+          <div class="why">为何重要：把「沃尔玛式周转」从零售比喻，还原成可查的证券化管道。</div>
+          <div class="src">来源：FCIC 等对 CDO 管道/warehouse 的公开记述；结构化信用教材</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s7">华尔街模式：杠杆冲向 20% ROE</h2>
+      <p>董事会要的是对冲基金式的约 20% ROE。猪哥掏出第三计：「华尔街模式」——加财务杠杆。他的算术例子很直白：资产收益约 5%，融资成本约 3%，杠杆约 20 倍，毛回报可以飙到吓人的区间；扣掉薪酬费用，仍可能把股东 ROE 送过 20%。美林、贝尔斯登一类机构在危机前杠杆常被公开讨论到 30 倍以上的量级<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a>。</p>
