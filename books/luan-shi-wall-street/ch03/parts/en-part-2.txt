@@ -1,0 +1,55 @@
+ften meant: not a pure Goldman/Morgan Stanley brand, but a balance-sheet giant — half a rung lower on the prestige ladder in a classmate’s ear.
+          <div class="why">Why it matters: Frank’s shock is the chapter’s first drumbeat of prestige versus a real seat.</div>
+          <div class="src">Sources: CRS R44349 / R41181; St. Louis Fed primers on the commercial–investment split</div>
+        </div>
+        <div class="fn-item" id="fn2">
+          <strong>² Lehman’s halo in 2005–06</strong>
+          On public league tables Lehman routinely sat near the front of U.S. investment-grade debt and M&amp;A advisory — e.g. about sixth in 2005 U.S. IG bookrunning (~7% share) and around eighth in 2006 global M&amp;A volume. Research prestige was even louder: Institutional Investor’s All-America polls crowned Lehman #1 in equity and fixed-income research for consecutive years. For graduates then, “I’m going to Lehman” was the explainable Wall Street sentence; “a commercial bank” was harder to sell at dinner.
+          <div class="why">Why it matters: only against those rankings does the author’s Lucy Bank detour look properly contrarian.</div>
+          <div class="src">Sources: Euromoney / Dealogic 2005–06 tables; Institutional Investor 2005 All-America Research; Lehman 2006 results release</div>
+        </div>
+        <div class="fn-item" id="fn3">
+          <strong>³ Pork-belly futures: unglamorous, real trading</strong>
+          CME launched frozen pork-belly futures in 1961 — among the earliest frozen-meat storage contracts — roughly 40,000 pounds per contract, long a hedge-and-speculation arena for the bacon chain. As the industry shifted to fresh processing and volume collapsed, CME delisted the contract on 15 July 2011. In trader folklore, “pork bellies” became shorthand for getting on a tape that actually moves — wet-market branding, pit-desk reality.
+          <div class="why">Why it matters: “I’d rather trade pork bellies” is not a joke; it is the extreme form of “give me a seat, not a staff job.”</div>
+          <div class="src">Sources: Reuters / NPR / MarketsWiki on the CME delisting; historical CME contract specs</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cme_building_aerial_view.jpg" alt="Chicago Mercantile Exchange building aerial view" loading="lazy" />
+        <figcaption>Chicago Mercantile Exchange building — geographic home of the pork-belly futures legend. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s2">Interview marathon: Mark, free salad, “40 under 40”</h2>
+      <p>Lucy Bank’s interviews felt like an endurance event. Rates boss Mark walked in and took a free salad — the casual perk of Wall Street interview rooms, and a quiet status test. After the résumé, his warmth cooled: almost no traditional finance work experience. Contests and models could not erase the frown of “you haven’t lived in the money pile.”</p>
+      <p>The author scrambled with flattery: he’d heard Mark had made a “40 under 40” style list — the media badge that packages sub-forty rising stars as industry royalty<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a>. The room thawed a notch. Mark tossed off his own story: roughly $5 million of first-year trading profit against a bonus expectation that might have been around $50,000 — a slap of gap numbers that doubled as a recruiting poster.</p>
+
+      <div class="scene">
+        Free salad, résumé frown, “40 under 40” flattery, five million versus fifty thousand — power was on the table before munis were.
+      </div>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ “40 under 40”: Wall Street’s age badge</strong>
+          “40 Under 40” is a staple list format across Fortune, Institutional Investor, and trade press: honor the under-forty cohort. A listing is not proof of trading skill, but it is useful stagecraft — candidates deploy it as deference; bosses hear confirmation they are still “seen.” Prestige economy hardware, not a risk model.
+          <div class="why">Why it matters: explains the rescue compliment after the résumé chill — trading honor language for speaking rights.</div>
+          <div class="src">Sources: Fortune / Institutional Investor public “40 Under 40” list formats</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">Apple guy and the French quant boss</h2>
+      <p>Next came the swap trader colleagues called “Apple guy” — he grabbed a free apple, then lobbed math questions while chewing. Interest-rate swaps are the vernacular of rates derivatives: one side pays fixed, the other floating, to hedge or express a view on the path of rates<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a>. The questions were not sadistic, but the tone was lukewarm — filtering out people who cannot compute, not hunting a partner.</p>
+      <p>Then the French quant boss: a joking Bonjour, a Mandarin pun landing like “stupid pig” (笨猪), then hard quant problems. The author felt outmatched — not because he could not do arithmetic, but because the density and desk context yanked him from “exam ace” back to “hasn’t lived on the curve yet.”</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal_Reserve_Bank_of_New_York,_Manhattan,_New_York_(7237032812).jpg" alt="Federal Reserve Bank of New York" loading="lazy" />
+        <figcaption>Federal Reserve Bank of New York — a landmark of the dollar rates world; swaps and curve talk ultimately orbit money markets and policy. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-
