@@ -1,0 +1,19 @@
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ Bank of America’s $2B Countrywide stake (22 Aug 2007)</strong>
+          After Countrywide drew an ~$11.5B credit line amid short-term funding stress mid-August, Bank of America completed a ~$2B strategic equity investment on 22 August: 7.25% Series B non-voting convertible preferred, convertible at about $18/share. CEO Ken Lewis argued markets were underpricing Countrywide’s franchise. It was the corporate-finance version of “strong hands”; a year later BofA would buy Countrywide outright.
+          <div class="why">Why it matters here: links private rescue to later moral-hazard and organ metaphors.</div>
+          <div class="src">Sources: Countrywide/BofA 22 Aug 2007 release and 8-K; CNBC/NPR contemporaneous coverage</div>
+        </div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ Citadel’s purchase of Sowood (30 Jul 2007)</strong>
+          Sowood Capital (Jeffrey Larson) Alpha funds lost roughly half their value in July’s credit rout, with failing hedges and looming margin calls. A 30 July investor letter said substantially all of the portfolio had been sold to Citadel Investment Group to avoid forced liquidation; post-deal NAV was still down &gt;50% month-to-date. Ken Griffin called it an orderly transfer of risk—one of summer 2007’s clearest “strong hands” episodes.
+          <div class="why">Why it matters here: a bounce after someone catches paper ≠ systemic risk resolved.</div>
+          <div class="src">Sources: Sowood 30 Jul 2007 investor letter (public PDF); Reuters/MarketWatch</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">Moral hazard: Uncle Sam as backstop</h2>
