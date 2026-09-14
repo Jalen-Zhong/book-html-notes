@@ -1,0 +1,24 @@
+      <p>Investors fled to safety. When ABCP, SIV, and TOB-style conduits faced runs or failed rollovers, sponsors such as Citigroup and Merrill Lynch had to pull assets <strong>back onto their own balance sheets</strong>—the off-balance game ended, and the heel wound became open capital burn.</p>
+      <p>Money-market promises of “cash first” collided, in the same weeks, with wholesale reality of “cash scarce.”</p>
+
+      <div class="scene">
+        Flight to safety is not a moral choice; it is arithmetic: when the rollover window shuts, conduit assets come home.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">ARS freeze: a new poker game and basis 210</h2>
+      <p>In February 2008 the auction-rate securities (ARS) market froze: long-dated munis and similar paper that reset via periodic <strong>Dutch auctions</strong>, marketed as near-short liquidity. When banks stopped supporting bids, auctions failed en masse; retail holders discovered that “cash-like” product would not cash out.<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a></p>
+      <p>Lucy Bank saw a game: buy ARS at distressed levels, finance them in repo, and print ROE north of 200%—poker’s “new game.” The author built an ARS book on the order of ~$2 billion. Joy muted fast: related basis blew out toward ~210 basis points—discount capture while the hedge and funding cracks widened.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wall_Street_Sign_New_York_2005.jpg" alt="Wall Street street sign" loading="lazy" />
+        <figcaption>Wall Street sign—the ARS freeze smashed the retail cash illusion on the same street. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        A new game can pencil &gt;200% ROE; when basis hits 210, the calculator reminds you the heel is still bleeding.
+      </div>
+
+      <div class="footnotes" id="fn-block-5">
+        <div class="fn-head">Section notes</div>

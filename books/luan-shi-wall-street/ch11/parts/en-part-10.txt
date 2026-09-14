@@ -1,0 +1,16 @@
+          <strong>⁵ Kerviel / Société Générale (January 2008)</strong>
+          In mid-to-late January 2008, Société Générale uncovered trader Jérôme Kerviel’s concealed directional European equity-index futures positions totaling roughly €50 billion notional (hidden via fictitious hedges). The bank unwound around January 21–23 and announced on January 24 a net loss of about €4.9 billion. The unwind overlapped a violent global equity move, making it hard to separate “macro panic” from “one bank’s forced liquidation”—the chapter’s “Fed fooled by appearances” points at that confusion.
+          <div class="why">Why it matters: grounds “demons appear when liquidity ebbs” in a checkable event—forced selling can masquerade as a macro crash.</div>
+          <div class="src">Sources: Société Générale official notes and inspection-report summaries; 24 Jan 2008 announcement; contemporaneous Risk.net / financial press</div>
+        </div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ Fed emergency cut, January 2008</strong>
+          Amid global equity plunges, the FOMC held an emergency call on January 21–22 and on January 22 cut the federal funds target by <strong>75</strong> basis points to 3.5% (discount rate moved in parallel)—the first intermeeting funds-rate move in years. At the January 29–30 scheduled meeting it cut another <strong>50</strong> basis points to 3%. The book’s “emergency ~50 bp” may compress the second cut or the month’s easing; the footnote separates the two public actions.
+          <div class="why">Why it matters: marks the heel wound traveling from trading desks to the central bank—short end and equities flashing together.</div>
+          <div class="src">Sources: Federal Reserve FOMC statements 22 Jan and 30 Jan 2008; FRB Monetary Policy Report narrative</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">Flight to safety: conduit runs onto the balance sheet</h2>

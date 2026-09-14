@@ -1,0 +1,23 @@
+          <div class="src">Sources: standard crisis histories of ABCP/SIV runs; municipal-finance explainers on TOB structures</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s4">Early 2008: differentiated haircuts and Kerviel</h2>
+      <p>By early 2008, haircuts sorted by pedigree: on-the-run Treasuries still financed relatively easily; MBS worsened; hedge-fund “elephants” might still negotiate ~20% haircuts, while the shrimp were simply refused.</p>
+      <p>In January, European equities fell on the order of ~6% in a day and S&amp;P futures flirted with limit-down atmosphere; the Fed answered with an <strong>emergency cut</strong>—the book’s narrative often compresses this to ~50 bp, while the public record shows a <strong>75</strong> bp intermeeting cut on January 22, then another <strong>50</strong> bp at the month-end meeting.<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a></p>
+      <p>Then came Jérôme Kerviel and Société Générale: unauthorized European index-futures positions on the order of ~€50 billion notional, a net loss near €4.9 billion after unwind.<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a> The author notes that the Fed was briefly fooled by the surface story of a “macro crash”—demons appear when liquidity ebbs.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Marriner_S._Eccles_Federal_Reserve_Board_Building.jpg" alt="Federal Reserve Eccles Building" loading="lazy" />
+        <figcaption>The Federal Reserve (Washington)—January 2008’s emergency easing answered a global equity and short-end scare. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        Haircut tiering is a silent rating; Kerviel reminds us that a “macro” tape can be one hidden ticket tape.
+      </div>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn5">
