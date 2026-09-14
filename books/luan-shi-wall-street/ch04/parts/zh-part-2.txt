@@ -1,0 +1,65 @@
+      <h2 id="s4">Mark 的 Done!：欧元美元期货与内部对冲</h2>
+      <p>利率台老板 Mark 的声音能穿越大半个大厅：一笔欧元美元期货（Eurodollar futures）成交，他扯着嗓子喊 Done!——不是表演，是让所有相关的人立刻知道「这单锁死了」<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a>。</p>
+      <p>更细的一层逻辑是内部对冲：台与台之间先在屋里把风险挪干净，尽量让 P&amp;L 留在本行账本上，而不是把每一笔对冲都丢给外部市场去「交手续费 + 泄露意图」。对新人，这是第一堂组织课——交易不只是对外下注，也是对内协调。</p>
+
+      <div class="scene">
+        Done! 是声学句号；内部对冲是会计与组织句号——两者一起定义「什么叫一笔真正完成的交易」。
+      </div>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ 欧元美元期货（Eurodollar futures）</strong>
+          欧元美元期货曾是全球最活跃的短期利率期货之一：标的是美元境外存款的远期利率预期（历史上紧密联动 3 个月 LIBOR），在芝加哥衍生品交易所交易，被银行、对冲基金与公司广泛用于对冲或表达短端利率观点。厅内一声 Done!，往往意味着短端利率风险被瞬时重定价——利率台上的「普通话成交」。
+          <div class="why">为何重要：解释 Mark 喊的不是闲话，而是整层楼都听得懂的短端利率事件。</div>
+          <div class="src">来源：CME / 教材对 Eurodollar futures 的公开定义；LIBOR 时代货币市场通识</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">FICC 帝国：国债到互换的产品地图</h2>
+      <p>投行销售交易的大盘子，口中常叫 FICC：固定收益、货币与商品；旁边还有股票、外汇、大宗商品等条线。对许多银行而言，固定收益往往是利润贡献最显眼的一块——不是因为「最炫」，而是因为资产负债表与利率风险天生庞大<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a>。</p>
+      <p>固定收益内部再切开：国债（Treasuries）、机构债（agencies，含两房相关信用）、抵押贷款支持证券（MBS）、市政债（munis）、公司债（投资级 vs 高收益/垃圾债）、以及互换等衍生品。衍生品不只是「赌博工具」——企业与银行用它们锁成本、调久期、对冲库存；当然，同一套工具也能放大方向性赌注。作者提醒自己：把互换理解成风险管理语言，比只把它理解成赌场筹码更接近台上的真实用法；中文语境里把复杂衍生品简单骂成「赌」时，也要小心别把套期保值一锅端掉<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a>。</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal_Reserve_Bank_of_New_York,_Manhattan,_New_York_(7237032812).jpg" alt="纽约联储大楼" loading="lazy" />
+        <figcaption>纽约联储一带——美元利率与国债世界的地标坐标。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-5">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ FICC：固定收益帝国的缩写</strong>
+          FICC（Fixed Income, Currencies &amp; Commodities）是投行对「非股票」宏观与信用交易业务的常用总称。危机前，大型机构的 FICC 收入常占销售交易半壁江山甚至更多；内部按产品设 desk：Rates（国债/互换）、Credit（公司债/CDS）、Securitized（MBS/ABS）、Municipals、FX、Commodities 等。理解「宇宙的中心」前，先要理解：你的座位挂在哪条产品线上，决定你每天呼吸的风险因子。
+          <div class="why">为何重要：给读者一张机构地图，才读得懂后文市政债台在帝国里的位置。</div>
+          <div class="src">来源：大型投行公开业务分部介绍；FICC 行业通识</div>
+        </div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ 产品速写：国债 / 机构 / MBS / 公司债 / 互换</strong>
+          <em>国债</em>：美国财政部直接债务，信用近乎无风险，是利率曲线锚。<em>机构债</em>：联邦机构或政府支持企业（GSE）债务；两房（Fannie Mae / Freddie Mac）相关证券在 2006 年仍被视为「准政府」信用（危机后显露隐含担保争议）。<em>MBS</em>：住房抵押贷款打包成的证券，关键风险是提前还款与展期。<em>公司债</em>：分投资级（IG）与高收益（junk）；信用利差是主戏。<em>利率互换</em>：固定对浮动的现金流交换，是对冲与相对价值的基础设施——用途可以是保险，也可以是杠杆，取决于敞口怎么摆。
+          <div class="why">为何重要：作者在章内扫过这些名词，脚注把它们从黑话还原成可查的市场构件。</div>
+          <div class="src">来源：纽约联储 / FINRA 国债与机构证券材料；DTCC MBS 清算介绍；ISDA 互换通识</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">市政债是什么：免税、联邦制与买家</h2>
+      <p>市政债的发行人是州、地方政府及各类公共相关主体：公用事业、大学、医院、收费公路当局……利息在符合条件时常免联邦所得税，不少还能叠加免本州税——对高税率投资者，综合免税效果可以把税负「砍」到听起来夸张的幅度（公开讨论里常提到边际税率叠加后接近或超过四成的量级）<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a>。</p>
+      <p>买家因此高度「税收敏感」：富裕个人、税率敏感的公司与特定账户。更深的一层是美国联邦制：州与地方自筹资本开支，联邦用税收优惠间接补贴，而不是事事由华盛顿拨款——市政债市场，是联邦制写在资产负债表上的一章。</p>
+
+      <div class="footnotes" id="fn-block-6">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ 市政债免税与联邦制</strong>
+          多数合格市政债利息免联邦所得税；若投资者居於发行州，还可能免州（及地方）税，形成「双免/三免」。这使市政债票息通常低于同久期应税债，但对高税率买家税后仍有吸引力。联邦制角度：州与地方通过市场发债建设学校、道路与公用设施，联邦以税式支出降低其融资成本。最高法院在 South Carolina v. Baker（1988）中确认联邦并非宪法上「不能」对州债利息征税，但实践中免税框架大体延续，成为美国公共金融的特色制度。
+          <div class="why">为何重要：不懂免税与联邦制，就只看见「冷门债」，看不见市政债台为何存在、买家是谁。</div>
+          <div class="src">来源：MSRB Tax Treatment / Municipal Bond Basics；Investor.gov；Federalism encyclopedia 条目</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s7">鲁西的逻辑：便宜资金 → 偏自营</h2>
+      <p>鲁西银行口袋深、融资成本相对低——尤其作为带商业银行血统的「外国人」机构，更容易拿到便宜负债。但客户特许权（franchise）往往弱于高盛、雷曼那类老牌投行：不是所有大单都会主动找上门<a class="fn-link" href="#fn8"><sup class="fn">⁸</sup></a>。</p>

@@ -1,0 +1,111 @@
+      <p>结果是战略倾斜：少做纯代理式的客户流水（agency flow），多靠自营（prop）吃点差与方向。市政债台在本章叙事里也偏自营导向——销售与做市之间的张力一直在：销售要客户满意与份额，交易要库存风险与 P&amp;L；自营逻辑更强时，桌子更像「用自己的钱下棋」，而不是「只赚佣金的管道」。</p>
+
+      <div class="scene">
+        便宜资金是弹药；弱客户流是地图上的空白；偏自营是鲁西给自己的填空题——也是新人要学会的政治地理。
+      </div>
+
+      <div class="footnotes" id="fn-block-7">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn8">
+          <strong>⁸ 自营 vs 代理 / 做市</strong>
+          <em>代理（agency）</em>：机构主要撮合客户买卖，赚佣金或销售信贷，库存风险有限。<em>做市（market-making）</em>：对客户双边报价，靠买卖价差赚钱，需管理库存。<em>自营（prop）</em>：用机构资本主动承担方向或相对价值风险，赚的是头寸的 P&amp;L。危机前大型银行常三者并存；融资成本低、客户流弱的机构，更有动机加码自营。沃尔克规则之后，美国银行自营空间被大幅压缩——但 2006 年的鲁西台，仍活在「可以堂堂正正 prop」的年代。
+          <div class="why">为何重要：解释为何同是「交易员」，在鲁西市政债台的日常，会不同于高盛式客户流台。</div>
+          <div class="src">来源：eFinancialCareers 等对 prop 文化的公开报道；沃尔克规则对比背景</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s8">Vince 的免费午餐盯梢与经纪商课</h2>
+      <p>Vince 给新人派了件「侦察任务」：去盯免费午餐——谁来、谁拿、气氛怎样。听起来像玩笑，实则是交易台观察课：大厅的权力与信息，常常附着在最不起眼的日常仪式上。</p>
+      <p>他又讲起星际经纪商（inter-dealer brokers）：交易员之间并不总是面对面成交，而是通过经纪商匿名或半匿名撮合，保护意图、集中流动性<a class="fn-link" href="#fn9"><sup class="fn">⁹</sup></a>。对市政债这种分散市场，经纪商渠道尤其像地下铁——外人看不见，台上的人天天坐。</p>
+
+      <div class="footnotes" id="fn-block-8">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn9">
+          <strong>⁹ 交易商间经纪商（IDB）</strong>
+          Inter-dealer brokers 为交易商提供彼此成交的中介：声音经纪或电子平台，常允许匿名，减少「亮出真实意图」的成本。国债、利率衍生品与部分信用产品高度依赖 IDB 生态；市政债等更分散的市场也有对应的经纪网络。对新人，理解 IDB 等于理解「价格从哪喊来、库存往哪卸」。
+          <div class="why">为何重要：Vince 的课把「宇宙的中心」从物理大厅，延伸到看不见的经纪商网络。</div>
+          <div class="src">来源：固定收益市场结构通识；IDB 行业公开介绍</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s9">Roger、Chris 们与 Series 7/63</h2>
+      <p>Roger 教他辨认现券（spot bonds）的脾气：哪一类券流动性像样、哪一类看起来便宜实则难出。销售席上则有一串叫 Chris 的名字——华尔街销售侧常见的「Chris 密度」成了内部笑话：你喊 Chris，半条销售桌有人回头。</p>
+      <p>持牌门槛也砸过来：Series 7 与 Series 63 之类资格考，他考到约 95 分的舒适区——然后苦笑：原来交易世界的入场券，有一部分真的像标准化考试<a class="fn-link" href="#fn10"><sup class="fn">¹⁰</sup></a>。会做题不等于会盯风险，但不会做题，连合法对客户说话的资格都没有。</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal_Hall_National_Memorial,_Wall_Street,_Manhattan,_New_York_(7236982206).jpg" alt="华尔街联邦厅" loading="lazy" />
+        <figcaption>华尔街联邦厅一带——持牌与监管叙事的城市布景。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-9">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn10">
+          <strong>¹⁰ Series 7 与 Series 63</strong>
+          Series 7（General Securities Representative）是 FINRA 核心从业资格考之一，覆盖公司证券、市政证券、期权、政府证券等销售与交易相关知识。Series 63（Uniform Securities Agent State Law）侧重州证券法（蓝天法）层面的代理注册。通过考试是「能合法展业」的门槛，不是「能稳定赚钱」的证明——作者的 95 分幽默，正点破这层：标准化考试是门票，P&amp;L 才是主课。
+          <div class="why">为何重要：收束「刘姥姥进大观园」的制度面——新鲜设备之外，还有监管试卷。</div>
+          <div class="src">来源：FINRA Series 7 官方说明；州证券法律师资格（Series 63）通识</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s10">茶馆笑话：从业余赌场到华尔街赌场</h2>
+      <p>章末的自我调侃像茶馆段子：离开业余赌场，走进华尔街赌场。语气轻，刺却在——上一章执意要飞行员座位，这一章终于坐上了，却发现「宇宙的中心」与「更大的牌桌」可以是同一间屋子的两块招牌。</p>
+      <p>重要的不是犬儒，而是清醒：工具可以是对冲，也可以是赌博；机构可以是宇宙中心，也可以是湿货市场。新人要做的，是在 Done! 的回声里，学会分辨自己到底在做哪一种。</p>
+
+      <div class="diagrams-section" id="diagrams">
+        <h2>人物 · 时间线 · 知识图谱</h2>
+        <p style="color:var(--muted);font-size:14px;">以下图表用 Mermaid 渲染，帮助把本章人物、产品与组织逻辑串起来（非书中原图）。</p>
+        <div class="mermaid-wrap">
+          <div class="caption">图 A · 入职时间线：座位 → 感官冲击 → 产品课 → 执照</div>
+          <pre class="mermaid">
+timeline
+    title 渔阳路径（本章叙事）
+    section 入职
+      2006年4月 : 鲁西银行市政债席
+      自己的座位 : 屏幕与额度
+    section 大厅冲击
+      宇宙中心神话 : 湿货市场眼睛
+      刘姥姥四屏 : 炮台与喊话盒
+      Mark喊Done : 欧元美元期货
+    section 组织课
+      FICC产品地图 : 国债到互换
+      市政债免税 : 联邦制买家
+      便宜资金偏自营 : 销售张力
+    section 学徒日常
+      Vince免费午餐盯梢 : IDB课
+      Roger现券 : Chris们黑话
+      Series7/63约95分 : 标准化门票
+      茶馆笑话 : 更大的赌场
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">图 B · 人物 / 台子关系图</div>
+          <pre class="mermaid">
+flowchart TD
+    A["作者 渔阳"] --> SEAT["市政债交易座位"]
+    SEAT --> V["Vince
+台负责人"]
+    SEAT --> R["Roger
+现券直觉"]
+    SEAT --> SALES["销售席 Chris们"]
+    V --> LUNCH["免费午餐盯梢"]
+    V --> IDB["星际经纪商课"]
+    M["Mark
+利率老板"] -->|"Done! Eurodollar"| FLOOR["交易大厅声景"]
+    A --> FLOOR
+    A --> HW["四屏 / 炮台 / 喊话盒"]
+    FIRM["鲁西银行
+便宜资金 / 弱franchise"] -->|"偏prop"| SEAT
+    GS["高盛/雷曼对照"] -.->|"更强客户流"| FIRM
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">图 C · 知识图谱：FICC 产品 / 免税 / 自营 / 执照</div>
+          <pre class="mermaid">
+flowchart LR
+    FICC["FICC"] --> TSY["国债"]
