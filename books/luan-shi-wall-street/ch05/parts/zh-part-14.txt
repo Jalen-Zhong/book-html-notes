@@ -1,0 +1,17 @@
+          回购交易：卖方卖出证券并承诺日后购回，本质是以证券为抵押的短期借款。Haircut 是抵押品市值与融资金额之间的折扣，用来缓冲价格波动；压力时期 haircut 上升等于强制去杠杆。经纪自营商高度依赖隔夜/短端回购滚动；Gorton 等人强调 2007–08 出现过「回购挤兑」机制。
+          <div class="why">为何重要：把「十亿账本」从吹牛数字，变成可折断的融资结构。</div>
+          <div class="src">来源：NY Fed repo 市场说明；Gorton &amp; Metrick《Securitized banking and the run on repo》</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s11">短端结构、套保与二十一点类比</h2>
+      <p>台上还有 SIV、市政 TOB（tender option bond）一类短端结构：用短期负债扛更长期或更复杂的资产，吃的是利差（carry）与周转。利率风险常用互换等工具对冲——套保压低波动，于是风险模型与管理层都觉得「还可以再加一点杠杆」<a class="fn-link" href="#fn11"><sup class="fn">¹¹</sup></a>。</p>
+      <p>作者把这与第一章赌场里的二十一点标准差直觉对照：你以为自己降低了波动，其实是在同一套赌术里，换筹码更大。套保不是魔法盾，它改变的是风险形状，不是把杜邦第三项变成免费午餐。</p>
+
+      <div class="footnotes" id="fn-block-9">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn11">
+          <strong>¹¹ SIV 与市政 TOB 式短端结构</strong>
+          SIV（structured investment vehicle）典型用 ABCP 等短端负债购买较长、更高收益的证券，赚利差；2007 年融资窗口关闭后大批 SIV 被迫重组或并回银行表内。市政 TOB 等结构则用短端「可赎回」负债放大免税债券的杠杆暴露。共同点：利差好看依赖短端市场持续开着。

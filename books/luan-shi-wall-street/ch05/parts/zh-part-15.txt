@@ -1,0 +1,24 @@
+          <div class="why">为何重要：解释「套保 + 短端负债」为何能在账面上同时提高周转与杠杆。</div>
+          <div class="src">来源：FCIC / 媒体对 SIV 并表事件的公开报道；市政 TOB 市场结构通识</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s12">模型幻觉与压缩的 CDS 溢价</h2>
+      <p>作者自己设计对冲与模型，一度有「市场可被科学编排」的幻觉：输入干净、输出整齐，像实验室。2006 年的贪婪空气里，CDS 与 CDX 投资级指数的保护费用被压得很薄——仿佛违约只是理论习题<a class="fn-link" href="#fn12"><sup class="fn">¹²</sup></a>。</p>
+      <p>模型越自信，杠杆越理直气壮；利差越压缩，沃尔玛式与华尔街式越像「稳赚」。章的锋利处在于：平静本身被当成了安全证据。</p>
+
+      <div class="footnotes" id="fn-block-10">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn12">
+          <strong>¹² CDS 与 CDX 指数</strong>
+          CDS（信用违约互换）是买方支付溢价、在信用事件时获得保护的合约。CDX.NA.IG 等指数把一篮子投资级实体的 CDS 标准化，成为信用风险的温度计。2006 年末公开经销商材料里，CDX.NA.IG 报价大约在 mid-30bp 一带——与书中「33–40bp」的平静海面叙事同量级。
+          <div class="why">为何重要：给「溢价被压缩」提供可查的市场刻度，而不仅是情绪形容词。</div>
+          <div class="src">来源：Markit/Nomura 2006 年 CDO/CDS 更新（FCIC 档案）；CDX 指数通识</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s13">平静海面：CDXIG 33–40bp</h2>
