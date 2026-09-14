@@ -1,0 +1,37 @@
+          <strong>⁵ Citadel 接盘 Sowood（2007-07-30）</strong>
+          Sowood Capital（杰弗里·拉森）旗下 Alpha 基金在 7 月信用暴跌中资产价值腰斩，面临保证金催缴与对冲失效。7 月 30 日投资者信称已将基金组合「几乎全部」出售给 Citadel Investment Group，以避免强制平仓；交易后 NAV 仍较月初大跌逾五成。肯尼思·格里芬称交易实现了「有序的风险转移」。这是夏季风暴里最清晰的「强手接货」案例之一。
+          <div class="why">为何重要：对照本章 8 月后的反弹心理——有人接货，不等于系统性风险已解。</div>
+          <div class="src">来源：Sowood 2007-07-30 投资者信（公开 PDF）；Reuters / MarketWatch 报道</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">道德风险：山姆大叔的靠山心理</h2>
+      <p>贴现窗口一开、强手一现身，市场上的潜台词很快变成：最坏的时候会有人兜底——联储、大型银行、 somehow 的「山姆大叔」。道德风险不是教科书里的抽象词，而是交易台的肌肉记忆：风险偏好被「不会真死」的预期悄悄抬高，杠杆与久期又开始往回加。</p>
+      <p>作者警惕的正是这种心理学：危机似乎过去，所以可以更冒险；而更冒险，正是下一场风暴的燃料。</p>
+
+      <div class="scene">
+        安全网越清晰，网外的人越敢走钢丝——直到钢丝本身成为系统风险。
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">10 月 9 日：皮肤健康、骨头受伤</h2>
+      <p>2007 年 10 月 9 日，标普 500 收在约 1565 的高点，与 2000 年前后的顶部形成双顶韵脚——图表看起来像「又一次牛市巅峰」。BRIC（巴西、俄罗斯、印度、中国）脱钩论正热：新兴市场可以自己长，不必跟美国信贷一起沉。<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a> 中国 A 股叙事冲向约 6092 点附近的高潮区（上证综指稍后在 10 月中旬见历史峰值）。</p>
+      <p>作者给出一个身体隐喻：股票是皮肤，信用是骨头，银行是器官。皮肤可以红润光泽，骨头已经裂纹，影子银行与批发融资管道这些器官则在内部渗血。<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a> 市场「看起来健康」，只是因为眼睛习惯盯着皮肤。</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/NYC_NYSE.jpg" alt="纽约证券交易所外观" loading="lazy" />
+        <figcaption>纽约证券交易所——10 月的股指高点像健康的皮肤；信用与银行管道的伤，要在更深处量。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        双顶可以骗人；脱钩论可以骗人；只有当你同时摸皮肤、骨头和器官，才知道身体有没有在假装康复。
+      </div>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ BRIC「脱钩」叙事（2007）</strong>
+          2000 年代中期，高盛等提出的 BRIC 概念与「新兴市场增长可相对独立于发达经济体」的脱钩（decoupling）讨论流行。2007 年秋美股与部分新兴股市同创新高，强化了「美国信贷问题本地化」的乐观。随后全球贸易、美元融资与风险偏好同步收缩，证明金融与贸易耦合远深于口号。
