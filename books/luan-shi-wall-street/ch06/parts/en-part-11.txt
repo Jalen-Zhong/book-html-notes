@@ -1,0 +1,20 @@
+          Beginning June 30, 2004, the FOMC raised its funds target by 25 bp seventeen times in a row, from 1.00% to 5.25% on June 29, 2006, then held that level for months. It is the textbook “measured tightening” stretch before the crisis: policy rates rose while risk appetite and shadow funding did not cool in lockstep.
+          <div class="why">Why it matters: explains how 2006 could still <em>feel</em> calm while cheap leverage’s fuel was already being drained.</div>
+          <div class="src">Sources: Federal Reserve FOMC history; FRED target federal funds series</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s9">Vince’s survival style vs. hero narrative</h2>
+      <p>On the desk the contrast is personal: Vince’s natural-gas-related style reads like survivalism — size control, respect for tails, “stay alive” as KPI number one. Hunter’s public image is heroic directional conviction: mythic in a tailwind, fatal to the whole “never-fading” flower in a gale.</p>
+      <p>The author pairs the two temperaments not for a sermon but for a question: in leveraged markets, are you trading a view — or betting the firm’s survival?</p>
+
+      <div class="scene">
+        Survival craft rarely looks cool; hero narrative photographs best in a bull tape. When the tide ebbs, looking good and staying solvent are often different jobs.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s10">Base money, multipliers, shadow leverage</h2>
+      <p>Pull the camera back: what a central bank can twist most directly is base money and the policy rate; what really inflates in a boom is the credit multiplier of banks and the shadow system<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a>. In repo markets, haircuts act like a lightly regulated leverage dial — loosen the haircut and the same collateral supports a larger notional<a class="fn-link" href="#fn8"><sup class="fn">⁸</sup></a>.</p>

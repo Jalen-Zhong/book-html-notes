@@ -1,0 +1,19 @@
+      <h2 id="s7">Hunter’s natural-gas heroics</h2>
+      <p>The plot is pure Wall Street: first the 2005 hurricane-season windfall memory, then 2006 conviction that seasonal spreads would widen — with March–April often cited in the public telling. Positions stacked higher; when the market reversed, copycats fled while vultures pressed the squeeze. Margin calls became death warrants; exit itself became part of the price.</p>
+      <p>In the end the energy book was packaged to counterparties better able to digest the risk — public reports name JPMorgan and Citadel. Hero narrative meets forced sale; petals everywhere.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wall_Street_Sign_New_York_2005.jpg" alt="Wall Street street sign" loading="lazy" />
+        <figcaption>Wall Street sign (2005) — same street for hero stories and liquidation calls. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <hr class="divider" />
+
+      <h2 id="s8">Seventeen hikes: lone leverage on the beach</h2>
+      <p>The backdrop is the Fed’s long hiking scroll: from mid-2004, seventeen consecutive increases took the federal funds target from 1% to 5.25% by mid-2006<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a>. Rising rates are a tide going out slowly; the first bodies visible on the sand are often those pinned to a single, highly leveraged bet.</p>
+      <p>Amaranth’s gas book became a sharp specimen of “who was swimming naked when the tide went out.”</p>
+
+      <div class="footnotes" id="fn-block-5">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ Federal funds path, 2004–2006</strong>
