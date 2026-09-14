@@ -1,0 +1,33 @@
+        <div class="fn-item" id="fn1">
+          <strong>¹ 阿喀琉斯之踵（Achilles’ heel）隐喻</strong>
+          古希腊传说中，阿喀琉斯被母亲忒提斯浸入冥河斯堤克斯以求不死，唯脚踵被握住而未浸到，后被箭矢射中身亡。「Achilles’ heel」由此成为英语成语，指表面强大系统中致命而隐蔽的弱点。本章用它对照华尔街：希腊字母风险模型像盔甲，短期批发融资依赖才是踵。
+          <div class="why">为何重要：把「风险管理很先进」与「每天要续命融资」拆开——后者才是危机里先断的筋。</div>
+          <div class="src">来源：古典神话传统与英语成语用法；危机文献对短期批发融资脆弱性的标准叙述</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">货币市场与回购：血液循环</h2>
+      <p>货币市场基金（money-market funds）被宣传成「现金优先」：追求本金安全、当日流动性、再捎一点收益。<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a> 它们买商业票据、回购与短债，把散户与公司的闲钱泵进批发市场。回购（repo）则像华尔街的血液循环：卖方拿券换现金，买方拿现金换抵押品，约定次日或稍后反向；中间靠<strong>折价（haircut）</strong>调节——券跌了谁先亏、需要垫多少保证金。<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a></p>
+      <p>鲁西银行（Lucy Bank）交易台上有个活生生的例子：对手方要求更高折价，融资成本被推到联邦基金利率再加约 20 个基点。数字不大，语气却冷——「空白支票式」的老关系在收紧；曾经一句玩笑「边上还有大把现金闲着」的回购台，忽然发现<strong>边上没现金了</strong>。</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/New_York_Stock_Exchange_2003.jpg" alt="纽约证券交易所外景" loading="lazy" />
+        <figcaption>纽约证券交易所一带——公开市场的喧闹下面，是回购与货币市场在夜里续命。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        回购台被忽视时，人人笑「现金很多」；被重视时，才发现笑话已经过期。
+      </div>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn2">
+          <strong>² 货币市场基金（Money-market funds）</strong>
+          一类开放式基金，主要投资高信用、短久期工具（国债、商业票据、回购协议等），目标是稳定净值、提供近似现金的流动性并获取略高于银行存款的收益。2007–2008 年，部分基金因持有资产支持商业票据等工具而承压；2008 年 9 月 Reserve Primary Fund「跌破 1 美元」更成为信心冲击的标志事件（本章时间线略早，但机制同源）。
+          <div class="why">为何重要：它们是「看起来像现金」的管道——管道一堵，批发融资立刻缺氧。</div>
+          <div class="src">来源：SEC / ICI 对货币市场基金的说明；危机史对 2007–08 短端挤兑的综述</div>
+        </div>
+        <div class="fn-item" id="fn3">
+          <strong>³ 回购折价（repo haircut）</strong>
