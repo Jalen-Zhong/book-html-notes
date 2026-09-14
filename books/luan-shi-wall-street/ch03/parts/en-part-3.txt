@@ -1,0 +1,60 @@
+3">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ Interest-rate swaps: rates-desk vernacular</strong>
+          In a plain-vanilla IRS, counterparties exchange fixed versus floating payments on a notional (historically often LIBOR-linked; later SOFR and other RFRs). Corporates, banks, and municipal issuers use swaps to lock funding costs or reshape duration; traders work spreads, flies, and relative value on the swap curve. For an “Apple guy” interviewer, math is the ticket — standing in cash-flow and curve language is the job.
+          <div class="why">Why it matters: explains the math-plus-aura screen, and foreshadows munis’ link to rates-curve models.</div>
+          <div class="src">Sources: ISDA / Fed market primers on IRS; LIBOR→SOFR transition background</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s4">Vince enters: munis and a church organ</h2>
+      <p>By then despair was near: the free-food interviewers had been polite and distant, confirming “you’re not our people.” Then Vince walked in — head of the municipal desk. He took no free food. Small talk surfaced a hobby: church organ. The room cut from salad-and-apple power games to a human corner.</p>
+      <p>Municipal bonds finance states, cities, school districts, and public agencies, often with federal tax-exempt interest, fragmented issuers, fiddly credit and tax clauses, and liquidity nothing like Treasuries<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a>. In the mid-2000s fashion parade of subprime, CDS, and exotics, a muni seat did not sound trendy — yet it sat at a real junction of rates and credit.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pipe_organ.jpg" alt="Pipe organ" loading="lazy" />
+        <figcaption>A pipe organ — visual nod to Vince’s church-organ hobby (not a portrait). Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ Municipal bond market basics</strong>
+          U.S. munis fund local public projects — schools, roads, utilities. Much interest is federally tax-exempt (sometimes state-exempt too), which attracts higher-tax-bracket buyers. Thousands of issuers, uneven liquidity, and credit work that inspects tax bases, project revenues, insurance, and structures. For a bank desk, munis are a three-dimensional board of rates, credit, and tax — not headline exotics, but a durable balance-sheet market.
+          <div class="why">Why it matters: without this map, the author’s “not trendy enough” hesitation and Vince’s real offer both float free of context.</div>
+          <div class="src">Sources: MSRB / Investopedia / asset-manager public muni primers</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">Trader qualities: risk, discipline, observation</h2>
+      <p>Vince asked what makes a good trader. The author skipped “I love markets” porridge and answered three battlefield rules: control risk — models are not enough; there is still exposure, liquidity, and human error; self-discipline under fire — execute the rules when the tape humiliates you, instead of revenge-sizing; observe and adapt — curves and order flow change; dogma dies first.</p>
+      <div class="scene">
+        Those three demote “can calculate” to a ticket and promote “leave the table alive” to the main course — exactly a desk head’s palate.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">I DO: the muni seat and Roger</h2>
+      <p>Vince offered a municipal trading seat on the spot. Hesitation flickered: munis were less trendy than subprime, CDS, or exotics. It lasted one beat — then he heard himself say I DO. He wanted the seat, not the magazine cover.</p>
+      <p>On the desk was Roger: senior trader, Chicago Booth, ex-Goldman muni prop. He partnered with Vince and needed someone who could talk to the quants — rates-curve models and relative-value frames were the financial-engineering interface the author could actually plug into<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a>. Not a pure yell-and-fill seat; a middleware job between trading gut and model shop.</p>
+
+      <div class="footnotes" id="fn-block-6">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ Prop trading meets curve models</strong>
+          Pre-crisis, banks ran proprietary desks on firm capital — directional or relative-value books with profit shares and wide autonomy. Muni prop often braided yield-curve models, credit spreads, and tax effects; quants shipped factors and prices, traders owned risk budgets and execution. The author’s role — “trading-side person who can speak quant” — was a classic hole on those pre-Volcker desks.
+          <div class="why">Why it matters: explains why Roger needed him, and why “years before you touch money” could collapse into a six-month offer.</div>
+          <div class="src">Sources: eFinancialCareers 2004–05 prop culture; rates relative-value primers; Volcker Rule contrast</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s7">Formal offer and Goldman’s retention pitch</h2>
+      <p>The second round was friendlier. The formal offer landed on the muni trading seat inside rates — about six months after the line “it will be years before you touch money.” Apprenticeship mythology met desk scarcity: not seniority theater, but filling a hole.</p>
+      <p>Goldman tried to retain him: other strat groups, FI strat again, even a tour with a Princeton PhD partner. He declined. In a near song-metaphor he cast himself as wanting to be the pilot, not the staff officer — hands on the yoke, n
