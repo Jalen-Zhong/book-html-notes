@@ -1,0 +1,39 @@
+      <p>对作者来说，这不是遥远八卦，而是「乱世又回来了」的现场证据：镀金的平静，可以被一朵花的凋谢撕开。</p>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ Amaranth Advisors / Brian Hunter / 卡特里娜</strong>
+          康涅狄格州格林尼治的多策略对冲基金。能源交易主管 Brian Hunter（卡尔加里）在 2005 年飓风卡特里娜冲击天然气市场时获得巨额利润；2006 年继续加大天然气日历价差等方向性押注。当年 9 月，基金因天然气衍生品巨亏（公开报道量级约数十亿美元、NAV 大幅回撤），并将能源仓位转让给摩根大通与 Citadel 等以缓解保证金与违约风险。基金名取自「不凋之花」意象，与结局形成刺眼对照。
+          <div class="why">为何重要：本章标题与核心事件——把 1998 的韵脚落到 2006 的气市。</div>
+          <div class="src">来源：当代财经报道（WSJ / NGI 等）；公开投资者信函转述；CFTC/FERC 后续执法背景</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s7">Hunter 的天然气豪赌</h2>
+      <p>剧本很「华尔街」：先有 2005 年飓风季的暴利记忆，再有 2006 年对季节价差的加倍信念——典型叙事里常提到押注 3 月与 4 月合约价差走阔。仓位越堆越高；当市场反走，模仿者先逃，秃鹫反而加码挤压。保证金电话像催命符，退出本身变成价格的一部分。</p>
+      <p>最终能源账本被打包交给更能消化风险的对手——公开报道指向摩根大通与 Citadel。英雄叙事在强平单面前，变成一地碎花瓣。</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wall_Street_Sign_New_York_2005.jpg" alt="华尔街路牌" loading="lazy" />
+        <figcaption>华尔街路牌（2005）——英雄叙事与强平电话共享的同一条街。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <hr class="divider" />
+
+      <h2 id="s8">加息潮退：孤独的杠杆暴露</h2>
+      <p>背景板是联储的加息长卷：自 2004 年中起连续十七次上调联邦基金目标利率，从 1% 走到 2006 年中的 5.25%<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a>。利率上升像潮水缓缓退去；沙滩上最先暴露的，往往是那些把自己钉在单一、高杠杆赌注上的人。</p>
+      <p>Amaranth 的天然气簿，成了「潮退之后谁在裸泳」的刺眼标本。</p>
+
+      <div class="footnotes" id="fn-block-5">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ 联邦基金利率路径（2004–2006）</strong>
+          2004 年 6 月 30 日起，FOMC 以每次 25 个基点的节奏连续加息 17 次，把联邦基金目标利率从 1.00% 抬至 2006 年 6 月 29 日的 5.25%，并在此后数月维持该水平。这是危机前「有序紧缩」的教科书段落：政策利率上升，但风险偏好与影子融资未必同步降温。
+          <div class="why">为何重要：解释为何 2006 仍看起来「平静」，却已在抽走廉价杠杆的燃料。</div>
+          <div class="src">来源：Federal Reserve FOMC 历史；FRED 联邦基金目标利率序列</div>
+        </div>
+      </div>
+
