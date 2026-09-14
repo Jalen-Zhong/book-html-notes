@@ -1,0 +1,35 @@
+        十六亿的净资产，撬起数十亿的资产与一整条抵押融资链——恐慌的单位从来不是「基金大小」，而是「谁被拴在同一堵墙上」。
+      </div>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ 贝尔斯登对冲基金危机（2007）</strong>
+          Bear Stearns High-Grade Structured Credit Strategies Fund 与 Enhanced Leverage 姐妹基金大量持有次级相关结构化信用，并依赖回购等杠杆融资。2007 年 6 月陷入赎回与保证金催缴；母公司于 6 月 26 日左右向 High-Grade 基金提供约 16 亿美元抵押回购额度。到 6 月末，Enhanced Leverage 对投资者几乎已无剩余价值，High-Grade 所剩无几；两只基金于 7 月底前后走向破产/清盘。
+          <div class="why">为何重要：本章风暴的第一声雷——从「小基金」变成「系统承重墙」。 </div>
+          <div class="src">来源：NYT / Reuters 当代报道；Cayne/BSAM 投资者更新信公开摘录</div>
+        </div>
+        <div class="fn-item" id="fn2">
+          <strong>² 抵押融资 / 回购式借贷（collateralized lending）</strong>
+          对冲基金与投行常用回购（repo）等安排：借入方交出证券作抵押，按折扣（haircut）拿到现金；价格下跌或 haircut 上升时，需追加保证金或被强制平仓。债权人（常为其他经纪商）一旦选择拍卖抵押品，会把「私人估值」瞬间变成公开的标记价格——这正是后文美林威胁拍卖的杀伤力所在。
+          <div class="why">为何重要：解释为何 NAV 不大也能拖累整条街的融资与定价。</div>
+          <div class="src">来源：回购市场公开教材；危机史对 HF–prime broker 融资链的标准叙述</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">策略：AAA、CDS 与杠杆</h2>
+      <p>基金的故事一度很漂亮：买入看起来 AAA 的结构化纸张，用信用违约互换（CDS）做对冲，再叠上杠杆，把「几个基点的利差」放大成漂亮的月度回报。当利差不断压缩，为了保住收益，组合被迫接受更差的抵押品、更不完整的对冲——模型仍说「高评级」，账本却越来越脆。</p>
+      <p>这是第七章连环计的续集：分层把风险改了名字，杠杆把名字变成了规模，不完整的对冲则在风暴里露出缺口。</p>
+
+      <div class="scene">
+        策略说明书写着 AAA 与对冲；盛夏真正考验的是：对冲覆盖了多少，以及抵押品在拍卖锤下还值多少。
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">凯恩注资、美林拍卖与 ABX 砸盘</h2>
+      <p>贝尔斯登 CEO 詹姆斯·凯恩（Jimmy Cayne）不情愿地同意向 High-Grade 基金注入约 16 亿美元量级的抵押融资支持——这是母公司用自己的资产负债表去挡清算。<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a></p>
+      <p>但债权人不买账。美林威胁对约 8 亿美元的 CDO 抵押品发起公开拍卖：一旦锤落下，冷清市场里的成交价会变成全市场不得不参考的标记价格（mark-to-market）窗纸。<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a><a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a> 恐慌顺着 ABX 等次级指数砸下去；同期 Sowood 等基金也在压力中显形；到 7 月末，贝尔斯登相关基金走向破产清盘。</p>
+

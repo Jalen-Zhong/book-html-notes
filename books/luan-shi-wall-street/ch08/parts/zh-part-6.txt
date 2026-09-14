@@ -1,0 +1,37 @@
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wall_Street_panorama_vc.jpg" alt="华尔街全景 2007" loading="lazy" />
+        <figcaption>华尔街全景（2007 年 12 月）——半年前拍卖威胁已经把「私人估值」逼成公开价格。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ ABX 指数</strong>
+          ABX.HE 等指数跟踪一组次级住房按揭证券（RMBS）的 CDS 价格，成为 2007 年市场给「次级整体健康度」定价的公开温度计。基金与自营用它做对冲或投机；一旦指数暴跌，它既反映恐慌，也通过标记与保证金要求放大恐慌。
+          <div class="why">为何重要：把「拍卖窗纸」与全市场可见的次级价格连在一起。</div>
+          <div class="src">来源：Markit ABX 公开说明；危机史对 2007 年 ABX 暴跌的标准叙述</div>
+        </div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ 按市值计价（mark-to-market）</strong>
+          按最近可观察市场价格（或模型加可比成交）给仓位估值。在流动性枯竭的市场里，一次公开拍卖或强制平仓可以制造「可比成交」，迫使其他持有人同步减记——即使他们本无意卖出。美林威胁拍卖的杀伤力，正在于把私人折扣变成公开基准。
+          <div class="why">为何重要：解释为何「威胁拍卖」本身就能砸穿一整层结构化信用。</div>
+          <div class="src">来源：会计与交易实务对 MTM 的标准定义；Bear HF 当代报道</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s4">大西洋对岸着火：BNP 冻结三只基金</h2>
+      <p>8 月 9 日，火越过大西洋。法国巴黎银行（BNP Paribas）宣布，因美国证券化市场部分区段流动性「完全蒸发」，无法公平估值底层 ABS，暂时停止三只基金的净值计算与申购赎回。<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a></p>
+      <p>声明很技术，含义却很政治：连「高质量、高评级」的资产也可以因为没有买家而无法定价。欧洲银行间市场随之紧张——危机叙事从「美国次级角落」升级为「全球流动性事件」。</p>
+
+      <div class="scene">
+        当银行说「我们算不出净值」，翻译成市场语言就是：钱的价格暂时失真，谁也不敢先伸手。
+      </div>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ 巴黎银行冻结三只基金（2007-08-09）</strong>
+          BNP Paribas Investment Partners 暂停 Parvest Dynamic ABS、BNP Paribas ABS Euribor、BNP Paribas ABS Eonia 的 NAV 计算与申赎，理由是美国证券化某些区段流动性蒸发，无法对底层 ABS 做出公平估值。三只基金规模当时约合十余亿欧元量级。此事常被视作 2007 年危机「跨大西洋公开化」的标志日之一；欧洲央行同日向银行体系注入流动性。
+          <div class="why">为何重要：夏季风暴从纽约融资桌蔓延到欧洲货币市场的公开节点。</div>
