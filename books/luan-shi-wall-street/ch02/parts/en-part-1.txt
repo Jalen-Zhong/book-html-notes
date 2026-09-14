@@ -1,0 +1,91 @@
+lumns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin: 16px 0 22px;
+    }
+    .event-card {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+    .event-card .yr { color: var(--gold); font-weight: 700; font-size: 14px; }
+    .event-card .ev { color: #c9d4e8; font-size: 13px; margin-top: 4px; line-height: 1.5; }
+    .diagrams-section {
+      margin-top: 32px;
+      padding-top: 8px;
+    }
+    footer {
+      margin-top: 28px; color: var(--muted);
+      font-size: 13px; text-align: center;
+    }
+    footer a { color: var(--gold-soft); }
+    @media (max-width: 560px) {
+      article.story { padding: 20px 16px 12px; }
+      .wrap { padding: 24px 14px 60px; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="lang-switch" aria-label="Language">
+        <a href="goldman-internship-zh.html">中文</a>
+        <a class="active" href="goldman-internship-en.html">English</a>
+      </div>
+      <div class="badge">Story guide · Retold from public trial read · Off-book research</div>
+      <h1>Goldman Internship</h1>
+      <p class="subtitle"><em>Chaos on Wall Street</em> · Chapter 2 “Goldman Internship” · Yuyang · narrative rewrite + footnotes</p>
+      <div class="note">
+        The pages below retell this chapter’s events in original phrasing for easy following — not a verbatim dump of the book. Footnotes, figures, and diagrams are off-book public research to illuminate names and institutions the text only glances at. Please support the official edition for the full work.
+      </div>
+      <nav class="toc" aria-label="Section navigation">
+        In this chapter
+        <ul>
+          <li><a href="#s1">Special-forces vibe: autumn in IBD Strategies</a></li>
+          <li><a href="#s2">Because we are Goldman: bonuses and the bottom cut</a></li>
+          <li><a href="#s3">Intern work: SecDB, narrative, and Jerry</a></li>
+          <li><a href="#s4">Elevator gossip and the insider-trading lesson</a></li>
+          <li><a href="#s5">Keen’s later path: do not follow</a></li>
+          <li><a href="#s6">Bonus season 2005, Christmas party, NYU fair</a></li>
+          <li><a href="#s7">Meeting Rick: “Lucy Bank” prop / rates</a></li>
+          <li><a href="#diagrams">People / timeline / knowledge graph</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER TWO · GOLDMAN INTERNSHIP</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/200_West_Street.jpg" alt="Goldman Sachs headquarters exterior" loading="lazy" />
+        <figcaption>Goldman Sachs headquarters at 200 West Street, Manhattan — the façade of what felt like a special-forces shop to an intern. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">Special-forces vibe: autumn in IBD Strategies</h2>
+      <p>In autumn 2005 the author walked into Goldman Sachs Investment Banking Division Strategies as an intern. The culture did not feel like a normal corporation: it moved like special forces — smart, hungry, willing to carry weight. Much of that temperament traced, in firm lore, to J. Aron, the commodities-and-FX house Goldman bought in 1981, which seeded a generation of risk-tolerant traders<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a>. Lloyd Blankfein rose on that line: precious-metals salesman at J. Aron, then currencies and commodities leadership, then the top of the firm; by 2006 he would be chairman and CEO. Around 2005, the firm’s appetite for risk was being lifted by exactly that trading bloodline<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a>.</p>
+      <p>For someone fresh from Berkeley’s financial-engineering program and finally sitting near the front office, the culture was both intoxicating and crushing: you were not here to “sample a workplace”; you were here to prove you belonged at the table.</p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">Public timeline anchors (chapter background)</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">1981</div><div class="ev">Goldman acquires J. Aron — commodities &amp; FX</div></div>
+          <div class="event-card"><div class="yr">1999.05</div><div class="ev">Goldman IPO: partnership → public company</div></div>
+          <div class="event-card"><div class="yr">Autumn 2005</div><div class="ev">Author’s IBD Strategies internship</div></div>
+          <div class="event-card"><div class="yr">2005–06</div><div class="ev">NYSE–Archipelago merger controversy</div></div>
+          <div class="event-card"><div class="yr">2006</div><div class="ev">Blankfein becomes CEO; ICBC stake announced</div></div>
+        </div>
+      </div>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ J. Aron: Goldman’s commodities and FX lineage</strong>
+          In 1981 Goldman acquired client J. Aron &amp; Company — a family commodities house with New Orleans roots in coffee, later precious metals and FX. Public firm history frames the deal as a way to deepen international commodities and currency reach. After the purchase, J. Aron’s trading culture and talent pipeline filtered into Goldman and helped shape the later FICC powerhouse.
+          <div class="why">Why it matters: the “special forces” and risk appetite in this chapter are not slogans; they map onto a documented 1981 acquisition and Blankfein’s promotion path.</div>
+          <div class="src">Sources: Goldman Sachs history moment “1981 J. Aron”; New York Times, 30 Oct 1981</div>
+        </div>
+        <div class="fn-item" id="fn2">
+          <strong>² Blankfein: from metals salesman to CEO</strong>
+          Lloyd Blankfein joined J. Aron in 1982 (already under Goldman) as a precious-metals salesperson, made partner in 1988, later led currencies and commodities, became president and COO in 2003–04, and succeeded Hank Paulson as chairman and CEO in 2006. Public narratives cast him as the trader who remade Goldman’s risk appetite and profit mix.
+          <div class="why">Why it matters: the internship sits on the eve of trading DNA taking the corner office — the firm’s “dare to wager” mood had a concrete 
