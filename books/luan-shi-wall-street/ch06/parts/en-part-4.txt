@@ -1,0 +1,29 @@
+        The narrative below follows the author’s experience and historical echoes in original phrasing for study — not a verbatim copy of the book. Footnotes, figures, and graphs are off-book public research. “Lucy Bank” and similar names are book aliases. Please support the official edition for the full text.
+      </div>
+      <nav class="toc" aria-label="Section guide">
+        In this chapter
+        <ul>
+          <li><a href="#s1">Cyclical China meets linear U.S. optimism</a></li>
+          <li><a href="#s2">Dress rehearsal: LTCM, 1998</a></li>
+          <li><a href="#s3">Spreads, leverage, and the “genius” brand</a></li>
+          <li><a href="#s4">Russia default: correlations → 1</a></li>
+          <li><a href="#s5">Models fail: people are not Brownian particles</a></li>
+          <li><a href="#s6">History rhymes: the never-fading amaranth</a></li>
+          <li><a href="#s7">Hunter’s natural-gas heroics</a></li>
+          <li><a href="#s8">Seventeen hikes: lone leverage on the beach</a></li>
+          <li><a href="#s9">Vince’s survival style vs. hero narrative</a></li>
+          <li><a href="#s10">Base money, multipliers, shadow leverage</a></li>
+          <li><a href="#s11">Canary: the gilded age is ending</a></li>
+          <li><a href="#diagrams">Cast map / timeline / knowledge graph</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER SIX · THE NEVER-FADING FLOWER</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Amaranthus_caudatus0.jpg" alt="Amaranthus caudatus flower" loading="lazy" />
+        <figcaption>Amaranthus — a plant whose name is tied to the idea of an unfading flower. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">Cyclical China meets linear U.S. optimism</h2>
