@@ -6,13 +6,8 @@
   <title>Book HTML Notes</title>
   <style>
     :root {
-      --bg: #0b1220;
-      --panel: #121a2b;
-      --gold: #d4af37;
-      --gold-soft: #f0d78c;
-      --text: #e8eef9;
-      --muted: #9aa8c1;
-      --line: rgba(212, 175, 55, 0.28);
+      --bg: #0b1220; --panel: #121a2b; --gold: #d4af37; --gold-soft: #f0d78c;
+      --text: #e8eef9; --muted: #9aa8c1; --line: rgba(212, 175, 55, 0.28);
     }
     * { box-sizing: border-box; }
     body {
@@ -22,9 +17,7 @@
         radial-gradient(1000px 500px at 10% -10%, rgba(212,175,55,0.12), transparent 55%),
         radial-gradient(800px 400px at 100% 0%, rgba(61,139,253,0.12), transparent 50%),
         var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-      min-height: 100vh;
+      color: var(--text); line-height: 1.7; min-height: 100vh;
     }
     .wrap { max-width: 780px; margin: 0 auto; padding: 48px 20px 80px; }
     .badge {
@@ -41,36 +34,44 @@
     }
     .card h2 { margin: 0 0 8px; font-size: 18px; color: var(--gold-soft); }
     .card p { margin: 0 0 12px; color: #d7deec; font-size: 15px; }
-    a.chap {
+    a.chap, a.link {
       display: block; text-decoration: none; color: var(--text);
       padding: 12px 14px; margin: 0 0 10px; border-radius: 12px;
       border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.03);
-      transition: 0.15s ease;
     }
-    a.chap:hover { border-color: var(--gold); color: var(--gold-soft); }
-    a.chap .t { font-weight: 650; }
-    a.chap .d { display: block; color: var(--muted); font-size: 13px; margin-top: 2px; }
+    a.chap:hover, a.link:hover { border-color: var(--gold); color: var(--gold-soft); }
+    .langs { font-size: 13px; color: var(--muted); margin-top: 4px; }
+    .langs a { color: var(--gold-soft); margin-right: 12px; }
     footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center; }
     footer a { color: var(--gold-soft); }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="badge">BOOK HTML NOTES</div>
+    <div class="badge">BOOK HTML NOTES · OPEN</div>
     <h1>书章阅读笔记</h1>
-    <p class="sub">故事向导读 + 场外脚注与图谱。非原书照搬；完整内容请支持正版。</p>
+    <p class="sub">中英双语 · 故事向导读 + 场外脚注与图谱。欢迎按社区规范贡献更多书。</p>
 
     <div class="card">
       <h2>《乱世华尔街》</h2>
-      <p>渔阳 · 一位华人交易员的经历</p>
+      <p>渔阳 · 一位华人交易员的经历（持续更新）</p>
       <a class="chap" href="books/luan-shi-wall-street/ch01/gilded-age-casino-to-wall-street.html">
-        <span class="t">第 1 章 · 镀金时代 · 从赌场走进华尔街</span>
-        <span class="d">后台 IT → 赌场预科 → 伯克利 → 高盛面试</span>
+        <span>第 1 节 · 镀金时代 · 从赌场走进华尔街</span>
+        <div class="langs">中文页（英文页推进中）</div>
       </a>
+    </div>
+
+    <div class="card">
+      <h2>参与贡献</h2>
+      <p>上传你有权使用的书，或给书名让 agent 用公开资料解读；fork → push → Pull Request。</p>
+      <a class="link" href="https://github.com/Jalen-Zhong/book-html-notes/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>
+      <a class="link" href="https://github.com/Jalen-Zhong/book-html-notes/blob/main/COMMUNITY.md">COMMUNITY.md</a>
+      <a class="link" href="https://github.com/Jalen-Zhong/book-html-notes/tree/main/skills">skills/</a>
     </div>
 
     <footer>
       源码：<a href="https://github.com/Jalen-Zhong/book-html-notes">Jalen-Zhong/book-html-notes</a>
+      · License: CC BY 4.0（原创笔记）
     </footer>
   </div>
 </body>
