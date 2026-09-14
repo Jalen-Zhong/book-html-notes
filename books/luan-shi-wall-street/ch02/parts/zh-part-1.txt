@@ -1,0 +1,97 @@
+y: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin: 16px 0 22px;
+    }
+    .event-card {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+    .event-card .yr { color: var(--gold); font-weight: 700; font-size: 14px; }
+    .event-card .ev { color: #c9d4e8; font-size: 13px; margin-top: 4px; line-height: 1.5; }
+    .diagrams-section {
+      margin-top: 32px;
+      padding-top: 8px;
+    }
+    footer {
+      margin-top: 28px; color: var(--muted);
+      font-size: 13px; text-align: center;
+    }
+    footer a { color: var(--gold-soft); }
+    @media (max-width: 560px) {
+      article.story { padding: 20px 16px 12px; }
+      .wrap { padding: 24px 14px 60px; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="lang-switch" aria-label="语言">
+        <a class="active" href="goldman-internship-zh.html">中文</a>
+        <a href="goldman-internship-en.html">English</a>
+      </div>
+      <div class="badge">故事导读 · 据公开试读改写 · 场外研究补充</div>
+      <h1>高盛实习</h1>
+      <p class="subtitle">《乱世华尔街》第二章「高盛实习」· 渔阳 · 故事改写 + 脚注研究</p>
+      <div class="note">
+        下面按作者经历顺序讲述本章故事，用自己的话改写，方便跟读；不是全书/全章原文照搬。脚注、配图与知识图谱为场外公开资料补充，帮助理解书中一带而过的背景。完整内容请读正版。
+      </div>
+      <nav class="toc" aria-label="章节导航">
+        本节导览
+        <ul>
+          <li><a href="#s1">特种部队气质：秋日走进 IBD Strategies</a></li>
+          <li><a href="#s2">因为我们是高盛：奖金与末位淘汰</a></li>
+          <li><a href="#s3">实习生的活：SecDB、叙事与 Jerry</a></li>
+          <li><a href="#s4">电梯八卦与内幕交易课</a></li>
+          <li><a href="#s5">基恩的后来：别跟着走</a></li>
+          <li><a href="#s6">2005 奖金季、圣诞派对与 NYU 招聘会</a></li>
+          <li><a href="#s7">遇见 Rick：「露西银行」自营利率台</a></li>
+          <li><a href="#diagrams">人物关系 / 时间线 / 知识图谱</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER TWO · 高盛实习</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/200_West_Street.jpg" alt="高盛曼哈顿总部外观" loading="lazy" />
+        <figcaption>高盛位于曼哈顿 200 West Street 的总部外观——实习生眼里「特种部队」的门面。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">特种部队气质：秋日走进 IBD Strategies</h2>
+      <p>2005 年秋天，作者踏进高盛投资银行部的 Strategies（策略）组实习。这里的文化不像普通大公司：节奏像特种部队，人人被要求又聪明又饿、又肯扛事。部门气质上，很多人追溯到 J. Aron——高盛 1981 年收购的大宗商品与外汇老行，培养出一整代爱交易、敢承担风险的人脉<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a>。劳埃德·布兰克费恩（Lloyd Blankfein）正是从这条线走上来的：先在 J. Aron 卖贵金属，后来管货币与商品，再升到公司高层；到 2006 年他将成为董事长兼 CEO，而 2005 年前后，整家公司对风险的胃口，正被交易与商品这股血统抬得很高<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a>。</p>
+      <p>对一个刚从伯克利金融工程项目出来、第一次真正坐在前台侧的人来说，这种文化既刺激又压迫：你不是来「体验职场」的，你是来证明自己配不配留在牌桌上的。</p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">相关公开节点（本章背景）</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">1981</div><div class="ev">高盛收购 J. Aron，切入商品与外汇</div></div>
+          <div class="event-card"><div class="yr">1999.05</div><div class="ev">高盛 IPO：合伙制 → 上市公司</div></div>
+          <div class="event-card"><div class="yr">2005 秋</div><div class="ev">作者 IBD Strategies 实习</div></div>
+          <div class="event-card"><div class="yr">2005–06</div><div class="ev">NYSE–Archipelago 合并争议期</div></div>
+          <div class="event-card"><div class="yr">2006</div><div class="ev">Blankfein 接任 CEO；ICBC 战略入股公开</div></div>
+        </div>
+      </div>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ J. Aron：高盛的商品与外汇血统</strong>
+          1981 年，高盛收购客户 J. Aron &amp; Company——一家源于新奥尔良、起家于咖啡贸易、后扩展至贵金属与外汇的家族大宗商品行。公开史料称此举意在强化高盛在商品与外汇市场的国际布局。收购后，J. Aron 的交易文化与人才网络逐渐渗入高盛，成为日后 FICC（固定收益、货币与商品）强大的历史根。
+          <div class="why">为何重要：书中「特种部队」与风险胃口，不是口号，而是可对表到 1981 收购与 Blankfein 升迁线的制度记忆。</div>
+          <div class="src">来源：Goldman Sachs 史志「1981 J. Aron」；《纽约时报》1981-10-30 收购报道</div>
+        </div>
+        <div class="fn-item" id="fn2">
+          <strong>² Blankfein：从贵金属销售到 CEO</strong>
+          劳埃德·布兰克费恩 1982 年加入已被高盛收购的 J. Aron，任贵金属销售；1988 年成为合伙人，后主导外汇与商品业务，2003–04 年起任总裁兼 COO，2006 年在保尔森（Hank Paulson）入阁后接任董事长兼 CEO。公开叙事里，他代表的是「交易员出身」对高盛风险偏好与利润结构的深刻重塑。
+          <div class="why">为何重要：作者实习那年，正是交易血统即将登上权力顶峰的前夜——文化上的「敢赌」有具体的人事背景。</div>
+          <div class="src">来源：Goldman Sachs 史志「2006 Blankfein」；Wikipedia / NYT DealBook 公开履历综述</div>
+        </div>
+      </div>
+
+      <hr c
