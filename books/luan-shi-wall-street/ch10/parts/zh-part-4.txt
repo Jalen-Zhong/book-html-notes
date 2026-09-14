@@ -1,0 +1,42 @@
+      <nav class="toc" aria-label="章节导航">
+        本节导览
+        <ul>
+          <li><a href="#s1">深秋双顶：买方冬眠</a></li>
+          <li><a href="#s2">花旗与美林：核爆式减记</a></li>
+          <li><a href="#s3">为何是他们：超市银行与 First Franklin</a></li>
+          <li><a href="#s4">超级高盛第二幕：三种结局</a></li>
+          <li><a href="#s5">黑暗洞窟：谁是曹刘孙</a></li>
+          <li><a href="#diagrams">人物关系 / 时间线 / 知识图谱</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER TEN · 十面埋伏</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Citigroup_Center.jpg" alt="花旗集团中心" loading="lazy" />
+        <figcaption>花旗中心（纽约）——2007 深秋，减记从外围冲进核心资产负债表。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">深秋双顶：买方冬眠</h2>
+      <p>2007 年 10 月下旬，股指双顶的寒意开始渗进交易台。屏幕上的「看起来健康」还在，可买卖盘的质地已经变了：bid list（求购清单）越拉越长，真正愿意出价的买方却像冬眠——电话打出去，回音里全是观望。</p>
+      <p>田纳西那笔住房债的「幸运」很快翻成后悔：价格往不利方向走，作者想止损，却发现住房信用不像 Multso 米价那样可以干净砍仓——流动性薄、对手方稀少，止损本身会变成二次冲击。</p>
+      <p>同事胡佑（Hu You）在清单里翻出一笔约 4.70% 的 bid——比此前约 4.50% 的锚点再宽了大约 20 个基点。数字不大，却像体温计：市场在用更苛刻的收益率，给同一类券重新贴价签。</p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">本章时间锚点 · 2007 深秋 → 危机前夜</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">10 下旬</div><div class="ev">双顶寒意 · bid list 膨胀 · 买方冬眠</div></div>
+          <div class="event-card"><div class="yr">深秋</div><div class="ev">花旗 ~$10B · 美林 ~$9.4B 减记重燃战火</div></div>
+          <div class="event-card"><div class="yr">传导</div><div class="ev">外围 → 对冲基金 → 核心银行</div></div>
+          <div class="event-card"><div class="yr">寓言</div><div class="ev">「超级高盛」第二幕 · 三种结局预演</div></div>
+        </div>
+      </div>
+
+      <div class="scene">
+        双顶可以骗图表；bid list 骗不了人——清单越长，往往说明愿意接货的手越少。
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">花旗与美林：核爆式减记</h2>
