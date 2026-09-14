@@ -1,0 +1,35 @@
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">彩排：1998 年的 LTCM</h2>
+      <p>要听懂 2006，作者先把磁带倒回 1998：长期资本管理公司（LTCM）像一场提前彩排的灾难剧<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a>。创始人 John Meriwether 带着所罗门兄弟套利台的血统；身边站着 Myron Scholes、Robert Merton 等期权定价的明星名字，还有前联储副主席 David Mullins——名片叠在一起，几乎把「理性」写成了公司 logo。</p>
+      <p>早期回报亮得刺眼：波动似乎被驯服，利差策略像一台精密钟表。外界把他们当成证明：市场可以被公式驯服。</p>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ LTCM（Long-Term Capital Management）</strong>
+          1994 年成立于康涅狄格的对冲基金，以固定收益相对价值/收敛交易闻名。1998 年近乎破产，触发华尔街大型对手方在美联储纽约分行协调下的私人救助安排。它不是政府直接注资的「国有化」，却让监管与市场第一次集中看见：一家基金也可以大到「退场困难」。
+          <div class="why">为何重要：本章把 LTCM 当作 2006 Amaranth 的历史回声——同一出戏的预演。</div>
+          <div class="src">来源：公开危机史记述；Roger Lowenstein《When Genius Failed》等二手叙事</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">利差、杠杆与「天才」们</h2>
+      <p>LTCM 的核心剧本并不神秘：押注相关债券/工具之间的价差会收敛，用融资与衍生品把薄利放大成可观回报<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a><a class="fn-link" href="#fn3"><sup class="fn">³</sup></a>。问题在于成功会自我摧毁——模仿者涌入，利差被压薄；要维持同样的利润，只能加杠杆。公开复盘常提到账面杠杆可到约 25 倍量级，衍生品名义敞口更把「看不见的杠杆」推得更高。</p>
+      <p>天才越多，空间越小；模型越自信，容错越薄。</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal_Reserve_Bank_of_New_York.jpg" alt="纽约联储大楼" loading="lazy" />
+        <figcaption>纽约联邦储备银行——1998 年 LTCM 私人救助协调发生的制度舞台。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn2">
+          <strong>² 《When Genius Failed》（《天才倒下的时候》）</strong>
+          记者 Roger Lowenstein 对 LTCM 兴衰的经典叙事读物：从所罗门套利文化、明星合伙人，写到俄罗斯冲击、相关性崩溃与华尔街救援。它不是监管报告，却塑造了大众对「量化天才也可能集体翻车」的记忆框架。
+          <div class="why">为何重要：作者与读者共享的「彩排剧本」多半经由这类公开叙事进入汉语世界。</div>
