@@ -1,0 +1,112 @@
+ot only lines on the map<a class="fn-link" href="#fn8"><sup class="fn">⁸</sup></a>. Behind the Lucy Bank alias sat an unglamorous table that would let him actually trade.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/200_West_Street.jpg" alt="Goldman Sachs headquarters" loading="lazy" />
+        <figcaption>Goldman at 200 West Street — symbolic landmark of the retention pitch; he left the halo for a commercial-bank seat. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-7">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn8">
+          <strong>⁸ Goldman’s retention culture</strong>
+          Elite banks retain high-potential interns and analysts with internal rotations, cross-group intros, and partner time — turning “exit” into “you haven’t finished the map.” Public campus narratives cast Goldman as elite filter plus internal mobility: stayers thicken the “Because we are Goldman” glue; leavers carry the halo to the next table. The grander the retention, the clearer his choice: not “failed to get Goldman,” but “refused the staff chair.”
+          <div class="why">Why it matters: closes the chapter’s theme — prestige path (Frank / Lehman / Goldman retain) versus trading path (Vince / munis / I DO).</div>
+          <div class="src">Sources: Goldman public culture and recruiting narratives; read against Chapter 2’s internship bonus/culture frame</div>
+        </div>
+        <div class="fn-item" id="fn9">
+          <strong>⁹ Munis inside the rates org chart</strong>
+          On bank FICC trees, muni desks often sit near rates or public-finance lines: sharing curves, repo, and hedges while keeping tax-and-credit specialty. An offer for “muni trading in rates” means daily language is rates, dialect is muni — exactly why Roger needed a curve-model translator.
+          <div class="why">Why it matters: places “munis” from a niche label back into a concrete ward of the rates empire.</div>
+          <div class="src">Sources: public FICC business overviews; rates–muni crossover primers</div>
+        </div>
+      </div>
+
+      <div class="diagrams-section" id="diagrams">
+        <h2>People · timeline · knowledge graph</h2>
+        <p style="color:var(--muted);font-size:14px;">Mermaid diagrams below wire people, path, and concepts for this chapter (not figures from the book).</p>
+        <div class="mermaid-wrap">
+          <div class="caption">Figure A · Job-search timeline: classmate fork → interview gauntlet → I DO → retention refused</div>
+          <pre class="mermaid">
+timeline
+    title Yuyang path (this chapter)
+    section Fork
+      Classmate Frank shocked : why a commercial bank
+      Frank toward Lehman : 2005-06 IB halo
+      Author prefers pork bellies : wants a trading seat
+    section Interview marathon
+      Mark free salad : résumé chill and 40 under 40
+      Apple guy swap math : lukewarm
+      French quant Bonjour : feels outmatched
+    section Turn
+      Vince no free food : organ hobby and munis
+      Three trader qualities : risk discipline observation
+      I DO : accepts muni seat
+    section Landing
+      Roger gap : talk to quants and curves
+      Formal offer : money in about six months
+      Refuse Goldman retain : pilot not staff officer
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">Figure B · People / institution map</div>
+          <pre class="mermaid">
+flowchart TD
+    A["Author Yuyang"] --> F["Classmate Frank"]
+    F --> L["Lehman Brothers\nIB prestige path"]
+    A --> G["Goldman\nintern halo / retention"]
+    A --> B["Lucy Bank\nalias commercial bank"]
+    B --> M["Mark\nrates boss / free salad"]
+    B --> AP["Apple guy\nswap trader"]
+    B --> Q["French quant boss\nBonjour / pig pun"]
+    B --> V["Vince\nmuni desk head"]
+    V --> R["Roger\nBooth / ex-Goldman muni prop"]
+    V --> SEAT["Muni trading seat"]
+    R --> SEAT
+    A -->|"I DO"| SEAT
+    G -.->|"other strat / FI strat / partner tour"| A
+    A -->|"refuse: be the pilot"| SEAT
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">Figure C · Knowledge graph: prestige / products / trader qualities / fork</div>
+          <pre class="mermaid">
+flowchart LR
+    PREST["IB prestige"] --> LEH["Lehman 2005-06"]
+    PREST --> GS["Goldman retention"]
+    COMM["Commercial-bank label"] --> LUCY["Lucy Bank interviews"]
+    PB["Pork-belly metaphor"] --> TRADE["Want a trading seat"]
+    IRS["Interest-rate swaps"] --> DESK["Rates ecosystem"]
+    MUNI["Municipal bonds"] --> DESK
+    PROP["Prop / curve models"] --> MUNI
+    RISK["Control risk"] --> QUAL["Trader qualities"]
+    DISC["Discipline under fire"] --> QUAL
+    OBS["Observe and adapt"] --> QUAL
+    QUAL --> SEAT["I DO seat"]
+    PILOT["Pilot metaphor"] --> SEAT
+    STAFF["Staff officer"] --> GS
+          </pre>
+        </div>
+      </div>
+    </article>
+    <footer>
+      Story guide · <em>Chaos on Wall Street</em> (Yuyang) · Chapter 3 “Lucy Bank”<br />
+      Retold from public trial-read arc; footnotes are off-book research; Lucy Bank is the book’s alias<br />
+      Support the official edition · See SOURCES.md ·
+      <a href="lucy-bank-zh.html">中文版</a>
+      · <a href="../ch02/goldman-internship-en.html">← Chapter 2</a>
+    </footer>
+  </div>
+
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
+  </script>
+
+</body>
+</html>
