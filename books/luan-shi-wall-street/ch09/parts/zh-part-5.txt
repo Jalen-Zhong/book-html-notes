@@ -1,0 +1,33 @@
+      <h2 id="s2">1907 恐慌与美联储诞生</h2>
+      <p>要理解「为什么只有美联储能注水」，作者把镜头拉回 1907 年恐慌：信托公司挤兑、清算链断裂，摩根大通在自家图书馆里把华尔街大佬关在一起，用私人资本与个人权威做了一次临时央行。<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a></p>
+      <p>那次「图书馆救援」的教训写入了 1913 年《联邦储备法》：美联储是公私混合体——既是银行的银行，又背着双重使命（物价稳定与充分就业的现代表述）。它不是普通商业银行，却必须对整个银行体系的流动性负责。<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a></p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Morgan_Library_entrance_building_and_library_annex.jpg" alt="摩根图书馆外观" loading="lazy" />
+        <figcaption>摩根图书馆（纽约）——1907 恐慌中私人救援的舞台；六年后联邦储备体系立法诞生。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        1907 年用私人权威缝合裂缝；1913 年后，裂缝理论上该由制度性央行来缝——直到影子银行让裂缝再次长出制度外的形状。
+      </div>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ 1907 年恐慌（Panic of 1907）</strong>
+          1907 年秋，纽约信托公司与经纪行连环挤兑，股市与货币市场几乎停摆。J.P. 摩根在曼哈顿麦迪逊大道的私人图书馆召集银行家，组织流动性互助、协调停兑与注资，扮演了事实上的最后贷款人。事后改革呼声催生国民货币委员会，并最终导向 1913 年联邦储备体系立法。
+          <div class="why">为何重要：本章把「夏季风暴」与「央行起源故事」焊在一起——私人救援不够，才有制度性注水权。</div>
+          <div class="src">来源：Federal Reserve History；Britannica / 公开危机史概述</div>
+        </div>
+        <div class="fn-item" id="fn2">
+          <strong>² 美联储结构：公私混合与「银行的银行」</strong>
+          联邦储备体系由华盛顿的联邦储备理事会与十二家地区联储组成；会员银行持有地区联储股份，董事会结构混合公共任命与银行界代表。联储向存款机构提供贴现窗口与支付清算，并执行货币政策——故称「银行的银行」。现代「双重使命」指向充分就业与物价稳定；危机时最后贷款人职能同样关键。
+          <div class="why">为何重要：解释为何私人强手接货仍替代不了央行对系统流动性的最终承诺。</div>
+          <div class="src">来源：federalreserve.gov 体系说明；Fed 教育材料</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">8 月 17 日：贴现率信号</h2>
+      <p>2007 年 8 月 17 日，美联储没有立刻下调联邦基金目标利率，而是把初级信贷贴现率下调 50 个基点（至 5.75%），把贴现窗口与基金利率的利差收窄，并允许最长约 30 天的期限融资——这是「信号」先于「全面降息」：承认市场失灵，又不想立刻把通胀与银行业危机的两难一刀切。<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a></p>
