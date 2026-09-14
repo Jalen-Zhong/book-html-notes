@@ -1,0 +1,38 @@
+      <nav class="toc" aria-label="章节导航">
+        本节导览
+        <ul>
+          <li><a href="#s1">小基金为何吓住华尔街</a></li>
+          <li><a href="#s2">策略：AAA、CDS 与杠杆</a></li>
+          <li><a href="#s3">凯恩注资、美林拍卖与 ABX 砸盘</a></li>
+          <li><a href="#s4">大西洋对岸着火：BNP 冻结三只基金</a></li>
+          <li><a href="#s5">传染：货币市场抽资与多策略去杠杆</a></li>
+          <li><a href="#s6">市政台的夏日风暴：基差与 SIFMA 比率</a></li>
+          <li><a href="#s7">图表顶部 ≠ 市场顶部</a></li>
+          <li><a href="#s8">现券无买盘、军法审判与全街去杠杆</a></li>
+          <li><a href="#diagrams">人物关系 / 时间线 / 知识图谱</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER EIGHT · 夏季风暴</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal-reserve-33-liberty.jpg" alt="纽约联储大楼" loading="lazy" />
+        <figcaption>纽约联储（33 Liberty，摄于 2007 年 7 月）——影子银行的承重墙开始晃动时，流动性最终要回到这里附近的管道。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">小基金为何吓住华尔街</h2>
+      <p>表面上看，贝尔斯登旗下那两只结构化信用对冲基金并不「大」：净资产（NAV）大约十六亿美元量级。按华尔街的体量，这点钱本该只是角落里的噪音。<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a></p>
+      <p>吓人的不是净资产，而是杠杆把资产规模推到数十亿美元，以及把钱借给它们的人——回购与抵押融资的对手方。一旦抵押品被打折、被拍卖，损失会沿着融资链扩散到「看起来无关」的桌面。影子银行体系里，这些基金像承重墙：墙本身不大，倒了会让整栋楼的载荷重新分配。<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a></p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">本章时间锚点 · 2007 夏</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">6月</div><div class="ev">Bear HF 告急 · 美林威胁拍卖</div></div>
+          <div class="event-card"><div class="yr">6末–7</div><div class="ev">凯恩注资 · Sowood · 基金破产</div></div>
+          <div class="event-card"><div class="yr">8.9</div><div class="ev">BNP 冻结三只基金</div></div>
+          <div class="event-card"><div class="yr">盛夏</div><div class="ev">市政基差风暴 · 全街去杠杆</div></div>
+        </div>
+      </div>
+
+      <div class="scene">
