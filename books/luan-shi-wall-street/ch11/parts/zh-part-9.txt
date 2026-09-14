@@ -1,0 +1,61 @@
+        <div class="mermaid-wrap">
+          <div class="caption">时间线：华尔街之踵（2007 末–2008 春）</div>
+          <div class="mermaid">
+timeline
+  title 华尔街之踵
+  危机前 : 低折价甚至弱抵押品
+         : ABCP/SIV/TOB 类回购滚动
+         : 击鼓传花尚未停乐
+  2008初 : 折价分化：国债易·MBS难
+         : HF大象~20% · 小虾拒收
+  2008-01 : 欧股约-6% · 期指跌停氛围
+          : 联储紧急降息（75bp+例会50bp）
+          : 科维尔 ~€50B / 亏~€4.9B
+  2008-02 : ARS 拍卖大面积失败
+          : 零售提现噩梦
+          : 鲁西 ARS+回购高ROE牌局
+          : 作者 ~$2B 书 · 基差~210
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">知识图谱：踵伤机制——短钱、折价、管道与拍卖</div>
+          <div class="mermaid">
+flowchart TB
+  CASH[看似现金的钱] --> MMF[货币市场基金]
+  CASH --> ARS[ARS准现金幻觉]
+  MMF --> ABCP[ABCP/商业票据]
+  REPO[回购] --> HC[折价旋钮]
+  HC --> LEV[杠杆升降]
+  ABCP --> SIV[SIV滚动短债]
+  SIV --> SPON[赞助银行回表]
+  ARS --> DUTCH[荷兰拍卖托底]
+  DUTCH --> FAIL[2008-02 停托底]
+  FAIL --> ILLIQ[零售冻结]
+  KER[科维尔强平] --> MASK[伪装成宏观暴跌]
+  FED[联储紧急降息] --> RESP[制度回应短端恐慌]
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer>
+      《乱世华尔街》· 渔阳 · 第十一章故事导读（原创改写）·
+      <a href="SOURCES.md">SOURCES.md</a> ·
+      <a href="../../index.html">返回目录</a>
+    </footer>
+  </div>
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
+  </script>
+
+</body>
+</html>
