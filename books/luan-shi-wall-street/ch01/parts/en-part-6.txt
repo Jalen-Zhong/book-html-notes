@@ -1,0 +1,86 @@
+e · Timeline · Knowledge graph</h2>
+        <p style="color:var(--muted);font-size:14px;">Mermaid diagrams below stitch chapter people, the author’s path, and core ideas (not from the book).</p>
+        <div class="mermaid-wrap">
+          <div class="caption">Figure A · Journey timeline: casino → back office → Berkeley → Goldman</div>
+          <pre class="mermaid">
+timeline
+    title Yuyang path (this chapter)
+    section Casino prep
+      Blackjack counting sweeps : Learn EV and volatility
+      Texas Hold'em boom : Seize new-game windows
+    section Wall Street back office
+      Bank IT / operations : See front-office bonus gap
+      Green-card wait : Decide on business school reboot
+    section Berkeley MFE
+      GMAT and CFA : One-year financial engineering
+      Rubinstein class : Portfolio insurance and 1987
+    section Into the front
+      Goldman open-net interviews : FI Strats vs IB Strats
+      Assigned to IB Strategies : Gilded Age opening
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">Figure B · People / institutions map</div>
+          <pre class="mermaid">
+flowchart TD
+    A["Author Yuyang"] --> B["Debbie\nMFE career lead"]
+    A --> C["Casino / tables"]
+    A --> D["Berkeley MFE"]
+    D --> E["Prof. Rubinstein\nOptions &amp; portfolio insurance"]
+    B --> F["Headhunter\nex-Salomon trader"]
+    F -.->|"Ice water"| A
+    B --> G["Goldman campus recruiting"]
+    G --> H["Keen\nIB Strategies interviewer"]
+    G --> I["Fixed Income Strategies"]
+    G --> J["IB Strategies"]
+    H --> J
+    J --> K["Nick MD\nOpen Q: investment ideas"]
+    K --> L["EM bond thesis"]
+    I -.->|"Both desks interested"| A
+    J -->|"Final assignment"| A
+    E -.->|"Black Monday lesson"| D
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">Figure C · Knowledge graph: risk / return / leverage / Sharpe / counting / poker</div>
+          <pre class="mermaid">
+flowchart LR
+    R["Risk"] --- RET["Return"]
+    R --- LEV["Leverage"]
+    RET --- LEV
+    SH["Sharpe ratio\nreturn ÷ vol"] --> R
+    SH --> RET
+    BJ["Blackjack counting"] --> EV["Expected value"]
+    BJ --> BET["Bet bigger when edge is up"]
+    EV --> SH
+    PK["Hold'em game theory"] --> INFO["Info-edge window"]
+    PK --> BLUFF["Bluff mix / reading people"]
+    INFO --> EDGE["Transferable edge"]
+    BLUFF --> EDGE
+    EDGE --> WS["Trading &amp; investment decisions"]
+    SH --> WS
+    LEV --> WS
+    PI["Portfolio insurance"] --> FAIL["Liquidity assumptions fail"]
+    FAIL --> R
+          </pre>
+        </div>
+      </div>
+    </article>
+    <footer>
+      Story guide · <em>Wall Street in Chaos</em> (Yuyang) · Chapter 1 “Casino to Wall Street”<br />
+      Retold from public trial-read beats — not verbatim; footnotes are off-book research<br />
+      Please support the official edition · Images: see SOURCES.md ·
+      <a href="casino-to-wall-street-zh.html" style="color:var(--gold-soft)">中文版</a>
+    </footer>
+  </div>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
+  </script>
+</body>
+</html>
