@@ -1,1 +1,141 @@
-PLACEHOLDER
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book HTML Notes</title>
+  <style>
+    :root {
+      --bg: #0b1220; --panel: #121a2b; --gold: #d4af37; --gold-soft: #f0d78c;
+      --text: #e8eef9; --muted: #9aa8c1; --line: rgba(212, 175, 55, 0.28);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+      background:
+        radial-gradient(1000px 500px at 10% -10%, rgba(212,175,55,0.12), transparent 55%),
+        radial-gradient(800px 400px at 100% 0%, rgba(61,139,253,0.12), transparent 50%),
+        var(--bg);
+      color: var(--text); line-height: 1.7; min-height: 100vh;
+    }
+    .wrap { max-width: 780px; margin: 0 auto; padding: 48px 20px 80px; }
+    .badge {
+      display: inline-block; padding: 6px 12px; border-radius: 999px;
+      border: 1px solid var(--line); color: var(--gold-soft); font-size: 13px;
+      background: rgba(212,175,55,0.08); letter-spacing: 0.06em;
+    }
+    h1 { margin: 18px 0 8px; font-size: clamp(28px, 5vw, 40px); line-height: 1.25; }
+    .sub { color: var(--muted); margin: 0 0 28px; }
+    .card {
+      background: linear-gradient(180deg, var(--panel), #182235);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 18px; padding: 22px 22px 14px; margin-bottom: 16px;
+    }
+    .card h2 { margin: 0 0 8px; font-size: 18px; color: var(--gold-soft); }
+    .card p { margin: 0 0 12px; color: #d7deec; font-size: 15px; }
+    a.chap, a.link {
+      display: block; text-decoration: none; color: var(--text);
+      padding: 12px 14px; margin: 0 0 10px; border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.03);
+    }
+    a.chap:hover, a.link:hover { border-color: var(--gold); color: var(--gold-soft); }
+    .item {
+      padding: 12px 14px; margin: 0 0 10px; border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.03);
+    }
+    .langs { font-size: 13px; color: var(--muted); margin-top: 6px; }
+    .langs a { color: var(--gold-soft); margin-right: 14px; }
+    footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center; }
+    footer a { color: var(--gold-soft); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="badge">BOOK HTML NOTES · OPEN</div>
+    <h1>书章阅读笔记</h1>
+    <p class="sub">中英双语 · 故事向导读 + 场外脚注与图谱。欢迎按社区规范贡献更多书。</p>
+
+    <div class="card">
+      <h2>《乱世华尔街》</h2>
+      <p>渔阳 · 一位华人交易员的经历（持续更新）</p>
+      <div class="item">
+        <span>§1 · 镀金时代 · 从赌场走进华尔街</span>
+        <div class="langs">
+          <a href="books/luan-shi-wall-street/ch01/casino-to-wall-street-zh.html">中文</a>
+          <a href="books/luan-shi-wall-street/ch01/casino-to-wall-street-en.html">English</a>
+        </div>
+      </div>
+      <div class="item">
+        <span>§2 · 高盛实习</span>
+        <div class="langs">
+          <a href="books/luan-shi-wall-street/ch02/goldman-internship-zh.html">中文</a>
+          <a href="books/luan-shi-wall-street/ch02/goldman-internship-en.html">English</a>
+        </div>
+      </div>
+      <div class="item">
+        <span>§3 · 鲁西银行（Lucy Bank）</span>
+        <div class="langs">
+          <a href="books/luan-shi-wall-street/ch03/lucy-bank-zh.html">中文</a>
+          <a href="books/luan-shi-wall-street/ch03/lucy-bank-en.html">English</a>
+        </div>
+      </div>
+      <div class="item">
+        <span>§4 · 宇宙的中心</span>
+        <div class="langs">
+          <a href="books/luan-shi-wall-street/ch04/center-of-universe-zh.html">中文</a>
+          <a href="books/luan-shi-wall-street/ch04/center-of-universe-en.html">English</a>
+        </div>
+      </div>
+      <div class="item">
+        <span>§5 · 杜邦公式</span>
+        <div class="langs">
+          <a href="books/luan-shi-wall-street/ch05/dupont-formula-zh.html">中文</a>
+          <a href="books/luan-shi-wall-street/ch05/dupont-formula-en.html">English</a>
+        </div>
+      </div>
+      <div class="item">
+        <span>§6 · 永不凋谢的花朵</span>
+        <div class="langs">
+          <a href="books/luan-shi-wall-street/ch06/never-fading-flower-zh.html">中文</a>
+          <a href="books/luan-shi-wall-street/ch06/never-fading-flower-en.html">English</a>
+        </div>
+      </div>
+      <div class="item">
+        <span>§7 · 连环计</span>
+        <div class="langs">
+          <a href="books/luan-shi-wall-street/ch07/interlocking-stratagem-zh.html">中文</a>
+          <a href="books/luan-shi-wall-street/ch07/interlocking-stratagem-en.html">English</a>
+        </div>
+      </div>
+      <div class="item">
+        <span>§8 · 夏季风暴</span>
+        <div class="langs">
+          <a href="books/luan-shi-wall-street/ch08/summer-storm-zh.html">中文</a>
+          <a href="books/luan-shi-wall-street/ch08/summer-storm-en.html">English</a>
+        </div>
+      </div>
+      <div class="item">
+        <span>§9 · 危机似乎过去</span>
+        <div class="langs">
+          <a href="books/luan-shi-wall-street/ch09/crisis-seems-past-zh.html">中文</a>
+          <a href="books/luan-shi-wall-street/ch09/crisis-seems-past-en.html">English</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>参与贡献</h2>
+      <p>上传你有权使用的书，或给书名让 agent 用公开资料解读；fork → push → Pull Request。</p>
+      <a class="link" href="https://github.com/Jalen-Zhong/book-html-notes/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>
+      <a class="link" href="https://github.com/Jalen-Zhong/book-html-notes/blob/main/COMMUNITY.md">COMMUNITY.md</a>
+      <a class="link" href="https://github.com/Jalen-Zhong/book-html-notes/tree/main/skills">skills/</a>
+    </div>
+
+    <footer>
+      源码：<a href="https://github.com/Jalen-Zhong/book-html-notes">Jalen-Zhong/book-html-notes</a>
+      · License: CC BY 4.0（原创笔记）
+    </footer>
+  </div>
+</body>
+</html>
