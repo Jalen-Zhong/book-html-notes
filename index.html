@@ -40,8 +40,12 @@
       border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.03);
     }
     a.chap:hover, a.link:hover { border-color: var(--gold); color: var(--gold-soft); }
-    .langs { font-size: 13px; color: var(--muted); margin-top: 4px; }
-    .langs a { color: var(--gold-soft); margin-right: 12px; }
+    .item {
+      padding: 12px 14px; margin: 0 0 10px; border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.03);
+    }
+    .langs { font-size: 13px; color: var(--muted); margin-top: 6px; }
+    .langs a { color: var(--gold-soft); margin-right: 14px; }
     footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center; }
     footer a { color: var(--gold-soft); }
   </style>
@@ -55,10 +59,13 @@
     <div class="card">
       <h2>《乱世华尔街》</h2>
       <p>渔阳 · 一位华人交易员的经历（持续更新）</p>
-      <a class="chap" href="books/luan-shi-wall-street/ch01/gilded-age-casino-to-wall-street.html">
-        <span>第 1 节 · 镀金时代 · 从赌场走进华尔街</span>
-        <div class="langs">中文页（英文页推进中）</div>
-      </a>
+      <div class="item">
+        <span>§1 · 镀金时代 · 从赌场走进华尔街</span>
+        <div class="langs">
+          <a href="books/luan-shi-wall-street/ch01/casino-to-wall-street-zh.html">中文</a>
+          <a href="books/luan-shi-wall-street/ch01/casino-to-wall-street-en.html">English</a>
+        </div>
+      </div>
     </div>
 
     <div class="card">
