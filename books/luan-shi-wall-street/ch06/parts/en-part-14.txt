@@ -1,0 +1,35 @@
+  BASE[Base money / policy rate] --> MULT[Bank and shadow multiplier]
+  MULT --> REPO[Repo / haircut leverage]
+  REPO --> RISK[Risk-appetite lag]
+  RISK --> QUIET[2006 surface calm]
+  MODEL[BSM / Brownian assumptions] --> BLIND[Underestimate stampede and corr→1]
+  BLIND --> LTCM
+  QUIET --> AM[Amaranth lone leverage]
+  LTCM -->|rhyme| AM
+  AM --> CANARY[Canary signal]
+  CANARY --> ENDING[Gilded-age ending]
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer>
+      <em>Chaos on Wall Street</em> · Yuyang · Chapter 6 story guide (original retelling) ·
+      <a href="SOURCES.md">SOURCES.md</a> ·
+      <a href="../../index.html">Back to index</a>
+    </footer>
+  </div>
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
+  </script>
+
+</body>
+</html>
