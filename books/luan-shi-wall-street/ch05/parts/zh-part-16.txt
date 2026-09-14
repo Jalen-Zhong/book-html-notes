@@ -1,0 +1,33 @@
+      <p>日常交易却愈发无聊：客户询价（RFQ）又薄又卷，价差被啃光；作者宁愿经常当 cover bid（第二好的报价）——赢单太少，输单的悔恨也少，反而省心。风平浪静的海让船员懈怠；CDXIG 在约 33–40 个基点的窄带里晃荡，像一面写着「无事发生」的旗。</p>
+      <p>读者已经知道后事：无事发生的旗，有时是风暴前的颜色。但 2006 年的台上，杜邦三项还在发光，奖金年历还在翻页，学徒的梦也还热着——下一章才会把「永不凋谢」的幻觉撕开。</p>
+
+      <div class="scene">
+        封面报价太卷，就宁当 cover；利差太紧，就以为风险死了。杜邦公式教会怎么把 ROE 做高，却不自动教会：哪一项会在夜里突然归零。
+      </div>
+
+      <div class="diagrams-section" id="diagrams">
+        <h2>人物 · 时间线 · 知识图谱</h2>
+        <p style="color:var(--muted);font-size:14px;">以下图表用 Mermaid 渲染，帮助把本章寓言、三种模式与回购伏笔串起来（非书中原图）。</p>
+        <div class="mermaid-wrap">
+          <div class="caption">图 A · 叙事时间线：狂欢 → 杜邦三计 → 回购伏笔 → 平静海面</div>
+          <pre class="mermaid">
+timeline
+    title 渔阳路径（本章叙事）
+    section 现场
+      2006市政台 : 月入百万量级
+      Vince与Roger庆祝 : 学徒梦见资深席
+    section 寓言超盛
+      董事会考ROE : 猪哥写杜邦
+      微软模式 : 高利润率人工业务
+      沃尔玛模式 : ABS/CDO仓库
+      华尔街模式 : 20x杠杆冲20%ROE
+    section 宏观与激励
+      ROE军备赛 : 自营创新
+      格林斯潘低利率 : 奖金年短视
+    section 回到鲁西
+      约10亿市政账本 : 隔夜回购与haircut
+      SIV/TOB短端 : 互换套保加杠杆
+      模型幻觉 : CDS/CDX压缩
+      CDXIG 33-40bp : cover bid与无聊
+          </pre>
+        </div>

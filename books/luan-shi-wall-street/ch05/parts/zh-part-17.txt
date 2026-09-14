@@ -1,0 +1,61 @@
+        <div class="mermaid-wrap">
+          <div class="caption">图 B · 超盛寓言人物 / 鲁西台关系</div>
+          <pre class="mermaid">
+flowchart TD
+    BOARD["董事会
+考核 ROE"] --> OX["牛总 CEO"]
+    OX --> PIG["猪哥军师
+算术杜邦"]
+    PIG --> M1["微软模式
+利润率"]
+    PIG --> M2["沃尔玛模式
+周转"]
+    PIG --> M3["华尔街模式
+杠杆"]
+    OX --> IB["投行条线"]
+    OX --> SEC["证券化明星"]
+    OX --> PROP["自营投资头"]
+    PROP --> HF["交易员跳槽HF"]
+    REAL["鲁西市政台"] --> V["Vince"]
+    REAL --> R["Roger"]
+    REAL --> A["作者/学徒"]
+    REAL --> REPO["隔夜回购融资"]
+    M3 -.->|"同构"| REPO
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">图 C · 知识图谱：杜邦三项与危机前管道</div>
+          <pre class="mermaid">
+flowchart LR
+    ROE["ROE"] --> PM["利润率"]
+    ROE --> AT["资产周转"]
+    ROE --> LEV["财务杠杆"]
+    PM --> IBFEES["IB/并购/承销"]
+    AT --> WH["ABS/CDO仓库"]
+    LEV --> REPO["Repo + haircut"]
+    LEV --> BD["经纪商30x"]
+    WH --> SHADOW["影子银行"]
+    REPO --> SIV["SIV/TOB短端"]
+    HEDGE["互换套保"] --> LEV
+    CDS["CDS/CDX"] --> CALM["33-40bp平静"]
+    GREEN["低政策利率"] --> LEV
+    PROP2["Prop"] --> ROE
+    AG["Agency"] --> PM
+          </pre>
+        </div>
+      </div>
+    </article>
+    <footer>
+      故事导读 · 《乱世华尔街》（渔阳）第五章「杜邦公式」<br />
+      据公开试读改写，非原文照搬；脚注为场外研究补充；Lucy Bank / 超盛等为书中化名或寓言<br />
+      完整原文请支持正版 · 配图见 SOURCES.md ·
+      <a href="dupont-formula-en.html">English edition</a>
+      · <a href="../ch04/center-of-universe-zh.html">← 第四章</a>
+    </footer>
+  </div>
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
