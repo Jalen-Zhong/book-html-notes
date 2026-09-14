@@ -27,7 +27,7 @@ Research and image sources used for footnotes, side panels, and local assets. Fa
 - http://www.edwardothorp.com/books/beat-the-dealer/
 - https://exhibits.lib.uci.edu/thorp/beat
 - https://www.reviewjournal.com/business/counting-a-legend/
-- https://www.theatlantic.com/magazine/archive/1962/06/a-prof-beats-the-gamblers/657997/
+- https://www.theatlantic.com/magazine/archives/1962/06/a-prof-beats-the-gamblers/657997/
 
 ### Sharpe ratio
 - Standard definition from William F. Sharpe’s work / CFA curriculum public summaries (excess return ÷ volatility).
@@ -73,3 +73,13 @@ Research and image sources used for footnotes, side panels, and local assets. Fa
 
 ## Copyright note
 Story prose is an original retelling based on publicly available trial-read narrative flow — not a verbatim copy of the book. Footnotes and diagrams are off-book research supplements.
+
+## Bilingual pages (ch01)
+
+| File | Language |
+|---|---|
+| `casino-to-wall-street-zh.html` | Chinese story guide (Wikimedia img URLs) |
+| `casino-to-wall-street-en.html` | English parallel edition |
+| `gilded-age-casino-to-wall-street.html` | Redirect stub → `-zh` |
+
+Prefer Wikimedia `Special:FilePath/...` URLs in HTML so the GitHub Pages push stays text-sized. Local `assets/` copies remain optional for offline use. Standalone base64 embeds (~2.6MB) were skipped as too large for the repo.
