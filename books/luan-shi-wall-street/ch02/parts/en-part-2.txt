@@ -1,0 +1,61 @@
+personnel backdrop.</div>
+          <div class="src">Sources: Goldman Sachs history “2006 Blankfein”; Wikipedia / NYT DealBook public career summaries</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">Because we are Goldman: bonuses and the bottom cut</h2>
+      <p>Goldman’s first lesson is often compensation, not models. In public filings and press, 2005 was a record year: compensation and benefits on the order of $11.7 billion — a rough per-employee average near half a million dollars, with trading and partner pay far higher and intern pay a different story<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a>. Beside the money sat the knife: roughly the bottom 5% were pushed out. Those who stayed pep-talked each other with a near-creed: Because we are Goldman.</p>
+      <p>That mix of incentive and fear sat on top of the post-1999 identity: still called “partners,” already a public company — the title kept its Holy-Grail glow while the capital structure had already changed generations<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a>. For an intern, the bonus myth and the cull knife swung in the same room.</p>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ 2005: a publicly reported record pay year</strong>
+          Goldman’s 2005 results put compensation and benefits near $11.69 billion, about 47% of net revenue, across roughly 22,000 employees. Contemporary media hyped year-end bonus pools; managing directors could clear millions in salary-plus-bonus. The figures explain both the magnet of the brand and why a bottom-cut culture could still hold under pressure.
+          <div class="why">Why it matters: the later “bonus season” and Christmas-party mood only make sense inside this compensation boom.</div>
+          <div class="src">Sources: Goldman 2005 results / SEC EX-99.1; eFinancialCareers, Feb 2006</div>
+        </div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ The 1999 IPO: partnership halo, public shell</strong>
+          On 4 May 1999 Goldman listed at $53 a share (ticker GS), raising about $3.66 billion — then one of the largest U.S. financial IPOs. The prospectus cited permanent capital, broader employee ownership, and acquisition currency. Decades of partnership debate had feared cultural dilution. After listing, the partner / MD ladder and rituals remained, but the legal form was The Goldman Sachs Group, Inc.
+          <div class="why">Why it matters: chasing the “partner track” in this chapter means competing for old-partnership status badges inside a public company.</div>
+          <div class="src">Sources: Goldman Sachs history “1999 IPO”; CNN Money, 3 May 1999; SEC prospectus summaries</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Roasted_coffee_beans.jpg" alt="Coffee beans close-up" loading="lazy" />
+        <figcaption>Coffee beans — a visual nod to J. Aron’s coffee-trading origins (not a trading-floor photo). Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s3">Intern work: SecDB, narrative, and Jerry</h2>
+      <p>Days were not all client dinners. The author did heavy financial analysis and brushed against internal tool names: SecDB, plus UFO and YAMS as the book’s desk slang — opaque to outsiders, the actual desktop for Strategies<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a>. Turning models into client-ready stories often fell to professors-turned-MDs: people who could both run the math and sell the narrative.</p>
+      <p>A manager named Jerry — J. Aron track, on the partner path — enforced a ruthless deliverables culture: on time, clean versions, numbers that would survive the next client meeting. For an intern, that beat any slogan: your worth was whether tonight’s slide was table-ready.</p>
+
+      <div class="scene">
+        Strategies felt like a hidden assembly line: quant minds make it add up, narrative minds make it land, MDs sell it. Interns sit in the middle and serve both ends.
+      </div>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ SecDB: the public story of Securities Database</strong>
+          Securities Database (SecDB) grew in the early 1990s out of J. Aron’s FX and commodities risk needs, launched around 1992–93, then spread across equities and fixed income as firmwide risk plumbing. Press long called it an internal “secret weapon”; in the 2010s pieces of capability reached clients via Marquee. Names like UFO and YAMS appear in the author’s internship context as internal tools/process codes with little independent public documentation — treat them as desk toolchain labels, not invent technical detail.
+          <div class="why">Why it matters: explains why a Strategies internship smelled so technical — Goldman long treated software as a trading weapon, not mere IT support.</div>
+          <div class="src">Sources: Goldman Sachs history “1993 SecDB”; Fortune / WSJ on Marquee &amp; SecDB; public SecDB / Michael Dubno overviews</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/New_York_Stock_Exchange_Exterior.jpg" alt="New York Stock Exchange exterior" loading="lazy" />
+        <figcaption>NYSE Broad Street façade — geographic stage for the NYSE–Archipelago controversy. Source: Wikimedia Commons (Kidfly182, CC BY-SA 4.0)</figcaption>
+      </figure>
+
+      <h2 id="s4">Elevator gossip and the insider-trading lesson</h2>
+      <p>One day, unfinished-deal gossip drifted through an elevator. Compliance and colleagues moved fast afterward: what you may hear, what you must never do, and how information can harden into material nonpublic information (MNPI) — the raw material of insider-trading cases<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a>. The same season, markets argued over the NYSE–Archipelago merger: Goldman advised both sides, held Archipelago stock, and had historical ties to exchange leadership — lawsuits and judicial commentary flayed that multi-hat role in public<a class="fn-link" href="#fn7"><sup 
