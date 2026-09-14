@@ -1,0 +1,20 @@
+      <div class="scene">
+        When a bank says “we cannot compute a NAV,” market language hears: the price of money is temporarily broken, and nobody wants to go first.
+      </div>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ BNP Paribas freezes three funds (9 Aug 2007)</strong>
+          BNP Paribas Investment Partners suspended NAV and dealing for Parvest Dynamic ABS, BNP Paribas ABS Euribor, and BNP Paribas ABS Eonia, citing evaporated liquidity in parts of the U.S. securitization market. Fund scale was on the order of ~€1.6B at the time. The date is widely treated as a public “Atlantic crossing” marker for the 2007 crisis; the ECB injected liquidity the same day.
+          <div class="why">Why it matters here: the summer storm’s open migration from New York financing desks to European money markets.</div>
+          <div class="src">Sources: BNP press release; CNBC/Bloomberg contemporaneous reports; FCIC archive PDF</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">Contagion: money-market pullback and multi-strategy deleveraging</h2>
+      <p>The transmission was not mysterious: money markets and funding desks pulled risk; multi-strategy hedge funds, facing redemptions and margin, sold whatever still had a bid — relative value, convertibles, and equity long/short got dragged together.</p>
+      <p>Goldman’s Global Alpha and similar quant/multi-strategy books became public exhibits that “smart money” can gap lower when everyone deleverages at once. Returns once credited as alpha partly reflected liquidity beta — a risk that looks like skill in crowded trades and like a trap in a scramble.<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a> Carhart-style factor models can speak to momentum, value, and size, yet often omit the dimension where financing liquidity suddenly gets expensive.</p>
+

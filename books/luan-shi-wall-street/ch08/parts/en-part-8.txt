@@ -1,0 +1,18 @@
+          ABX.HE and related indices track CDS pricing on baskets of subprime RMBS and became a public thermometer for “how sick is subprime” in 2007. Funds and prop desks used them to hedge or speculate; sharp declines both reflected fear and amplified it through marks and margin.
+          <div class="why">Why it matters here: links the auction “window paper” to a Street-visible subprime price.</div>
+          <div class="src">Sources: Markit ABX public descriptions; standard crisis narratives of the 2007 ABX collapse</div>
+        </div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ Mark-to-market</strong>
+          Valuing positions at recent observable market prices (or models anchored to comparables). In an illiquid market, one public auction or forced sale can manufacture the comparable that forces everyone else to write down — even holders who never intended to sell. That is why an auction threat alone can smash a whole layer of structured credit.
+          <div class="why">Why it matters here: explains the weaponized psychology of Merrill’s collateral sale threat.</div>
+          <div class="src">Sources: standard MTM definitions in trading/accounting; contemporary Bear HF coverage</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s4">Fire crosses the Atlantic: BNP freezes three funds</h2>
+      <p>On August 9 the fire jumped the ocean. BNP Paribas said that with liquidity in certain U.S. securitization segments “completely evaporating,” it could not fairly value underlying ABS and temporarily suspended NAV calculation and subscriptions/redemptions for three funds.<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a></p>
+      <p>The prose was technical; the implication was political: even “high-quality, high-rated” assets can become unpriceable when buyers vanish. European interbank markets tightened — the crisis story upgraded from “U.S. subprime corner” to “global liquidity event.”</p>
+
