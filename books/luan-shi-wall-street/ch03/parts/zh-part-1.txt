@@ -1,0 +1,102 @@
+r-radius: 16px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(61,139,253,0.22);
+    }
+    .mermaid-wrap {
+      margin: 18px 0 22px;
+      padding: 16px;
+      border-radius: 16px;
+      background: #0e1626;
+      border: 1px solid rgba(255,255,255,0.08);
+      overflow-x: auto;
+    }
+    .mermaid-wrap .caption {
+      font-size: 12px; color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .mermaid { background: transparent !important; }
+    .event-timeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin: 16px 0 22px;
+    }
+    .event-card {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+    .event-card .yr { color: var(--gold); font-weight: 700; font-size: 14px; }
+    .event-card .ev { color: #c9d4e8; font-size: 13px; margin-top: 4px; line-height: 1.5; }
+    .diagrams-section {
+      margin-top: 32px;
+      padding-top: 8px;
+    }
+    footer {
+      margin-top: 28px; color: var(--muted);
+      font-size: 13px; text-align: center;
+    }
+    footer a { color: var(--gold-soft); }
+    @media (max-width: 560px) {
+      article.story { padding: 20px 16px 12px; }
+      .wrap { padding: 24px 14px 60px; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="lang-switch" aria-label="语言">
+        <a class="active" href="lucy-bank-zh.html">中文</a>
+        <a href="lucy-bank-en.html">English</a>
+      </div>
+      <div class="badge">故事导读 · 据公开试读改写 · 场外研究补充</div>
+      <h1>鲁西银行</h1>
+      <p class="subtitle">《乱世华尔街》第三章「鲁西银行」（Lucy Bank，化名）· 渔阳 · 故事改写 + 脚注研究</p>
+      <div class="note">
+        下面按作者经历顺序讲述本章故事，用自己的话改写，方便跟读；不是全书/全章原文照搬。脚注、配图与知识图谱为场外公开资料补充。「鲁西银行 / Lucy Bank」为书中对雇主的化名。完整内容请读正版。
+      </div>
+      <nav class="toc" aria-label="章节导航">
+        本节导览
+        <ul>
+          <li><a href="#s1">同学震惊：商业银行为何登场</a></li>
+          <li><a href="#s2">面试马拉松：Mark、免费沙拉与「40 under 40」</a></li>
+          <li><a href="#s3">苹果男与法籍量化老板</a></li>
+          <li><a href="#s4">Vince 进场：市政债台与教会管风琴</a></li>
+          <li><a href="#s5">交易员素质：风控、自律、观察</a></li>
+          <li><a href="#s6">I DO：市政债座位与 Roger</a></li>
+          <li><a href="#s7">正式 offer 与高盛挽留：飞行员隐喻</a></li>
+          <li><a href="#diagrams">人物关系 / 时间线 / 知识图谱</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER THREE · 鲁西银行</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal_Hall_National_Memorial,_Wall_Street,_Manhattan,_New_York_(7236982206).jpg" alt="华尔街联邦厅外观" loading="lazy" />
+        <figcaption>华尔街联邦厅一带——曼哈顿金融区的公共地标，也是「从投行光环走向商业银行交易台」这一章的城市布景。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">同学震惊：商业银行为何登场</h2>
+      <p>伯克利老同学 Frank 听说作者要去一家商业银行面试，几乎愣住：你不是已经在高盛待过了吗？纯投行光环尚在，怎么拐进「商行」这条更土、更存款贷款味的赛道<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a>？Frank 自己的下一站是雷曼兄弟——在 2005–06 年，雷曼仍是华尔街顶级投行牌桌上的常客，固收研究与交易口碑尤响，对求职者而言属于「听起来就对」的名字<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a>。</p>
+      <p>作者心里却另有一把尺。他想要的不是继续当策略参谋，而是真正坐上交易席。哪怕先去芝加哥交易猪肉肚期货也行——那种听起来土得掉渣、却实打实按点跳动的合约，反而更接近他想要的「动手感」<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a>。投行名片很香，但飞行员的座位比参谋部的桌子更让他睡不着觉。</p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">相关公开节点（本章背景）</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">1933 / 1999</div><div class="ev">Glass-Steagall 分业 → GLBA 部分松绑</div></div>
+          <div class="event-card"><div class="yr">2005–06</div><div class="ev">雷曼仍处投行联赛前列</div></div>
+          <div class="event-card"><div class="yr">1961–2011</div><div class="ev">CME 猪肉肚期货传奇生命周期</div></div>
+          <div class="event-card"><div class="yr">本章时点</div><div class="ev">高盛实习后求职 · 鲁西银行面试</div></div>
+        </div>
+      </div>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ 商业银行 vs 纯投资银行</strong>
+          传统上，商业银行吸收存款、发放贷款、提供支付清算；投资银行则承销证券、做经纪与交易、做并购顾问，一般不靠零售存款。1933 年《格拉斯—斯蒂格尔法》把二者硬切开；1999 年《格雷姆—里奇—比利雷法》（GLBA）废除其中部分条款后，金融控股公司可同时拥有商行与投行子公司，但「存款机构」与「证券业务」在法律与文化上仍常被区分。对求职者，2005 年口头上的「去商业银行」往往意味着：这不是纯 Goldman / Morgan Stanley 式
