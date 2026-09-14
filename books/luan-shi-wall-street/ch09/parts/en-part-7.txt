@@ -1,0 +1,21 @@
+          <div class="src">Sources: Federal Reserve History; standard encyclopedic crisis summaries</div>
+        </div>
+        <div class="fn-item" id="fn2">
+          <strong>² Fed structure: public–private hybrid and bankers’ bank</strong>
+          The System pairs a Board of Governors in Washington with twelve Reserve Banks; member banks hold Reserve Bank stock, and governance mixes public appointees with banking-sector directors. The Fed supplies the discount window and payment rails and runs monetary policy—hence “bankers’ bank.” The modern dual mandate targets maximum employment and price stability; crisis last-resort lending sits beside that frame.
+          <div class="why">Why it matters here: private strong hands catching paper still cannot replace the Fed’s systemic liquidity promise.</div>
+          <div class="src">Sources: federalreserve.gov structure explainers; Fed education materials</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">August 17: the discount-rate signal</h2>
+      <p>On August 17, 2007, the Fed did not yet cut the federal funds target. It cut the primary credit discount rate 50 basis points (to 5.75%), narrowed the window’s spread over the funds rate, and allowed term financing up to about 30 days—a signal ahead of a full easing cycle, acknowledging market failure without immediately surrendering the inflation-versus-banking-crisis bind.<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a></p>
+      <p>Phones lit up: counterparties asked whether anyone had bonds to offer. Liquidity expectations shifted first; sellers’ courage returned a notch. Municipals bounced; crushed credit spreads exhaled.</p>
+
+      <div class="scene">
+        No immediate funds cut—just a wider crack in the discount door. The Street heard: the central bank sees the run, not that the inflation objective has surrendered.
+      </div>
+
+      <div class="footnotes" id="fn-block-2">
