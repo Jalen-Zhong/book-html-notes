@@ -1,0 +1,134 @@
+          <em>Agency</em>: mostly match clients, earn commission or sales credit, limited inventory. <em>Market-making</em>: two-way quotes, earn spread, manage book risk. <em>Prop</em>: firm capital takes directional or relative-value risk for P&amp;L. Pre-crisis banks often ran all three; cheap funding plus weak flow pushed some toward prop. The Volcker Rule later crushed much bank prop — but 2006 Lucy still lived in the can-do-prop era.
+          <div class="why">Why it matters: same job title, different daily physics on a Lucy muni prop desk versus a franchise flow shop.</div>
+          <div class="src">Sources: eFinancialCareers prop-culture reporting; Volcker Rule contrast</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s8">Vince’s free-lunch stakeout &amp; IDBs</h2>
+      <p>Vince assigned a “recon” job: stake out the free lunch — who shows, who grabs, what the vibe is. It sounded like a joke; it was observation school. Power and information on a floor often cling to the smallest rituals.</p>
+      <p>He also taught inter-dealer brokers: dealers do not always trade face-to-face; IDBs match them anonymously or semi-anonymously, protecting intent and pooling liquidity<a class="fn-link" href="#fn9"><sup class="fn">⁹</sup></a>. In a fragmented muni market, broker channels are like a subway — invisible to tourists, daily rides for the desk.</p>
+
+      <div class="footnotes" id="fn-block-8">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn9">
+          <strong>⁹ Inter-dealer brokers (IDBs)</strong>
+          IDBs intermediate dealer-to-dealer trades by voice or screen, often with anonymity that lowers the cost of showing real intent. Treasuries, rate derivatives, and parts of credit lean hard on IDB ecosystems; munis have their own broker networks. For a rookie, learning IDBs is learning where prices are shouted from and where inventory can be unloaded.
+          <div class="why">Why it matters: Vince extends “center of the universe” from the physical floor to the invisible broker web.</div>
+          <div class="src">Sources: fixed-income market-structure primers; public IDB industry overviews</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s9">Roger, the Chrises &amp; Series 7/63</h2>
+      <p>Roger taught the temperament of spot bonds: which names actually trade, which look cheap until you try to exit. On the sales side, a cluster of Chrises became an in-joke — shout “Chris” and half the sales row turns.</p>
+      <p>Licensing hit too: Series 7 and 63-type exams; he landed around a comfortable 95% — then laughed that part of entering trading really does feel like standardized tests<a class="fn-link" href="#fn10"><sup class="fn">¹⁰</sup></a>. Passing papers ≠ managing risk; failing them means you cannot legally talk to clients.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal_Hall_National_Memorial,_Wall_Street,_Manhattan,_New_York_(7236982206).jpg" alt="Federal Hall Wall Street" loading="lazy" />
+        <figcaption>Federal Hall on Wall Street — urban backdrop for licensing and regulation narratives. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-9">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn10">
+          <strong>¹⁰ Series 7 and Series 63</strong>
+          Series 7 (General Securities Representative) is a core FINRA qualification covering corporate securities, munis, options, governments, and more. Series 63 (Uniform Securities Agent State Law) focuses on state “blue sky” agent registration. Exams gate legal practice; they do not certify a stable P&amp;L — his ~95% joke lands exactly there: standardized ticket, then the real class.
+          <div class="why">Why it matters: closes the Liu Laolao arc on the institutional side — new gadgets plus regulatory paperwork.</div>
+          <div class="src">Sources: FINRA Series 7 official page; Series 63 state-law exam primers</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s10">Teahouse joke: amateur casino to Wall Street casino</h2>
+      <p>The chapter’s self-mockery lands like a teahouse gag: leave the amateur casino, enter the Wall Street casino. Light tone, sharp tip — last chapter he insisted on a pilot’s seat; this chapter he has it, and discovers “center of the universe” and “bigger gaming table” can be two signs on the same room.</p>
+      <p>The point is not cynicism but clarity: tools can hedge or gamble; a firm can be the universe’s center or a wet market. In the echo of Done!, a rookie has to learn which one he is actually doing.</p>
+
+      <div class="diagrams-section" id="diagrams">
+        <h2>People · timeline · knowledge graph</h2>
+        <p style="color:var(--muted);font-size:14px;">Mermaid diagrams (not from the book) linking people, products, and org logic.</p>
+        <div class="mermaid-wrap">
+          <div class="caption">Fig A · Onboarding timeline: seat → sensory shock → product school → licenses</div>
+          <pre class="mermaid">
+timeline
+    title Yuyang path (this chapter)
+    section Arrival
+      April 2006 : Lucy Bank muni seat
+      Own chair : screens and limits
+    section Floor shock
+      Universe myth : wet-market eyes
+      Liu Laolao four screens : turret and squawk
+      Mark Done : Eurodollar futures
+    section Org school
+      FICC product map : Treasuries to swaps
+      Muni tax exemption : federalism buyers
+      Cheap funding prop lean : sales tension
+    section Apprentice days
+      Vince free-lunch stakeout : IDB lesson
+      Roger spot bonds : Chris slang
+      Series 7/63 ~95% : standardized ticket
+      Teahouse joke : bigger casino
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">Fig B · People / desk map</div>
+          <pre class="mermaid">
+flowchart TD
+    A["Author Yuyang"] --> SEAT["Muni trading seat"]
+    SEAT --> V["Vince
+desk head"]
+    SEAT --> R["Roger
+spot-bond feel"]
+    SEAT --> SALES["Sales row Chrises"]
+    V --> LUNCH["Free-lunch stakeout"]
+    V --> IDB["IDB lesson"]
+    M["Mark
+rates boss"] -->|"Done! Eurodollar"| FLOOR["Floor soundscape"]
+    A --> FLOOR
+    A --> HW["4 screens / turret / squawk"]
+    FIRM["Lucy Bank
+cheap funding / weak franchise"] -->|"prop lean"| SEAT
+    GS["Goldman/Lehman contrast"] -.->|"stronger flow"| FIRM
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">Fig C · Knowledge graph: FICC products / tax / prop / licenses</div>
+          <pre class="mermaid">
+flowchart LR
+    FICC["FICC"] --> TSY["Treasuries"]
+    FICC --> AGY["Agencies/GSEs"]
+    FICC --> MBS["MBS"]
+    FICC --> MUNI["Munis"]
+    FICC --> CORP["Corporates IG/Junk"]
+    FICC --> SWAP["Swaps/Eurodollar"]
+    MUNI --> TAX["Tax-exempt interest"]
+    TAX --> FED["Federalism funding"]
+    TAX --> BUY["High-bracket buyers"]
+    PROP["Prop"] --> PNL["Firm P&amp;L"]
+    MM["Market-making"] --> SPREAD["Bid-ask"]
+    AG["Agency flow"] --> COMM["Commission"]
+    FUND["Cheap funding"] --> PROP
+    EXAM["Series 7/63"] --> GATE["Practice ticket"]
+    RISK["Hedge use"] --> SWAP
+    BET["Directional bet"] --> SWAP
+          </pre>
+        </div>
+      </div>
+    </article>
+    <footer>
+      Story guide · Chaos on Wall Street (Yuyang) Ch.4 “Center of the Universe”<br />
+      Retold from public trial text — not verbatim; footnotes are off-book research; Lucy Bank is a book alias<br />
+      Support the licensed edition · images in SOURCES.md ·
+      <a href="center-of-universe-zh.html">中文版</a>
+      · <a href="../ch03/lucy-bank-en.html">← Chapter 3</a>
+    </footer>
+  </div>
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",

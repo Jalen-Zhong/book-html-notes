@@ -1,86 +1,94 @@
-      border-radius: 0 12px 12px 0;
-      color: var(--muted); font-size: 13px;
-    }
-    .toc {
-      margin: 20px 0 0; padding: 14px 16px;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 14px; font-size: 14px; color: var(--muted);
-    }
-    .toc a { color: var(--gold-soft); text-decoration: none; }
-    .toc a:hover { text-decoration: underline; }
-    .toc ul { margin: 8px 0 0; padding-left: 18px; }
-    .toc li { margin: 4px 0; }
-    article.story {
-      background: linear-gradient(180deg, var(--panel), var(--panel-2));
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 20px; padding: 28px 28px 20px;
-      box-shadow: var(--shadow);
-    }
-    .chapter-mark {
-      color: var(--gold-soft); font-size: 13px;
-      letter-spacing: 0.12em; margin-bottom: 18px;
-    }
-    h2 {
-      margin: 28px 0 12px; font-size: 20px;
-      color: var(--gold-soft); font-weight: 650;
-      scroll-margin-top: 24px;
-    }
-    h2:first-of-type { margin-top: 8px; }
-    h3.panel-title {
-      margin: 0 0 10px; font-size: 15px;
-      color: var(--accent); font-weight: 600;
-    }
-    p { margin: 0 0 16px; color: #d7deec; font-size: 16px; }
-    .scene {
-      margin: 8px 0 20px; padding: 16px 18px;
-      border-radius: 14px;
-      background: rgba(61,139,253,0.07);
-      border: 1px solid rgba(61,139,253,0.18);
-      color: #c9dbff; font-size: 15px;
-    }
-    .divider {
-      height: 1px; margin: 28px 0;
-      background: linear-gradient(90deg, transparent, var(--line), transparent);
-      border: 0;
-    }
-    sup.fn {
-      font-size: 11px; color: var(--gold);
-      font-weight: 700; cursor: pointer;
-      margin-left: 1px; text-decoration: none;
-    }
-    a.fn-link { color: inherit; text-decoration: none; }
-    .figure {
-      margin: 18px 0 22px;
-      border-radius: 16px;
-      overflow: hidden;
-      border: 1px solid rgba(255,255,255,0.08);
-      background: #0a101c;
-    }
-    .figure img {
-      display: block; width: 100%; height: auto;
-      max-height: 420px; object-fit: cover;
-    }
-    .figure figcaption {
-      padding: 10px 14px 12px;
-      font-size: 12px; color: var(--muted);
-      line-height: 1.55;
-      border-top: 1px solid rgba(255,255,255,0.06);
-    }
-    .footnotes {
-      margin: 8px 0 24px;
-      padding: 16px 18px;
-      border-radius: 14px;
-      background: var(--fn-bg);
-      border: 1px solid rgba(212,175,55,0.22);
-    }
-    .footnotes .fn-head {
-      font-size: 13px; color: var(--gold-soft);
-      letter-spacing: 0.08em; margin-bottom: 12px;
-      font-weight: 600;
-    }
-    .fn-item {
-      margin-bottom: 14px; padding-bottom: 14px;
-      border-bottom: 1px dashed rgba(212,175,55,0.18);
-      font-size: 13.5px; color: #c5d0e4; line-height: 1.7;
-    }
+        下面按作者经历顺序讲述本章故事，用自己的话改写，方便跟读；不是全书/全章原文照搬。脚注、配图与知识图谱为场外公开资料补充。「鲁西银行 / Lucy Bank」为书中对雇主的化名。完整内容请读正版。
+      </div>
+      <nav class="toc" aria-label="章节导航">
+        本节导览
+        <ul>
+          <li><a href="#s1">2006 年 4 月：自己的座位</a></li>
+          <li><a href="#s2">宇宙中心，还是湿货市场？</a></li>
+          <li><a href="#s3">刘姥姥：四屏、炮台电话与喊话盒</a></li>
+          <li><a href="#s4">Mark 的 Done!：欧元美元期货与内部对冲</a></li>
+          <li><a href="#s5">FICC 帝国：国债到互换的产品地图</a></li>
+          <li><a href="#s6">市政债是什么：免税、联邦制与买家</a></li>
+          <li><a href="#s7">鲁西的逻辑：便宜资金 → 偏自营</a></li>
+          <li><a href="#s8">Vince 的免费午餐盯梢与经纪商课</a></li>
+          <li><a href="#s9">Roger、Chris 们与 Series 7/63</a></li>
+          <li><a href="#s10">茶馆笑话：从业余赌场到华尔街赌场</a></li>
+          <li><a href="#diagrams">人物关系 / 时间线 / 知识图谱</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER FOUR · 宇宙的中心</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/NYSE-floor.jpg" alt="纽约证券交易所交易大厅" loading="lazy" />
+        <figcaption>纽约证券交易所交易大厅——外人眼里的「嘈杂市场」，对从业者却常是「宇宙的中心」。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">2006 年 4 月：自己的座位</h2>
+      <p>2006 年 4 月，作者正式加入鲁西银行纽约投行部，坐上市政债交易员的位子——不是访客椅，是交易大厅里属于自己的那一格。前一章的「I DO」终于落地：屏幕、电话、风险额度与同事的目光，一起把「想当飞行员」从隐喻变成日常。</p>
+      <p>那一年仍是危机前的繁荣尾声：杠杆便宜、信用利差紧、结构性产品热卖；交易台的噪音里还听不出两年后的崩裂声<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a>。对新人而言，第一课不是预测危机，而是先搞清楚：这张桌子到底在宇宙的哪个坐标。</p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">相关公开节点（本章背景）</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">2006.04</div><div class="ev">入职鲁西银行 NY · 市政债席</div></div>
+          <div class="event-card"><div class="yr">危机前</div><div class="ev">杠杆与利差仍偏乐观</div></div>
+          <div class="event-card"><div class="yr">FICC</div><div class="ev">固收常为银行 P&amp;L 重心</div></div>
+          <div class="event-card"><div class="yr">执照</div><div class="ev">Series 7 / 63 入门门槛</div></div>
+        </div>
+      </div>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ 2006：危机前繁荣的尾声</strong>
+          公开叙事里，2005–06 年美国房价与信用扩张仍在高位，投行与银行固收/结构化业务利润丰厚；2007 年次贷裂缝才广为人知，2008 年系统性危机爆发。对 2006 年春入职的交易新人，日常语言仍是点差、库存与客户流——「宇宙的中心」感建立在尚未崩塌的杠杆之上。
+          <div class="why">为何重要：把本章的兴奋感钉在可查的时间坐标上，避免用后见之明抹掉当时的真实气氛。</div>
+          <div class="src">来源：美联储 / 公开危机编年综述；行业对 2005–07 繁荣期的通识记述</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">宇宙中心，还是湿货市场？</h2>
+      <p>华尔街人对自己说：交易大厅是宇宙的中心。局外人走进来，却可能只看见一排排桌子、闪烁屏幕和此起彼伏的电话——像一座装了空调的湿货市场：叫价、比手势、抢通道，只是货换成了债券与衍生品<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a>。</p>
+      <p>作者脑中还冒出航空母舰飞行甲板的隐喻：甲板上看似混乱，每一步却有塔台、风与弹射器的隐形规则。交易大厅也一样——外人听到的嘈杂，是内部人已经内化的节奏。</p>
+
+      <div class="scene">
+        「宇宙的中心」是身份神话；「湿货市场」是外来者的眼睛；「航母甲板」是作者给自己找的第三种解释——混乱里有规程。
+      </div>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn2">
+          <strong>² 交易大厅文化：开放式战场</strong>
+          大型投行/银行的销售与交易（S&amp;T）大厅多为开放式布局：交易员、销售、助理并排，价格与风险信息靠喊话、炮台电话与电子屏同步。文化上强调速度、可见的 P&amp;L、以及「谁敢大声报价」的气场；同时也依赖合规、风控与限额把「菜市场」关进制度笼子。危机前后，电子化逐步削弱部分喊单仪式，但 2006 年的大厅仍保留大量声景。
+          <div class="why">为何重要：解释为何新人第一天会被感官淹没，以及后文「Done!」喊单为何能横穿整层楼。</div>
+          <div class="src">来源：行业口述与公开 S&amp;T 文化记述；交易所/交易厅历史影像（Wikimedia）</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/NY_stock_exchange_traders_floor_LC-U9-10548-6.jpg" alt="交易大厅历史影像" loading="lazy" />
+        <figcaption>交易大厅历史影像——开放式叫价与屏幕文化的视觉近亲（非鲁西银行实景）。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s3">刘姥姥：四屏、炮台电话与喊话盒</h2>
+      <p>作者自嘲像《红楼梦》里进大观园的刘姥姥：什么都新鲜。工位上四块显示器同时亮着行情、仓位、新闻与聊天；面前是炮台电话（turret）——一排键对应不同线路与对手方；旁边还有喊话盒（squawk box），让整条台子共享同一声道的喊价与成交回报<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a>。</p>
+      <p>硬件本身不神秘，神秘的是速度：信息不是「打开网页慢慢看」，而是「同时砸进四块屏和一只喇叭」——反应慢半拍，就只剩别人成交后的余波。</p>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ 炮台电话与喊话盒</strong>
+          Turret phone（交易炮台）是专为交易台设计的多线路电话系统，可一键接通经纪商、销售或内部对家，并常支持多方监听。Squawk box（喊话/对讲盒）则把语音广播到整条 desk，用于快速同步价格、成交与风险提示。它们是电子聊天普及前（及并存期）的「声景基础设施」：让交易台像一个共用大脑，而不是一排互不说话的个人电脑。
+          <div class="why">为何重要：把「刘姥姥」的新鲜感落到可指认的设备上，读者才懂大厅为何听起来像战场。</div>
+          <div class="src">来源：交易通信设备厂商与行业通识对 turret / squawk 的公开说明</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
