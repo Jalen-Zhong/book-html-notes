@@ -73,8 +73,13 @@ Story prose is an original retelling based on publicly available trial-read narr
 
 | File | Language |
 |---|---|
-| `goldman-internship-zh.html` | Chinese story guide |
-| `goldman-internship-en.html` | English parallel edition |
+| `goldman-internship-zh.html` | Chinese story guide (GitHub = loader; local = full ~31KB) |
+| `goldman-internship-en.html` | English parallel edition (same) |
+| `parts/zh-part-*.txt` / `parts/en-part-*.txt` | Split bodies assembled at runtime on GitHub Pages |
 | `SOURCES.md` | This file |
 
-Both HTML files are single-file standalones (~31KB each, under MCP size comfort). Prefer Wikimedia `Special:FilePath/...` URLs so the repo push stays text-sized.
+## GitHub Pages assembly note
+
+On GitHub, `goldman-internship-{zh,en}.html` are thin assemblers that `fetch` + `document.write` the `parts/*-part-*.txt` files (MCP payload-size workaround, same pattern as ch01). Local copies of those same filenames are the full inline HTML (~31KB each).
+
+Prefer Wikimedia `Special:FilePath/...` URLs in HTML so the GitHub Pages push stays text-sized.
