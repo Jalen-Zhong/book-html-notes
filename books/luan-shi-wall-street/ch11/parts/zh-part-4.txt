@@ -1,0 +1,42 @@
+      </div>
+      <nav class="toc" aria-label="章节导航">
+        本节导览
+        <ul>
+          <li><a href="#s1">阿喀琉斯之踵：短期资金瘾</a></li>
+          <li><a href="#s2">货币市场与回购：血液循环</a></li>
+          <li><a href="#s3">危机前：低折价与传递包裹</a></li>
+          <li><a href="#s4">2008 初：分化折价与科维尔</a></li>
+          <li><a href="#s5">逃向安全：管道挤兑回表</a></li>
+          <li><a href="#s6">ARS 冻结：新牌局与基差 210</a></li>
+          <li><a href="#diagrams">人物关系 / 时间线 / 知识图谱</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER ELEVEN · 华尔街之踵</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Achilles_in_Skyros_fresco.jpg" alt="阿喀琉斯相关古典图像" loading="lazy" />
+        <figcaption>阿喀琉斯意象——全身盔甲、唯踵可伤；华尔街的「踵」是短期融资依赖。来源：Wikimedia Commons（古典题材示意）</figcaption>
+      </figure>
+
+      <h2 id="s1">阿喀琉斯之踵：短期资金瘾</h2>
+      <p>希腊英雄阿喀琉斯几乎刀枪不入，却死在脚踵——母亲握住的那一小块没浸到冥河。<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a> 作者借这个隐喻对准华尔街：屏幕上希腊字母风险模型闪得耀眼，VaR、相关性、压力测试样样齐全；真正要命的，却是对<strong>短期融资</strong>的成瘾——隔夜与超短期资金一旦抽走，再精致的模型也只是盔甲上的花纹。</p>
+      <p>上一章「十面埋伏」把核心银行减记推到台前；这一章往下挖一层：减记伤的是资本，而踵伤的是<strong>能不能每天早上一睁眼就借到钱</strong>。</p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">本章时间锚点 · 2007 末 → 2008 春</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">危机前</div><div class="ev">低折价 · ABCP/SIV/TOB 像回购一样滚</div></div>
+          <div class="event-card"><div class="yr">2008初</div><div class="ev">折价分化 · 欧股急挫 · 联储紧急降息</div></div>
+          <div class="event-card"><div class="yr">1月</div><div class="ev">科维尔 / 法兴 ~€50B 期货 · €4.9B 亏损</div></div>
+          <div class="event-card"><div class="yr">2月</div><div class="ev">ARS 荷兰拍卖冻结 · 作者建 ~$2B 书</div></div>
+        </div>
+      </div>
+
+      <div class="scene">
+        模型可以算出希腊字母；踵上的伤口算不出来——它只在流动性退潮时显形。
+      </div>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">本节脚注</div>
