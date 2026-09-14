@@ -1,0 +1,20 @@
+      <p>Strip Chapter 8’s indexes and acronyms, and the summer storm was a modern bank run: not depositors in a lobby queue, but cash yanking simultaneously out of repo, commercial paper, and shadow-bank conduits. Private balance sheets pledged and haircut each other; once collateral lost trust, liquidity ebbed like a tide.<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a></p>
+      <p>This chapter states the blunt rule: only a central bank—the Federal Reserve—can truly inject system-wide liquidity. Strong private hands can catch assets and shout “buying opportunity,” but refilling the pipes still depends on the discount window and open-market operations.</p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">Time anchors · autumn 2007</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">Aug 17</div><div class="ev">Discount rate −50bp · signal before a funds cut</div></div>
+          <div class="event-card"><div class="yr">Late Aug</div><div class="ev">Muni bounce · Citadel/Sowood · BofA–Countrywide</div></div>
+          <div class="event-card"><div class="yr">Oct 9</div><div class="ev">S&amp;P ~1565 high · double-top rhyme</div></div>
+          <div class="event-card"><div class="yr">Fall</div><div class="ev">Tennessee AAA housing · “calm after battle”</div></div>
+        </div>
+      </div>
+
+      <div class="scene">
+        Runs change costume—tellers, repo, paper—but not logic: when trust snaps, only an institution that can create liquidity rewrites the ending.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">Panic of 1907 and the Fed’s birth</h2>
