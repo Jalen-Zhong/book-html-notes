@@ -1,0 +1,20 @@
+完整原文请支持正版 · 配图见 SOURCES.md ·
+      <a href="lucy-bank-en.html">English edition</a>
+      · <a href="../ch02/goldman-internship-zh.html">← 第二章</a>
+    </footer>
+  </div>
+
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
+  </script>
+
+</body>
+</html>
+
