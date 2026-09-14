@@ -1,0 +1,40 @@
+    FICC --> AGY["机构/两房"]
+    FICC --> MBS["MBS"]
+    FICC --> MUNI["市政债"]
+    FICC --> CORP["公司债 IG/Junk"]
+    FICC --> SWAP["互换/Eurodollar"]
+    MUNI --> TAX["利息免税"]
+    TAX --> FED["联邦制筹资"]
+    TAX --> BUY["高税率买家"]
+    PROP["自营"] --> PNL["机构P&amp;L"]
+    MM["做市"] --> SPREAD["买卖价差"]
+    AG["代理流"] --> COMM["佣金"]
+    FUND["便宜资金"] --> PROP
+    EXAM["Series 7/63"] --> GATE["展业门票"]
+    RISK["对冲用途"] --> SWAP
+    BET["方向赌注"] --> SWAP
+          </pre>
+        </div>
+      </div>
+    </article>
+    <footer>
+      故事导读 · 《乱世华尔街》（渔阳）第四章「宇宙的中心」<br />
+      据公开试读改写，非原文照搬；脚注为场外研究补充；Lucy Bank 为书中化名<br />
+      完整原文请支持正版 · 配图见 SOURCES.md ·
+      <a href="center-of-universe-en.html">English edition</a>
+      · <a href="../ch03/lucy-bank-zh.html">← 第三章</a>
+    </footer>
+  </div>
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
+  </script>
+
+</body>
+</html>
