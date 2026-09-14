@@ -1,86 +1,96 @@
-      border-radius: 0 12px 12px 0;
-      color: var(--muted); font-size: 13px;
-    }
-    .toc {
-      margin: 20px 0 0; padding: 14px 16px;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 14px; font-size: 14px; color: var(--muted);
-    }
-    .toc a { color: var(--gold-soft); text-decoration: none; }
-    .toc a:hover { text-decoration: underline; }
-    .toc ul { margin: 8px 0 0; padding-left: 18px; }
-    .toc li { margin: 4px 0; }
-    article.story {
-      background: linear-gradient(180deg, var(--panel), var(--panel-2));
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 20px; padding: 28px 28px 20px;
-      box-shadow: var(--shadow);
-    }
-    .chapter-mark {
-      color: var(--gold-soft); font-size: 13px;
-      letter-spacing: 0.12em; margin-bottom: 18px;
-    }
-    h2 {
-      margin: 28px 0 12px; font-size: 20px;
-      color: var(--gold-soft); font-weight: 650;
-      scroll-margin-top: 24px;
-    }
-    h2:first-of-type { margin-top: 8px; }
-    h3.panel-title {
-      margin: 0 0 10px; font-size: 15px;
-      color: var(--accent); font-weight: 600;
-    }
-    p { margin: 0 0 16px; color: #d7deec; font-size: 16px; }
-    .scene {
-      margin: 8px 0 20px; padding: 16px 18px;
-      border-radius: 14px;
-      background: rgba(61,139,253,0.07);
-      border: 1px solid rgba(61,139,253,0.18);
-      color: #c9dbff; font-size: 15px;
-    }
-    .divider {
-      height: 1px; margin: 28px 0;
-      background: linear-gradient(90deg, transparent, var(--line), transparent);
-      border: 0;
-    }
-    sup.fn {
-      font-size: 11px; color: var(--gold);
-      font-weight: 700; cursor: pointer;
-      margin-left: 1px; text-decoration: none;
-    }
-    a.fn-link { color: inherit; text-decoration: none; }
-    .figure {
-      margin: 18px 0 22px;
-      border-radius: 16px;
-      overflow: hidden;
-      border: 1px solid rgba(255,255,255,0.08);
-      background: #0a101c;
-    }
-    .figure img {
-      display: block; width: 100%; height: auto;
-      max-height: 420px; object-fit: cover;
-    }
-    .figure figcaption {
-      padding: 10px 14px 12px;
-      font-size: 12px; color: var(--muted);
-      line-height: 1.55;
-      border-top: 1px solid rgba(255,255,255,0.06);
-    }
-    .footnotes {
-      margin: 8px 0 24px;
-      padding: 16px 18px;
-      border-radius: 14px;
-      background: var(--fn-bg);
-      border: 1px solid rgba(212,175,55,0.22);
-    }
-    .footnotes .fn-head {
-      font-size: 13px; color: var(--gold-soft);
-      letter-spacing: 0.08em; margin-bottom: 12px;
-      font-weight: 600;
-    }
-    .fn-item {
-      margin-bottom: 14px; padding-bottom: 14px;
-      border-bottom: 1px dashed rgba(212,175,55,0.18);
-      font-size: 13.5px; color: #c5d0e4; line-height: 1.7;
-    }
+        The narrative below follows the author’s path in original phrasing for study — not a verbatim copy of the book. Footnotes, figures, and diagrams are public-source supplements. “Lucy Bank” is the book’s employer alias. Read the licensed edition for the full text.
+      </div>
+      <nav class="toc" aria-label="Section nav">
+        In this chapter
+        <ul>
+          <li><a href="#s1">April 2006: a seat of his own</a></li>
+          <li><a href="#s2">Center of the universe — or a wet market?</a></li>
+          <li><a href="#s3">Liu Laolao: four screens, turret, squawk</a></li>
+          <li><a href="#s4">Mark’s Done!: Eurodollars &amp; internal hedges</a></li>
+          <li><a href="#s5">FICC empire: Treasuries to swaps</a></li>
+          <li><a href="#s6">What munis are: tax exemption &amp; federalism</a></li>
+          <li><a href="#s7">Lucy’s logic: cheap funding → prop lean</a></li>
+          <li><a href="#s8">Vince’s free-lunch stakeout &amp; IDBs</a></li>
+          <li><a href="#s9">Roger, the Chrises &amp; Series 7/63</a></li>
+          <li><a href="#s10">Teahouse joke: amateur casino to Wall Street casino</a></li>
+          <li><a href="#diagrams">People / timeline / knowledge graph</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER FOUR · CENTER OF THE UNIVERSE</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/NYSE-floor.jpg" alt="NYSE trading floor" loading="lazy" />
+        <figcaption>NYSE trading floor — a noisy market to outsiders, often “the center of the universe” to practitioners. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">April 2006: a seat of his own</h2>
+      <p>In April 2006 he joined Lucy Bank’s New York investment-banking unit as a municipal-bond trader — not a visitor’s chair, but his own slot on the floor. Chapter 3’s “I DO” became furniture: screens, phones, risk limits, and colleagues’ eyes turned the pilot metaphor into a workday.</p>
+      <p>It was still the late boom before the crisis: cheap leverage, tight credit spreads, structured products selling hard. The crack of 2008 was not yet audible in the floor noise<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a>. For a new hire the first lesson was not forecasting collapse; it was locating the desk on the map of the firm’s universe.</p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">Public context nodes</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">2006.04</div><div class="ev">Lucy Bank NY · muni seat</div></div>
+          <div class="event-card"><div class="yr">Pre-crisis</div><div class="ev">Leverage &amp; spreads still buoyant</div></div>
+          <div class="event-card"><div class="yr">FICC</div><div class="ev">Fixed income often core P&amp;L</div></div>
+          <div class="event-card"><div class="yr">Licenses</div><div class="ev">Series 7 / 63 gate</div></div>
+        </div>
+      </div>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ 2006: end of the pre-crisis boom</strong>
+          In public chronologies, 2005–06 still looked like high housing and credit expansion; FICC/structured profits were lush. Subprime cracks became widely visible in 2007; systemic crisis hit in 2008. A spring-2006 desk hire still lived in the language of spreads, inventory, and flow — a “center of the universe” feeling built on leverage that had not yet snapped.
+          <div class="why">Why it matters: pins the chapter’s excitement to a dated boom, without hindsight erasing how it felt.</div>
+          <div class="src">Sources: Fed / public crisis chronologies; industry primers on 2005–07</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">Center of the universe — or a wet market?</h2>
+      <p>Wall Streeters told themselves the trading floor was the center of the universe. Walk in as an outsider and you might see only rows of desks, blinking screens, and ringing phones — an air-conditioned wet market where the goods happen to be bonds and derivatives<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a>.</p>
+      <p>He also reached for a carrier flight-deck metaphor: chaos on the surface, invisible rules underneath — wind, tower, catapult. The floor sounded the same: noise to visitors, rhythm to people who already lived inside it.</p>
+
+      <div class="scene">
+        “Center of the universe” is identity myth; “wet market” is the outsider’s eye; “carrier deck” is his third frame — procedure inside the roar.
+      </div>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn2">
+          <strong>² Trading-floor culture: open battlefield</strong>
+          Large S&amp;T floors are open-plan: traders, sales, and assistants side by side; prices and risk sync by shout, turret, and screens. Culture prizes speed, visible P&amp;L, and the nerve to quote out loud — while compliance and limits cage the “wet market.” By 2006 electronic chat already coexisted with the soundscape; the shout still mattered.
+          <div class="why">Why it matters: explains sensory overload on day one, and why a shouted Done! can cross a whole floor.</div>
+          <div class="src">Sources: industry oral histories of S&amp;T culture; exchange-floor imagery (Wikimedia)</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/NY_stock_exchange_traders_floor_LC-U9-10548-6.jpg" alt="Historic trading floor" loading="lazy" />
+        <figcaption>Historic trading-floor imagery — visual cousin to open-outcry and screen culture (not Lucy Bank). Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s3">Liu Laolao: four screens, turret, squawk</h2>
+      <p>He joked he was Liu Laolao entering the Grand View Garden: everything new. Four monitors showed markets, positions, news, and chat at once; a turret phone put counterparties one button away; a squawk box shared voice across the desk<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a>.</p>
+      <p>The gear was not magic; the speed was. Information did not arrive as a leisurely webpage — it hit four screens and a speaker at once. Half a beat late, and you only heard the wash after someone else traded.</p>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ Turret phones and squawk boxes</strong>
+          A turret is a multi-line trading phone: one-touch paths to brokers, sales, or internal desks, often with shared listen. A squawk box broadcasts voice across the pod for prices, fills, and risk alerts. Together they were (and partly remain) the acoustic infrastructure of a desk — one shared brain, not a row of silent PCs.
+          <div class="why">Why it matters: turns the Liu Laolao gag into nameable hardware so readers hear why the floor sounds like a battlefield.</div>
+          <div class="src">Sources: trading-comms vendor and industry primers on turret / squawk</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s4">Mark’s Done!: Eurodollars &amp; internal hedges</h2>
+      <p>Rates boss Mark’s voice could cut half the floor: a Eurodollar futures fill, then a bellowed Done! — not theater, but an instant broadcast that the trade was locked<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a>.</p>

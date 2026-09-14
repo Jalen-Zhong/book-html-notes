@@ -1,0 +1,73 @@
+      <p>Underneath sat internal hedging: move risk between desks inside the firm first, keep P&amp;L on the house books when possible, instead of paying the street for every hedge and advertising intent. For a rookie that was organizational lesson one — trading is outbound bets and inbound coordination.</p>
+
+      <div class="scene">
+        Done! is an acoustic period; internal hedges are the accounting period — together they define when a trade is truly finished.
+      </div>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ Eurodollar futures</strong>
+          Eurodollar futures were long among the world’s most liquid short-rate contracts: priced off expectations for offshore dollar deposit rates (historically tightly linked to 3-month LIBOR), traded on Chicago derivatives venues, used by banks, funds, and corporates to hedge or express front-end views. A floor Done! often meant short-rate risk had just been re-marked for everyone listening.
+          <div class="why">Why it matters: Mark was not shouting small talk — he was marking a short-rate event the whole rates world understands.</div>
+          <div class="src">Sources: CME / textbook definitions of Eurodollar futures; LIBOR-era money-market primers</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">FICC empire: Treasuries to swaps</h2>
+      <p>Sales-and-trading’s big non-equity bucket is often called FICC: fixed income, currencies, commodities — beside equities, FX, and commodities lines. At many banks, fixed income was frequently the loudest P&amp;L engine, not because it was glamorous, but because balance-sheet and rate risk are huge by nature<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a>.</p>
+      <p>Inside rates/credit: Treasuries; agencies (including Fannie/Freddie-linked credit); MBS; munis; corporates (IG vs junk); and swaps/derivatives. Derivatives are not “only gambling” — firms use them to lock costs, reshape duration, hedge inventory; the same tools can also lever directional bets. He reminded himself to hear swaps as risk language first; in Chinese public talk that flattens complex derivatives into pure “gambling,” be careful not to erase legitimate hedges<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a>.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal_Reserve_Bank_of_New_York,_Manhattan,_New_York_(7237032812).jpg" alt="New York Fed" loading="lazy" />
+        <figcaption>New York Fed area — landmark coordinates for dollar rates and Treasuries. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-5">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ FICC: the fixed-income empire’s acronym</strong>
+          FICC groups much of a bank’s non-equity macro and credit trading. Pre-crisis, FICC often supplied half or more of S&amp;T revenue. Desks carve the map: Rates, Credit, Securitized, Municipals, FX, Commodities. Before calling anything the center of the universe, ask which product line your chair sits on — that chooses the risk factors you breathe.
+          <div class="why">Why it matters: gives readers an org map so the muni desk has a place in the empire.</div>
+          <div class="src">Sources: public business-segment disclosures; FICC industry primers</div>
+        </div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ Product sketch: Treasuries / agencies / MBS / corporates / swaps</strong>
+          <em>Treasuries</em>: direct U.S. Treasury debt; near risk-free credit; the curve anchor. <em>Agencies</em>: federal agency or GSE debt; Fannie/Freddie paper in 2006 still carried a “quasi-gov” halo (implicit-guarantee debates flared in the crisis). <em>MBS</em>: mortgages pooled into securities; prepayment/extension risk dominates. <em>Corporates</em>: IG vs high-yield (junk); credit spread is the plot. <em>IRS / rate futures</em>: fixed-for-floating exchanges and listed short-rate futures — infrastructure for hedging and relative value; insurance or leverage depending on how the book is set.
+          <div class="why">Why it matters: the chapter name-drops these markets; footnotes turn jargon into checkable building blocks.</div>
+          <div class="src">Sources: NY Fed / FINRA Treasuries &amp; agencies materials; DTCC MBS clearing; ISDA swap primers</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">What munis are: tax exemption &amp; federalism</h2>
+      <p>Municipal bonds fund states, localities, and public-related issuers — utilities, universities, hospitals, toll authorities. Qualifying interest is often federally tax-exempt, and sometimes state-tax-exempt too for residents — for high-bracket buyers the combined relief can reach eye-watering effective levels (public discussion often cites stacked marginal rates in the ~40%+ neighborhood)<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a>.</p>
+      <p>Buyers are therefore tax-sensitive: wealthy individuals, tax-aware corporates, specialized accounts. Deeper still is U.S. federalism: states and cities finance capital projects in the market; the federal government subsidizes via tax expenditure rather than writing every check from Washington. The muni market is federalism written onto a balance sheet.</p>
+
+      <div class="footnotes" id="fn-block-6">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ Muni tax exemption and federalism</strong>
+          Most qualifying muni interest is exempt from federal income tax; in-state buyers may also escape state (and local) tax — double or triple exemption. Coupons are typically lower than taxable peers, yet after-tax attractive to high brackets. Federalism angle: localities borrow for schools, roads, utilities; Congress lowers their funding cost through tax preference. In South Carolina v. Baker (1988) the Court held the federal government is not constitutionally barred from taxing state-bond interest — yet the exemption framework largely endured as a signature of U.S. public finance.
+          <div class="why">Why it matters: without tax and federalism, munis look like a sleepy niche; with them, the desk’s buyers and purpose snap into focus.</div>
+          <div class="src">Sources: MSRB Tax Treatment / Bond Basics; Investor.gov; Federalism encyclopedia</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s7">Lucy’s logic: cheap funding → prop lean</h2>
+      <p>Lucy Bank had deep pockets and relatively cheap funding — especially as a foreigner-flavored commercial-bank balance sheet. Its client franchise, though, was often weaker than Goldman’s or Lehman’s: not every mandate walked in the door<a class="fn-link" href="#fn8"><sup class="fn">⁸</sup></a>.</p>
+      <p>Strategy followed: less pure agency flow, more proprietary risk. The muni desk in this chapter leans prop — and the eternal tension remains: sales want clients and wallet share; trading wants inventory risk and P&amp;L. When prop logic dominates, the table is a chessboard with the firm’s own chips, not merely a commission pipe.</p>
+
+      <div class="scene">
+        Cheap funding is ammo; a thin franchise is blank space on the map; a prop lean is Lucy’s fill-in-the-blank — and the politics a rookie must learn.
+      </div>
+
+      <div class="footnotes" id="fn-block-7">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn8">
+          <strong>⁸ Prop vs agency / market-making</strong>
