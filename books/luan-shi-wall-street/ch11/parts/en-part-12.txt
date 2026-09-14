@@ -1,0 +1,36 @@
+        <div class="fn-item" id="fn6">
+          <strong>⁶ Auction-rate securities (ARS) and Dutch auctions</strong>
+          ARS are typically long municipal bonds, corporates, or preferreds whose rates reset in periodic Dutch auctions: buyers bid the lowest rate they will accept; the clearing rate becomes the reset for holders and ownership turns over. Broker-dealers historically backstopped auctions with proprietary bids; from mid-February 2008 major firms withdrew support, auctions failed widely, holders could not exit as expected, and some municipal issuers faced penalty rates. Later buyback settlements with regulators followed.
+          <div class="why">Why it matters: ARS is the retail version of “long asset pretending to be short cash”—same family as repo and ABCP.</div>
+          <div class="src">Sources: CRS / Chicago Fed / Wikipedia summaries of the Feb 2008 ARS freeze; SEC and state AG settlement coverage</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <section class="diagrams-section" id="diagrams">
+        <h2>Maps / timeline / knowledge graph</h2>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Map: short-funding addiction → haircut tiering → conduit onboarding → ARS poker</div>
+          <div class="mermaid">
+flowchart LR
+  HEEL[Achilles heel metaphor] --> ST[Short wholesale funding addiction]
+  ST --> MMF[Money-market funds]
+  ST --> REPO[Repo blood circulation]
+  REPO --> HC[Haircut]
+  ST --> PIPE[ABCP/SIV/TOB]
+  PIPE --> PASS[Pass-the-parcel]
+  HC --> DIFF[Early-2008 haircut tiering]
+  DIFF --> JAN[Europe plunge · Fed emergency cut]
+  JAN --> KER[Kerviel/SocGen unwind]
+  PIPE --> RUN[Conduit runs on-balance]
+  RUN --> CITI[Citi/Merrill onboarding]
+  DIFF --> ARS[ARS Dutch-auction freeze]
+  ARS --> LUCY[Lucy opportunistic poker ROE&gt;200%]
+  LUCY --> BOOK[~2B ARS book]
+  BOOK --> BASIS[Basis blows to ~210]
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">

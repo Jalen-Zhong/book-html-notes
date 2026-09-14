@@ -1,0 +1,59 @@
+          <div class="caption">Timeline: Achilles’ Heel of Wall Street (late 2007–spring 2008)</div>
+          <div class="mermaid">
+timeline
+  title Achilles Heel of Wall Street
+  Pre-crisis : Low haircuts even on weaker collateral
+            : ABCP/SIV/TOB rolling like repo
+            : Pass-the-parcel still playing
+  Early 2008 : Haircut tiering: OTR easy · MBS hard
+             : HF elephant ~20% · shrimp refused
+  2008-01 : Europe ~-6% · futures limit-down feel
+          : Fed emergency cut (75bp + meeting 50bp)
+          : Kerviel ~€50B / loss ~€4.9B
+  2008-02 : ARS auctions fail widely
+          : Retail redemption horror stories
+          : Lucy ARS+repo high-ROE game
+          : Author ~$2B book · basis ~210
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Knowledge graph: heel mechanics—short cash, haircuts, conduits, auctions</div>
+          <div class="mermaid">
+flowchart TB
+  CASH[Cash-looking money] --> MMF[Money-market funds]
+  CASH --> ARS[ARS cash illusion]
+  MMF --> ABCP[ABCP / CP]
+  REPO[Repo] --> HC[Haircut dial]
+  HC --> LEV[Leverage up/down]
+  ABCP --> SIV[SIV rollover short debt]
+  SIV --> SPON[Sponsor bank onboarding]
+  ARS --> DUTCH[Dutch auction backstop]
+  DUTCH --> FAIL[Feb 2008 backstop withdrawn]
+  FAIL --> ILLIQ[Retail freeze]
+  KER[Kerviel unwind] --> MASK[Masked as macro crash]
+  FED[Fed emergency cut] --> RESP[Policy answer to short-end panic]
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer>
+      <em>Chaos on Wall Street</em> · Yuyang · Chapter 11 story guide (original retelling) ·
+      <a href="SOURCES.md">SOURCES.md</a> ·
+      <a href="../../index.html">Back to index</a>
+    </footer>
+  </div>
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
+  </script>
+
+</body>
