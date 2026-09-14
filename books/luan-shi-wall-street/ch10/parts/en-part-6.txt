@@ -1,0 +1,17 @@
+        When the periphery burns, the core can still say “contained.” When Citi and Merrill both print ten-digit writedowns, the narrative itself becomes fuel.
+      </div>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ Citigroup / Merrill late-2007 writedown wave</strong>
+          From deep autumn into year-end 2007, Citigroup repeatedly raised expected losses and writedowns tied to subprime and CDO exposures (public reports and filings spanning multi-billion to tens-of-billions adjustments); Merrill, in the same window, kept enlarging FICC/CDO/subprime hits (Q3 already ~$7.9B, later quarters larger still). Markets read simultaneous core-bank “blowups” as crisis wave two—the chapter’s ~$10B / ~$9.4B figures are narrative anchors for that “ten-digit reopen fire” moment, not a single 8-K line item.
+          <div class="why">Why it matters: snaps the “healthy skin” story back to “organ hemorrhage”—core writedowns are the encirclement signal.</div>
+          <div class="src">Sources: Citi / Merrill 2007 earnings releases; Reuters and contemporaneous coverage of the writedown wave</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">Why them: supermarket bank and First Franklin</h2>
+      <p>Why Citi and Merrill first in the public blast radius? Structure: Citi was a financial supermarket—retail, wholesale, and IB pipes in one house—with warehouses of housing-related inventory and CDO exposure. Rewrite the marks, and losses write straight into group P&amp;L.<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a></p>
