@@ -1,0 +1,18 @@
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ ROE（Return on Equity，股本回报率）</strong>
+          ROE = 净利润 / 股东权益，衡量「股东每投入一单位资本，赚回多少会计利润」。投行与银行常把它当作对标同业、设定奖金池与战略叙事的核心 KPI。高 ROE 可以来自真经营效率，也可以来自高杠杆与周期顺风——分子好看时，分母（资本）被压薄，数字会格外漂亮。
+          <div class="why">为何重要：整章三种「模式」都是在回答董事会那句：怎样把 ROE 做上去。</div>
+          <div class="src">来源：公司金融教材对 ROE 的标准定义；投行年报 KPI 披露通识</div>
+        </div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ 杜邦恒等式（DuPont identity）</strong>
+          经典三因素杜邦：ROE =（净利润/销售收入）×（销售收入/总资产）×（总资产/股东权益）＝销售利润率 × 资产周转率 × 财务杠杆。它不「创造」利润，只把 ROE 拆成可管理的杠杆：提价/控本、加快周转、或加杠杆。杜邦公司早期用此框架做内部诊断，后成财务分析常识。
+          <div class="why">为何重要：猪哥黑板上的公式，是后文微软/沃尔玛/华尔街三种模式的数学骨架。</div>
+          <div class="src">来源：公司金融教科书 DuPont analysis；公开财务分析词条</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">微软模式：高利润率的人工业务</h2>
