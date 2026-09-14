@@ -1,0 +1,64 @@
+  MS --> GA[Global Alpha 等]
+  MS --> MUNI[市政基差 / SIFMA 比率]
+  MUNI --> DESK[作者交易台]
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">时间线：2007 年夏季风暴</div>
+          <div class="mermaid">
+timeline
+  title 夏季风暴时间线
+  2007-06 : Bear HF 告急
+          : 美林威胁拍卖抵押品
+          : 凯恩约 16 亿注资支持
+  2007-07 : ABX / 结构化信用重挫
+          : Sowood 等显形
+          : Bear 相关基金破产清盘
+  2007-08-09 : BNP 冻结三只 ABS 基金
+             : 火越过大西洋
+  2007盛夏 : 市政基差走阔
+           : 比率套利踩空
+           : 全街去杠杆
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">知识图谱：杠杆、窗纸与流动性贝塔</div>
+          <div class="mermaid">
+flowchart TB
+  LEV[杠杆 + AAA 叙事] --> WALL[影子银行承重墙]
+  WALL --> AUC[拍卖 / MTM 窗纸]
+  AUC --> IDX[ABX 与公开价格]
+  IDX --> ATL[跨大西洋流动性蒸发]
+  ATL --> BETA[流动性贝塔暴露]
+  BETA --> HF[多策略同步减仓]
+  HF --> RATIO[SIFMA 比率跳动]
+  RATIO --> BASIS[市政基差 80→140]
+  BASIS --> LESSON[图表顶 ≠ 市场顶]
+  LESSON --> DELEV[全街去杠杆]
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer>
+      《乱世华尔街》· 渔阳 · 第八章故事导读（原创改写）·
+      <a href="SOURCES.md">SOURCES.md</a> ·
+      <a href="../../index.html">返回目录</a>
+    </footer>
+  </div>
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
+  </script>
+
+</body>
+</html>
