@@ -1,0 +1,17 @@
+      <p>Product design echoed hedge-fund leverage in retail clothing: teaser rates made the first payments look affordable; cash-out refinances turned price appreciation into spendable cash. For borrowers it was leveraged consumption and speculation; for Wall Street it was feedstock for the securitization machine.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Fannie_Mae_headquarters.jpg" alt="Fannie Mae headquarters" loading="lazy" />
+        <figcaption>Fannie Mae headquarters — one institutional stage for wholesale housing credit via GSEs and MBS. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">Footnotes</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ Subprime vs prime mortgages</strong>
+          Prime loans typically go to borrowers with stronger credit, income, and documentation; subprime targets thinner credit, incomplete files, or heavier debt loads, usually at higher rates and fees. Mid-2000s structures—ARMs, teaser periods, second liens—amplified “get in now, refinance later” incentives. When house prices stalled, the refinance exit narrowed and defaults clustered.
+          <div class="why">Why it matters: shows how the same housing-finance machine slid from sturdy pipe to riskier feedstock.</div>
+          <div class="src">Sources: public housing-finance histories; standard post-crisis definitions of subprime</div>
+        </div>
+        <div class="fn-item" id="fn2">
+          <strong>² Fannie Mae / Freddie Mac (GSEs)</strong>

@@ -1,0 +1,16 @@
+          The government-sponsored enterprises long bought or guaranteed conforming mortgages and issued agency MBS, supplying liquidity and standardization to U.S. housing finance. They are not the whole subprime story, but they are core infrastructure for “mortgages as wholesale securities.” Political pressure to widen homeownership often traveled through GSE goals alongside private conduits.
+          <div class="why">Why it matters: links successful housing securitization to the later private-label overreach.</div>
+          <div class="src">Sources: public GSE explainers; crisis histories of housing-finance infrastructure</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">Tranching alchemy: AAA, mezz, equity</h2>
+      <p>When feedstock was flawed, Wall Street’s answer was tranching<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a>: assume pool defaults around a “manageable” number—public narratives often floated something like 5%—then slice senior, mezzanine, and equity. Senior paper was dressed as AAA for pensions and insurers who could only buy “safe”; equity and juicy mezz went to hedge funds and prop books; leftovers that would not clear stayed on investment-bank inventories.</p>
+      <p>The author likens the table to Wall Street baccarat: the house shuffles, guests pick seats, and sometimes the dealer must sit too. While house prices rose, loss assumptions kept looking “reasonable.”</p>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">Footnotes</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ Tranching and CDOs</strong>
