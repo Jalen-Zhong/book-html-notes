@@ -1,0 +1,117 @@
+id-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin: 16px 0 22px;
+    }
+    .event-card {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+    .event-card .yr { color: var(--gold); font-weight: 700; font-size: 14px; }
+    .event-card .ev { color: #c9d4e8; font-size: 13px; margin-top: 4px; line-height: 1.5; }
+    .diagrams-section {
+      margin-top: 32px;
+      padding-top: 8px;
+    }
+    footer {
+      margin-top: 28px; color: var(--muted);
+      font-size: 13px; text-align: center;
+    }
+    @media (max-width: 560px) {
+      article.story { padding: 20px 16px 12px; }
+      .wrap { padding: 24px 14px 60px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="lang-switch" aria-label="语言">
+        <a class="active" href="casino-to-wall-street-zh.html">中文</a>
+        <a href="casino-to-wall-street-en.html">English</a>
+      </div>
+      <div class="badge">故事导读 · 据公开试读改写 · 场外研究补充</div>
+      <h1>镀金时代<br />从赌场走进华尔街</h1>
+      <p class="subtitle">《乱世华尔街》第一章「赌场到华尔街」· 渔阳 · 故事改写 + 脚注研究</p>
+      <div class="note">
+        下面按作者经历顺序讲述本章故事，用自己的话改写，方便跟读；不是全书/全章原文照搬。脚注、配图与知识图谱为场外公开资料补充，帮助理解书中一带而过的背景。完整内容请读正版。
+      </div>
+      <nav class="toc" aria-label="章节导航">
+        本节导览
+        <ul>
+          <li><a href="#s1">华尔街之路，从赌场开始</a></li>
+          <li><a href="#s2">身在华尔街，却不在牌桌上</a></li>
+          <li><a href="#s3">拉斯韦加斯：21点一周扫街</a></li>
+          <li><a href="#s4">德州扑克：与人斗，抢先一步</a></li>
+          <li><a href="#s5">伯克利：一年制金融工程</a></li>
+          <li><a href="#s6">鲁宾斯坦教授与黑色星期一</a></li>
+          <li><a href="#s7">求职冷起步</a></li>
+          <li><a href="#s8">高盛面试与新兴市场债券</a></li>
+          <li><a href="#diagrams">人物关系 / 时间线 / 知识图谱</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER ONE · 赌场到华尔街</div>
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/New_York_Stock_Exchange_Exterior.jpg" alt="纽约证券交易所外立面" loading="lazy" />
+        <figcaption>纽约证券交易所（NYSE）Broad Street 外立面——华尔街在大众想象中的门面。来源：Wikimedia Commons（Kidfly182，CC BY-SA 4.0）</figcaption>
+      </figure>
+      <h2 id="s1">华尔街之路，从赌场开始</h2>
+      <p>作者后来回望自己的路，发现起点并不体面：若干年前，他还坐在美国赌场里，对着红红绿绿的筹码算进算退，挣点零花；若干年后，他管理着数亿美元的交易账簿，一年替银行创造以千万计的利润。跨度听上去很大，他自己却觉得不算远——两边都是赌，只是赌注换了<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a>。</p>
+      <p>他说自己大概有点赌的基因：太爷爷好赌，太姥爷开过麻将馆。生在新中国、长在红旗下，这点本性被压了很多年，反而逼出了对数学的热情，也把他送进了北京大学。可大学四年他只真正搞明白一件事：数学太深，自己真正拿手的不过是算术。于是毕业后跟着出国潮去了美国，转学电脑，本该奔硅谷，却阴差阳错进了一家投行做 IT。</p>
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ 从牌桌到交易台：同一套心智模型</strong>
+          爱德华·索普（Edward Thorp）先以《打败庄家》证明记牌可战胜 21 点，后又把同样的概率思维带到可转债与量化交易。作者在本章把赌场当作「华尔街预科」，正是这条历史线索的个人版：先在可重复的小局里练期望值与仓位，再把同一套语言迁移到市场。
+          <div class="why">为何重要：读懂本章的「两边都是赌」，不是玩世不恭，而是强调期望值、波动与杠杆——后文对冲基金叙事的种子。</div>
+          <div class="src">来源：Edward O. Thorp 官网 / Beat the Dealer；A Man for All Markets（公开介绍）</div>
+        </div>
+      </div>
+      <h2 id="s2">身在华尔街，却不在牌桌上</h2>
+      <p>那时他其实并不清楚投资银行到底干什么，只觉得天天跟市场打交道很酷。真正进了华尔街才发现：自己在「后台」<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a>。前台负责融资交易，真正押宝下注；后台负责保障支援。待遇差得像打仗时立功的是战士，支前的人只能分到少一点慰问品——投行年终奖也差不多这个逻辑。</p>
+      <p>待久了，他想转前台。钱是一方面，更想体验在市场里冲浪的感觉，也想把「精通算术」用到刀刃上。可后台转前台极难，常见出路是「二进宫」：去名牌商学院回锅，毕业后再找前台工作。他早想走这条路，却被绿卡拖了好几年。这几年他没有空等——他去赌场，给自己上了一门「华尔街预科」。</p>
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn2">
+          <strong>² 前台（Front Office）vs 后台（Back Office）</strong>
+          在投资银行里，「前台」通常指直接产生收入的业务线：销售与交易（Sales &amp; Trading）、投资银行业务（IPO、并购顾问）、自营或做市等。中间层还有「中台」（风险、合规、产品控制）。「后台」则覆盖清算交割、技术运维、财务运营、IT 支持等保障职能。2000 年代前后，前台奖金池远大于后台，身份落差往往比薪资数字更刺痛人。
+          <div class="why">为何重要：作者「身在华尔街却不在牌桌」的焦虑，是整章转学前台的发动机；不懂这个层级，就读不懂后文为什么非读 MFE、非冲高盛不可。</div>
+          <div class="src">来源：投行组织结构通识（Investopedia Front/Middle/Back Office 等公开释义）</div>
+        </div>
+      </div>
+      <hr class="divider" />
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Las_Vegas_Strip_at_night.jpg" alt="拉斯维加斯大道夜景" loading="lazy" />
+        <figcaption>拉斯维加斯大道（Las Vegas Strip）夜景——作者「一周扫街」21 点的舞台。来源：Wikimedia Commons</figcaption>
+      </figure>
+      <h2 id="s3">拉斯韦加斯：21点一周扫街</h2>
+      <p>美国赌场在他眼里像阿里巴巴的藏宝洞：筹码堆来推去，老虎机叮当作响，好像到处都是钱。可绝大多数游戏对玩家是「久赌必输」。他先练成一件事：没有机会绝不出手。</p>
+      <p>真正藏着缝隙的，是 21 点<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a>。高手能靠记牌打败赌场，许多华尔街前辈年轻时都干过。庄家优势本来就小；会基本战术时大约只剩 0.5%，还会随剩余大小牌比例上下浮动。秘诀很简单也很难：形势对庄家有利时下小注，对玩家有利时下大注。</p>
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/DelLagoCasinoBlackjackTable.jpg" alt="赌场二十一点牌桌" loading="lazy" />
+        <figcaption>赌场中的 Blackjack（21 点）牌桌。记牌者靠追踪剩余牌组成调整下注与打法。来源：Wikimedia Commons（DanielPenfield，CC BY-SA 4.0）</figcaption>
+      </figure>
+      <p>偶然得到一本教人赢 21 点的小册子，他挑灯夜读，觉得「武功已成」，便去拉斯韦加斯奇袭。那是痛快的一周：一家家赌场扫过去，揣着两裤兜百元大钞回纽约。他一度觉得 21 点可以当提款机——后来才明白，那只是幸运女神对他笑了一下。</p>
+      <div class="scene">
+        之后他总体还能赢，但起伏很大，再也没有每战必胜。他从数学上认清：风险相对回报太大。想平均每小时赚二十块，就得承受上下一千块左右的波动——用金融行话说，夏普比率太低<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a>。赌注小了赚不大，下大了又容易赔光。21 点成了「赢不了大钱」的游戏。这些弯弯绕里，已经埋着后文对冲基金最核心的三件事：风险、回报、杠杆。
+      </div>
+      <p>赌场规则一改，记牌赢 21 点几乎没戏了。美国又流行起德州扑克，他跟着转场。</p>
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ 记牌、索普与赌场反制</strong>
+          1962 年 MIT 数学家爱德华·索普出版《Beat the Dealer》，把电脑验证过的点算系统带给大众：当剩余牌中大牌偏多时玩家期望为正，应加大注码。赌场很快反击——多副牌鞋、提前洗牌、限制加倍与分牌、监控下注跳跃，甚至直接「请」走优势玩家。1964 年内华达一度改规则又因客流骤减而改回，说明「可被战胜」与「赌场生意」之间的张力一直存在。
+          <div class="why">为何重要：书中「一周扫街」的快感，背后是半个世纪的数学与赌场军备竞赛；也解释了为何规则一变，提款机叙事立刻熄火。</div>
+          <div class="src">来源：edwardothorp.com；UCI Thorp 展览；Las Vegas Review-Journal 对索普的报道</div>
+        </div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ 夏普比率（Sharpe Ratio）一句话版</strong>
+          夏普比率 ≈（策略平均超额收益）÷（收益波动的标准差）。分子是「你多赚了多少」，分母是「你抖得多厉害」。比值低，说明单位风险换来的回报很差——哪怕长期期望为正，心理和资金也未必熬得住。作者用「每小时想赚 20，却要扛 ±1000 波动」做直觉翻译，正是这个意思。
+          <div class="why">为何重要：这是全书第一次把赌场体验翻译成对冲基金语言；后文谈杠杆、仓位、回撤，都绕不开「单位风险回报」。</div>
+          <div class="src">来源：William F. Sharpe 原始论文传统释义；CFA / 投资学教材通识</div>
+        </div>
+      </div>
+      <h2 id="s4">德州扑克：与人斗，抢先一步
