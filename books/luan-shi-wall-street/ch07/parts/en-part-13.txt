@@ -1,0 +1,20 @@
+          In May 2007 China’s forming state FX investment vehicle (later China Investment Corporation) agreed to invest about $3 billion for non-voting Blackstone common units tied to the IPO, keeping the stake under 10% with a multi-year hold. It became a landmark sovereign entry into a U.S. alternative-asset manager’s equity—and sat on the same liquidity map as Blackstone’s real-estate/PE expansion.
+          <div class="why">Why it matters: turns “too much global money” into a named ticket.</div>
+          <div class="src">Sources: Blackstone press release; CRS and other public CIC early-investment summaries</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s9">Collections in boom, gold in chaos</h2>
+      <p>Desk orders still said grow. The author reaches for a near-proverb: in prosperous times people collect art; in chaotic times they buy gold—chase stories in boom, cling to what stores value and clears in stress. His own moves were concrete: trading muni housing-related bonds, hunting price in the details.</p>
+      <p>Bear salesman Hu You’s Ohio bond anecdote was small—thin profit, hard to resell. A fallen leaf: not a storm, but a wind direction. Warnings need not roar; sometimes they are just a few basis points of lost liquidity.</p>
+
+      <div class="scene">
+        A leaf is not a tornado; when leaves drift one way, people in the tree should ask where the wind begins.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s10">Novel floaters: models price risk in bps</h2>
+      <p>Expansion kept inventing product: novel floating-rate structures, Merrill-linked muni CDOs. Models stayed gentle—showing “risk” that looked tiny against a few extra basis points. The author’s choice was distance: not a precise crash calendar, just ugly odds.</p>

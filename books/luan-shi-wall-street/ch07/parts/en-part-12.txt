@@ -1,0 +1,13 @@
+      <p>Money did not vanish; it changed lanes—energy, emerging markets, and bolder leveraged buyouts<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a>. Blackstone’s Equity Office takeout, KKR’s TXU-scale ambitions, bridge loans and “Triple Play”–style package financing let deals sprint before permanent capital arrived. China’s forming sovereign investor (later CIC) took roughly $3 billion of non-voting Blackstone IPO-related units—global spare cash with a proper noun<a class="fn-link" href="#fn8"><sup class="fn">⁸</sup></a>.</p>
+      <p>Irony shared the season: Sam Zell sold Equity Office near the CRE peak to Blackstone, then levered into Tribune—selling peak bricks, buying newspaper futures. In boom time, stories outran risk models.</p>
+
+      <div class="footnotes" id="fn-block-5">
+        <div class="fn-head">Footnotes</div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ LBOs and bridge loans</strong>
+          Leveraged buyouts finance acquisitions largely with debt, counting on cash flows and refinancing. Bridge loans are short-term underwriter financing that close a deal before high-yield bonds, loan syndications, or other takeouts land; in 2006–07 mega-PE deals, bridges and packaged commitments (market slang often bundled ideas like a “Triple Play”) parked underwriting risk on Street balance sheets. When bridges fail to take out, inventory and losses surface.
+          <div class="why">Why it matters: liquidity rotated rather than evaporated—into larger leverage games.</div>
+          <div class="src">Sources: contemporary coverage of EOP/TXU-scale LBOs; primers on acquisition bridge financing</div>
+        </div>
+        <div class="fn-item" id="fn8">
+          <strong>⁸ Blackstone and the CIC precursor stake</strong>
