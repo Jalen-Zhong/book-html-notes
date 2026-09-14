@@ -1,0 +1,59 @@
+      margin-top: 32px;
+      padding-top: 8px;
+    }
+    footer {
+      margin-top: 28px; color: var(--muted);
+      font-size: 13px; text-align: center;
+    }
+    footer a { color: var(--gold-soft); }
+    @media (max-width: 560px) {
+      article.story { padding: 20px 16px 12px; }
+      .wrap { padding: 24px 14px 60px; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="lang-switch" aria-label="语言">
+        <a class="active" href="dupont-formula-zh.html">中文</a>
+        <a href="dupont-formula-en.html">English</a>
+      </div>
+      <div class="badge">故事导读 · 据公开试读改写 · 场外研究补充</div>
+      <h1>杜邦公式</h1>
+      <p class="subtitle">《乱世华尔街》第五章「杜邦公式」· 渔阳 · 故事改写 + 脚注研究</p>
+      <div class="note">
+        下面按作者经历与寓言顺序讲述本章故事，用自己的话改写，方便跟读；不是全书/全章原文照搬。脚注、配图与知识图谱为场外公开资料补充。「鲁西银行 / Lucy Bank」「超盛 / Hyper Goldman」等为书中化名或寓言名。完整内容请读正版。
+      </div>
+      <nav class="toc" aria-label="章节导航">
+        本节导览
+        <ul>
+          <li><a href="#s1">2006：市政台的狂欢与学徒梦</a></li>
+          <li><a href="#s2">三个人为何能赚这么多？</a></li>
+          <li><a href="#s3">寓言：超盛证券的董事会</a></li>
+          <li><a href="#s4">杜邦公式上黑板</a></li>
+          <li><a href="#s5">微软模式：高利润率的人工业务</a></li>
+          <li><a href="#s6">沃尔玛模式：ABS/CDO 仓库周转</a></li>
+          <li><a href="#s7">华尔街模式：杠杆冲向 20% ROE</a></li>
+          <li><a href="#s8">ROE 军备赛与「巨型对冲基金」论</a></li>
+          <li><a href="#s9">格林斯潘、廉价流动性与奖金短视</a></li>
+          <li><a href="#s10">十亿美元市政账本与隔夜回购</a></li>
+          <li><a href="#s11">短端结构、套保与二十一点类比</a></li>
+          <li><a href="#s12">模型幻觉与压缩的 CDS 溢价</a></li>
+          <li><a href="#s13">平静海面：CDXIG 33–40bp</a></li>
+          <li><a href="#diagrams">人物关系 / 时间线 / 知识图谱</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER FIVE · 杜邦公式</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/New_York_Stock_Exchange_July_2011.jpg" alt="纽约证券交易所外景" loading="lazy" />
+        <figcaption>纽约证券交易所外景——投行把 ROE 写进董事会语言的城市坐标。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">2006：市政台的狂欢与学徒梦</h2>
+      <p>2006 年，鲁西银行市政债交易台的利润数字听起来不像「三个人的小作坊」，更像一台开足马力的印钞机：按作者的叙事量级，台子每月能贡献以百万美元计的赚头。Vince 与 Roger 高兴得像刚打完一场大胜仗；学徒站在旁边，心里却悄悄演练另一出戏——有朝一日自己坐上资深席，屏幕、额度与奖金曲线都写着自己的名字。</p>
