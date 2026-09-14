@@ -1,0 +1,25 @@
+        A chronological retelling of the author’s desk experience and the late-autumn 2007 tape, in original phrasing for study—not a verbatim dump of the book. Footnotes, figures, and diagrams add public off-book context. Names such as “Lucy Bank” are literary stand-ins. Read the official edition for the full text.
+      </div>
+      <nav class="toc" aria-label="Section guide">
+        In this chapter
+        <ul>
+          <li><a href="#s1">Late-October double top: buyers hibernate</a></li>
+          <li><a href="#s2">Citi and Merrill: megabank writedowns</a></li>
+          <li><a href="#s3">Why them: supermarket bank and First Franklin</a></li>
+          <li><a href="#s4">Hyper Goldman Act II: three endings</a></li>
+          <li><a href="#s5">Dark cave: who will be Cao, Liu, Sun?</a></li>
+          <li><a href="#diagrams">Maps / timeline / knowledge graph</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER TEN · Ambush from Ten Sides</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Citigroup_Center.jpg" alt="Citigroup Center" loading="lazy" />
+        <figcaption>Citigroup Center (New York)—by late autumn 2007, writedowns had raced from the periphery into core balance sheets. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">Late-October double top: buyers hibernate</h2>
+      <p>In late October 2007, the chill of the equity double top seeped onto the desk. Screens still looked “healthy,” but the texture of two-way markets had changed: bid lists grew longer while real buyers hibernated—calls went out and came back as watchful silence.</p>
+      <p>The “lucky” Tennessee housing bond flipped into regret: marks moved the wrong way, and a stop-loss was nothing like cutting Multso rice. Housing credit was thin; counterparties scarce; selling into that void could itself become a second shock.</p>
