@@ -1,0 +1,31 @@
+      <p>真正把「危机似乎过去」撕开的，是核心银行的减记：花旗量级约 100 亿美元、美林量级约 94 亿美元的资产减记与损失预期，把战火从外围重新点回华尔街心脏。<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a></p>
+      <p>传导路径不再模糊：先是边缘机构与按揭管道承压，再是对冲基金被迫降杠杆、甩卖，最后冲击核心商业银行与投行的仓库与 CDO 存货。屏幕上的指数还可以假装平静；损益表与估值备注已经开始流血。</p>
+
+      <div class="scene">
+        外围着火时，核心还能讲「可控」；当花旗与美林同时报出十亿级减记，叙事本身就成了燃料。
+      </div>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ 花旗 / 美林 2007 年末减记浪潮</strong>
+          2007 年深秋至年末，花旗集团多次上调与次级、CDO 相关的损失与减记预期（公开报道与公司披露中出现约数十亿至逾百亿美元量级的调整）；美林同期在固定收益与 CDO/次级敞口上连续加大减记（第三季已报约 79 亿美元量级，后续季度继续扩大）。市场把「核心投行/全能银行同时爆表」读成危机第二波——本章书中约 ~$10B / ~$9.4B 的量级，对应那一波「十亿级减记重燃战火」的叙事锚点，而非单一 8-K 的精确一行。
+          <div class="why">为何重要：把「皮肤健康」叙事打回「器官出血」——核心银行减记是合围信号。</div>
+          <div class="src">来源：花旗 / 美林 2007 季报与新闻稿；Reuters / 当代财经报道对减记浪潮的综述</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">为何是他们：超市银行与 First Franklin</h2>
+      <p>为什么偏偏是花旗与美林最先在公众视野里「炸开」？作者给出结构答案：花旗像金融超市——零售、批发、投行管道一应俱全，仓库里堆着待分销的住房相关存货与 CDO 敞口，一旦估值模型改写，减记就从「管道」直接写进集团损益。<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a></p>
+      <p>美林则在 2006 年 9 月前后买下 First Franklin——把次级发放能力并进自己的证券化机器，想垂直整合「源头贷款 → 打包 → 分销」。垂直整合在牛市是效率；在崩盘里是把毒素直接焊进资产负债表。<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a></p>
+      <p>「有毒资产 / toxic waste」从此进入日常口语：不是实验室词，而是交易员对卖不掉、估不清、却还挂在账上的结构化残渣的骂名。<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a> 华盛顿互惠（WaMu）、瑞银（UBS）、苏格兰皇家银行（RBS）等名字也开始在同一张伤亡名单上出现。美林相关 CDS 利差一度被市场传唱到约 500 个基点附近——保险成本本身成了恐惧指数。<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a></p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Merrill_Lynch_HQ_4_WFC.jpg" alt="美林总部外观" loading="lazy" />
+        <figcaption>美林（纽约）——First Franklin 垂直整合的牛市逻辑，在熊市变成减记机器。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        超市银行怕仓库；垂直整合怕源头——两者同时爆仓时，「有毒」就从形容词变成会计科目。
