@@ -1,0 +1,42 @@
+hourly rate, and harvested before the crowd leveled up.</p>
+      <p>He also trained himself to read people: recreational players with strong hands often play too tight, terrified of letting a cooked duck fly; when losing, they press bets trying to get even, ignoring stops. He forced the opposite: never risk what he could not afford to lose; leave at a loss limit; judge process over single outcomes; trust skill, probability, and risk control — not luck.</p>
+      <p>After enough gambling — and enough biographies of star traders and fund managers — he concluded: people who can truly beat casinos should usually walk away. The same brain, applied to a real profession, usually builds more. The highest form of gambling is not gambling. His green card finally arrived; he washed his hands and applied to business school.</p>
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ Mid-2000s Texas Hold’em / online poker boom</strong>
+          Around 2003, WSOP TV with hole-card cameras entered living rooms; stories like Chris Moneymaker’s amateur win flooded PartyPoker, Full Tilt, and peers with new players. No-limit Hold’em and Sit &amp; Go tournaments iterated fast; early grasp of ICM and multi-table efficiency bought a brief information edge. After the U.S. UIGEA (2006), the dollar-player ecosystem shrank sharply and the boom shifted.
+          <div class="why">Why it matters: “easiest money in a new game” maps onto markets’ new products and regulatory vacuums — learn-while-playing windows close fast.</div>
+          <div class="src">Source: public WSOP / online-poker histories; UIGEA 2006 background</div>
+        </div>
+      </div>
+      <hr class="divider" />
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sather_tower-Berkeley-cropped.jpg" alt="Sather Tower, UC Berkeley" loading="lazy" />
+        <figcaption>Sather Tower (Campanile) at UC Berkeley — campus landmark with Bay Area views. Source: Wikimedia Commons (CC BY-SA 4.0)</figcaption>
+      </figure>
+      <h2 id="s5">Berkeley: a one-year financial engineering master’s</h2>
+      <p>Those years, mathematical models were fashionable in finance; “financial engineering” became the crossroads of finance, math, and computing. UC Berkeley’s program billed itself as the nation’s best, a master’s in one year — ideal for career switchers<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a>. It was his first choice.</p>
+      <p>The degree sat in the business school, so the GMAT mattered<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a>. Standardized tests suited him: one option is right; combine context with the examiner’s psychology — easier than Hold’em. After the last question, the screen showed 790. Stacked with CFA Level III already passed, he felt Berkeley was nearly certain.</p>
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/GoldenGateBridge-001.jpg" alt="Golden Gate Bridge" loading="lazy" />
+        <figcaption>Golden Gate Bridge — the Bay image often visible from Berkeley’s hillside campus. Source: Wikimedia Commons</figcaption>
+      </figure>
+      <p>The campus sits on a coastal hillside; the campanile looks toward the Golden Gate and the Pacific. Fresh from New York noise, he felt dropped into a sanctuary. It was a Nobel-dense university and a strongly left-leaning place: fewer Stars and Stripes, more anti-war, anti-Bush, and green marches, plus a nearby People’s Park. The business school was the suit-and-tie enclave — future mainstream professionals rushing past with notebooks and buzzwords. He studied hard between classrooms and the library.</p>
+      <div class="footnotes" id="fn-block-5">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ Berkeley MFE: a quant fast lane inside a business school</strong>
+          Haas’s Master of Financial Engineering (MFE) launched around 2001 — among the earlier U.S. MFE degrees fully housed in a business school (organizers included David Pyle, Linda Kreitzman, Gifford Fong, and others). Roughly one intense year: stochastic calculus, derivatives, programming, internships and placement toward quant research, risk, trading support, and fintech. For applicants with work experience who need a quick front-office pivot, the short duration is itself the product.
+          <div class="why">Why it matters: he chose one year over a two-year MBA because the green-card delay had already burned so much opportunity cost.</div>
+          <div class="src">Source: UC Berkeley News (2000-11-15); Haas MFE site; Poets&amp;Quants interview with Linda Kreitzman</div>
+        </div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ GMAT and CFA: two different ability signals</strong>
+          The GMAT is the common business-school entrance exam (verbal, quant, analysis, writing); high scores are hard currency for admissions. The CFA is a professional path — three levels covering ethics, portfolio management, fixed income, equities, derivatives, and more. Slow, but it signals to employers: “I actually studied investments.” Showing a 790 GMAT plus CFA III is a test-strong applicant speaking two languages at once: schools hear GMAT; Wall Street hears CFA.
+          <div class="why">Why it matters: explains the “near-certain admit” confidence — on a quant career-switch track, that stack is strong.</div>
+          <div class="src">Source: public GMAT / CFA Institute descriptions</div>
+        </div>
+      </div>
+      <h2 id="s6">Professor Rubinstein — and the last promise</h2>
+      <p>Finance opened by putting star professor Mark Rubinstein on “financial products.” Young, he had helped popularize binomial option pricing; without a mid-career commercial stumble, a Nobel conversation might have been closer. In the mid-1980s Wall Street raced through innovation. Rubinstein and two other professors founded a firm and sold “portfolio insurance” rooted in option theory<a class="fn-link" href="#fn8"><sup class="fn">⁸</sup></a>: use index futures to synthesize a protective put — ride bulls without missing them, cap losses in bears. The strategy boomed. Then came October 1987’s Black Monday: the Dow fell about 22% in a day; believers dumped futures into the slide and amplified the crash. Congressional scrutiny followed. They were not cast 
