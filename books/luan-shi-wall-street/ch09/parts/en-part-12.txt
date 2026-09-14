@@ -1,0 +1,26 @@
+      <p>The author’s desk mandate had not flipped to defense: management still wanted the municipal housing book grown. In October, a bid-wanted showed Tennessee AAA housing-related paper around 4.50%. First try felt like a coin flip—he lost. Soon another ~$10 million of similar bonds appeared; he bought.</p>
+      <p>In hindsight that bond would ride the entire crisis—luck at the time, and also a warning: in the month when “the crisis seemed past,” long-duration housing credit was still being stuffed onto balance sheets, and a buyer’s “good luck” often meant carrying the risk longer.</p>
+
+      <div class="scene">
+        Lose one coin flip, win the next—on the tape it looks like execution; on the ledger it can look like buying a ticket for the whole crisis early.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s8">Calm after battle = reserves spent</h2>
+      <p>The quiet of late summer into fall felt like the hush after a fight: guns stop not because the enemy is gone, but because the reserves are spent. The author reaches for autumn 1942 at Stalingrad—the alleyway lull while an encirclement is already closing.<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a></p>
+      <p>Discount signal, strong hands, equity highs, housing bonds still scaling: each looks like proof the crisis is past; together they look more like the illusion before the ring closes. The next chapter asks not when skin flushes again, but when bone and organ fracture in public.</p>
+
+      <div class="scene">
+        Post-battle quiet is the most dangerous: you misread spent ammunition as victory, and encirclement as a truce.
+      </div>
+
+      <hr class="divider" />
+
+      <section class="diagrams-section" id="diagrams">
+        <h2>Maps / timeline / knowledge graph</h2>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Relationship map: run → Fed signal → strong hands → skin/bone split</div>
+          <div class="mermaid">
+flowchart LR
