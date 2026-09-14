@@ -1,0 +1,14 @@
+      <p>The answer is not “three geniuses.” It is the investment bank’s revenue mix: traditional IB (M&amp;A advisory, ECM/DCM underwriting), market-making and sales &amp; trading, plus shadow-banking securitization pipelines, plus a growing pile of principal / proprietary investing<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a><a class="fn-link" href="#fn2"><sup class="fn">²</sup></a>.</p>
+      <p>The muni desk is one cut of that pie. It drinks cheap liabilities, inventory spreads, and sometimes the turnover speed tangled up with structuring and repo finance. Three heads look small; behind them sit the firm’s balance sheet, sales franchise, and funding pipes.</p>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ IB revenue mix: IB + market-making + securitization + prop</strong>
+          Pre-crisis bulge-bracket P&amp;L was rarely a single engine: advisory and underwriting, sales &amp; trading / market-making, securitization and structured credit, and principal/prop books. Public filings split the lines; desk life often blends them — leftover underwriting bonds enter inventory, inventory is repo-levered, warehouses accelerate turnover into ROE.
+          <div class="why">Why it matters: “three people, huge P&amp;L” is the balance sheet talking, not a magic trick.</div>
+          <div class="src">Source: pre-crisis bank segment disclosures; S&amp;T / securitization primers</div>
+        </div>
+        <div class="fn-item" id="fn2">
+          <strong>² Shadow banking</strong>
+          Shadow banking intermediates credit outside the classic deposit–loan model — via securitization, repo, money-market funds, SIVs, and similar short-term funding. It can boost turnover and leverage while parking liquidity risk in “must-roll-every-night” finance. Much of 2007–08’s run happened in repo and ABCP pipes, not teller lines.

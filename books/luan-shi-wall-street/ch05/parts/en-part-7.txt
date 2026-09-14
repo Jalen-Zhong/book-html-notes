@@ -1,0 +1,24 @@
+          <div class="why">Why it matters: warehouses, SIVs, and overnight repo later in the chapter ride this track.</div>
+          <div class="src">Source: NY Fed / FSB definitions and crisis retrospectives</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">Allegory: Hyper Goldman’s board</h2>
+      <p>To make ROE human, the author stages a Wall Street animal fable: “Hyper Goldman Securities” (超盛). CEO Ox runs the firm; advisor Pig claims to be great at math — and mostly means arithmetic. Around them: the IB lead, capital markets, a securitization star, a prop-investing chief, and traders who, once big enough, leave for hedge funds.</p>
+      <p>The board does not grade Ox on storytelling. The ruler is ROE. Pig therefore walks to the blackboard.</p>
+
+      <div class="scene">
+        Hyper Goldman is not a courtroom transcript of one real bank; it is theater — Pig’s arithmetic for laughs, the board’s ROE obsession for the sting.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s4">DuPont on the blackboard</h2>
+      <p>Pig writes the DuPont breakdown: take “are we earning enough on equity?” and factor it into three manageable multiplications — profit margin × asset turnover × financial leverage<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a><a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a>. Raise any factor, and ROE rises; the industry’s arms race is really a race over which factor still has room.</p>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ ROE (Return on Equity)</strong>
