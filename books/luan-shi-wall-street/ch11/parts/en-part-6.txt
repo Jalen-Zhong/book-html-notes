@@ -1,0 +1,14 @@
+          In Greek myth, Thetis dipped Achilles in the river Styx to make him invulnerable, holding him by the heel—the one spot left dry. An arrow later found that spot. “Achilles’ heel” became the English idiom for a fatal, hidden weakness in an otherwise strong system. This chapter maps it onto Wall Street: Greek-letter risk models as armor; wholesale short-term funding dependence as the heel.
+          <div class="why">Why it matters: separates “sophisticated risk management” from “must refinance every day”—the latter snaps first in a crisis.</div>
+          <div class="src">Sources: classical myth tradition and English idiom usage; crisis literature on wholesale funding fragility</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">Money markets and repo: the blood circulation</h2>
+      <p>Money-market funds were sold as cash-first products: protect principal, stay liquid, skim a little yield.<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a> They bought commercial paper, repo, and short paper, pumping household and corporate cash into the wholesale machine. Repo was Wall Street’s blood circulation: securities for cash today, reverse tomorrow; the <strong>haircut</strong> set how much cushion the cash lender demanded.<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a></p>
+      <p>On the Lucy Bank desk, a live example: counterparties hiked haircuts and pushed funding toward federal funds plus about 20 basis points. Small number, cold tone—“blank-check” relationships were tightening. The overlooked repo desk that used to joke about “lots of cash on the sidelines” suddenly found <strong>no cash on the sidelines</strong>.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/New_York_Stock_Exchange_2003.jpg" alt="New York Stock Exchange exterior" loading="lazy" />

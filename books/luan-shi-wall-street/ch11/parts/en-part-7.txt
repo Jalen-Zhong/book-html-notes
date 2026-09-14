@@ -1,0 +1,19 @@
+        <figcaption>Near the New York Stock Exchange—under the public roar, repo and money markets roll overnight life-support. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        When the repo desk is ignored, everyone laughs that cash is plentiful; when it matters, the joke has already expired.
+      </div>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn2">
+          <strong>² Money-market funds</strong>
+          Open-end funds that invest mainly in high-quality, short-duration instruments (Treasuries, commercial paper, repo, etc.), aiming for stable NAV, cash-like liquidity, and a yield edge over deposits. In 2007–08 some funds strained on ABCP and related paper; the September 2008 Reserve Primary Fund “break the buck” episode later became a confidence landmark (slightly after this chapter’s core window, same mechanism).
+          <div class="why">Why it matters: they are the pipes that look like cash—when the pipes clog, wholesale funding loses oxygen.</div>
+          <div class="src">Sources: SEC / ICI explainers on money-market funds; crisis histories of 2007–08 short-end runs</div>
+        </div>
+        <div class="fn-item" id="fn3">
+          <strong>³ Repo haircuts</strong>
+          In a repurchase agreement, the cash lender typically advances less than the collateral’s face or market value; the percentage gap is the haircut. Higher haircuts mean less cash against the same bonds—forced de-leveraging. In the crisis, on-the-run Treasuries often kept easier terms while housing-related collateral saw haircuts explode or bids refused—the same “bloodstream” sorted by collateral quality and expelled the weak.
+          <div class="why">Why it matters: haircuts are the invisible leverage dial—tightening them kills positions faster than a downgrade.</div>

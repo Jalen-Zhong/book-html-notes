@@ -1,0 +1,20 @@
+          <div class="src">Sources: New York Fed explainers on tri-party repo and haircuts; crisis accounts of 2007–08 haircut differentiation</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">Pre-crisis: low haircuts and pass-the-parcel</h2>
+      <p>Before the break, markets were trained on optimism: even weaker collateral could clear at thin haircuts. Structured short-term funding—asset-backed commercial paper (ABCP), structured investment vehicles (SIVs), and municipal tender-option-bond (TOB) structures—worked like repo in spirit: short money rolling long assets, surviving on continuous rollover and the appearance of safety.<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a></p>
+      <p>The author frames those months as pass-the-parcel: everyone assumed the next hand would take the package; when the music stopped, whoever held the paper discovered they were not a passer-by but an owner.</p>
+
+      <div class="scene">
+        Low haircuts were the bull market’s hymn; pass-the-parcel was its etiquette—both assumed tomorrow’s liquidity would still show up.
+      </div>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ ABCP / SIV / TOB: repo-like structured short funding</strong>
+          <em>ABCP</em> is short paper issued by conduits against loans, receivables, or securitized assets; <em>SIVs</em> funded longer credit assets with short debt/ABCP and lived on rollover; <em>TOB</em> structures split long municipal bonds into floating-rate certificates and residual pieces, with the short end dependent on liquidity and bank support. In 2007–08, when buyers stepped away or demanded wider spreads, these pipes contracted and risk returned to sponsor banks’ balance sheets.
+          <div class="why">Why it matters: proves “short funding long assets” was not only classic repo—the heel wound was a whole short-funding web.</div>
