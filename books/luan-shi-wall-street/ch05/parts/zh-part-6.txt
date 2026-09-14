@@ -1,0 +1,13 @@
+      <p>答案不在「三个人特别聪明」这一句里，而在投行收入结构的拼盘：传统投行业务（并购顾问、股票与债券承销 ECM/DCM）、做市与销售交易，再加上影子银行式的证券化流水线，以及越来越重的自营/主体投资（principal / prop）<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a><a class="fn-link" href="#fn2"><sup class="fn">²</sup></a>。</p>
+      <p>市政台只是拼盘上的一块肉：它吃得到便宜负债、吃得到库存价差，有时也吃得到与结构化、回购融资缠在一起的「周转速度」。三个人看起来少，背后却是整家银行的资产负债表、销售渠道与融资管道在给他们「续命」。</p>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ 投行收入拼盘：IB + 做市 + 证券化 + 自营</strong>
+          危机前大型投行/全能银行的收入通常不是单一来源：顾问与承销（传统 IB）、销售交易与做市、资产证券化与结构化信用，以及用自有资本做的主体投资/自营。公开年报里这些条线常分列，但台上的日常 P&amp;L 往往互相渗透——承销剩券进库存、库存用回购加杠杆、证券化「仓库」又把周转速度写进 ROE。
+          <div class="why">为何重要：解释「三个人赚大钱」不是魔术，是机构资产负债表的投影。</div>
+          <div class="src">来源：大型投行危机前业务分部披露；行业对 S&amp;T / securitization 的通识记述</div>
+        </div>
+        <div class="fn-item" id="fn2">
+          <strong>² 影子银行（shadow banking）</strong>
