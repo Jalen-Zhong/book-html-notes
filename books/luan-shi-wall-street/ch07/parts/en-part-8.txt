@@ -1,0 +1,24 @@
+          Tranching reallocates a pool’s cash flows by loss-absorption order: equity burns first, seniors last, reshaping heterogeneous risk into differently rated bonds. Collateralized debt obligations (CDOs) often remortgage MBS, loans, or other debt and tranche again. Ratings, models, and “historical default rates” propped up the AAA story for senior slices—until correlated defaults and downgrades arrived together.
+          <div class="why">Why it matters: technical core of the “interlocking stratagem”—risk is renamed and resold, not erased.</div>
+          <div class="src">Sources: structured-credit primers; post-crisis public postmortems on tranching/CDOs</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s4">Interlocking ships: where is the east wind?</h2>
+      <p>The chapter’s title image comes from the Romance of the Three Kingdoms interlocking-ships stratagem: chain the fleet for steadier decks—and turn a single fire into a systemic blaze. Subprime loans, MBS, CDOs, wrappers, and funding pipes locked together. While prices rose, everyone praised the calm; few urgently asked: when winter comes, where is the east wind?</p>
+      <p>Systemic risk and contagion were named, then waved away by the house-price trend. The tighter the chains, the harder for any one ship to flee alone.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Red_Cliffs.jpg" alt="Image related to the Battle of Red Cliffs" loading="lazy" />
+        <figcaption>Red Cliffs imagery — chained ships look like strength in fair wind and like amplifiers in fire. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        In markets the “east wind” is not poetry: it is liquidity, refinance exits, and house prices turning at once.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">Dose: useful securitization, excess chaining</h2>

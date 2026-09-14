@@ -1,0 +1,16 @@
+      <p>The author reaches for a dose metaphor: securitization is medicine—useful in moderation to move credit risk to those who can bear it; toxic in excess when the same risk is repackaged again and again. CDOs-squared took already-sliced mezzanine and sliced it once more, farther from the original borrower, while models still printed “acceptable” default correlations<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a>.</p>
+      <p>The chain was institutional as well as product: banks, raters, insurers, money funds, and cross-border buyers on the same deck. Global finance became mutually collateralized planking—admired as engineering until the screws proved shared.</p>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">Footnotes</div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ CDOs-squared (CDO²)</strong>
+          CDOs collateralized by other CDO tranches (often mezzanine). They lengthen the distance from end-investor to original mortgage and are hypersensitive to default-correlation assumptions: when underlying defaults become correlated, multiple “senior” stories can fail together. Crisis literature treats them as a specimen of structured-credit over-engineering.
+          <div class="why">Why it matters: separates useful securitization from excess interlocking—medicine versus overdose.</div>
+          <div class="src">Sources: structured-credit crisis postmortems; standard definitions of CDO²</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">Christmas 2006: record bonuses, tiny price dip</h2>
