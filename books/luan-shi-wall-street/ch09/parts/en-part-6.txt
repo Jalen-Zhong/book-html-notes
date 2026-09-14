@@ -1,0 +1,18 @@
+      <p>To explain why only the Fed can “add water,” the author rewinds to the Panic of 1907: trust-company runs, a broken clearing chain, and J.P. Morgan locking Wall Street’s chiefs inside his library to improvise a temporary central bank with private capital and personal authority.<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a></p>
+      <p>That library rescue fed the Federal Reserve Act of 1913: a public–private hybrid—a bankers’ bank with what we now call a dual mandate. It is not an ordinary commercial bank, yet it owns the system’s liquidity backstop.<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a></p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Morgan_Library_entrance_building_and_library_annex.jpg" alt="Morgan Library exterior" loading="lazy" />
+        <figcaption>The Morgan Library (New York)—stage of the 1907 private rescue; six years later the Fed was legislated. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        1907 stitched cracks with private authority; after 1913, stitching was supposed to be institutional—until shadow banking grew cracks outside the charter again.
+      </div>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ Panic of 1907</strong>
+          In autumn 1907, cascading runs on New York trust companies and brokerages nearly froze equities and money markets. J.P. Morgan convened bankers at his Madison Avenue library, coordinating liquidity pools and stopgaps as a de facto lender of last resort. Reform pressure produced the National Monetary Commission and, ultimately, the 1913 Federal Reserve System.
+          <div class="why">Why it matters here: welds the “summer storm” to the Fed’s origin myth—private rescue was not enough.</div>
