@@ -1,0 +1,97 @@
+ id="fn9">
+          <strong>⁹ CFA：三级考试的「投资学通行证」</strong>
+          特许金融分析师（CFA）由 CFA Institute 主办，通常分三级：一级夯实术语与工具，二级强调资产估值应用，三级侧重组合管理与实务整合（近年三级还引入不同专业路径）。通过考试、满足工作经验后可成为特许持证人。对买债、利率、组合岗位，CFA 常被当作「我认真啃过投资学」的外部信号——作者在伯克利阶段已考过三级，与 Rick 的债券话题正好同频。
+          <div class="why">为何重要：解释为何招聘会上「CFA + 债券」能迅速建立共同语言；也回扣第一章的能力信号叙事。</div>
+          <div class="src">来源：CFA Institute 项目公开介绍</div>
+        </div>
+        <div class="fn-item" id="fn10">
+          <strong>¹⁰ 2005 年前后的银行自营交易</strong>
+          金融危机前，大型投行与商业银行普遍设有自营交易台：用银行资本做方向性或相对价值交易，成功交易员可按利润分成拿到高额奖金，台子相对独立。2005 年招聘市场仍把 prop 视为「聪明人的游乐场」。2008 年后监管收紧，美国《多德—弗兰克》下的沃尔克规则显著限制存款机构自营交易，许多 prop 台迁往对冲基金或关闭。读本章时要记住：作者遇见的「露西银行」自营座位，属于前沃尔克时代的物种。
+          <div class="why">为何重要：没有这个时代坐标，就读不懂他为何觉得自营比策略组更像「从赌场升维的正业」。</div>
+          <div class="src">来源：eFinancialCareers 2004–05 自营薪酬/文化报道；沃尔克规则通识背景</div>
+        </div>
+      </div>
+
+      <div class="diagrams-section" id="diagrams">
+        <h2>人物 · 时间线 · 知识图谱</h2>
+        <p style="color:var(--muted);font-size:14px;">以下图表用 Mermaid 渲染，帮助把本章人物关系、作者路径与核心概念串起来（非书中原图）。</p>
+        <div class="mermaid-wrap">
+          <div class="caption">图 A · 作者旅程：高盛实习 → 合规震撼 → NYU → 自营吸引</div>
+          <pre class="mermaid">
+timeline
+    title 渔阳路径（本章叙事）
+    section 入职高盛
+      2005秋 IBD Strategies : 特种部队文化与 J.Aron 血统
+      工具与交付 : SecDB / 叙事 / Jerry
+    section 信息边界
+      电梯八卦事件 : MNPI 与合规教育
+      Archipelago 争议 : 双边顾问公开课
+      基恩后来 : 内幕交易反面教材
+    section 年末转向
+      奖金季与圣诞派对 : 感到火力不足
+      NYU 招聘会 : 遇见 Rick 与露西银行
+      自营利率吸引 : CFA 与债券共同语言
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">图 B · 人物 / 机构关系图</div>
+          <pre class="mermaid">
+flowchart TD
+    A["作者 渔阳"] --> B["高盛 IBD Strategies"]
+    B --> C["Jerry\nJ.Aron 线 / 合伙人轨道"]
+    B --> D["教授出身 MD\n客户叙事"]
+    B --> E["SecDB / 内部工具"]
+    A --> F["基恩 Keen\n伯克利面试官"]
+    F -.->|"后来涉内幕交易"| W["警告：别跟着走"]
+    B --> G["合规教育\n电梯八卦"]
+    H["NYSE–Archipelago\n双边顾问争议"] -.->|"公开课"| G
+    A --> I["NYU 招聘会"]
+    I --> J["Rick\n露西银行自营/利率"]
+    J --> K["CFA / 债券共同语言"]
+    J --> L["Prop desk 吸引"]
+    M["Blankfein / J.Aron 血统"] -.->|"风险胃口"| B
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">图 C · 知识图谱：文化 / 工具 / 合规 / 职业分叉</div>
+          <pre class="mermaid">
+flowchart LR
+    CULT["Because we are Goldman"] --> BONUS["创纪录奖金"]
+    CULT --> CUT["末位约5%"]
+    PART["1999 IPO 后合伙人阶梯"] --> CULT
+    SEED["SecDB"] --> RISK["定价与风险聚合"]
+    NAR["客户叙事"] --> IBD["投行交付物"]
+    MNPI["重大非公开信息"] --> COMP["合规边界"]
+    COMP --> PHONE["电话优于邮件"]
+    ARCH["双边顾问冲突"] --> COMP
+    PROP["2005自营台"] --> EDGE["用银行资本交易"]
+    CFA["CFA 固收信号"] --> PROP
+    INTERN["高盛实习光环"] --> DOOR["下一张牌桌的门票"]
+    DOOR --> PROP
+    DOOR --> IBD
+          </pre>
+        </div>
+      </div>
+    </article>
+    <footer>
+      故事导读 · 《乱世华尔街》（渔阳）第二章「高盛实习」<br />
+      据公开试读改写，非原文照搬；脚注为场外研究补充<br />
+      完整原文请支持正版 · 配图见 SOURCES.md ·
+      <a href="goldman-internship-en.html">English edition</a>
+      · <a href="../ch01/casino-to-wall-street-zh.html">← 第一章</a>
+    </footer>
+  </div>
+
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
+  </script>
+
+</body>
+</html>
