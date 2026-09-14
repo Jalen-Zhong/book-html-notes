@@ -1,0 +1,44 @@
+  2007春夏 : 巨型 LBO / 过桥融资
+           : CIC 前身入股黑石
+  2007-06 : 贝尔斯登相关基金告急
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">知识图谱：剂量、锁链与东风</div>
+          <div class="mermaid">
+flowchart TB
+  SEC[证券化适度] --> USE[分散风险]
+  SEC --> OVER[过量再打包]
+  OVER --> CHAIN[CDO → CDO² → 融资链]
+  CHAIN --> SHIPS[连环船隐喻]
+  PRICE[房价上涨叙事] -->|按住| SYS[系统性风险讨论]
+  SHIPS --> FIRE[单船起火 → 传染]
+  BRIDGE[LBO 过桥 / 全球流动性] --> DISTRACT[注意力转向巨额交易]
+  FIRE --> BEAR2[Bear HF 明火]
+  WIND[东风=流动性与再融资转向] --> FIRE
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer>
+      《乱世华尔街》· 渔阳 · 第七章故事导读（原创改写）·
+      <a href="SOURCES.md">SOURCES.md</a> ·
+      <a href="../../index.html">返回目录</a>
+    </footer>
+  </div>
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
+  </script>
+
+</body>
+</html>
