@@ -1,0 +1,51 @@
+      <p>扩张逻辑继续发明新产品：新奇的浮动利率结构、美林等推动的市政相关 CDO。模型输出总是温柔的——为了多赚几个基点，显示的「风险」看起来微不足道。作者的选择是保持距离：不是因为能精确预言崩溃日，而是因为赔率难看。</p>
+      <p>另一边，政府相关发行人用浮动利率债加互换，把资产负债表管理得越来越像对冲基金。发行人不只是借钱修桥修学校，也在交易曲线与基差。整个经济的杠杆感，从华尔街台子蔓延到公共发行人的工具箱。</p>
+
+      <hr class="divider" />
+
+      <h2 id="s11">第一艘着火的船：贝尔斯登对冲基金</h2>
+      <p>2007 年 6 月，与贝尔斯登相关的高评级结构化信用对冲基金陷入困境：次级相关仓位、杠杆与保证金催缴把「高评级」叙事撕开<a class="fn-link" href="#fn9"><sup class="fn">⁹</sup></a>。母公司被迫以数十亿美元量级的救援承诺去挡清算——连环船上，终于有一艘公开着火。</p>
+      <p>到这里，第七章的计中之计收束成一句很冷的话：分层不会取消风险，只会重新排列谁先烧、谁后烧；当房子、融资与相关性一起转向，锁在一起的船，会一起亮。</p>
+
+      <div class="footnotes" id="fn-block-6">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn9">
+          <strong>⁹ 贝尔斯登相关对冲基金危机（2007 年 6 月）</strong>
+          Bear Stearns High-Grade Structured Credit Strategies Fund 与其 Enhanced Leverage 姐妹基金大量持有 CDO/按揭相关结构化信用，并依赖回购等融资。2007 年 6 月，随着次级资产价格下跌与债权人催缴保证金，基金濒临崩溃；贝尔斯登最终承诺最高约 32 亿美元贷款以救援其中一只基金，另一只则走向更深度清算。此事常被看作危机从「放贷商/小型市场」传导到「华尔街核心融资与基金结构」的关键节点。
+          <div class="why">为何重要：本章收束点——连环船的第一场明火。</div>
+          <div class="src">来源：NYT 2007-06-23 等当代报道；危机史对 Bear funds 的标准叙述</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <section class="diagrams-section" id="diagrams">
+        <h2>人物关系 / 时间线 / 知识图谱</h2>
+
+        <div class="mermaid-wrap">
+          <div class="caption">关系图：次级原料 → 分层产品 → 机构与基金</div>
+          <div class="mermaid">
+flowchart LR
+  POL[住房政治推力] --> SUB[次级放贷]
+  GSE[GSE / MBS 成功] --> SUB
+  SUB --> POOL[贷款池]
+  POOL --> TRANCHE[分层 tranching]
+  TRANCHE --> AAA[AAA → 养老金等]
+  TRANCHE --> EQ[股权/夹层 → HF/自营]
+  TRANCHE --> BOOK[残余 → 投行账簿]
+  BOOK --> CDO2[CDO / CDO²]
+  CDO2 --> BEAR[Bear 相关基金 2007.6]
+  HSBC[汇丰 Household] -.-> SUB
+  NC[新世纪] -.-> SUB
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">时间线：从盛宴到第一艘着火的船</div>
+          <div class="mermaid">
+timeline
+  title 连环计时间线
+  2006末 : 派对对比 · 创纪录奖金
+         : 房价微跌几乎无人在意
+  2007-02 : 汇丰 Household 拨备警报
+  2007-04 : 新世纪破产
