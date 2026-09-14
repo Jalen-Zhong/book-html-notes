@@ -1,0 +1,26 @@
+        A chronological retelling of the author’s desk experience and the autumn-2007 market tape, in original phrasing for study—not a verbatim dump of the book. Footnotes, figures, and diagrams add public off-book context. Names such as “Lucy Bank” are literary stand-ins. Read the official edition for the full text.
+      </div>
+      <nav class="toc" aria-label="Section guide">
+        In this chapter
+        <ul>
+          <li><a href="#s1">Summer storm = a bank run</a></li>
+          <li><a href="#s2">Panic of 1907 and the Fed’s birth</a></li>
+          <li><a href="#s3">August 17: the discount-rate signal</a></li>
+          <li><a href="#s4">Strong hands: Citadel, BofA, the bounce</a></li>
+          <li><a href="#s5">Moral hazard: Uncle Sam as backstop</a></li>
+          <li><a href="#s6">October 9: healthy skin, cracked bones</a></li>
+          <li><a href="#s7">Tennessee housing bonds: a coin-flip warning</a></li>
+          <li><a href="#s8">Calm after battle = reserves spent</a></li>
+          <li><a href="#diagrams">Maps / timeline / knowledge graph</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER NINE · THE CRISIS SEEMS PAST</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal-reserve-33-liberty.jpg" alt="New York Fed building" loading="lazy" />
+        <figcaption>New York Fed (33 Liberty)—after the summer storm, the Street watched whether the bankers’ bank would refill the pipes. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">Summer storm = a bank run</h2>
