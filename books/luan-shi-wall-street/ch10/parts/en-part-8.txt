@@ -1,0 +1,12 @@
+          In September 2006 Merrill agreed to buy National City’s First Franklin origination franchise and related servicing for about $1.3 billion, plus a separate purchase of billions in First Franklin–originated loans—aimed at feeding non-prime product into CDO/securitization lines. The deal closed near the subprime cycle’s crest; origination and warehouse exposure later fed Merrill’s 2007–08 writedowns and shrinkage, and First Franklin was eventually shuttered.
+          <div class="why">Why it matters: “why Merrill” was not bad luck—it was late-cycle vertical integration welding toxin into its own pipe.</div>
+          <div class="src">Sources: National City / Merrill 5 Sep 2006 press materials and SEC exhibits; LA Times / HousingWire follow-ons</div>
+        </div>
+        <div class="fn-item" id="fn3">
+          <strong>³ Bank CDS spreads and the ~500 bp fear reading</strong>
+          Credit-default-swap spreads price the annualized cost of insuring an issuer’s debt (in basis points). From late 2007 into 2008, large bank and dealer CDS widened sharply; names like Merrill were routinely cited in the hundreds of bps (the book’s ~500 bps as a fear anchor). Spreads fed back into funding costs, counterparty limits, and confidence that short-term debt could still roll.
+          <div class="why">Why it matters: equities are skin; CDS is closer to whether the market is already pricing organ failure.</div>
+          <div class="src">Sources: standard crisis histories of bank CDS widening; Bloomberg / contemporaneous credit-market reporting</div>
+        </div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ “Toxic assets / toxic waste” enters the vernacular</strong>
