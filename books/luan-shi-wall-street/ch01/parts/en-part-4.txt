@@ -1,0 +1,47 @@
+as villains of the state, but reputations darkened; Rubinstein returned to Berkeley teaching. The author highlights the episode because similar model failures recur in later crises.</p>
+      <p>After that history, the professor had little appetite for teaching mid-career “speculators.” Lectures often circled old grievances or aged notes whose freshest examples stopped in 1987. Students skipped; he answered with pop quizzes. Two terms passed in that tug-of-war. Before the final class he kindly warned: there <em>would</em> be a quiz next time. Bleary classmates arrived on time. No quiz. When they accused him of breaking his word, he smiled and delivered the most useful line of both semesters:</p>
+      <div class="scene">
+        “The last promise, is the only one you can break.”
+      </div>
+      <p>It hit hard: on the bright side, business needs trust — break it once and people walk; on the dark side, someone who spends years building credibility for a final grab… he had heard Chinese merchants burn that way too. Worth remembering.</p>
+      <div class="side-panel">
+        <h3 class="panel-title">Macro waypoints mentioned in the chapter</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">Oct 1987</div><div class="ev">Black Monday: Dow ~−22%; portfolio insurance under fire</div></div>
+          <div class="event-card"><div class="yr">Aug 1998</div><div class="ev">Russia default &amp; ruble crisis; EM debt crushed</div></div>
+          <div class="event-card"><div class="yr">2001–02</div><div class="ev">Argentina sovereign default; currency board collapse</div></div>
+          <div class="event-card"><div class="yr">Jul 2005</div><div class="ev">RMB reform: ~8.28 → 8.11, basket reference</div></div>
+        </div>
+      </div>
+      <div class="footnotes" id="fn-block-6">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn8">
+          <strong>⁸ Rubinstein, portfolio insurance, and Black Monday</strong>
+          Mark Rubinstein, Hayne Leland, and John O’Brien founded LOR, turning option-replication ideas into portfolio insurance: sell equity-index futures as markets fall; reduce hedges as they rise. On 19 Oct 1987 liquidity vanished and prices gapped; dynamic-hedging assumptions failed. Post-crash inquiries (including the Brady Commission) argued portfolio-insurance selling amplified the drop — not the sole cause. Rubinstein later reflected in the <em>Financial Analysts Journal</em> that low transaction costs and continuous prices both failed that day.
+          <div class="why">Why it matters: the classroom character plants “models break under stress” in chapter one — a trailer for the book’s crisis arc.</div>
+          <div class="src">Source: Hayne Leland / Brady Report overviews; Rubinstein, FAJ 1988; LA Times / SFGate historical reporting</div>
+        </div>
+      </div>
+      <hr class="divider" />
+      <h2 id="s7">A cold start — and a headhunter’s ice water</h2>
+      <p>Most classmates came to Berkeley to land jobs. The most beloved figure was Debbie, who ran financial-engineering placement: tireless, treating employment as priority one, even carving three internship months into a one-year calendar. She networked hard; students trusted she could package them into Wall Street.</p>
+      <p>One day she invited a senior headhunter who had traded at Salomon Brothers<a class="fn-link" href="#fn9"><sup class="fn">⁹</sup></a> — catchphrase: “when I was at Salomon…” After the talk, classmates lined up for résumé reviews. The author’s turn: zero relevant finance experience, big talk about becoming a trader. She left one line — it would take many years before anyone let him touch money. The tone felt like old privilege dismissing an upstart.</p>
+      <p>It proved true: seven or eight banks and funds recruited on campus; none invited him to interview. Discouraged, he complained in Debbie’s office and begged for any placement. She was more confident than he was, eyes bright: opportunities come — when one does, grab it.</p>
+      <div class="footnotes" id="fn-block-7">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn9">
+          <strong>⁹ Salomon Brothers: afterglow of a bond-trading myth</strong>
+          Salomon was once Wall Street’s legendary bond house — mortgages, Treasury auctions, trading-floor culture immortalized in Michael Lewis’s <em>Liar’s Poker</em>. The 1991 Treasury auction scandal damaged the franchise; later Travelers / Citigroup mergers dissolved the independent brand. By the mid-2000s, “when I was at Salomon” was both résumé glow and a badge of a vanished era.
+          <div class="why">Why it matters: explains why one word — Salomon — could dominate a room, and how light a résumé without that pedigree felt to old aristocracy.</div>
+          <div class="src">Source: public Salomon / Citigroup merger histories; cultural impact of Liar’s Poker</div>
+        </div>
+      </div>
+      <hr class="divider" />
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/200_West_Street.jpg" alt="Goldman Sachs headquarters exterior" loading="lazy" />
+        <figcaption>Goldman Sachs headquarters exterior at 200 West Street, Manhattan (a late-2000s landmark). Source: Wikimedia Commons</figcaption>
+      </figure>
+      <h2 id="s8">Goldman arrives: open-net interviews</h2>
+      <p>The first campus interview invite came from — of all places — Goldman Sachs<a class="fn-link" href="#fn10"><sup class="fn">¹⁰</sup></a>. He thought it was a mistake. Why would the firm care about someone with no experience? Debbie explained: two people from Goldman strategies would interview nearly thirty classmates — almost a dragnet. Only later did he grasp Goldman’s approach: cast a wide net. Give a chance to anyone with a spark; whether an offer follows is another question.</p>
+      <p>He went last that day. Interviewer Keen, a Harvard grad, had already grilled people for seven or eight hours and looked exhausted. Half an hour of math, stats, finance, coding, and puzzles. Finally a thin smile: you were the only one who got every question right — wait for the phone round.</p>
+      <p>The phone interview lasted forty-five minutes; one slip and you hang. He prepared: reshuffled the résumé so option-pricing projects sat up front and set a trap. The interviewer walked into the rate model he had rehearsed. He moved from formulas to finance m

@@ -1,0 +1,39 @@
+eaning, from strengths to limits, sounding like he truly knew it. That round passed too.</p>
+      <h2>New York HQ: a two-day marathon</h2>
+      <p>The final battle was at Goldman’s New York headquarters. Fixed Income Strategies and Investment Banking Strategies would each put him through a full day with nine-plus interviewers<a class="fn-link" href="#fn11"><sup class="fn">¹¹</sup></a>. Classic bank style: skills and chemistry. Goldman especially prizes teamwork; a new hire must feel “comfortable” to work with.</p>
+      <p>Day one with Fixed Income Strategies went smoothly. Beyond financial math: lots of probability. Peking University training plus casino miles made coin flips, dice, and cards feel like home forms. There were riddles too — on an island, four identical-looking pills mixed, how do you guarantee one A and one B each day? Answer: quarter every pill; eat one quarter of each daily.</p>
+      <p>Day two was IB Strategies — Keen’s group. Morning flowed. At lunch Keen chatted while sizing him up, then warned kindly: morning looked good; the first afternoon interviewer was senior MD Nick — clear that hurdle and you were basically in.</p>
+      <p>Nick, a professor-turned-banker with a warm smile, wandered topics, then asked: what looks like a good investment now? Open question. Equities felt too ordinary; he needed something fresher. He remembered an emerging-market bond fund he had bought and argued: EM sovereign bonds looked attractive — after the Russia crisis and Argentina’s default<a class="fn-link" href="#fn12"><sup class="fn">¹²</sup></a>, investors were still scared, prices low and yields high; yet the world had shifted, China’s rise lifting commodity prices, resource exporters’ balances improving, debt service easing; commodity investment also brought capital inflows and possible FX upside; recent RMB appreciation was another catalyst<a class="fn-link" href="#fn13"><sup class="fn">¹³</sup></a>. Buy now and you might harvest coupon, price, and currency together.</p>
+      <p>Nick lit up; they debated eagerly. The author guessed Goldman wanted people who could make almost any case coherent. He thought both desks might want him; Fixed Income was closer to the trader dream, IB Strategies’ storytelling not bad either.</p>
+      <h2>Ending: assigned to IB Strategies</h2>
+      <p>Back in California, Debbie was glowing: Goldman Strategies had taken several Berkeley students — unprecedented — and he was wanted by both Fixed Income and IB. Then the formal note: after internal coordination, he was “assigned” to Investment Banking Strategies.</p>
+      <p>Excitement mixed with a little disappointment — abandon the trader ideal to become an investment banker’s strategist? Debbie’s bright eyes held him; he knew there was no choice but to accept the assignment. The Gilded Age opening freezes on that first true step into Goldman’s front-office world.</p>
+      <div class="footnotes" id="fn-block-8">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn10">
+          <strong>¹⁰ Goldman recruiting culture (public view)</strong>
+          Outsiders often describe Goldman as obsessed with cultural fit and “one firm” collaboration: campus coverage can be broad (the author’s “cast a wide net”), but the funnel is steep — technical rounds, cases, behavioral interviews, and Superday cross-checks. Public reporting and alumni talk repeat keywords: smart, hungry, teamwork, and whether colleagues would want to pull an all-nighter with you.
+          <div class="why">Why it matters: “no experience yet still in the open net” is not a contradiction — wide casting is the filter; the real door sits later.</div>
+          <div class="src">Source: public business press on Goldman recruiting culture (no internal documents)</div>
+        </div>
+        <div class="fn-item" id="fn11">
+          <strong>¹¹ Fixed Income Strategies vs Investment Banking Strategies</strong>
+          Fixed Income Strategies / Strats usually sit near rates, credit, and bond trading desks: pricing models, relative-value research, market-making and position support — more quant, closer to a trader’s self-image. IB Strategies more often serves equity and M&amp;A coverage: valuation, industry research, deal structuring — heavier on narrative, clients, and communication. Same word “Strategies,” different tables: one faces markets; the other faces deals and client stories.
+          <div class="why">Why it matters: the sting of being assigned to IB Strategies comes from that occupational smell difference — same badge, different felt.</div>
+          <div class="src">Source: public sell-side Quant / Strats role descriptions</div>
+        </div>
+        <div class="fn-item" id="fn12">
+          <strong>¹² Russia 1998 and Argentina 2001–02: how fear is priced</strong>
+          In August 1998 Russia restructured domestic GKOs, loosened the ruble, and constrained external debt — sparking EM contagion; high-yield Russian and related risk assets cratered. In late 2001 Argentina defaulted under recession and currency-board stress; the 2002 peso collapse left multi-year scars on Latin and “EM credit” memory. Long after crises, spreads can stay fat — the historical base of the interview pitch: fear lags fundamental repair.
+          <div class="why">Why it matters: without those two crises, “cheap, high-yielding, still feared” would not land with Nick.</div>
+          <div class="src">Source: IMF public overviews of Russia / Argentina crises; EM sovereign debt research</div>
+        </div>
+        <div class="fn-item" id="fn13">
+          <strong>¹³ July 2005 RMB reform: 8.28 → about 8.11</strong>
+          On 21 July 2005 the PBOC announced a managed float referenced to a basket instead of a hard dollar peg. From 19:00 that day the USD/CNY central parity moved to 8.11 (from a long ~8.28 level), a roughly 2.1% one-time appreciation, with a daily band. In EM narratives, RMB appreciation expectations often tie to China demand, commodities, and capital flows into resource exporters — one link in the author’s “triple harvest” interview logic.
+          <div class="why">Why it matters: one of the few chapter dates that pins to a precise policy moment, anchoring a personal interview story in real macro time.</div>
+          <div class="src">Source: PBOC announcement 2005-07-21; FRBSF economic letter overview</div>
+        </div>
+      </div>
+      <div class="diagrams-section" id="diagrams">
+        <h2>Peopl
