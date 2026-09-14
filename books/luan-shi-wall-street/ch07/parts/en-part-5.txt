@@ -1,0 +1,21 @@
+      <p>At a late-2006 party the author ran into Parvin, a Berkeley classmate working on Lehman’s subprime-related desk. Shop talk slid into P&amp;L scale: the other department’s profits were spoken of near the billion-dollar mark, while the author’s municipal book still lived in the tens of millions. The feeling was blunt—peasant laboring at the landlord’s gate.</p>
+      <p>Nothing in the room smelled like blood. Subprime still looked like a proven franchise: rising houses, easy refis, open securitization pipes. Under party lights, risk seemed to belong on someone else’s balance sheet.</p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">Chapter anchors</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">Late 2006</div><div class="ev">Subprime feast · record bonuses</div></div>
+          <div class="event-card"><div class="yr">Feb 2007</div><div class="ev">HSBC Household provisioning alert</div></div>
+          <div class="event-card"><div class="yr">Apr 2007</div><div class="ev">New Century bankruptcy</div></div>
+          <div class="event-card"><div class="yr">Jun 2007</div><div class="ev">Bear-related funds in distress</div></div>
+        </div>
+      </div>
+
+      <div class="scene">
+        Same campus pedigree, same Street—and a profit scale that felt like a class divide. The interlocking stratagem opens as status whiplash.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">From prime success to subprime push</h2>
+      <p>Rewind to earlier victories: prime mortgages, the GSEs, and MBS had turned American homeownership into something ratable, tradable, and exportable<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a><a class="fn-link" href="#fn2"><sup class="fn">²</sup></a>. Once the pipe worked, politics and markets both wanted a wider aperture—thinner credit files, lower incomes—and subprime moved from fringe to entrée.</p>

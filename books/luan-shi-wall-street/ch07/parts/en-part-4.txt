@@ -1,0 +1,30 @@
+      <div class="note">
+        This page retells the chapter’s narrative arc in original wording for bilingual study—not a verbatim copy of the book. Footnotes, figures, and diagrams are off-book public research. Names such as “Lucy Bank” are book aliases. Read the licensed edition for the full text.
+      </div>
+      <nav class="toc" aria-label="Section navigation">
+        On this page
+        <ul>
+          <li><a href="#s1">Berkeley classmate, peasant vs landlord</a></li>
+          <li><a href="#s2">From prime success to subprime push</a></li>
+          <li><a href="#s3">Tranching alchemy: AAA, mezz, equity</a></li>
+          <li><a href="#s4">Interlocking ships: where is the east wind?</a></li>
+          <li><a href="#s5">Dose: useful securitization, excess chaining</a></li>
+          <li><a href="#s6">Christmas 2006: record bonuses, tiny price dip</a></li>
+          <li><a href="#s7">Early 2007 sparks: HSBC and New Century</a></li>
+          <li><a href="#s8">Liquidity rotates: energy, EM, mega-LBOs</a></li>
+          <li><a href="#s9">Collections in boom, gold in chaos</a></li>
+          <li><a href="#s10">Novel floaters: models price risk in bps</a></li>
+          <li><a href="#s11">First ship on fire: Bear’s related funds</a></li>
+          <li><a href="#diagrams">Map / timeline / knowledge graph</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER SEVEN · THE INTERLOCKING STRATAGEM</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wall_Street_Sign_New_York_2005.jpg" alt="Wall Street street sign" loading="lazy" />
+        <figcaption>Wall Street sign (2005) — banquet laughter and chained leverage share the same address. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">Berkeley classmate, peasant vs landlord</h2>
