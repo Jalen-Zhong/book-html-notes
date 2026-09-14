@@ -1,0 +1,27 @@
+          In September 2008 Berkshire Hathaway invested about $5 billion in Goldman preferred (roughly 10% dividend, callable at a premium) plus warrants; Goldman also sold common equity. Markets read it as celebrity capital plus hard cash. The chapter’s “Buffett-style preferred” uses such public deals as prototype for how preferred can be both capital and confidence technology in a crunch.
+          <div class="why">Why it matters: pulls Hyper Goldman Act II from fiction back to checkable crisis finance.</div>
+          <div class="src">Sources: Berkshire / Goldman Sep 2008 announcements; NBC / Reuters contemporaneous coverage</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">Dark cave: who will be Cao, Liu, Sun?</h2>
+      <p>Writedowns, CDS, toxic slang, three allegorical deaths—the author feels trapped in a dark cave: exits unclear, the torch lighting only gravel at his feet. The 2008 curtain is rising; Cao Cao, Liu Bei, and Sun Quan’s seats are still empty—who unifies the wreckage, who grinds on, who splits the river will show only after the real ten-sided ambush closes.</p>
+      <p>Tennessee regret, the 4.70% re-quote, Citi and Merrill’s numbers, and the Hyper Goldman play say one thing together: last chapter’s “crisis seems past” was illusion; this chapter, the ambush has already shut.</p>
+
+      <div class="scene">
+        The cave’s terror is not darkness—it is thinking you are still walking on open plain until drums sound from ten sides and every exit is sealed.
+      </div>
+
+      <hr class="divider" />
+
+      <section class="diagrams-section" id="diagrams">
+        <h2>Maps / timeline / knowledge graph</h2>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Map: double-top chill → core writedowns → toxic slang → three endings</div>
+          <div class="mermaid">
+flowchart LR
+  TOP[Late-Oct double-top chill] --> BIDS[bid lists↑ · buyers hibernate]
+  BIDS --> TN[Tennessee regret · hard to stop]

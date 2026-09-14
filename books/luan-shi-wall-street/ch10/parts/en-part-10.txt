@@ -1,0 +1,18 @@
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/200_West_Street.jpg" alt="Goldman Sachs headquarters 200 West Street" loading="lazy" />
+        <figcaption>Goldman Sachs (200 West Street)—the allegory’s “survive” template, entangled in real life with BHC status, sovereign capital, and Buffett preferred. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        Act II’s cruelty: the same toolkit—writedowns, raises, dumps, bank conversion—yields three endings that differ by one step of confidence collapse.
+      </div>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ Bank holding company (BHC) and the Fed window</strong>
+          In the U.S., BHCs sit under the Bank Holding Company Act and Fed oversight; conversion (or financial-holding status) lets firms operate deposit subsidiaries in a fuller banking frame and, in crisis, reach the discount window, payments rails, and later liquidity facilities more cleanly. In September 2008 Goldman and Morgan Stanley won approval to become BHCs—widely read as the last two large standalone investment banks trading independence for the central-bank safety net.
+          <div class="why">Why it matters: “become a bank” in the allegory is not rhetoric—it was a real institutional escape hatch.</div>
+          <div class="src">Sources: Federal Reserve 21 Sep 2008 approvals for Goldman/MS BHC status; contemporaneous reporting</div>
+        </div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ Buffett preferred capital (Goldman case)</strong>
