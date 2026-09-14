@@ -1,0 +1,16 @@
+          Crisis post-mortems often note that standalone dealers’ assets-to-equity ratios rose sharply before 2007; Merrill, Bear, Lehman and peers are frequently cited around ~30× (metrics vary with accounting and off-balance items). High leverage flatters ROE in the up-cycle and leaves little buffer when funding tightens — delevering itself then knocks prices.
+          <div class="why">Why it matters: pins Pig’s “20× is only the start; they run 30×” gag to a historical order of magnitude.</div>
+          <div class="src">Source: SEC / GAO / FCIC leverage discussions; Duffie on dealer fragility</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s8">The ROE arms race and the “giant hedge fund” thesis</h2>
+      <p>When peers race on ROE, innovation and prop get drafted into the arms race: whoever finds a new margin, a new turnover pipe, or a new leverage posture leads for a quarter. The author also floats a carefully restated thesis — an authorial frame, not an official finding — that if an economy’s financing pattern looks, in metaphor, like debt capital in and equity capital out, it can rhyme with a leveraged macro “book.” In DuPont language: a return story driven from the liability side<a class="fn-link" href="#fn8"><sup class="fn">⁸</sup></a>.</p>
+      <p>Calling a country a “giant hedge fund” is rhetoric, not an audited balance sheet. Its use here is to mirror micro leverage obsession with macro funding structure — read it as the author’s thesis, not a tradable macro model.</p>
+
+      <div class="footnotes" id="fn-block-6">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn8">
+          <strong>⁸ Author’s thesis: ROE contest and macro metaphor</strong>

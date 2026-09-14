@@ -1,0 +1,20 @@
+          A securitization warehouse is the interim account where an arranger warehouses collateral on short-term funding before a CDO/ABS prints. Warehouses boost fees and turnover — and leave pipeline risk on or near the balance sheet if the issuance window shuts. Crisis histories treat warehouses and unsold tranches as key transmission points in structured credit.
+          <div class="why">Why it matters: turns “Walmart turnover” from a retail metaphor into a checkable pipe.</div>
+          <div class="src">Source: FCIC and structured-credit primers on CDO pipelines/warehouses</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s7">Wall Street mode: leverage toward 20% ROE</h2>
+      <p>The board wants hedge-fund-like ~20% ROE. Pig’s third play: “Wall Street mode” — gear up. His arithmetic is blunt: ~5% asset yield, ~3% funding cost, ~20× leverage, and the gross return jumps into a board-friendly zone; after pay, shareholder ROE can still clear 20%. Firms such as Merrill and Bear were widely discussed pre-crisis at 30×-plus leverage (depending on accounting perimeter)<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a>.</p>
+      <p>Prop desks boom. An IB veteran sighs: the firm is becoming a hedge fund — leveraging shareholder capital for spread, not living only on client franchise.</p>
+
+      <div class="scene">
+        Five minus three looks like a small carry; times twenty, it becomes the ROE slide the board applauds. The arithmetic is fine. The error is treating rollable overnight funding as a law of nature.
+      </div>
+
+      <div class="footnotes" id="fn-block-5">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ Pre-crisis broker-dealer leverage</strong>
