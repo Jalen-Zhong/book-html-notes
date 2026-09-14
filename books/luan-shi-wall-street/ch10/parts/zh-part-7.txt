@@ -1,0 +1,43 @@
+      <p>寓言收在三种结局：高盛式——融资 + 转型 + 活下来；贝尔斯登式——被「安排」给更大的买家；雷曼式——周末谈判破裂，周一破产。舞台灯一亮，观众才发现：这三种结局不是科幻，而是接下来一年华尔街真会排演的剧本。</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/200_West_Street.jpg" alt="高盛总部 200 West Street" loading="lazy" />
+        <figcaption>高盛（200 West Street）——寓言里的「活下来」模板，现实中与 BHC、主权资金、巴菲特优先股缠在一起。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        第二幕的残酷在于：同一套工具箱——减记、募资、甩卖、变身银行——三种结局只差一步信心是否崩塌。
+      </div>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ 银行控股公司（Bank Holding Company, BHC）与联储窗口</strong>
+          在美国，银行控股公司受《银行控股公司法》与美联储监管；成为 BHC（或金融控股公司）后，机构可在更完整的银行监管框架下运营存款类子公司，并在危机中更顺畅地使用贴现窗口、支付体系与后续流动性设施。2008 年 9 月，高盛与摩根士丹利获准转为 BHC，被广泛解读为「最后两家大型独立投行」换取央行安全网的制度转身。
+          <div class="why">为何重要：寓言里的「变身银行」不是修辞，而是真实存在的制度逃生舱。</div>
+          <div class="src">来源：Federal Reserve 2008-09-21 批准高盛/摩士成为 BHC 的公告与当代报道</div>
+        </div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ 巴菲特优先股资本（高盛案例）</strong>
+          2008 年 9 月，伯克希尔·哈撒韦向高盛投资约 50 亿美元优先股（约 10% 股息，可赎回溢价安排），并获认股权证；高盛同时进行普通股发行。交易被市场读作「名人资本背书 + 真金白银补血」。本章寓言中的「巴菲特式优先股」以此类公开交易为原型，说明危机中优先股如何同时扮演资本与信心工具。
+          <div class="why">为何重要：把「超级高盛第二幕」从虚构拉回可核对的危机金融工程。</div>
+          <div class="src">来源：Berkshire / Goldman 2008-09 公告；NBC / Reuters 等当代报道</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">黑暗洞窟：谁是曹刘孙</h2>
+      <p>减记、CDS、有毒资产、寓言里的三种死法——作者自觉像被围进黑暗洞窟：出口不明，火把只照得见脚边的碎石。2008 年的大幕正在升起；台上还空着曹操、刘备、孙权的位置——谁会一统残局、谁会苦苦支撑、谁会划江而治，要等真正的十面埋伏合围之后才见分晓。</p>
+      <p>田纳西的后悔、4.70% 的新报价、花旗与美林的数字、以及那出「超级高盛」戏，合在一起只说一件事：上一章「危机似乎过去」是假象；这一章，埋伏已经合上。</p>
+
+      <div class="scene">
+        洞窟里最怕的不是黑暗，而是以为自己还在平原上散步——直到十面鼓响，才发现出路早已被封。
+      </div>
+
+      <hr class="divider" />
+
+      <section class="diagrams-section" id="diagrams">
+        <h2>人物关系 / 时间线 / 知识图谱</h2>
+
+        <div class="mermaid-wrap">

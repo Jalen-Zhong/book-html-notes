@@ -1,0 +1,29 @@
+      </div>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn2">
+          <strong>² 美林收购 First Franklin（2006 年 9 月协议）</strong>
+          2006 年 9 月，美林宣布以约 13 亿美元从国民城市银行（National City）收购 First Franklin 发放特许及相关服务平台，并另行买入约数十亿美元 First Franklin 源生贷款仓位，意图强化非优级住房贷款来源，服务 CDO/证券化生产线。交易在次级周期见顶前后落地；随后发放与仓储敞口成为美林 2007–2008 减记与业务收缩的重要来源之一，First Franklin 业务后来被关闭。
+          <div class="why">为何重要：解释「为何是美林」——不是运气差，而是牛市末端的垂直整合把毒素焊进了自己的管道。</div>
+          <div class="src">来源：National City / Merrill 2006-09-05 新闻稿与 SEC 附件；LA Times / HousingWire 后续报道</div>
+        </div>
+        <div class="fn-item" id="fn3">
+          <strong>³ 银行 CDS 利差与约 500bp 的恐惧读数</strong>
+          信用违约互换（CDS）利差衡量为某发行人债务买保险的年化成本（基点）。2007 深秋至 2008，大型投行与银行的 CDS 急剧走阔；美林等名字的利差被市场与媒体频繁引用到数百基点量级（书中约 ~500bps 作为恐惧锚点）。利差本身会反馈进融资成本、对手方限额与「是否还能滚动短期债」的信心。
+          <div class="why">为何重要：股价是皮肤，CDS 更接近「器官有没有在被市场判死刑」。</div>
+          <div class="src">来源：危机史对银行 CDS 走阔的标准叙述；Bloomberg / 当代信用市场报道</div>
+        </div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ 「有毒资产 / toxic waste」进入日常口语</strong>
+          2007–2008 年，媒体、国会听证与交易台把难以估值、流动性枯竭的次级相关 CDO、仓库贷款与结构化残渣俗称为 toxic assets / toxic waste。词义从比喻迅速变成政策与会计辩论的中心词——如何标记、如何剥离、谁来接盘。本章把它当作「语言层面的合围」：当骂名统一，市场对价格发现的耐心也统一耗尽。
+          <div class="why">为何重要：术语流行 = 共识形成——共识一旦形成，甩卖与减记会自我强化。</div>
+          <div class="src">来源：当代财经媒体用语史；危机后政策文件对 toxic assets 的沿用</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s4">超级高盛第二幕：三种结局</h2>
+      <p>作者插入一出「超级高盛」寓言第二幕——不是纪实传记，而是用夸张舞台把危机公司的求生脚本演一遍：管道里堆着卖不掉的有毒存货；会计上在「逐日盯市」与「公允价值技巧」之间拉锯——模型、流动性折扣、第三层次资产，每一个选择都像在改写明天的资本充足率。</p>
+      <p>求生路径被写成连环计：向亚洲与中东主权资金募资；引入巴菲特式优先股资本作为信心锚；再配股权融资；把最脏的残渣以大约 20 美分的价格甩给不良资产基金；最后申请成为银行控股公司（BHC），以便够到美联储贴现窗口与更稳的存款基础。<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a><a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a></p>
