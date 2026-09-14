@@ -1,0 +1,56 @@
+lass="divider" />
+
+      <h2 id="s2">因为我们是高盛：奖金与末位淘汰</h2>
+      <p>高盛给人的第一课，往往不是模型，而是补偿结构。公开报道里，2005 年是创纪录的一年：公司薪酬福利合计约 117 亿美元量级，人均（粗算）可达五十万美元上下——当然，这是全公司平均，交易台与合伙人那一端要高得多，实习生那一端则另当别论<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a>。钱之外，还有残酷的一面：末位约 5% 会被推出去。留下的人互相打气时，常挂一句近乎信仰的话：Because we are Goldman——因为我们是高盛。</p>
+      <p>这套激励与恐惧并置的系统，和 1999 年合伙制改上市公司之后的「仍叫合伙人、却已是公众公司」身份叠在一起：头衔仍有圣杯感，资本结构却早已换代<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a>。对实习生而言，眼前的奖金神话与身后的淘汰刀，同时在教室里晃。</p>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ 2005：公开报道中的「创纪录」薪酬年</strong>
+          高盛 2005 年业绩披露中，薪酬与福利（compensation and benefits）约 116.9 亿美元，约占净收入 47%；当年员工约 2.2 万人量级。同期媒体热议年底奖金池，董事总经理年薪加奖金可达数百万美元量级。这些数字解释了为何「高盛」三个字对求职者有磁铁般的拉力——也解释了末位淘汰为何仍能维持高压。
+          <div class="why">为何重要：本章后文「奖金季」与圣诞派对的情绪，必须放在这个宏观薪酬泡沫里读。</div>
+          <div class="src">来源：高盛 2005 业绩新闻稿 / SEC EX-99.1；eFinancialCareers 2006-02 报道</div>
+        </div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ 1999 IPO：合伙圣杯变公众公司</strong>
+          1999 年 5 月 4 日，高盛以每股 53 美元上市（代码 GS），募资约 36.6 亿美元，是当时美国金融史上最大 IPO 之一。招股说明书列出三大动机：永久资本、员工股权分享、用公开股票做收购货币。此前数十年合伙制辩论激烈——担心文化稀释。上市后，仍保留「合伙人 / 董事总经理」晋升阶梯与文化仪式，但法律形态已是 The Goldman Sachs Group, Inc.。
+          <div class="why">为何重要：书中「冲合伙人轨道」的野心，是在公众公司外壳下争夺旧合伙制的地位徽章。</div>
+          <div class="src">来源：Goldman Sachs 史志「1999 IPO」；CNN Money 1999-05-03；SEC 招股文件综述</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Roasted_coffee_beans.jpg" alt="咖啡豆特写" loading="lazy" />
+        <figcaption>咖啡豆——J. Aron 起家于咖啡贸易的视觉提示（非交易室实拍）。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s3">实习生的活：SecDB、叙事与 Jerry</h2>
+      <p>日常并不全是光鲜客户晚宴。作者做大量财务分析，并摸到公司内部工具链上的名字：SecDB，以及书中提到的 UFO、YAMS 一类系统代号——外人听来像黑话，对策略组却是干活的桌面<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a>。真正把模型翻译成客户能听懂的故事，往往落在那些「教授改行的 MD」肩上：他们既懂公式，又擅长把数字写成投行叙事。</p>
+      <p>组里有一位 Jerry——履历挂着 J. Aron 线、人在合伙人晋升轨道上——把「交付物文化」钉得很死：材料要准时、版本要干净、数字要对得起下一次客户会议。对实习生，这比任何文化口号都更具体：你的价值等于你今晚能不能把那一页幻灯片修到可上桌。</p>
+
+      <div class="scene">
+        策略组的分工像一条隐形流水线：量化脑子负责算清楚，叙事脑子负责讲清楚，MD 负责把故事卖给客户。实习生夹在中间，两边都要伺候。
+      </div>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ SecDB：公开史料里的「证券数据库」</strong>
+          Securities Database（SecDB）是高盛 1990 年代初在 J. Aron 外汇与商品业务上发展起来的专有定价与风险管理平台，约 1992–93 年成形，后扩展到股票与固收，成为全公司聚合风险的骨干。公开报道称其长期被视为内部「秘密武器」；2010 年代起部分能力通过 Marquee 等客户端向机构客户开放。书中顺带提到的 UFO、YAMS 等名称，属作者实习语境中的内部工具/流程代号，公开百科几乎无独立条目——此处只作「桌面工具链」理解，不臆造技术细节。
+          <div class="why">为何重要：解释为何 Strategies 实习生的「技术气味」这么重——高盛前台长期把软件当交易武器，而不只是 IT 支持。</div>
+          <div class="src">来源：Goldman Sachs 史志「1993 SecDB」；Fortune / WSJ 对 Marquee 与 SecDB 的公开报道；Michael Dubno / SecDB 公开概述</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/New_York_Stock_Exchange_Exterior.jpg" alt="纽约证券交易所外立面" loading="lazy" />
+        <figcaption>纽约证券交易所 Broad Street 外立面——NYSE–Archipelago 合并争议的地理舞台。来源：Wikimedia Commons（Kidfly182，CC BY-SA 4.0）</figcaption>
+      </figure>
+
+      <h2 id="s4">电梯八卦与内幕交易课</h2>
+      <p>某一天，电梯里飘来未公开交易的八卦。事后，合规与同事教育来得很快：什么能听、什么绝不能做、信息一旦变成「重大非公开信息」（MNPI），就可能踩进内幕交易的红线<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a>。同一时期，市场上正吵嚷 NYSE 与电子盘 Archipelago 的合并：高盛同时扮演双边顾问、又持有 Archipelago 股份、还与交易所高管有历史联系——公开诉讼与法官意见里，这种「
