@@ -1,0 +1,27 @@
+        The narrative below follows the chapter’s lived scenes and allegory in original wording for study — not a verbatim copy of the book. Footnotes, figures, and diagrams are off-book public research. “Lucy Bank,” “Hyper Goldman / 超盛,” and similar names are book aliases or fables. Support the licensed edition for the full text.
+      </div>
+      <nav class="toc" aria-label="Chapter navigation">
+        In this chapter
+        <ul>
+          <li><a href="#s1">2006: muni-desk carnival and the apprentice’s dream</a></li>
+          <li><a href="#s2">How can three traders make so much?</a></li>
+          <li><a href="#s3">Allegory: Hyper Goldman’s board</a></li>
+          <li><a href="#s4">DuPont on the blackboard</a></li>
+          <li><a href="#s5">Microsoft mode: high-margin people businesses</a></li>
+          <li><a href="#s6">Walmart mode: ABS/CDO warehouse turnover</a></li>
+          <li><a href="#s7">Wall Street mode: leverage toward 20% ROE</a></li>
+          <li><a href="#s8">The ROE arms race and the “giant hedge fund” thesis</a></li>
+          <li><a href="#s9">Greenspan, cheap liquidity, bonus myopia</a></li>
+          <li><a href="#s10">A ~$1B muni book on overnight repo</a></li>
+          <li><a href="#s11">Short-term structures, hedges, blackjack echo</a></li>
+          <li><a href="#s12">Model illusion and compressed CDS premia</a></li>
+          <li><a href="#s13">Calm seas: CDX IG 33–40 bps</a></li>
+          <li><a href="#diagrams">People / timeline / knowledge graph</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER FIVE · THE DUPONT FORMULA</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/New_York_Stock_Exchange_July_2011.jpg" alt="New York Stock Exchange exterior" loading="lazy" />

@@ -1,0 +1,20 @@
+        <figcaption>NYSE exterior — the city stage where investment banks speak fluent ROE to their boards. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">2006: muni-desk carnival and the apprentice’s dream</h2>
+      <p>In 2006, Lucy Bank’s municipal desk did not feel like a three-person cottage shop. In the author’s scale of telling, the book could print millions of dollars a month. Vince and Roger celebrated as if they had just won a campaign; the apprentice beside them silently rehearsed another play — one day the senior seat, the screens, the limits, and the bonus curve would carry his name.</p>
+      <p>The air was still gilded: tight credit spreads, cheap funding, structured products that sold. Laughter on the floor still drowned the freeze that would arrive two years later. The apprentice’s first hard question was not “will a crisis come?” but something sharper and simpler: <em>how can three traders make this much?</em></p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">Anchors for this chapter</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">2006</div><div class="ev">Hot muni P&amp;L · apprentice watching</div></div>
+          <div class="event-card"><div class="yr">DuPont</div><div class="ev">ROE = margin × turnover × leverage</div></div>
+          <div class="event-card"><div class="yr">Three modes</div><div class="ev">Microsoft / Walmart / Wall Street</div></div>
+          <div class="event-card"><div class="yr">Foreshadow</div><div class="ev">Overnight repo · crushed spreads</div></div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">How can three traders make so much?</h2>
