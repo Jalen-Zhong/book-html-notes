@@ -1,0 +1,35 @@
+          <div class="src">来源：BNP 官方新闻稿；CNBC / Bloomberg 当代报道；FCIC 存档 PDF</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">传染：货币市场抽资与多策略去杠杆</h2>
+      <p>传染路径并不神秘：货币市场与融资柜台开始抽回风险敞口；多策略对冲基金为满足赎回与保证金，在仍有流动性的市场里同步减仓——相对价值、可转债、股票多空一起被拖下水。</p>
+      <p>高盛的 Global Alpha 等量化/多策略产品在公开叙事里成为「聪明钱也会踩空」的标本：当人人同时去杠杆，过去被归因于「阿尔法」的收益，有一部分其实是流动性贝塔——一种在拥挤交易里看起来像技能、在挤兑里原形毕露的风险。<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a> 卡哈特（Carhart）等多因子框架能解释动量、价值、规模，却常常漏掉「流动性突然变贵」这一维。</p>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ Global Alpha、Carhart 与流动性贝塔</strong>
+          Goldman Sachs Global Alpha 等大型量化/多策略基金在 2007 年 8 月前后遭遇显著回撤，当代报道将其与「量化拥挤交易同时平仓」联系在一起。Carhart 四因子等模型扩展了 Fama–French，加入动量等风格因子；但经典股票因子并不直接定价「融资流动性突然抽紧」。危机文献因此强调：许多所谓 alpha，在拥挤与杠杆并存时，其实暴露于 liquidity beta——市场流动性与融资条件的共同冲击。
+          <div class="why">为何重要：把市政台之外的「全市场同向减仓」写成可理解的机制。</div>
+          <div class="src">来源：当代对 Global Alpha 的公开报道；资产定价教材对 Carhart / 流动性风险的讨论</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">市政台的夏日风暴：基差与 SIFMA 比率</h2>
+      <p>风暴终于打到作者所在的市政债交易台。这里的夏日戏码，绕着两条看似技术的线展开：现金市政债与衍生品之间的基差（basis），以及 SIFMA（市政浮动利率基准）对 LIBOR 的比率套利。<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a><a class="fn-link" href="#fn8"><sup class="fn">⁸</sup></a></p>
+      <p>世界已经被「对冲基金化」：公式化的中期票据（MTN）把市政浮动利率结构嵌进结构化产品，把本来偏本地的市政市场，拴到全球相对价值资金的同一根绳上。Vince 休假在外却焦虑不已——比率开始跳动，假期变成远程值班。</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/NYC_NYSE.jpg" alt="纽约证券交易所" loading="lazy" />
+        <figcaption>纽约证券交易所外立面——股票大厅的喧嚣之外，固定收益台用基差与比率书写同一场夏季风暴。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-5">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ SIFMA / LIBOR 比率</strong>
