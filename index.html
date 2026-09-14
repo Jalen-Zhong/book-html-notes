@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book HTML Notes</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #121a2b;
+      --gold: #d4af37;
+      --gold-soft: #f0d78c;
+      --text: #e8eef9;
+      --muted: #9aa8c1;
+      --line: rgba(212, 175, 55, 0.28);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+      background:
+        radial-gradient(1000px 500px at 10% -10%, rgba(212,175,55,0.12), transparent 55%),
+        radial-gradient(800px 400px at 100% 0%, rgba(61,139,253,0.12), transparent 50%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    .wrap { max-width: 780px; margin: 0 auto; padding: 48px 20px 80px; }
+    .badge {
+      display: inline-block; padding: 6px 12px; border-radius: 999px;
+      border: 1px solid var(--line); color: var(--gold-soft); font-size: 13px;
+      background: rgba(212,175,55,0.08); letter-spacing: 0.06em;
+    }
+    h1 { margin: 18px 0 8px; font-size: clamp(28px, 5vw, 40px); line-height: 1.25; }
+    .sub { color: var(--muted); margin: 0 0 28px; }
+    .card {
+      background: linear-gradient(180deg, var(--panel), #182235);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 18px; padding: 22px 22px 14px; margin-bottom: 16px;
+    }
+    .card h2 { margin: 0 0 8px; font-size: 18px; color: var(--gold-soft); }
+    .card p { margin: 0 0 12px; color: #d7deec; font-size: 15px; }
+    a.chap {
+      display: block; text-decoration: none; color: var(--text);
+      padding: 12px 14px; margin: 0 0 10px; border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.03);
+      transition: 0.15s ease;
+    }
+    a.chap:hover { border-color: var(--gold); color: var(--gold-soft); }
+    a.chap .t { font-weight: 650; }
+    a.chap .d { display: block; color: var(--muted); font-size: 13px; margin-top: 2px; }
+    footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center; }
+    footer a { color: var(--gold-soft); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="badge">BOOK HTML NOTES</div>
+    <h1>书章阅读笔记</h1>
+    <p class="sub">故事向导读 + 场外脚注与图谱。非原书照搬；完整内容请支持正版。</p>
+
+    <div class="card">
+      <h2>《乱世华尔街》</h2>
+      <p>渔阳 · 一位华人交易员的经历</p>
+      <a class="chap" href="books/luan-shi-wall-street/ch01/gilded-age-casino-to-wall-street.html">
+        <span class="t">第 1 章 · 镀金时代 · 从赌场走进华尔街</span>
+        <span class="d">后台 IT → 赌场预科 → 伯克利 → 高盛面试</span>
+      </a>
+    </div>
+
+    <footer>
+      源码：<a href="https://github.com/Jalen-Zhong/book-html-notes">Jalen-Zhong/book-html-notes</a>
+    </footer>
+  </div>
+</body>
+</html>

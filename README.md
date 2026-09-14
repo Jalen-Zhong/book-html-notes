@@ -2,6 +2,10 @@
 
 Story-first HTML reading pages for book chapters — narrative rewrite plus researched footnotes, images, and diagrams.
 
+## Read online
+
+https://jalen-zhong.github.io/book-html-notes/
+
 ## Layout
 
 ```text
