@@ -1,0 +1,26 @@
+      <p>As the ratio jumped, the author offered the 30-year ratio at 75¾ — and UBS lifted it. It felt like a win: selling the “top of the chart.” Ego blocked the stop. The next day, exiting meant lifting someone else’s offer — a lesson on the order of ~$300k.</p>
+      <p>One short line lasts a career: the top of the chart is not the top of the market. A technical extreme is only a coordinate on your screen; the market can still grind that coordinate into dust.</p>
+
+      <div class="scene">
+        “I sold the top” — until you learn there is always a higher top, and your risk is still on.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s8">No bids, a “court martial,” and Street-wide deleveraging</h2>
+      <p>Cash munis cascaded: bids disappeared into polite silence. Basis marched from about 80 toward 120 and then 140. London risk sent a SWAT-like team; something close to a court martial landed on the desk.</p>
+      <p>The author reversed earlier UBS-linked note hedges into a steeper curve, wider CDS, and higher vol — every Greek letter arguing with the book. He later reached for a Marines metaphor of advance and retreat: charge when you must, fall back when you must. He was cleared of misconduct, but the Street had already begun delevering in the same direction. The summer storm was no longer one fund’s obituary; it was a funding-ecosystem retreat order.</p>
+
+      <div class="scene">
+        A court martial asks whether you broke a rule; the market asks whether you can leave alive when there is no bid. Two questions — answers may differ.
+      </div>
+
+      <hr class="divider" />
+
+      <section class="diagrams-section" id="diagrams">
+        <h2>Map / timeline / knowledge graph</h2>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Relationship map: small fund → auction window paper → Atlantic contagion → muni desk</div>
+          <div class="mermaid">
+flowchart LR
