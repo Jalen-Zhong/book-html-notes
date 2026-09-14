@@ -1,0 +1,98 @@
+der" />
+
+      <h2 id="s7">正式 offer 与高盛挽留：飞行员隐喻</h2>
+      <p>第二轮气氛友好得多。正式 offer 落在利率部下的市政债交易台——距他被告知「你还要好几年才能真正碰钱」大约只过了六个月。学徒叙事被现实改写：不是谁年资够，而是谁刚好补上台上的缺口。</p>
+      <p>高盛试图挽留：其他策略组、再回固收策略、甚至安排普林斯顿博士合伙人带他参观。作者拒绝了。他用近乎歌曲隐喻的说法定位自己：想当飞行员，而不是参谋军官——要握住舵，而不是只在地图上画航线<a class="fn-link" href="#fn8"><sup class="fn">⁸</sup></a>。鲁西银行的化名背后，是一张不够炫、却让他能真正下单的桌子。</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/200_West_Street.jpg" alt="高盛曼哈顿总部" loading="lazy" />
+        <figcaption>高盛 200 West Street——挽留谈判的象征性地标；作者最终选择离开光环，去坐商业银行的交易席。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-7">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn8">
+          <strong>⁸ 高盛的挽留文化：为什么「不放人」也是品牌</strong>
+          顶级投行对高潜实习生/分析师的挽留，常包括内部轮岗、跨组介绍、合伙人时间——把「离开」变成「你还没看完整张地图」。公开叙事里，高盛长期以精英筛选与内部流动著称：留下的人强化「Because we are Goldman」的身份粘性，离开的人则带走光环去下一张牌桌。对作者，挽留越隆重，越反衬他的选择不是「没拿到高盛」，而是「明确不要参谋席」。
+          <div class="why">为何重要：收束全章主题——声望路径（Frank / 雷曼 / 高盛挽留）对抗真实交易路径（Vince / 市政债 / I DO）。</div>
+          <div class="src">来源：高盛公开企业文化与校园招聘叙事；本章对读第二章「高盛实习」奖金/文化语境</div>
+        </div>
+        <div class="fn-item" id="fn9">
+          <strong>⁹ 利率部里的市政债台：组织位置</strong>
+          在银行固定收益（rates / FICC）组织树上，市政债台常挂在利率或公共金融条线附近：共享曲线、回购与对冲工具，又保留税收与信用的独立分析。offer 落在「利率部市政债交易」意味着：日常语言是利率，特色语言是 muni——这正是 Roger 需要「曲线模型翻译器」的组织原因。
+          <div class="why">为何重要：帮读者把「市政债」从冷门标签，放回利率交易帝国的具体科室。</div>
+          <div class="src">来源：大型投行/银行 FICC 公开业务介绍；市政与利率交叉的市场通识</div>
+        </div>
+      </div>
+
+      <div class="diagrams-section" id="diagrams">
+        <h2>人物 · 时间线 · 知识图谱</h2>
+        <p style="color:var(--muted);font-size:14px;">以下图表用 Mermaid 渲染，帮助把本章人物关系、求职路径与核心概念串起来（非书中原图）。</p>
+        <div class="mermaid-wrap">
+          <div class="caption">图 A · 求职时间线：同学分流 → 面试筛打 → I DO → 挽留被拒</div>
+          <pre class="mermaid">
+timeline
+    title 渔阳路径（本章叙事）
+    section 分流
+      同学 Frank 震惊 : 商业银行为何
+      Frank 去向雷曼 : 2005-06 投行光环
+      作者宁可炒猪肉肚 : 要交易席
+    section 面试马拉松
+      Mark 免费沙拉 : 简历降温与 40 under 40
+      苹果男互换题 : 不冷不热
+      法籍量化 Bonjour : 感到被压住
+    section 转折
+      Vince 无免费食物 : 管风琴与市政债
+      交易员三素质 : 风控 自律 观察
+      I DO : 接受市政债座位
+    section 落地
+      Roger 缺口 : 对接量化与曲线
+      正式 offer : 约六个月后碰钱
+      拒高盛挽留 : 飞行员不是参谋
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">图 B · 人物 / 机构关系图</div>
+          <pre class="mermaid">
+flowchart TD
+    A["作者 渔阳"] --> F["同学 Frank"]
+    F --> L["雷曼兄弟\n投行声望路径"]
+    A --> G["高盛\n实习光环 / 挽留"]
+    A --> B["鲁西银行 Lucy Bank\n化名商业银行"]
+    B --> M["Mark\n利率老板 / 免费沙拉"]
+    B --> AP["苹果男\n互换交易员"]
+    B --> Q["法籍量化老板\nBonjour / 笨猪梗"]
+    B --> V["Vince\n市政债台负责人"]
+    V --> R["Roger\nBooth / 前高盛 muni prop"]
+    V --> SEAT["市政债交易座位"]
+    R --> SEAT
+    A -->|"I DO"| SEAT
+    G -.->|"策略组 / FI strat / 合伙人参观"| A
+    A -->|"拒绝：要当飞行员"| SEAT
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">图 C · 知识图谱：声望 / 产品 / 交易员素质 / 职业分叉</div>
+          <pre class="mermaid">
+flowchart LR
+    PREST["投行声望"] --> LEH["雷曼 2005-06"]
+    PREST --> GS["高盛挽留"]
+    COMM["商业银行标签"] --> LUCY["鲁西银行面试"]
+    PB["猪肉肚期货隐喻"] --> TRADE["要交易席"]
+    IRS["利率互换"] --> DESK["利率部生态"]
+    MUNI["市政债"] --> DESK
+    PROP["自营 / 曲线模型"] --> MUNI
+    RISK["控制风险"] --> QUAL["交易员素质"]
+    DISC["炮火下自律"] --> QUAL
+    OBS["观察适应市场"] --> QUAL
+    QUAL --> SEAT["I DO 座位"]
+    PILOT["飞行员隐喻"] --> SEAT
+    STAFF["参谋军官"] --> GS
+          </pre>
+        </div>
+      </div>
+    </article>
+    <footer>
+      故事导读 · 《乱世华尔街》（渔阳）第三章「鲁西银行」<br />
+      据公开试读改写，非原文照搬；脚注为场外研究补充；Lucy Bank 为书中化名<br />
+      
