@@ -1,0 +1,65 @@
+  META --> WARN[田纳西住房债]
+  WARN --> STAL[斯大林格勒式平静]
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">时间线：危机似乎过去（2007 夏末–秋）</div>
+          <div class="mermaid">
+timeline
+  title 危机似乎过去
+  1907-1913 : 恐慌与联储立法起源
+  2007-08-17 : 贴现率下调 50bp
+             : 基金利率暂不动
+  2007-08末 : 市政反弹 · 电话询券
+            : Citadel/Sowood 已接货
+            : 美银 20 亿注资 Countrywide
+            : 基差约 140→110
+  2007-10-09 : 标普约 1565 高点
+             : BRIC 脱钩论 · A 股高潮
+  2007秋 : 田纳西 AAA 住房债买入
+         : 「战后平静」= 预备队耗尽
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">知识图谱：信号、道德风险与身体隐喻</div>
+          <div class="mermaid">
+flowchart TB
+  LIQ[流动性挤兑] --> CB[央行最后贷款人]
+  CB --> DISC[贴现窗口信号]
+  DISC --> RELIEF[价差收窄 / 反弹]
+  RELIEF --> HANDS[强手接货]
+  HANDS --> MH[道德风险 / 靠山心理]
+  MH --> RISK[风险偏好回升]
+  RISK --> SKIN[股票=皮肤创新高]
+  RISK --> BONE[信用=骨头仍裂]
+  RISK --> ORG[银行/影子=器官渗血]
+  SKIN --> ILLUSION[危机似乎过去]
+  BONE --> ILLUSION
+  ORG --> ENCIRCLE[包围圈形成中]
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer>
+      《乱世华尔街》· 渔阳 · 第九章故事导读（原创改写）·
+      <a href="SOURCES.md">SOURCES.md</a> ·
+      <a href="../../index.html">返回目录</a>
+    </footer>
+  </div>
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
+  </script>
+
+</body>
+</html>
