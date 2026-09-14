@@ -1,0 +1,22 @@
+        <figcaption>New York Stock Exchange façade — beyond the equity floor’s noise, fixed-income desks wrote the same summer storm in basis points and ratios. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-5">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ SIFMA / LIBOR ratio</strong>
+          The SIFMA Municipal Swap Index (formerly BMA) reflects weekly reset rates on high-grade tax-exempt floating munis; traders watch its ratio to a taxable floating benchmark (then often LIBOR). Ratio arb and hedges assume a stable relationship; when risk aversion rises, tax-exempt buyers step back, or structured books deleverage, the ratio can gap and smash positions sized to a quiet historical band.
+          <div class="why">Why it matters here: the coordinate axis for the author’s personal trading lesson.</div>
+          <div class="src">Sources: SIFMA index public materials; muni-derivatives market practice summaries</div>
+        </div>
+        <div class="fn-item" id="fn8">
+          <strong>⁸ Municipal basis</strong>
+          Here, basis is the gap between cash muni exposure and hedge instruments (swaps, ratio locks, Treasury futures, etc.). In calm markets it trades in a band; in a liquidity crisis, cash bids vanish while derivatives still mark, and basis can gap wider (in the book’s telling, roughly 80 → 120 → 140), forcing desks to choose between cutting risk and eating margin.
+          <div class="why">Why it matters here: turns abstract “deleveraging” into a ruler on the muni P&amp;L.</div>
+          <div class="src">Sources: municipal fixed-income practice; public discussions of relative-value unwinds in 2007</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s7">Top of the chart ≠ top of the market</h2>

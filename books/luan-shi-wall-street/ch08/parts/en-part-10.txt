@@ -1,0 +1,18 @@
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ Global Alpha, Carhart, and liquidity beta</strong>
+          Goldman Sachs Global Alpha and peer quant/multi-strategy funds suffered sharp drawdowns around August 2007, contemporaneously linked to crowded factor/stat-arb books unwinding together. Carhart’s four-factor model extends Fama–French with momentum; classic equity factors do not directly price a sudden tightening of funding liquidity. Crisis writing therefore stresses that much apparent alpha, when leverage and crowding coexist, is exposure to liquidity beta.
+          <div class="why">Why it matters here: makes “everyone sold the same stuff” a mechanism, not just a mood.</div>
+          <div class="src">Sources: contemporary Global Alpha coverage; asset-pricing discussions of Carhart factors and liquidity risk</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">Muni-desk summer storm: basis and the SIFMA ratio</h2>
+      <p>The storm finally hit the author’s municipal desk. The summer plot turned on two technical-looking lines: the basis between cash munis and hedges, and ratio trades of the SIFMA municipal floating index versus LIBOR.<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a><a class="fn-link" href="#fn8"><sup class="fn">⁸</sup></a></p>
+      <p>The world had been “HF-ized”: formula medium-term notes (MTNs) embedded muni floating structures into structured product, tying a once-local market to the same global relative-value rope. Vince was on vacation and still anxious — ratios started jumping, and holiday became remote watch duty.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/NYC_NYSE.jpg" alt="New York Stock Exchange" loading="lazy" />
