@@ -1,0 +1,29 @@
+    CDS["CDS/CDX"] --> CALM["33-40bp平静"]
+    GREEN["低政策利率"] --> LEV
+    PROP2["Prop"] --> ROE
+    AG["Agency"] --> PM
+          </pre>
+        </div>
+      </div>
+    </article>
+    <footer>
+      故事导读 · 《乱世华尔街》（渔阳）第五章「杜邦公式」<br />
+      据公开试读改写，非原文照搬；脚注为场外研究补充；Lucy Bank / 超盛等为书中化名或寓言<br />
+      完整原文请支持正版 · 配图见 SOURCES.md ·
+      <a href="dupont-formula-en.html">English edition</a>
+      · <a href="../ch04/center-of-universe-zh.html">← 第四章</a>
+    </footer>
+  </div>
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
+  </script>
+
+</body>
+</html>
