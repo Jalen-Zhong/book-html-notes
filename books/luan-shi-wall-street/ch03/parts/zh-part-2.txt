@@ -1,0 +1,52 @@
+投行品牌，而是带银行资产负债表与更广业务线的大型金融集团——在同学耳里，声望阶梯可能矮半截。
+          <div class="why">为何重要：Frank 的震惊，是整章「声望 vs 真实座位」张力的第一声鼓点。</div>
+          <div class="src">来源：CRS 报告 R44349 / R41181；圣路易斯联储对商投行分业的公开综述</div>
+        </div>
+        <div class="fn-item" id="fn2">
+          <strong>² 2005–06 年的雷曼光环</strong>
+          公开联赛榜上，雷曼常年挤进美国投行债承销与并购顾问前列：例如 2005 年美国投资级债簿记约第 6、份额约 7%；2006 年全球并购顾问量约第 8。更刺眼的是研究口碑——《机构投资者》全美研究队评选中，雷曼连续多年在股票与固收研究双双称霸。对当时毕业生，「去雷曼」听起来是正统华尔街路线，远比「去某家商业银行」好解释给父母听。
+          <div class="why">为何重要：把 Frank 的选择钉在可查的联赛与研究排名上，才能理解作者「另择鲁西」有多反潮流。</div>
+          <div class="src">来源：Euromoney / Dealogic 2005–06 联赛表；Institutional Investor 2005 All-America Research；雷曼 2006 业绩新闻稿</div>
+        </div>
+        <div class="fn-item" id="fn3">
+          <strong>³ 猪肉肚期货：土，但真交易</strong>
+          芝加哥商业交易所（CME）1961 年推出冷冻猪肉肚期货，是最早基于冷冻肉类仓储的期货之一，合约规模约 4 万磅，曾长期是猪肚/培根产业链的对冲与投机主场。随着行业转向鲜肉加工、成交量萎缩，CME 于 2011 年 7 月 15 日正式退市该合约。对交易员文化而言，「猪肉肚」几乎成了「真正下场买卖波动」的民间隐喻——哪怕听起来像菜市场，却比写客户幻灯片更接近牌桌。
+          <div class="why">为何重要：作者「宁可去炒猪肉肚」不是玩笑，而是对「要交易席、不要参谋席」的极端表达。</div>
+          <div class="src">来源：Reuters / NPR / MarketsWiki 对 CME 猪肉肚退市的公开记述；CME 历史合约规格综述</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cme_building_aerial_view.jpg" alt="芝加哥商业交易所大楼航拍" loading="lazy" />
+        <figcaption>芝加哥商业交易所（CME）大楼——猪肉肚期货传奇的地理坐标。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s2">面试马拉松：Mark、免费沙拉与「40 under 40」</h2>
+      <p>鲁西银行的面试像一场耐力赛。利率台老板 Mark 进门先拿走一份免费沙拉——华尔街面试室里常见的「顺手福利」，也像一场无声的气场测试。翻完简历，他的热情明显降温：作者几乎没有传统金融业工作经验，模型和竞赛光环再亮，也挡不住「你没在钱堆里待过」的皱眉。</p>
+      <p>作者赶紧补救，把奉承砸在 Mark 身上：听说您上过「40 under 40」一类榜单——华尔街媒体与行业评选里，把四十岁以下新星打包成荣誉徽章的那种名单<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a>。气氛稍回暖。Mark 随口讲起自己的故事：第一年就赚到约五百万美元量级的收益，而当年奖金预期却可能只有五万美元上下——数字落差像一记耳光，也像一张招聘海报：台子上的钱和人事部的「合理预期」可以隔着一整条河。</p>
+
+      <div class="scene">
+        免费沙拉、简历皱眉、「40 under 40」马屁、五百万与五万的奖金落差——面试还没开始谈市政债，权力关系已经摆上桌。
+      </div>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ 「40 under 40」：华尔街的年龄荣誉徽章</strong>
+          「40 Under 40」是媒体与行业协会常用的榜单格式：评选四十岁以下的行业新星。《财富》、Institutional Investor、各类法律/金融媒体都有版本。上榜本身不等于交易能力证明，但对面试场上的权力表演很有用——候选人用它示敬，老板用它确认自己仍在「被看见」的轨道上。它是声望经济的小零件，不是风险模型。
+          <div class="why">为何重要：解释作者为何在简历被泼冷水后立刻祭出这句恭维——他在用行业荣誉语言换回对话权。</div>
+          <div class="src">来源：Fortune / Institutional Investor 等公开「40 Under 40」榜单体例综述</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">苹果男与法籍量化老板</h2>
+      <p>下一位是互换交易员，同事背后叫他「苹果男」——进门就拿起桌上的免费苹果，边啃边抛数学题。利率互换是固收衍生品的普通话：一方付固定、一方付浮动，用来对冲或表达对利率路径的观点<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a>。问题不算刁钻，但对方语气不冷不热，像在例行公事地筛掉「不会算」的人，而不是在找合伙人。</p>
+      <p>再往后，法籍量化老板进场，先开法语玩笑喊一声 Bonjour，又用中文谐音梗调侃「笨猪」——轻松外壳下是一串硬核量化题。作者明显感到被压住：不是不会算术，而是对方的问题密度与交易台语境，把他从「会考试的优等生」拽回「还没真正在曲线上活过」的位置。</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal_Reserve_Bank_of_New_York,_Manhattan,_New_York_(7237032812).jpg" alt="纽约联邦储备银行大楼" loading="lazy" />
+        <figcaption>纽约联
