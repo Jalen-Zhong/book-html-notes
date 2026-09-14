@@ -1,0 +1,49 @@
+      <p>2008 年 2 月，拍卖利率证券（ARS）市场冻结：本是长期市政债等工具，靠定期<strong>荷兰式拍卖</strong>重置利率并提供「准短期」变现通道；银行停止托底竞标后，拍卖大面积失败，零售投资者发现「像现金一样」的产品突然提不出来。<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a></p>
+      <p>鲁西银行却看见机会：把 ARS 折价买入与回购融资叠在一起，账面回报率可以飙到超过 200% 的 ROE——作者形容像扑克桌上的「新游戏」。他自己搭起约 20 亿美元量级的 ARS 账簿。兴奋很快降温：相关基差（basis）一度走阔到约 210 个基点——赚折价的同时，对冲与融资的裂缝也在扩大。</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wall_Street_Sign_New_York_2005.jpg" alt="华尔街路牌" loading="lazy" />
+        <figcaption>华尔街路牌——ARS 冻结把「零售现金幻觉」砸在同一条街上。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        新游戏可以算出 &gt;200% ROE；基差走到 210 时，计算器提醒：踵还在出血。
+      </div>
+
+      <div class="footnotes" id="fn-block-5">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ 拍卖利率证券（ARS）与荷兰式拍卖</strong>
+          ARS 多为长期市政债、公司债或优先股，利息（或股息）通过定期荷兰式拍卖重置：买家报愿接受的最低利率，清算利率成为全体持有人的重置利率，同时完成所有权换手。历史上经纪商常以自营托底防止流拍；2008 年 2 月中旬起，主要投行撤回支持，拍卖大面积失败，持有人无法按预期变现，市政发行人则可能面临惩罚利率。事后多家机构与监管达成回购和解。
+          <div class="why">为何重要：ARS 是「长期资产假装短期现金」的零售版踵伤——与回购、ABCP 同一家族。</div>
+          <div class="src">来源：CRS / Chicago Fed / Wikipedia 对 2008 年 2 月 ARS 冻结的综述；SEC 与州检察和解报道</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <section class="diagrams-section" id="diagrams">
+        <h2>人物关系 / 时间线 / 知识图谱</h2>
+
+        <div class="mermaid-wrap">
+          <div class="caption">关系图：短融成瘾 → 折价分化 → 管道回表 → ARS 牌局</div>
+          <div class="mermaid">
+flowchart LR
+  HEEL[阿喀琉斯之踵隐喻] --> ST[短期批发融资瘾]
+  ST --> MMF[货币市场基金]
+  ST --> REPO[回购血液循环]
+  REPO --> HC[折价 haircut]
+  ST --> PIPE[ABCP/SIV/TOB]
+  PIPE --> PASS[击鼓传花]
+  HC --> DIFF[2008初折价分化]
+  DIFF --> JAN[欧股急挫·联储紧急降息]
+  JAN --> KER[科维尔/法兴强平]
+  PIPE --> RUN[管道挤兑回表]
+  RUN --> CITI[花旗/美林回表]
+  DIFF --> ARS[ARS荷兰拍卖冻结]
+  ARS --> LUCY[鲁西机会牌·ROE&gt;200%]
+  LUCY --> BOOK[~2B ARS账簿]
+  BOOK --> BASIS[基差走阔至~210]
+          </div>
+        </div>
+
