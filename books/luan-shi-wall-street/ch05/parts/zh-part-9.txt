@@ -1,86 +1,17 @@
-      <p>读者已经知道后事：无事发生的旗，有时是风暴前的颜色。但 2006 年的台上，杜邦三项还在发光，奖金年历还在翻页，学徒的梦也还热着——下一章才会把「永不凋谢」的幻觉撕开。</p>
+      <p>猪哥的第一计：抓销售利润率。最好的生意像软件垄断——成本薄、定价狠，一张盘卖出惊人差价。落到投行，就是高利润率的「人工业务」：并购顾问、承销、以及有定价权的做市与客户业务。作者把这路子叫做「微软模式」——靠单位利润，而不是靠把资产负债表撑到极限<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a>。</p>
+      <p>问题是：人工业务会饱和。顾问费与承销份额不是无限扩的；当所有超盛都想当「微软」时，定价权被竞争啃掉，利润率自己往下塌。</p>
 
-      <div class="scene">
-        封面报价太卷，就宁当 cover；利差太紧，就以为风险死了。杜邦公式教会怎么把 ROE 做高，却不自动教会：哪一项会在夜里突然归零。
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ 自营 vs 代理（prop vs agency）再对照</strong>
+          高利润率的客户/顾问业务更接近「卖脑力与牌照」：资本占用相对可控。自营则直接把资本押进价格波动。危机前许多机构两者并存；「微软模式」叙事强调的是：先吃厚利润的人工业务，再在利润率不够时另寻杜邦的另外两项。
+          <div class="why">为何重要：把寓言里的「微软」落到可辨认的投行业务类型上。</div>
+          <div class="src">来源：行业对 IB fee businesses vs prop 的公开对比；前章脚注延续</div>
+        </div>
       </div>
 
-      <div class="diagrams-section" id="diagrams">
-        <h2>人物 · 时间线 · 知识图谱</h2>
-        <p style="color:var(--muted);font-size:14px;">以下图表用 Mermaid 渲染，帮助把本章寓言、三种模式与回购伏笔串起来（非书中原图）。</p>
-        <div class="mermaid-wrap">
-          <div class="caption">图 A · 叙事时间线：狂欢 → 杜邦三计 → 回购伏笔 → 平静海面</div>
-          <pre class="mermaid">
-timeline
-    title 渔阳路径（本章叙事）
-    section 现场
-      2006市政台 : 月入百万量级
-      Vince与Roger庆祝 : 学徒梦见资深席
-    section 寓言超盛
-      董事会考ROE : 猪哥写杜邦
-      微软模式 : 高利润率人工业务
-      沃尔玛模式 : ABS/CDO仓库
-      华尔街模式 : 20x杠杆冲20%ROE
-    section 宏观与激励
-      ROE军备赛 : 自营创新
-      格林斯潘低利率 : 奖金年短视
-    section 回到鲁西
-      约10亿市政账本 : 隔夜回购与haircut
-      SIV/TOB短端 : 互换套保加杠杆
-      模型幻觉 : CDS/CDX压缩
-      CDXIG 33-40bp : cover bid与无聊
-          </pre>
-        </div>
-        <div class="mermaid-wrap">
-          <div class="caption">图 B · 超盛寓言人物 / 鲁西台关系</div>
-          <pre class="mermaid">
-flowchart TD
-    BOARD["董事会
-考核 ROE"] --> OX["牛总 CEO"]
-    OX --> PIG["猪哥军师
-算术杜邦"]
-    PIG --> M1["微软模式
-利润率"]
-    PIG --> M2["沃尔玛模式
-周转"]
-    PIG --> M3["华尔街模式
-杠杆"]
-    OX --> IB["投行条线"]
-    OX --> SEC["证券化明星"]
-    OX --> PROP["自营投资头"]
-    PROP --> HF["交易员跳槽HF"]
-    REAL["鲁西市政台"] --> V["Vince"]
-    REAL --> R["Roger"]
-    REAL --> A["作者/学徒"]
-    REAL --> REPO["隔夜回购融资"]
-    M3 -.->|"同构"| REPO
-          </pre>
-        </div>
-        <div class="mermaid-wrap">
-          <div class="caption">图 C · 知识图谱：杜邦三项与危机前管道</div>
-          <pre class="mermaid">
-flowchart LR
-    ROE["ROE"] --> PM["利润率"]
-    ROE --> AT["资产周转"]
-    ROE --> LEV["财务杠杆"]
-    PM --> IBFEES["IB/并购/承销"]
-    AT --> WH["ABS/CDO仓库"]
-    LEV --> REPO["Repo + haircut"]
-    LEV --> BD["经纪商30x"]
-    WH --> SHADOW["影子银行"]
-    REPO --> SIV["SIV/TOB短端"]
-    HEDGE["互换套保"] --> LEV
-    CDS["CDS/CDX"] --> CALM["33-40bp平静"]
-    GREEN["低政策利率"] --> LEV
-    PROP2["Prop"] --> ROE
-    AG["Agency"] --> PM
-          </pre>
-        </div>
-      </div>
-    </article>
-    <footer>
-      故事导读 · 《乱世华尔街》（渔阳）第五章「杜邦公式」<br />
-      据公开试读改写，非原文照搬；脚注为场外研究补充；Lucy Bank / 超盛等为书中化名或寓言<br />
-      完整原文请支持正版 · 配图见 SOURCES.md ·
-      <a href="dupont-formula-en.html">English edition</a>
-      · <a href="../ch04/center-of-universe-zh.html">← 第四章</a>
-    </footer>
+      <hr class="divider" />
+
+      <h2 id="s6">沃尔玛模式：ABS/CDO 仓库周转</h2>
+      <p>利润率不够，就拼周转。猪哥指向「沃尔玛模式」：薄利多销，让资产在账上停得越短越好。危机前的具体形态，是 ABS/CDO 的仓库（warehouse）流水线——把贷款或债券聚合、打包、分层、卖掉；卖不掉的残片留在账上，由交易员继续「管理」与出清<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a>。</p>
