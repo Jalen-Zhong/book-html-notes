@@ -1,0 +1,15 @@
+          In February 2007 HSBC issued a trading update on U.S. Mortgage Services, warning loan-impairment charges would run well above consensus, driven by deteriorating subprime and related ARM/second-lien books. Household International, bought in 2003, sat inside that U.S. consumer-finance footprint. Retrospectives often treat the alert as an early public signal that subprime had entered large-bank earnings.
+          <div class="why">Why it matters: nails party-chat “subprime” to a global bank’s disclosure.</div>
+          <div class="src">Sources: HSBC 8 Feb 2007 trading update; contemporary Reuters coverage</div>
+        </div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ New Century Financial</strong>
+          Once among the largest independent U.S. subprime originators. Early 2007 brought rising delinquencies, repurchase pressure, and fraud/accounting scrutiny; after warehouse lines tightened it filed for Chapter 11 on 2 April 2007, cut most lending, and became a highly visible break in the originate–securitize–repurchase chain—still easy for core Street desks to dismiss as peripheral.
+          <div class="why">Why it matters: originators fell first—mine-mouth smoke still labeled a “small market.”</div>
+          <div class="src">Sources: contemporary Reuters reports; bankruptcy examiner / BIS case studies</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s8">Liquidity rotates: energy, EM, mega-LBOs</h2>

@@ -1,0 +1,17 @@
+      <p>Around Christmas 2006 the Street bathed in record-pay headlines: New York State Comptroller estimates put the Wall Street bonus pool near $23.9 billion; Goldman’s full-year compensation and benefits ran about $16.4 billion, roughly $622k per employee; CEO bonus stories refreshed the screens in turn. Fireworks drowned a nearly invisible house-price wiggle—the first tiny dip barely registered as news.</p>
+      <p>The Gilded Age’s favorite trick: translate “doesn’t hurt yet” into “will never hurt.”</p>
+
+      <div class="scene">
+        A winter of record bonuses; house prices nod almost imperceptibly—few heard it as the east wind clearing its throat.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s7">Early 2007 sparks: HSBC and New Century</h2>
+      <p>Early 2007, smoke from the corners. HSBC raised impairment charges tied to its U.S. consumer/mortgage franchise (the Household / HSBC Finance lineage), putting subprime on a global bank’s P&amp;L in plain sight<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a>. Then independent subprime lender New Century hit fraud probes and a funding squeeze, filing for bankruptcy in April 2007<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a>.</p>
+      <p>Trading-floor complacency sounded like 1998 talk about Russia: a “small market.” If your book did not literally say subprime, the alarm could be filed under next door’s smoke.</p>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">Footnotes</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ HSBC / Household provisioning alert</strong>
