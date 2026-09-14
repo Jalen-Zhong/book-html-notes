@@ -1,0 +1,33 @@
+        同一所学校、同一条华尔街，利润量级差出一个数量级——「连环计」的序幕，先写成一种身份落差。
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">从优质房贷到次级：政策推力与诱惑利率</h2>
+      <p>故事要倒回更早的成功：优质（prime）住房按揭、政府支持企业（GSE）与按揭抵押证券（MBS）曾把「美国人拥有住房」做成可交易、可评级、可卖给全球买家的产品<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a><a class="fn-link" href="#fn2"><sup class="fn">²</sup></a>。管道一通，政治与市场都想把受益面推得更宽——低收入、信用更薄的借款人也被请进门，次级由此从边缘变成主菜。</p>
+      <p>产品设计像对冲基金的杠杆说明书：诱惑利率（teaser rate）先让月供好看；现金提取再融资（cash-out refinance）把房价上涨变成可花的现金。对借款人是杠杆化的消费与投机；对华尔街则是源源不断的可证券化原料。</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Fannie_Mae_headquarters.jpg" alt="房利美总部" loading="lazy" />
+        <figcaption>房利美（Fannie Mae）总部——GSE 与 MBS 把住房信用做成可批发产品的制度舞台之一。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ 次级（subprime）与优质（prime）按揭</strong>
+          优质按揭通常面向信用较好、收入与文件较完整的借款人；次级则面向信用分数较低、文件不全或债务负担更高的借款人，利率与费用通常更高。2000 年代中期，可调利率、诱惑期与二次抵押等结构放大了「先上车再谈月供」的激励；房价一旦停涨，再融资出口变窄，违约便集中爆发。
+          <div class="why">为何重要：解释为何同一套「住房金融」会从稳健管道滑向高风险原料。</div>
+          <div class="src">来源：公开住房金融史；危机后官方与学术对 subprime 定义的标准陈述</div>
+        </div>
+        <div class="fn-item" id="fn2">
+          <strong>² 房利美 / 房地美（Fannie Mae / Freddie Mac）</strong>
+          两家政府支持企业（GSE）长期通过购买/担保符合条件的住房按揭、发行机构 MBS，为美国住房市场提供流动性与标准化。它们不是次级的全部故事，却是「住房贷款可以批发证券化」这一基础设施的核心节点；政治上扩大住房拥有率的压力，也常常透过 GSE 目标与私人管道并行传导。
+          <div class="why">为何重要：把「成功的住房证券化」与后文私人次级管道的过度延伸连成一条因果链。</div>
+          <div class="src">来源：GSE 公开职能说明；危机史对住房金融基础设施的综述</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">分层炼金术：AAA、夹层与股权</h2>
