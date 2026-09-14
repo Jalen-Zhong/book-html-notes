@@ -1,29 +1,17 @@
-    CDS["CDS/CDX"] --> CALM["33-40bp平静"]
-    GREEN["低政策利率"] --> LEV
-    PROP2["Prop"] --> ROE
-    AG["Agency"] --> PM
-          </pre>
+      <h2 id="s1">2006：市政台的狂欢与学徒梦</h2>
+      <p>2006 年，鲁西银行市政债交易台的利润数字听起来不像「三个人的小作坊」，更像一台开足马力的印钞机：按作者的叙事量级，台子每月能贡献以百万美元计的赚头。Vince 与 Roger 高兴得像刚打完一场大胜仗；学徒站在旁边，心里却悄悄演练另一出戏——有朝一日自己坐上资深席，屏幕、额度与奖金曲线都写着自己的名字。</p>
+      <p>那一年的空气仍是镀金的：信用利差紧、融资便宜、结构化产品好卖。大厅里的笑声还盖过两年后将要到来的冻结声。新人要问的第一个问题，不是「危机会不会来」，而是更朴素、也更刺人的一句：<em>怎么才三个人，就能赚这么多？</em></p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">本章时间与概念锚点</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">2006</div><div class="ev">市政台高利润 · 学徒旁观</div></div>
+          <div class="event-card"><div class="yr">杜邦</div><div class="ev">ROE = 利润率×周转×杠杆</div></div>
+          <div class="event-card"><div class="yr">三种模式</div><div class="ev">微软 / 沃尔玛 / 华尔街</div></div>
+          <div class="event-card"><div class="yr">预兆</div><div class="ev">隔夜回购 · 利差压缩</div></div>
         </div>
       </div>
-    </article>
-    <footer>
-      故事导读 · 《乱世华尔街》（渔阳）第五章「杜邦公式」<br />
-      据公开试读改写，非原文照搬；脚注为场外研究补充；Lucy Bank / 超盛等为书中化名或寓言<br />
-      完整原文请支持正版 · 配图见 SOURCES.md ·
-      <a href="dupont-formula-en.html">English edition</a>
-      · <a href="../ch04/center-of-universe-zh.html">← 第四章</a>
-    </footer>
-  </div>
 
-  <script>
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: "dark",
-      securityLevel: "loose",
-      timeline: { useMaxWidth: true },
-      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
-    });
-  </script>
+      <hr class="divider" />
 
-</body>
-</html>
+      <h2 id="s2">三个人为何能赚这么多？</h2>
