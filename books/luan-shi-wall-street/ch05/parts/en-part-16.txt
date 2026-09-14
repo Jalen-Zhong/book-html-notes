@@ -1,0 +1,52 @@
+      <div class="diagrams-section" id="diagrams">
+        <h2>People · timeline · knowledge graph</h2>
+        <p style="color:var(--muted);font-size:14px;">Mermaid diagrams linking the fable, three modes, and repo foreshadow (not from the book).</p>
+        <div class="mermaid-wrap">
+          <div class="caption">Fig A · Narrative timeline: carnival → DuPont trio → repo foreshadow → calm seas</div>
+          <pre class="mermaid">
+timeline
+    title Yuyang path (this chapter)
+    section Floor
+      2006 muni desk : millions per month scale
+      Vince and Roger celebrate : apprentice eyes senior seat
+    section Hyper Goldman
+      Board grades ROE : Pig writes DuPont
+      Microsoft mode : high-margin people biz
+      Walmart mode : ABS/CDO warehouse
+      Wall Street mode : 20x toward 20% ROE
+    section Macro and pay
+      ROE arms race : prop innovation
+      Greenspan low rates : bonus-year myopia
+    section Back to Lucy
+      ~1B muni book : overnight repo and haircuts
+      SIV/TOB shorts : swaps hedge then lever
+      Model illusion : CDS/CDX compressed
+      CDX IG 33-40bp : cover bid boredom
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">Fig B · Hyper Goldman cast / Lucy desk map</div>
+          <pre class="mermaid">
+flowchart TD
+    BOARD["Board
+grades ROE"] --> OX["CEO Ox"]
+    OX --> PIG["Advisor Pig
+arithmetic DuPont"]
+    PIG --> M1["Microsoft mode
+margin"]
+    PIG --> M2["Walmart mode
+turnover"]
+    PIG --> M3["Wall Street mode
+leverage"]
+    OX --> IB["IB lead"]
+    OX --> SEC["Securitization star"]
+    OX --> PROP["Prop investing lead"]
+    PROP --> HF["Traders leave for HF"]
+    REAL["Lucy muni desk"] --> V["Vince"]
+    REAL --> R["Roger"]
+    REAL --> A["Author/apprentice"]
+    REAL --> REPO["Overnight repo funding"]
+    M3 -.->|"isomorphic"| REPO
+          </pre>
+        </div>
+        <div class="mermaid-wrap">

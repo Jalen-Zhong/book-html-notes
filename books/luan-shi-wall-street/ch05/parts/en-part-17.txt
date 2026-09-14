@@ -1,0 +1,42 @@
+          <div class="caption">Fig C · Knowledge graph: DuPont factors and pre-crisis pipes</div>
+          <pre class="mermaid">
+flowchart LR
+    ROE["ROE"] --> PM["Margin"]
+    ROE --> AT["Turnover"]
+    ROE --> LEV["Leverage"]
+    PM --> IBFEES["IB/M&amp;A/underwriting"]
+    AT --> WH["ABS/CDO warehouse"]
+    LEV --> REPO["Repo + haircut"]
+    LEV --> BD["Dealer ~30x"]
+    WH --> SHADOW["Shadow banking"]
+    REPO --> SIV["SIV/TOB short end"]
+    HEDGE["Swap hedges"] --> LEV
+    CDS["CDS/CDX"] --> CALM["33-40bp calm"]
+    GREEN["Low policy rates"] --> LEV
+    PROP2["Prop"] --> ROE
+    AG["Agency"] --> PM
+          </pre>
+        </div>
+      </div>
+    </article>
+    <footer>
+      Story guide · Chaos on Wall Street (Yuyang) Ch.5 “The DuPont Formula”<br />
+      Retold from public trial text — not verbatim; footnotes are off-book research; Lucy Bank / Hyper Goldman are aliases or fable<br />
+      Support the licensed edition · images in SOURCES.md ·
+      <a href="dupont-formula-zh.html">中文版</a>
+      · <a href="../ch04/center-of-universe-en.html">← Chapter 4</a>
+    </footer>
+  </div>
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
+  </script>
+
+</body>
+</html>
