@@ -1,0 +1,18 @@
+          ROE = net income / shareholders’ equity — accounting profit per unit of book equity. Banks and dealers treat it as a peer benchmark, bonus-pool input, and strategy slogan. High ROE can mean real operating edge — or thin capital plus a friendly cycle. When the numerator looks good and the denominator is levered down, the ratio flatters.
+          <div class="why">Why it matters: every “mode” in the chapter answers the board’s demand to lift ROE.</div>
+          <div class="src">Source: corporate-finance textbooks; bank KPI disclosures</div>
+        </div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ DuPont identity</strong>
+          Classic three-factor DuPont: ROE = (net income/sales) × (sales/assets) × (assets/equity) = profit margin × asset turnover × financial leverage. It does not create profit; it diagnoses which lever management is pulling. The framework spread from DuPont’s internal analysis into standard ratio analysis.
+          <div class="why">Why it matters: Pig’s blackboard is the skeleton of Microsoft / Walmart / Wall Street modes.</div>
+          <div class="src">Source: DuPont analysis in corporate-finance texts; public ratio-analysis primers</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">Microsoft mode: high-margin people businesses</h2>
+      <p>Pig’s first play: lift margin. The dream trade looks like software monopoly — thin cost, fat price. Mapped onto a dealer, that means high-margin “people businesses”: M&amp;A advisory, underwriting, and client/market-making franchises with pricing power. Call it “Microsoft mode” — earn on unit economics before you stretch the balance sheet to the limit<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a>.</p>
+      <p>People businesses saturate. Advisory fees and underwriting wallets are not infinite; when every Hyper Goldman tries to be Microsoft, competition chews the margin down.</p>
+

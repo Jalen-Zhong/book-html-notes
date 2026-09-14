@@ -1,0 +1,25 @@
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ Prop vs agency, again</strong>
+          High-margin client/advisory work is closer to selling brains and licenses: capital use can stay contained. Prop puts capital directly into price risk. Pre-crisis firms ran both; “Microsoft mode” says: skim thick fee businesses first, then hunt DuPont’s other two factors when margins fade.
+          <div class="why">Why it matters: lands the fable’s “Microsoft” on recognizable IB business types.</div>
+          <div class="src">Source: public IB fee vs prop contrasts; continuity with prior chapter notes</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">Walmart mode: ABS/CDO warehouse turnover</h2>
+      <p>When margin is not enough, chase turnover. Pig points to “Walmart mode”: thin margin, furious volume — assets should not linger. Pre-crisis, that often meant ABS/CDO warehouse pipelines: aggregate loans or bonds, tranche them, sell them; keep unsold stubs on book for traders to “manage” and work out<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a>.</p>
+      <p>Fast turnover can flattering ROE even with mediocre margins — if the downstream bid and short-term funding stay open. When the pipe clogs, turnover becomes inventory.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal_Reserve_Board_Building.jpg" alt="Federal Reserve Board building" loading="lazy" />
+        <figcaption>Federal Reserve Board (Eccles) Building — institutional backdrop for cheap liquidity and the leverage climate. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ ABS/CDO warehouses</strong>
