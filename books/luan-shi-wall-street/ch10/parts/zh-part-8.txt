@@ -1,0 +1,79 @@
+          <div class="caption">关系图：双顶寒意 → 核心减记 → 有毒口语 → 三种结局</div>
+          <div class="mermaid">
+flowchart LR
+  TOP[10月下旬双顶寒意] --> BIDS[bid list↑ · 买方冬眠]
+  BIDS --> TN[田纳西后悔 · 难止损]
+  BIDS --> HY[胡佑 bid 4.70% −20bp]
+  TOP --> WD[花旗~$10B · 美林~$9.4B]
+  WD --> PATH[外围→HF→核心银行]
+  PATH --> CITI[超市银行·仓库/CDO]
+  PATH --> MER[First Franklin 垂直整合]
+  MER --> TOX[toxic waste 口语化]
+  TOX --> CDS[美林CDS ~500bp]
+  TOX --> ALLEG[超级高盛第二幕]
+  ALLEG --> ENDS[高盛式/贝尔式/雷曼式]
+  ENDS --> CAVE[黑暗洞窟 · 曹刘孙]
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">时间线：十面埋伏（2007 深秋）</div>
+          <div class="mermaid">
+timeline
+  title 十面埋伏
+  2006-09 : 美林协议收购 First Franklin
+  2007-10下旬 : 双顶寒意 · 买方冬眠
+               : 田纳西住房债后悔
+               : bid ~4.70%（−20bp）
+  2007深秋 : 花旗/美林十亿级减记
+           : 外围→HF→核心传导
+           : toxic waste 进入口语
+           : 银行 CDS 急升
+  寓言外延 : 主权资金·巴菲特优先股
+           : 20¢甩卖·转 BHC
+           : 三种结局预演 2008
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">知识图谱：减记、CDS、BHC 与寓言工具箱</div>
+          <div class="mermaid">
+flowchart TB
+  INV[仓库/CDO存货] --> WD[核心银行减记]
+  ORIG[次级发放源] --> VERT[垂直整合]
+  VERT --> WD
+  WD --> TOX[有毒资产口语]
+  WD --> CDS[CDS利差恐惧]
+  TOX --> SALE[残渣打折甩卖]
+  CAP[主权+优先股+增发] --> SURV[资本与信心]
+  BHC[转为银行控股公司] --> FED[联储窗口/存款]
+  SURV --> G[高盛式活]
+  SALE --> G
+  FED --> G
+  SURV --> B[贝尔式被卖]
+  SURV --> L[雷曼式破产]
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer>
+      《乱世华尔街》· 渔阳 · 第十章故事导读（原创改写）·
+      <a href="SOURCES.md">SOURCES.md</a> ·
+      <a href="../../index.html">返回目录</a>
+    </footer>
+  </div>
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
+  </script>
+
+</body>
+</html>
