@@ -1,0 +1,38 @@
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Marriner_S._Eccles_Federal_Reserve_Board_Building.jpg" alt="美联储埃克尔斯大楼" loading="lazy" />
+        <figcaption>美联储（华盛顿）——2008 年 1 月紧急降息，是对全球股市与短端恐慌的制度回应。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        折价分化是一场无声的评级；科维尔事件则提醒：屏幕上的「宏观」有时只是一张被藏起来的交易单。
+      </div>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ 科维尔 / 法兴（Kerviel / Société Générale，2008 年 1 月）</strong>
+          2008 年 1 月中下旬，法兴发现交易员热罗姆·科维尔通过虚假对冲掩盖约近 500 亿欧元名义的欧洲股指期货方向性仓位；银行于 1 月 21–23 日前后平仓，并于 1 月 24 日公告净亏损约 49 亿欧元。平仓恰逢全球股市剧烈波动，市场一度难以区分「宏观恐慌」与「单家银行强平」的贡献——本章「联储被表象所骗」即指此混淆。
+          <div class="why">为何重要：把「流动性退潮时魔鬼现身」落到可核对事件——强平可以伪装成宏观崩溃。</div>
+          <div class="src">来源：Société Générale 官方说明与总监察报告摘要；2008-01-24 公告；当代 Risk.net / 财经报道</div>
+        </div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ 美联储 2008 年 1 月紧急降息</strong>
+          2008 年 1 月 21–22 日，在全球股市急挫背景下，FOMC 召开紧急会议，于 1 月 22 日宣布将联邦基金目标利率下调 <strong>75</strong> 个基点至 3.5%（贴现率同步下调），为多年来首次会议间紧急行动；1 月 29–30 日例会再下调 <strong>50</strong> 个基点至 3%。书中「紧急约 50bp」可与同月第二次降息或叙事压缩对应；脚注按公开会议声明区分两次操作。
+          <div class="why">为何重要：标定「踵伤」已从交易台传到央行——短端与股市同时告急。</div>
+          <div class="src">来源：Federal Reserve FOMC 2008-01-22 声明；2008-01-30 声明；FRB Monetary Policy Report 叙述</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">逃向安全：管道挤兑回表</h2>
+      <p>投资者集体逃向安全资产。ABCP、SIV、TOB 一类管道遭遇挤兑或续发失败时，花旗、美林等赞助方不得不把资产<strong>拉回自己的资产负债表</strong>——表外游戏结束，踵上的伤口变成公开的资本消耗。</p>
+      <p>货币市场「现金优先」的承诺，与批发市场「现金稀缺」的现实，在同一周里对撞。</p>
+
+      <div class="scene">
+        逃向安全不是道德选择，是数学：当续发窗口关上，管道里的资产只能回家。
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">ARS 冻结：新牌局与基差 210</h2>
