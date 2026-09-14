@@ -1,0 +1,21 @@
+      <p>It was Chapter 7’s interlocking stratagem continued: tranching renamed risk, leverage scaled the name into size, and incomplete hedges left gaps for a summer wind to find.</p>
+
+      <div class="scene">
+        The term sheet promised AAA and hedges; high summer asked how much the hedges really covered — and what the collateral fetched under an auction hammer.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">Cayne’s injection, Merrill’s auction threat, ABX smash</h2>
+      <p>CEO Jimmy Cayne reluctantly backed a roughly $1.6 billion collateralized funding backstop for the High-Grade fund — the parent putting its own balance sheet in front of a liquidation.<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a></p>
+      <p>Creditors were unconvinced. Merrill Lynch threatened a public auction of about $800 million of CDO collateral: one thin-market print could become the mark-to-market window paper everyone else had to respect.<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a><a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a> Panic smashed through the ABX complex; Sowood and others showed stress in the same weather; by late July the Bear funds were headed into bankruptcy.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wall_Street_panorama_vc.jpg" alt="Wall Street panorama 2007" loading="lazy" />
+        <figcaption>Wall Street panorama (December 2007) — months earlier, auction threats had already forced private marks into public prices. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ The ABX index</strong>

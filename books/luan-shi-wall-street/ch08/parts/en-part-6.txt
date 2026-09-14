@@ -1,0 +1,16 @@
+          The High-Grade Structured Credit Strategies Fund and its Enhanced Leverage sister held leveraged structured-credit exposure tied to subprime and financed heavily in repo-style markets. In June 2007 they faced redemptions and margin calls; Bear later committed roughly a $1.6B collateralized repo facility to the High-Grade fund (around June 26). By month-end, Enhanced Leverage had effectively no investor value left and High-Grade very little; the funds moved toward bankruptcy/wind-down by late July.
+          <div class="why">Why it matters here: the first thunderclap of the chapter — a “small” fund as a system wall.</div>
+          <div class="src">Sources: contemporary NYT/Reuters coverage; public excerpts of Cayne/BSAM investor updates</div>
+        </div>
+        <div class="fn-item" id="fn2">
+          <strong>² Collateralized lending / repo</strong>
+          Hedge funds and dealers commonly finance inventory via repurchase agreements: securities are posted as collateral against cash, subject to a haircut. When prices fall or haircuts rise, borrowers face margin calls or forced liquidation. If creditors auction seized collateral, private marks become public prices — the bite behind Merrill’s auction threat later in the chapter.
+          <div class="why">Why it matters here: explains how modest NAV can still shock Street-wide funding and marks.</div>
+          <div class="src">Sources: public repo-market primers; crisis histories of HF–prime-broker financing chains</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">Strategy: AAA paper, CDS, and leverage</h2>
+      <p>The pitch had once been elegant: buy seemingly AAA structured paper, overlay credit-default-swap hedges, add leverage, and turn a few basis points of spread into tidy monthly returns. As spreads compressed, keeping the return required worse collateral and incomplete hedges — models still said “high grade,” while the book grew brittle.</p>
