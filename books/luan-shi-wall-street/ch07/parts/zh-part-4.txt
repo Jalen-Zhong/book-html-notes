@@ -1,0 +1,42 @@
+      </div>
+      <nav class="toc" aria-label="章节导航">
+        本节导览
+        <ul>
+          <li><a href="#s1">伯克利同学的盛宴：佃户与地主</a></li>
+          <li><a href="#s2">从优质房贷到次级：政策推力与诱惑利率</a></li>
+          <li><a href="#s3">分层炼金术：AAA、夹层与股权</a></li>
+          <li><a href="#s4">连环计：赤壁连环船与东风何在</a></li>
+          <li><a href="#s5">剂量问题：有用的药，过量的链</a></li>
+          <li><a href="#s6">2006 圣诞：创纪录奖金与未被察觉的跌价</a></li>
+          <li><a href="#s7">2007 初火：汇丰与新世纪</a></li>
+          <li><a href="#s8">流动性轮动：能源、新兴市场与巨型 LBO</a></li>
+          <li><a href="#s9">盛世兴收藏，乱世买黄金</a></li>
+          <li><a href="#s10">新型浮动债：模型说风险很便宜</a></li>
+          <li><a href="#s11">第一艘着火的船：贝尔斯登对冲基金</a></li>
+          <li><a href="#diagrams">人物关系 / 时间线 / 知识图谱</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER SEVEN · 连环计</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wall_Street_Sign_New_York_2005.jpg" alt="华尔街路牌" loading="lazy" />
+        <figcaption>华尔街路牌（2005）——宴会厅里的笑声与簿记上的连环杠杆，共享同一条街。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">伯克利同学的盛宴：佃户与地主</h2>
+      <p>2006 年尾的一场派对上，作者遇见伯克利同学 Parvin。对方在雷曼兄弟的次级相关台子上做事；闲聊落到利润，数字几乎不像同一个行业——对方部门盈亏量级说到约十亿美元，而作者自己的市政债簿记，一年利润仍以「几千万」计。那种感觉很具体：自己像在地主家门口干活的佃户，对方像在收租。</p>
+      <p>笑谈里没有血腥味。次级（subprime）还像一门被证明过的生意：房子涨、再融资顺、证券化管道通畅。派对灯光一打，风险看起来只是别人的资产负债表问题。</p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">本章时间与概念锚点</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">2006末</div><div class="ev">次级盛宴 · 创纪录奖金</div></div>
+          <div class="event-card"><div class="yr">2007.2</div><div class="ev">汇丰 Household 拨备警报</div></div>
+          <div class="event-card"><div class="yr">2007.4</div><div class="ev">新世纪破产</div></div>
+          <div class="event-card"><div class="yr">2007.6</div><div class="ev">贝尔斯登相关基金告急</div></div>
+        </div>
+      </div>
+
+      <div class="scene">
