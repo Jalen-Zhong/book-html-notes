@@ -1,0 +1,59 @@
+  RUN[Summer storm ≈ run] --> FED[Only Fed can inject]
+  FED --> ORIGIN[1907 library → 1913 Fed]
+  FED --> SIG[8/17 discount signal]
+  SIG --> PHONE[Phones: any bonds?]
+  PHONE --> MUNI[Muni bounce]
+  SIG --> STRONG[Strong hands]
+  STRONG --> CIT[Citadel ← Sowood]
+  STRONG --> BAC[BofA ← Countrywide]
+  STRONG --> ABX[ABX bounce · basis 140→110]
+  ABX --> MH[Moral hazard ↑]
+  MH --> SPX[10/9 S&P ~1565]
+  SPX --> META[Skin / bone / organs]
+  META --> WARN[Tennessee housing]
+  WARN --> STAL[Stalingrad-style calm]
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Timeline: the crisis seems past (late summer–fall 2007)</div>
+          <div class="mermaid">
+timeline
+  title The crisis seems past
+  1907-1913 : Panic and Fed legislation
+  2007-08-17 : Discount rate −50bp
+             : Funds target on hold
+  2007-late Aug : Muni bounce · bond inquiries
+                : Citadel/Sowood already caught
+                : BofA $2B into Countrywide
+                : Basis ~140→110
+  2007-10-09 : S&P ~1565 high
+             : BRIC decoupling · A-share climax
+  2007 fall : Tennessee AAA housing buy
+            : Calm = reserves spent
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Knowledge graph: signal, moral hazard, body metaphor</div>
+          <div class="mermaid">
+flowchart TB
+  LIQ[Liquidity run] --> CB[Central-bank LOLR]
+  CB --> DISC[Discount-window signal]
+  DISC --> RELIEF[Spreads tighten / bounce]
+  RELIEF --> HANDS[Strong hands catch]
+  HANDS --> MH[Moral hazard / backstop psyche]
+  MH --> RISK[Risk appetite returns]
+  RISK --> SKIN[Equities = skin at highs]
+  RISK --> BONE[Credit = cracked bone]
+  RISK --> ORG[Banks/shadow = bleeding organs]
+  SKIN --> ILLUSION[Crisis seems past]
+  BONE --> ILLUSION
+  ORG --> ENCIRCLE[Encirclement forming]
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer>
