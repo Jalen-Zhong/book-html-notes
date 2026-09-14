@@ -1,0 +1,45 @@
+      <h2 id="s11">Canary: the gilded age is ending</h2>
+      <p>In the author’s telling, Amaranth is not merely an unlucky fund — it is a canary in the mine: a flower can die first in the gas market while larger cracks in credit and funding pipes still wait. 2006’s calm is not a safety certificate; it is the most deceptive scenery near the end of a gilded age.</p>
+      <p>Cyclical history stops sounding like nostalgia and starts sounding like a warning: linear optimism still says “never fading,” while petals are already on the floor.</p>
+
+      <hr class="divider" />
+
+      <section class="diagrams-section" id="diagrams">
+        <h2>Cast map / timeline / knowledge graph</h2>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Relationship map: 1998 cast → 2006 gas protagonists → desk contrast</div>
+          <div class="mermaid">
+flowchart LR
+  MW[Meriwether / Salomon lineage] --> LTCM[LTCM 1998]
+  SM[Scholes / Merton] --> LTCM
+  DM[Mullins] --> LTCM
+  RU[Russia default] --> LTCM
+  LTCM -->|history rhymes| AM[Amaranth 2006]
+  BH[Brian Hunter] --> AM
+  KATRINA[Katrina windfall memory] --> BH
+  AM -->|book transfer| JPM[JPM / Citadel]
+  FED[Fed 17 hikes] -.-> AM
+  VINCE[Vince survival style] -.->|contrast| BH
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Timeline: LTCM dress rehearsal to Amaranth canary</div>
+          <div class="mermaid">
+timeline
+  title Echoes of chaos
+  1998-08 : Russia debt shock
+           : LTCM crisis and private rescue coordination
+  2004-06 : Fed begins consecutive hikes
+  2005    : Katrina · nat-gas windfall
+  2006-06 : Funds target reaches 5.25%
+  2006-09 : Amaranth losses and energy-book transfer
+  late-2006 : Gilded calm persists · canary already singing
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Knowledge graph: leverage, liquidity, model illusion</div>
+          <div class="mermaid">
+flowchart TB

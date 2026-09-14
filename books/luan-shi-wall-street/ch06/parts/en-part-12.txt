@@ -1,0 +1,20 @@
+      <p>Worse is the lag: after hikes, risk appetite can stay euphoric for a while; liquidity does not <em>feel</em> cold overnight. Policy tightens while markets still add risk — until one lonely leveraged bet blows up and everyone admits the tide already left.</p>
+
+      <div class="footnotes" id="fn-block-6">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ Money multiplier</strong>
+          In textbooks, broad money ≈ base money × multiplier; the multiplier captures how the banking system turns reserves into deposits and credit. Crisis research stresses that shadow banks, securitization, and off-balance-sheet pipes complicate the “effective” multiplier — credit can expand in repo and ABCP without sitting at the center of traditional deposit stats.
+          <div class="why">Why it matters: clarifies the crack between “the Fed is hiking” and “the Street still feels flush.”</div>
+          <div class="src">Sources: money-and-banking texts; post-crisis discussions of shadow credit expansion</div>
+        </div>
+        <div class="fn-item" id="fn8">
+          <strong>⁸ Shadow banking / repo and haircuts</strong>
+          Repo finances positions with securities as collateral; a haircut is the discount between collateral value and cash lent. Lower haircuts mean higher leverage; rising haircuts force de-leveraging. Work by Gorton, Metrick, and others emphasizes that crisis “runs” often hit repo and wholesale funding that behaves like runnable deposits. A hedge fund’s invisible leverage frequently lives in these daily-rolled contracts.
+          <div class="why">Why it matters: links to the prior chapter’s DuPont/ROE leverage story and explains how one commodity book can drain a whole fund’s liquidity.</div>
+          <div class="src">Sources: NY Fed repo explainers; Gorton &amp; Metrick on the run on repo</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
