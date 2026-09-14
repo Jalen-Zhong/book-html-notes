@@ -1,89 +1,59 @@
-08 regulation, especially the U.S. Volcker Rule under Dodd-Frank, sharply limited deposit-taking banks’ proprietary trading; many desks moved to hedge funds or shut. Read this chapter knowing “Lucy Bank” prop is a pre-Volcker species.
-          <div class="why">Why it matters: without that era marker, you miss why prop felt like the casino skill set promoted into a real job.</div>
-          <div class="src">Sources: eFinancialCareers 2004–05 prop pay/culture pieces; Volcker Rule background primers</div>
+class="fn">⁷</sup></a>.</p>
+      <p>The practical advice was pure Wall Street: for sensitive talk, prefer the phone to email — email leaves a forwardable trail. For a newcomer this was not a how-to on cutting corners; it was a warning that information boundaries here are sharper than any campus ethics seminar.</p>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ Insider trading and MNPI: the boundary course</strong>
+          Under U.S. securities law, trading on material nonpublic information — or tipping for personal benefit — can be illegal; bankers, lawyers, and other temporary insiders are in scope. Compliance training hammers walls, watch lists, restricted lists, and the duty to report what you hear without trading or tipping family. Elevator gossip is dangerous precisely because the source is informal yet the content may still be MNPI.
+          <div class="why">Why it matters: this chapter turns “overhearing gossip” into a career life-or-death line — Keen’s later fate is the cautionary payoff.</div>
+          <div class="src">Sources: SEC / U.S. insider-trading primers; public IB compliance training summaries</div>
+        </div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ 2005 NYSE–Archipelago: the dual-advisor storm</strong>
+          In April 2005 the NYSE announced a combination with electronic venue Archipelago on the path to becoming a public company. Goldman’s public role was tangled: facilitator/advisor to both sides, holder of roughly 15% of Archipelago, NYSE seat owner; NYSE CEO John Thain was a Goldman alumnus. Seat holders sued over conflicts; a New York judge later still blasted Goldman’s multiple roles while clearing related settlements. The deal advanced, but “can a bank serve both sides?” became that year’s open seminar.
+          <div class="why">Why it matters: the book uses the deal to show how “clever” and “clean” tear apart under public light — what the intern heard was the industry’s reputation stress test.</div>
+          <div class="src">Sources: NBC / LA Times / NY Post 2005 coverage; Archipelago SEC 8-K; Higgins litigation public summaries</div>
         </div>
       </div>
 
-      <div class="diagrams-section" id="diagrams">
-        <h2>People · timeline · knowledge graph</h2>
-        <p style="color:var(--muted);font-size:14px;">Mermaid diagrams below stitch chapter people, path, and ideas (not original book figures).</p>
-        <div class="mermaid-wrap">
-          <div class="caption">Figure A · Journey: Goldman internship → compliance jolt → NYU → prop pull</div>
-          <pre class="mermaid">
-timeline
-    title Yuyang path (this chapter)
-    section Inside Goldman
-      Autumn 2005 IBD Strategies : Special-forces culture and J.Aron bloodline
-      Tools and delivery : SecDB / narrative / Jerry
-    section Information boundary
-      Elevator gossip : MNPI and compliance education
-      Archipelago controversy : Dual-advisor public lesson
-      Keen later : Insider-trading cautionary tale
-    section Year-end turn
-      Bonus season and Christmas party : Feels outgunned
-      NYU recruiting fair : Meets Rick and Lucy Bank
-      Prop rates attraction : CFA and bond common language
-          </pre>
-        </div>
-        <div class="mermaid-wrap">
-          <div class="caption">Figure B · People / institution map</div>
-          <pre class="mermaid">
-flowchart TD
-    A["Author Yuyang"] --> B["Goldman IBD Strategies"]
-    B --> C["Jerry\nJ.Aron track / partner path"]
-    B --> D["Professor-turned MDs\nClient narrative"]
-    B --> E["SecDB / internal tools"]
-    A --> F["Keen\nBerkeley interviewer"]
-    F -.->|"Later insider ring"| W["Warning: do not follow"]
-    B --> G["Compliance education\nElevator gossip"]
-    H["NYSE–Archipelago\nDual-advisor controversy"] -.->|"Public lesson"| G
-    A --> I["NYU recruiting fair"]
-    I --> J["Rick\nLucy Bank prop/rates"]
-    J --> K["CFA / bond common language"]
-    J --> L["Prop desk attraction"]
-    M["Blankfein / J.Aron lineage"] -.->|"Risk appetite"| B
-          </pre>
-        </div>
-        <div class="mermaid-wrap">
-          <div class="caption">Figure C · Knowledge graph: culture / tools / compliance / career fork</div>
-          <pre class="mermaid">
-flowchart LR
-    CULT["Because we are Goldman"] --> BONUS["Record bonuses"]
-    CULT --> CUT["Bottom ~5% cut"]
-    PART["Post-1999 partner ladder"] --> CULT
-    SEED["SecDB"] --> RISK["Pricing and risk aggregation"]
-    NAR["Client narrative"] --> IBD["IB deliverables"]
-    MNPI["Material nonpublic info"] --> COMP["Compliance boundary"]
-    COMP --> PHONE["Phone over email"]
-    ARCH["Dual-advisor conflict"] --> COMP
-    PROP["2005 prop desk"] --> EDGE["Trading firm capital"]
-    CFA["CFA fixed-income signal"] --> PROP
-    INTERN["Goldman intern halo"] --> DOOR["Ticket to the next table"]
-    DOOR --> PROP
-    DOOR --> IBD
-          </pre>
+      <hr class="divider" />
+
+      <h2 id="s5">Keen’s later path: do not follow</h2>
+      <p>Keen — the Berkeley interviewer from Chapter 1 who grilled him for hours and smiled when every answer landed — later drifted into an insider-trading ring. The author writes it almost as a warning label: the shortcut looks like “information edge”; the destination is regulators and prison. For readers, the elevator lesson upgrades from policy to a human wreck — do not follow.</p>
+      <div class="scene">
+        The internship teaches two weapons: SecDB and models, and reverence for information boundaries. Without the second, the first only helps you fail faster.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">Bonus season 2005, Christmas party, NYU fair</h2>
+      <p>Year-end, Wall Street bathed in 2005’s record-bonus air. Inside Goldman, acronyms like SSG and Triple Play floated at parties — fireworks for an intern: bright, not yet fully decoded. The Christmas party glittered; between toasts the author felt outgunned — surrounded by people closer to revenue accounts and smoother at the story.</p>
+      <p>So he went to a New York University recruiting fair — not to discard Goldman’s glow, but to open another door: if the full-time seat was not on this Strategies line, a trading, prop, or rates seat might be closer to the table he had wanted since the casino years.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rockefeller_Center_christmas_tree.jpg" alt="Rockefeller Center Christmas tree" loading="lazy" />
+        <figcaption>Rockefeller Center Christmas tree — Manhattan’s public year-end backdrop. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-6">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn8">
+          <strong>⁸ Chinese bank reform and the Goldman–ICBC line (same-era public facts)</strong>
+          2005–06 was peak season for Chinese big-bank restructuring and strategic investors. Public records show that in January 2006 a Goldman-led consortium (with Allianz and American Express) signed to invest about $3.78 billion for roughly 8.45% of ICBC, Goldman itself near 5.75%, plus governance and risk-management cooperation ahead of ICBC’s IPO. For a Chinese observer interning at Goldman, such deals were live textbooks on mutual need between China and Wall Street — even when this chapter’s plot is a personal job hunt.
+          <div class="why">Why it matters: pins the smallness of a Christmas party against the same year’s Asian financial-reform table — gilding was not only in the champagne.</div>
+          <div class="src">Sources: ICBC English press releases (Jan 2006 strategic investment); Wharton case PDF summaries</div>
         </div>
       </div>
-    </article>
-    <footer>
-      Story guide · <em>Chaos on Wall Street</em> (Yuyang) · Chapter 2 “Goldman Internship”<br />
-      Retold from public trial-read arc; footnotes are off-book research<br />
-      Support the official edition · See SOURCES.md ·
-      <a href="goldman-internship-zh.html">中文版</a>
-      · <a href="../ch01/casino-to-wall-street-en.html">← Chapter 1</a>
-    </footer>
-  </div>
 
+      <hr class="divider" />
 
-  <script>
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: "dark",
-      securityLevel: "loose",
-      timeline: { useMaxWidth: true },
-      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
-    });
-  </script>
+      <h2 id="s7">Meeting Rick: “Lucy Bank” prop / rates</h2>
+      <p>At the NYU fair he met Rick — from the book’s aliased “Lucy Bank,” on a proprietary-trading / rates-related team. They talked bonds, rates, and the CFA: the charter path as a common signal in fixed income and portfolio work<a class="fn-link" href="#fn9"><sup class="fn">⁹</sup></a>. The résumé line Goldman intern was already a door-knocker in the 2005 market.</p>
+      <p>Prop desks then were still banks’ relatively free corners for betting the house’s capital: high payouts, real autonomy, not yet remade by the later Volcker Rule<a class="fn-link" href="#fn10"><sup class="fn">¹⁰</sup></a>. To someone who had trained expected value at blackjack and poker, the seat smelled more like a true table than client narrative decks. The chapter closes on that pull — the Goldman internship opened a door; the next table might not be in the same building.</p>
 
-</body>
-</html>
+      <div class="footnotes" id="fn-block-7">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn9">
+          <strong>⁹ CFA: the three-level investment passport</strong>
+          The Chartered Financial Analyst program (CFA Institute) typically runs three exam levels: Le
