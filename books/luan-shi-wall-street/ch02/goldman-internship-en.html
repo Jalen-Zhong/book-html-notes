@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Goldman Internship · loading</title>
+  <style>
+    body { margin:0; font-family: system-ui, sans-serif; background:#0b1220; color:#e8eef9;
+      display:flex; min-height:100vh; align-items:center; justify-content:center; }
+    .box { max-width:420px; padding:24px; border:1px solid rgba(212,175,55,.28);
+      border-radius:16px; background:#121a2b; line-height:1.6; text-align:center; }
+    a { color:#f0d78c; }
+  </style>
+</head>
+<body>
+  <div class="box" id="status">Loading chapter…</div>
+  <script>
+  (async function () {
+    const parts = ["parts/en-part-0.txt", "parts/en-part-1.txt", "parts/en-part-2.txt", "parts/en-part-3.txt"];
+    const status = document.getElementById('status');
+    try {
+      const texts = await Promise.all(parts.map(p => fetch(p).then(r => {
+        if (!r.ok) throw new Error(p + ' ' + r.status);
+        return r.text();
+      })));
+      const html = texts.join('');
+      document.open();
+      document.write(html);
+      document.close();
+    } catch (e) {
+      status.innerHTML = 'Failed to assemble page: ' + e +
+        '<br><br><a href="goldman-internship-zh.html">中文</a>';
+    }
+  })();
+  </script>
+</body>
+</html>
