@@ -1,0 +1,57 @@
+  BIDS --> HY[Hu You bid 4.70% −20bp]
+  TOP --> WD[Citi~$10B · Merrill~$9.4B]
+  WD --> PATH[periphery→HF→core banks]
+  PATH --> CITI[supermarket bank·warehouse/CDO]
+  PATH --> MER[First Franklin vertical]
+  MER --> TOX[toxic waste vernacular]
+  TOX --> CDS[Merrill CDS ~500bp]
+  TOX --> ALLEG[Hyper Goldman Act II]
+  ALLEG --> ENDS[Goldman/Bear/Lehman endings]
+  ENDS --> CAVE[dark cave · Cao/Liu/Sun]
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Timeline: Ambush from Ten Sides (late autumn 2007)</div>
+          <div class="mermaid">
+timeline
+  title Ambush from Ten Sides
+  2006-09 : Merrill agrees to buy First Franklin
+  2007-late-Oct : Double-top chill · buyers hibernate
+                 : Tennessee housing regret
+                 : bid ~4.70% (−20bp)
+  2007-deep-fall : Citi/Merrill ten-digit writedowns
+                 : periphery→HF→core path
+                 : toxic waste enters speech
+                 : bank CDS surges
+  Allegory-arc : Sovereign + Buffett preferred
+               : 20¢ dump · convert to BHC
+               : three endings preview 2008
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Knowledge graph: writedowns, CDS, BHC, allegory toolkit</div>
+          <div class="mermaid">
+flowchart TB
+  INV[warehouse/CDO inventory] --> WD[core-bank writedowns]
+  ORIG[subprime origination] --> VERT[vertical integration]
+  VERT --> WD
+  WD --> TOX[toxic-asset slang]
+  WD --> CDS[CDS fear spreads]
+  TOX --> SALE[residue fire-sale]
+  CAP[sovereign+preferred+equity] --> SURV[capital and confidence]
+  BHC[convert to BHC] --> FED[Fed window/deposits]
+  SURV --> G[Goldman-like live]
+  SALE --> G
+  FED --> G
+  SURV --> B[Bear-like sold]
+  SURV --> L[Lehman-like bankrupt]
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer>
+      <em>Chaos on Wall Street</em> · Yuyang · Chapter 10 story guide (original retelling) ·

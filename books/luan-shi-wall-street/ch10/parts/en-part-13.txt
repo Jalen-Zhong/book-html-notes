@@ -1,0 +1,17 @@
+      <a href="SOURCES.md">SOURCES.md</a> ·
+      <a href="../../index.html">Back to index</a>
+    </footer>
+  </div>
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
+  </script>
+
+</body>
+</html>
