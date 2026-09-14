@@ -1,0 +1,19 @@
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ Discount rate vs. federal funds rate (17 Aug 2007)</strong>
+          The funds target anchors overnight interbank reserves; primary credit at the discount window usually sits above that target as a backup facility. On 17 August 2007 the Board approved a 50bp cut in the primary credit rate to 5¾%, narrowing the spread to the 5.25% funds target to 50bp, and allowed renewable term financing up to 30 days while keeping a broad collateral list. The first funds-rate cut followed on 18 September.
+          <div class="why">Why it matters here: institutional meaning of “signal, not full easing”—fix the pipes before declaring a cycle.</div>
+          <div class="src">Source: Federal Reserve press release monetary20070817a (17 Aug 2007)</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s4">Strong hands: Citadel, BofA, the bounce</h2>
+      <p>Strong hands showed up. Citadel took nearly all of Sowood’s book after July’s credit smash—capital and nerve buying risk at fire-sale marks.<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a> Bank of America injected about $2 billion of convertible preferred into Countrywide, a balance-sheet sedative for the nation’s largest mortgage lender.<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a></p>
+      <p>ABX and related subprime gauges bounced; municipal basis tightened from roughly 140 toward 110—not a cured patient, just the sharpest panic blade pulled back. A generation of traders revived the mantra that every crisis is a buying opportunity—S&amp;L, Russia, the dot-com bust—each corpse had minted fortunes in the rubble. This time, they thought the script would rhyme again.</p>
+
+      <div class="scene">
+        Strong hands turn screens green. Green is not healed bone—only someone willing to warehouse risk others refuse at a lower price.
+      </div>
+
