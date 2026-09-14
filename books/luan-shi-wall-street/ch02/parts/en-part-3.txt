@@ -1,0 +1,89 @@
+08 regulation, especially the U.S. Volcker Rule under Dodd-Frank, sharply limited deposit-taking banks’ proprietary trading; many desks moved to hedge funds or shut. Read this chapter knowing “Lucy Bank” prop is a pre-Volcker species.
+          <div class="why">Why it matters: without that era marker, you miss why prop felt like the casino skill set promoted into a real job.</div>
+          <div class="src">Sources: eFinancialCareers 2004–05 prop pay/culture pieces; Volcker Rule background primers</div>
+        </div>
+      </div>
+
+      <div class="diagrams-section" id="diagrams">
+        <h2>People · timeline · knowledge graph</h2>
+        <p style="color:var(--muted);font-size:14px;">Mermaid diagrams below stitch chapter people, path, and ideas (not original book figures).</p>
+        <div class="mermaid-wrap">
+          <div class="caption">Figure A · Journey: Goldman internship → compliance jolt → NYU → prop pull</div>
+          <pre class="mermaid">
+timeline
+    title Yuyang path (this chapter)
+    section Inside Goldman
+      Autumn 2005 IBD Strategies : Special-forces culture and J.Aron bloodline
+      Tools and delivery : SecDB / narrative / Jerry
+    section Information boundary
+      Elevator gossip : MNPI and compliance education
+      Archipelago controversy : Dual-advisor public lesson
+      Keen later : Insider-trading cautionary tale
+    section Year-end turn
+      Bonus season and Christmas party : Feels outgunned
+      NYU recruiting fair : Meets Rick and Lucy Bank
+      Prop rates attraction : CFA and bond common language
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">Figure B · People / institution map</div>
+          <pre class="mermaid">
+flowchart TD
+    A["Author Yuyang"] --> B["Goldman IBD Strategies"]
+    B --> C["Jerry\nJ.Aron track / partner path"]
+    B --> D["Professor-turned MDs\nClient narrative"]
+    B --> E["SecDB / internal tools"]
+    A --> F["Keen\nBerkeley interviewer"]
+    F -.->|"Later insider ring"| W["Warning: do not follow"]
+    B --> G["Compliance education\nElevator gossip"]
+    H["NYSE–Archipelago\nDual-advisor controversy"] -.->|"Public lesson"| G
+    A --> I["NYU recruiting fair"]
+    I --> J["Rick\nLucy Bank prop/rates"]
+    J --> K["CFA / bond common language"]
+    J --> L["Prop desk attraction"]
+    M["Blankfein / J.Aron lineage"] -.->|"Risk appetite"| B
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">Figure C · Knowledge graph: culture / tools / compliance / career fork</div>
+          <pre class="mermaid">
+flowchart LR
+    CULT["Because we are Goldman"] --> BONUS["Record bonuses"]
+    CULT --> CUT["Bottom ~5% cut"]
+    PART["Post-1999 partner ladder"] --> CULT
+    SEED["SecDB"] --> RISK["Pricing and risk aggregation"]
+    NAR["Client narrative"] --> IBD["IB deliverables"]
+    MNPI["Material nonpublic info"] --> COMP["Compliance boundary"]
+    COMP --> PHONE["Phone over email"]
+    ARCH["Dual-advisor conflict"] --> COMP
+    PROP["2005 prop desk"] --> EDGE["Trading firm capital"]
+    CFA["CFA fixed-income signal"] --> PROP
+    INTERN["Goldman intern halo"] --> DOOR["Ticket to the next table"]
+    DOOR --> PROP
+    DOOR --> IBD
+          </pre>
+        </div>
+      </div>
+    </article>
+    <footer>
+      Story guide · <em>Chaos on Wall Street</em> (Yuyang) · Chapter 2 “Goldman Internship”<br />
+      Retold from public trial-read arc; footnotes are off-book research<br />
+      Support the official edition · See SOURCES.md ·
+      <a href="goldman-internship-zh.html">中文版</a>
+      · <a href="../ch01/casino-to-wall-street-en.html">← Chapter 1</a>
+    </footer>
+  </div>
+
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
+  </script>
+
+</body>
+</html>
