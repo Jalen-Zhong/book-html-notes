@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>赌场到华尔街 · loading</title>
+  <title>Casino to Wall Street · loading</title>
   <style>
     body { margin:0; font-family: system-ui, sans-serif; background:#0b1220; color:#e8eef9;
       display:flex; min-height:100vh; align-items:center; justify-content:center; }
@@ -16,7 +16,7 @@
   <div class="box" id="status">Loading chapter…</div>
   <script>
   (async function () {
-    const parts = ["parts/zh-part-0.txt", "parts/zh-part-1.txt", "parts/zh-part-2.txt", "parts/zh-part-3.txt", "parts/zh-part-4.txt"];
+    const parts = ["parts/en-part-0.txt", "parts/en-part-1.txt", "parts/en-part-2.txt", "parts/en-part-3.txt", "parts/en-part-4.txt", "parts/en-part-5.txt", "parts/en-part-6.txt"];
     const status = document.getElementById('status');
     try {
       const texts = await Promise.all(parts.map(p => fetch(p).then(r => {
@@ -29,7 +29,7 @@
       document.close();
     } catch (e) {
       status.innerHTML = 'Failed to assemble page: ' + e +
-        '<br><br><a href="casino-to-wall-street-en.html">English</a>';
+        '<br><br><a href="casino-to-wall-street-zh.html">中文</a>';
     }
   })();
   </script>
