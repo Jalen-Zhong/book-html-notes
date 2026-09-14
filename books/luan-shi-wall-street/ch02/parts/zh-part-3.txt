@@ -1,89 +1,57 @@
-自营交易台：用银行资本做方向性或相对价值交易，成功交易员可按利润分成拿到高额奖金，台子相对独立。2005 年招聘市场仍把 prop 视为「聪明人的游乐场」。2008 年后监管收紧，美国《多德—弗兰克》下的沃尔克规则显著限制存款机构自营交易，许多 prop 台迁往对冲基金或关闭。读本章时要记住：作者遇见的「露西银行」自营座位，属于前沃尔克时代的物种。
-          <div class="why">为何重要：没有这个时代坐标，就读不懂他为何觉得自营比策略组更像「从赌场升维的正业」。</div>
-          <div class="src">来源：eFinancialCareers 2004–05 自营薪酬/文化报道；沃尔克规则通识背景</div>
+多边身份」被骂得很凶<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a>。</p>
+      <p>公司给人的实务忠告很华尔街：敏感话题，电话优于电子邮件——邮件会留下证据链，电话至少少一条可被转发的纸面轨迹。对新人，这不是教你「钻空子」，而是教你：这个行业的信息边界，比学校伦理课锋利得多。</p>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ 内幕交易与 MNPI：新人必修的边界课</strong>
+          美国证券法下，利用重大非公开信息交易或「泄密换利益」可构成内幕交易；投行、律师、会计师等「临时内部人」同样受约束。合规培训通常强调：墙（Chinese wall）、观察名单、限制名单、以及「听到了也要报告、不能交易、不能提示亲友」。电梯八卦之所以危险，正因为信息来源非正式，却仍可能被认定为 MNPI。
+          <div class="why">为何重要：本章把「听八卦」写成职业伦理的生死线——后文基恩的结局，正是这条线的反面教材。</div>
+          <div class="src">来源：SEC / 美国内幕交易通识；投行合规公开培训材料综述</div>
+        </div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ 2005 NYSE–Archipelago：双边顾问争议</strong>
+          2005 年 4 月，纽交所宣布与电子交易平台 Archipelago 合并，迈向公众公司化。高盛公开角色复杂：同时协助双方、持有 Archipelago 约 15% 量级股份、并拥有 NYSE 席位；时任 NYSE CEO 约翰·塞恩（John Thain）亦出自高盛。席位持有人起诉指控利益冲突；纽约州法官后来在批准相关和解时，仍严厉批评高盛的多重角色。合并最终推进，但「投行能否同时服务交易双方」成了那年华尔街公开课。
+          <div class="why">为何重要：书中用这笔交易当案例，说明「聪明」与「干净」在公众目光下如何撕裂——实习生听到的，是整个行业的信誉压力测试。</div>
+          <div class="src">来源：NBC / LA Times / NY Post 2005 报道；Archipelago SEC 8-K；Higgins 相关诉讼公开意见综述</div>
         </div>
       </div>
 
-      <div class="diagrams-section" id="diagrams">
-        <h2>人物 · 时间线 · 知识图谱</h2>
-        <p style="color:var(--muted);font-size:14px;">以下图表用 Mermaid 渲染，帮助把本章人物关系、作者路径与核心概念串起来（非书中原图）。</p>
-        <div class="mermaid-wrap">
-          <div class="caption">图 A · 作者旅程：高盛实习 → 合规震撼 → NYU → 自营吸引</div>
-          <pre class="mermaid">
-timeline
-    title 渔阳路径（本章叙事）
-    section 入职高盛
-      2005秋 IBD Strategies : 特种部队文化与 J.Aron 血统
-      工具与交付 : SecDB / 叙事 / Jerry
-    section 信息边界
-      电梯八卦事件 : MNPI 与合规教育
-      Archipelago 争议 : 双边顾问公开课
-      基恩后来 : 内幕交易反面教材
-    section 年末转向
-      奖金季与圣诞派对 : 感到火力不足
-      NYU 招聘会 : 遇见 Rick 与露西银行
-      自营利率吸引 : CFA 与债券共同语言
-          </pre>
-        </div>
-        <div class="mermaid-wrap">
-          <div class="caption">图 B · 人物 / 机构关系图</div>
-          <pre class="mermaid">
-flowchart TD
-    A["作者 渔阳"] --> B["高盛 IBD Strategies"]
-    B --> C["Jerry\nJ.Aron 线 / 合伙人轨道"]
-    B --> D["教授出身 MD\n客户叙事"]
-    B --> E["SecDB / 内部工具"]
-    A --> F["基恩 Keen\n伯克利面试官"]
-    F -.->|"后来涉内幕交易"| W["警告：别跟着走"]
-    B --> G["合规教育\n电梯八卦"]
-    H["NYSE–Archipelago\n双边顾问争议"] -.->|"公开课"| G
-    A --> I["NYU 招聘会"]
-    I --> J["Rick\n露西银行自营/利率"]
-    J --> K["CFA / 债券共同语言"]
-    J --> L["Prop desk 吸引"]
-    M["Blankfein / J.Aron 血统"] -.->|"风险胃口"| B
-          </pre>
-        </div>
-        <div class="mermaid-wrap">
-          <div class="caption">图 C · 知识图谱：文化 / 工具 / 合规 / 职业分叉</div>
-          <pre class="mermaid">
-flowchart LR
-    CULT["Because we are Goldman"] --> BONUS["创纪录奖金"]
-    CULT --> CUT["末位约5%"]
-    PART["1999 IPO 后合伙人阶梯"] --> CULT
-    SEED["SecDB"] --> RISK["定价与风险聚合"]
-    NAR["客户叙事"] --> IBD["投行交付物"]
-    MNPI["重大非公开信息"] --> COMP["合规边界"]
-    COMP --> PHONE["电话优于邮件"]
-    ARCH["双边顾问冲突"] --> COMP
-    PROP["2005自营台"] --> EDGE["用银行资本交易"]
-    CFA["CFA 固收信号"] --> PROP
-    INTERN["高盛实习光环"] --> DOOR["下一张牌桌的门票"]
-    DOOR --> PROP
-    DOOR --> IBD
-          </pre>
+      <hr class="divider" />
+
+      <h2 id="s5">基恩的后来：别跟着走</h2>
+      <p>第一章里在伯克利海选他、累到半死还把所有题答对的面试官基恩（Keen），后来卷入内幕交易圈子。作者写下这段，语气近乎警告：那条捷径看起来像「信息优势」，终点却是监管与牢狱。对读者，这是把电梯八卦课从「规章」拉到「真人下场」——不要跟着走。</p>
+      <div class="scene">
+        实习教你两套武器：一套是 SecDB 与模型，一套是对信息边界的敬畏。缺了后一套，前一套只会害得更快。
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">2005 奖金季、圣诞派对与 NYU 招聘会</h2>
+      <p>年底，整个华尔街沉浸在 2005 创纪录奖金的气氛里。高盛内部也有 SSG、Triple Play 一类业务或项目代号在酒会上被提起——对实习生，专有名词像烟花：亮一下，未必能立刻看懂全部结构。圣诞派对金碧辉煌，觥筹交错之间，作者却清楚感到自己「火力不足」：周围全是更资深、更会讲故事、更贴近收入账户的人。</p>
+      <p>于是他去了纽约大学（NYU）的招聘会——不是放弃高盛光环，而是给自己多开一扇窗：如果正式 offer 不在策略组这条线上，交易台、自营、利率相关的座位，也许更接近他从赌场时代就想坐的那张牌桌。</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rockefeller_Center_christmas_tree.jpg" alt="洛克菲勒中心圣诞树" loading="lazy" />
+        <figcaption>洛克菲勒中心圣诞树——曼哈顿年末季节的公共意象（派对气氛的城市布景）。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-6">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn8">
+          <strong>⁸ 中国银行股改与高盛—工行线（同期公开事实）</strong>
+          2005–06 年恰是中资大行股改与引进战略投资者高峰。公开资料显示，2006 年 1 月，高盛牵头的国际财团（含安联、美国运通）与工商银行签署战略投资协议，财团出资约 37.8 亿美元认购约 8.45% 股份，其中高盛自身持股约 5.75% 量级，并协助治理、风控与投行能力建设，为随后工行上市铺路。对在高盛实习的华人观察者，这类交易是「中国与华尔街互相需要」的现场教材——哪怕本章主线是个人求职，时代背景里已有巨额跨境股权故事。
+          <div class="why">为何重要：把个人圣诞派对的渺小感，钉在同一年亚洲金融改革的大桌上——镀金不只发生在酒杯里。</div>
+          <div class="src">来源：工行英文新闻稿（2006-01 / 战略投资）；Wharton 相关案例公开 PDF 综述</div>
         </div>
       </div>
-    </article>
-    <footer>
-      故事导读 · 《乱世华尔街》（渔阳）第二章「高盛实习」<br />
-      据公开试读改写，非原文照搬；脚注为场外研究补充<br />
-      完整原文请支持正版 · 配图见 SOURCES.md ·
-      <a href="goldman-internship-en.html">English edition</a>
-      · <a href="../ch01/casino-to-wall-street-zh.html">← 第一章</a>
-    </footer>
-  </div>
 
+      <hr class="divider" />
 
-  <script>
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: "dark",
-      securityLevel: "loose",
-      timeline: { useMaxWidth: true },
-      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
-    });
-  </script>
+      <h2 id="s7">遇见 Rick：「露西银行」自营利率台</h2>
+      <p>在 NYU 招聘会上，他遇见 Rick——来自书中化名「露西银行」（Lucy Bank）的自营交易 / 利率相关团队。Rick 聊债券、聊利率，也聊 CFA：特许金融分析师那条路，对固收与组合管理是通行的能力信号<a class="fn-link" href="#fn9"><sup class="fn">⁹</sup></a>。作者简历上赫然印着 Goldman intern——在 2005 年的招聘市场上，这四个音节本身就是敲门砖。</p>
+      <p>自营台（prop desk）当时仍是银行里相对自由的「用自己的钱赌博」角落：利润提成高、自主权大，也尚未被日后的沃尔克规则彻底重塑<a class="fn-link" href="#fn10"><sup class="fn">¹⁰</sup></a>。对一个从 21 点与德州扑克里练出期望值直觉的人，这种座位闻起来比写客户叙事更像「真牌桌」。本章收在他被这条线吸引的瞬间——高盛实习打开了门，下一张桌子，也许不在同一栋楼。</p>
 
-</body>
-</html>
+      <div class="footnotes" id="fn-block-7">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item"
