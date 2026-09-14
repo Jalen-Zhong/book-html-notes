@@ -1,0 +1,24 @@
+      <p>The chalkboard lesson: history rhymes. 1998’s rhyme is about to sound again on a natural-gas futures blotter.</p>
+
+      <div class="scene">
+        Equations treat people as integrable noise; crises restore them as animals who stampede. Curtain. Act two.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">History rhymes: the never-fading amaranth</h2>
+      <p>The flower’s name is Amaranth — a plant genus whose etymology carries “unfading.” In 2006, hedge fund Amaranth Advisors managed on the order of $9 billion and became a living irony<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a>: a name that promised never to wilt, a book that withered in weeks.</p>
+      <p>For the author this is not distant gossip but live evidence that chaos is returning: gilded calm can be torn open by one flower’s fall.</p>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ Amaranth Advisors / Brian Hunter / Katrina</strong>
+          A multi-strategy hedge fund in Greenwich, Connecticut. Energy desk head Brian Hunter (Calgary) booked huge profits around Hurricane Katrina’s 2005 shock to natural gas; in 2006 the book doubled down on directional / calendar-spread bets (often described as March-versus-April spreads). In September 2006 the fund suffered multi-billion-dollar nat-gas derivative losses and large NAV drawdowns, transferring the energy book to parties including JPMorgan and Citadel to ease margin and default risk. The “never-fading flower” name and the ending glare at each other.
+          <div class="why">Why it matters: the chapter title and core event — dropping 1998’s rhyme onto 2006’s gas market.</div>
+          <div class="src">Sources: contemporary financial press (WSJ / NGI et al.); public investor-letter paraphrases; later CFTC/FERC enforcement context</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+

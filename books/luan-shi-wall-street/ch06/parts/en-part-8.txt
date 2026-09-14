@@ -1,0 +1,17 @@
+      <p>In August 1998, Russia’s sovereign debt crisis and ruble turmoil ripped open the word “diversification.”<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a> Positions that looked uncorrelated in peacetime fell the same way in panic — correlations twisted toward one. LTCM was too large to exit cleanly: selling <em>was</em> part of the price.</p>
+      <p>What followed was a private rescue coordinated among major counterparties at the New York Fed — not mercy for genius, but a firebreak against cascading liquidations. The rehearsal ends with a cruel subtitle: when everyone needs liquidity at once, model “mean reversion” can go offline.</p>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ Russia’s 1998 financial crisis</strong>
+          In August 1998 Russia devalued the ruble and effectively defaulted on / restructured parts of its domestic debt (including GKOs), triggering violent selling across emerging markets and global risk assets. For funds that lived on financing and convergence trades, the hit was not only “Russia marks” but a simultaneous worsening of spreads, volatility, and funding — the correlation structure rewritten overnight.
+          <div class="why">Why it matters: the external trigger for LTCM’s collapse and a teaching case of macro shock as black swan for arb books.</div>
+          <div class="src">Sources: IMF / public economic histories of the 1998 Russia crisis; LTCM literature cross-references</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">Models fail: people are not Brownian particles</h2>
+      <p>The rehearsal closes on Newton’s almost proverbial sigh in finance: he could calculate the motions of heavenly bodies, but not the madness of people. Market “particles” imitate, panic, and rush the same exit — they are not independent Brownian noise.</p>
