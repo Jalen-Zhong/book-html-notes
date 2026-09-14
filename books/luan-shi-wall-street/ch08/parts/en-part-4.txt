@@ -1,0 +1,26 @@
+        The narrative below follows the author’s desk experience and the summer-2007 market timeline in original phrasing for study — not a verbatim copy of the book. Footnotes, figures, and diagrams are off-book public research. Names such as “Lucy Bank” are anonymized in the source. Please support the official edition for the full text.
+      </div>
+      <nav class="toc" aria-label="Section navigation">
+        In this chapter
+        <ul>
+          <li><a href="#s1">Why a tiny Bear fund scared the Street</a></li>
+          <li><a href="#s2">Strategy: AAA paper, CDS, and leverage</a></li>
+          <li><a href="#s3">Cayne’s injection, Merrill’s auction threat, ABX smash</a></li>
+          <li><a href="#s4">Fire crosses the Atlantic: BNP freezes three funds</a></li>
+          <li><a href="#s5">Contagion: money-market pullback and multi-strategy deleveraging</a></li>
+          <li><a href="#s6">Muni-desk summer storm: basis and the SIFMA ratio</a></li>
+          <li><a href="#s7">Top of the chart ≠ top of the market</a></li>
+          <li><a href="#s8">No bids, a “court martial,” and Street-wide deleveraging</a></li>
+          <li><a href="#diagrams">Map / timeline / knowledge graph</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER EIGHT · SUMMER STORM</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal-reserve-33-liberty.jpg" alt="Federal Reserve Bank of New York" loading="lazy" />
+        <figcaption>Federal Reserve Bank of New York at 33 Liberty (July 2007) — when shadow-bank load-bearing walls wobble, liquidity arguments eventually run back toward these pipes. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">Why a tiny Bear fund scared the Street</h2>

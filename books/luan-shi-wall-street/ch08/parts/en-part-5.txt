@@ -1,0 +1,21 @@
+      <p>On paper the Bear Stearns structured-credit hedge funds were not “large”: net asset value sat around the $1.6 billion mark. In Street terms that should have been corner noise.<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a></p>
+      <p>What scared people was leverage — assets scaled into the tens of billions — and the lenders who took the collateral. If that collateral was haircut harder or auctioned into a thin market, losses traveled along the financing chain onto desks that thought they were unrelated. In the shadow-banking building, these funds were load-bearing walls: not huge rooms, but walls whose failure redistributes the whole load.<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a></p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">Chapter anchors · Summer 2007</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">June</div><div class="ev">Bear HF distress · Merrill auction threat</div></div>
+          <div class="event-card"><div class="yr">Late Jun–Jul</div><div class="ev">Cayne facility · Sowood · fund bankruptcies</div></div>
+          <div class="event-card"><div class="yr">Aug 9</div><div class="ev">BNP freezes three funds</div></div>
+          <div class="event-card"><div class="yr">High summer</div><div class="ev">Muni basis storm · Street-wide deleveraging</div></div>
+        </div>
+      </div>
+
+      <div class="scene">
+        A $1.6B NAV levered into tens of billions of assets and a chain of secured lenders — panic is priced in “who shares the wall,” not “how big the fund looks.”
+      </div>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ Bear Stearns hedge funds (2007)</strong>
