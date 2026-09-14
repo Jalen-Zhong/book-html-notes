@@ -1,0 +1,22 @@
+      <p>The more confident the model, the more righteous the leverage; the tighter the spread, the more Walmart and Wall Street modes look like “steady money.” The chapter’s edge: calm itself is treated as evidence of safety.</p>
+
+      <div class="footnotes" id="fn-block-10">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn12">
+          <strong>¹² CDS and CDX</strong>
+          A credit-default swap pays the buyer for protection after a credit event. Indices such as CDX.NA.IG standardize a basket of investment-grade names into a credit thermometer. Dealer materials from late 2006 show CDX.NA.IG around the mid-30s bps — the same order of magnitude as the book’s “33–40 bps” calm-sea image.
+          <div class="why">Why it matters: gives “premia compressed” a market tick, not only a mood adjective.</div>
+          <div class="src">Source: Markit/Nomura Dec 2006 CDO/CDS update (FCIC archive); CDX primers</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s13">Calm seas: CDX IG 33–40 bps</h2>
+      <p>Day-to-day trading grows thin and boring: client RFQs are competitive scraps; spreads are chewed to nothing. The author would rather be cover bid often — fewer wins, fewer regrets, less drama. Calm seas make sailors soft. CDX IG drifts in a ~33–40 bp band like a flag that says nothing is happening.</p>
+      <p>Readers already know the sequel: the “nothing happening” flag can be the color of the hour before the gale. But on the 2006 desk, DuPont’s three factors still glowed, bonus calendars still flipped, and the apprentice’s dream still ran hot — the next chapter will tear at the “never-fading” illusion.</p>
+
+      <div class="scene">
+        When cover is safer than winning every RFQ, and tight spreads pass for dead risk, DuPont has taught how to raise ROE — not which factor can go to zero overnight.
+      </div>
+

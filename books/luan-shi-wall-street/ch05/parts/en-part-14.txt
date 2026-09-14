@@ -1,0 +1,20 @@
+      <hr class="divider" />
+
+      <h2 id="s11">Short-term structures, hedges, blackjack echo</h2>
+      <p>Desks also run SIV- and muni TOB-style short-term structures: short liabilities against longer or more complex assets, harvesting carry and turnover. Rate risk is often swapped away — hedges damp volatility, so models and managers conclude they can “safely” add leverage<a class="fn-link" href="#fn11"><sup class="fn">¹¹</sup></a>.</p>
+      <p>The author echoes Chapter 1’s blackjack / standard-deviation intuition: you think you cut volatility; you may only have resized the chips inside the same game. A hedge reshapes risk; it does not make DuPont’s third factor free.</p>
+
+      <div class="footnotes" id="fn-block-9">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn11">
+          <strong>¹¹ SIVs and TOB-style short structures</strong>
+          SIVs typically funded longer, higher-yielding assets with ABCP and similar short liabilities; when 2007 funding windows shut, many were restructured or pulled onto bank balance sheets. Municipal tender-option-bond structures similarly use short puttable liabilities to lever tax-exempt exposure. Shared premise: pretty carry needs the short end to stay open.
+          <div class="why">Why it matters: shows how “hedge + short liabilities” can lift turnover and leverage on the same slide.</div>
+          <div class="src">Source: FCIC / press on SIV consolidations; muni TOB market-structure primers</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s12">Model illusion and compressed CDS premia</h2>
+      <p>Designing hedges and models, the author briefly enjoys the scientist’s illusion: markets as an orderly lab — clean inputs, tidy outputs. In 2006’s greedy air, CDS and CDX investment-grade protection premia were crushed thin — default felt like a homework problem<a class="fn-link" href="#fn12"><sup class="fn">¹²</sup></a>.</p>
