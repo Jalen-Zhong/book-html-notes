@@ -1,0 +1,35 @@
+      <p>电话立刻响起来：对手方开始问「有没有券要出？」——流动性预期一变，卖方的胆量会先回来一点。市政债出现反弹；此前被压垮的信用价差开始喘口气。</p>
+
+      <div class="scene">
+        没有马上砍基金利率，却先把贴现窗口的门缝开大——市场听见的是：央行看见了挤兑，而不是「通胀目标已经投降」。
+      </div>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ 贴现率 vs 联邦基金利率（2007-08-17）</strong>
+          联邦基金目标利率是银行间隔夜准备金交易的政策锚；贴现窗口初级信贷利率通常高于基金目标，作为后备流动性通道。2007 年 8 月 17 日，联储理事会批准将初级信贷利率下调 50bp 至 5¾%，把相对基金目标（当时 5.25%）的利差收窄至 50bp，并允许最长 30 天、可展期的期限融资，同时继续接受较广抵押品。完整基金降息要到 9 月 18 日才开始。
+          <div class="why">为何重要：本章「信号而非全面降息」的制度含义——先修管道，再谈宽松周期。</div>
+          <div class="src">来源：Federal Reserve 2007-08-17 新闻稿 monetary20070817a</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s4">强手接货：Citadel、美银与反弹</h2>
+      <p>强手开始出现。Citadel 接走了 Sowood 几乎全部组合——七月信用暴跌后，那是「有胆量和资本的人」在极端价格上把风险搬到自己账上。<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a> 美银向 Countrywide 注入约 20 亿美元可转换优先股，给这家全国最大按揭发放商一剂「资产负债表镇定剂」。<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a></p>
+      <p>ABX 等次级指数出现反弹；市政基差从盛夏约 140 附近收窄到约 110——不是危机消失，而是最恐慌的那一刀暂时收回去了。作者这一代交易员的口头禅被重新念出：「所有危机都是买入机会」——储贷危机、俄罗斯违约、互联网泡沫，每一次「死人」之后都有人在废墟里发财。这一次，他们以为剧本又会重演。</p>
+
+      <div class="scene">
+        强手接货会让屏幕变绿；变绿不等于骨头愈合——只是有人愿意在更低的价格上，把别人不要的风险扛走。
+      </div>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ 美银 20 亿美元注资 Countrywide（2007-08-22）</strong>
+          Countrywide Financial 在 8 月中旬因短期融资困难动用约 115 亿美元信贷额度后，股价与信心重挫。8 月 22 日，美国银行（Bank of America）完成约 20 亿美元战略股权投资：购买 7.25% B 系列无投票权可转换优先股，转换价约 18 美元/股。肯·刘易斯称市场低估了 Countrywide 的运营与资产价值。该注资是「强手接货」叙事的公司金融版本；一年后美银最终收购 Countrywide。
+          <div class="why">为何重要：把「私人资本救援」与后文道德风险、器官隐喻连成一条线。</div>
+          <div class="src">来源：Countrywide / BofA 2007-08-22 新闻稿与 8-K；CNBC / NPR 当代报道</div>
+        </div>
+        <div class="fn-item" id="fn5">
