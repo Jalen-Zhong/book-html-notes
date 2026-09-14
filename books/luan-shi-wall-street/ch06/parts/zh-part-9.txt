@@ -1,0 +1,73 @@
+        <h2>人物关系 / 时间线 / 知识图谱</h2>
+
+        <div class="mermaid-wrap">
+          <div class="caption">关系图：彩排班子 → 2006 气市主角 → 交易台对照</div>
+          <div class="mermaid">
+flowchart LR
+  MW[Meriwether / 所罗门血统] --> LTCM[LTCM 1998]
+  SM[Scholes / Merton] --> LTCM
+  DM[Mullins] --> LTCM
+  RU[俄罗斯违约] --> LTCM
+  LTCM -->|历史押韵| AM[Amaranth 2006]
+  BH[Brian Hunter] --> AM
+  KATRINA[卡特里娜暴利记忆] --> BH
+  AM -->|仓位转让| JPM[JPM / Citadel]
+  FED[联储加息 17 次] -.-> AM
+  VINCE[Vince 生存术] -.->|对照| BH
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">时间线：从 LTCM 彩排到 Amaranth 金丝雀</div>
+          <div class="mermaid">
+timeline
+  title 乱世回声
+  1998-08 : 俄债冲击
+           : LTCM 危机与私人救助协调
+  2004-06 : 联储开始连续加息
+  2005    : 卡特里娜 · 气市暴利
+  2006-06 : 联邦基金目标利率至 5.25%
+  2006-09 : Amaranth 巨亏并转让能源仓
+  2006末  : 镀金平静仍在 · 金丝雀已叫
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">知识图谱：杠杆、流动性与模型幻觉</div>
+          <div class="mermaid">
+flowchart TB
+  BASE[基础货币 / 政策利率] --> MULT[银行与影子乘数]
+  MULT --> REPO[回购 / haircut 杠杆]
+  REPO --> RISK[风险偏好时滞]
+  RISK --> QUIET[2006 表面平静]
+  MODEL[BSM / 布朗假设] --> BLIND[低估踩踏与相关性→1]
+  BLIND --> LTCM
+  QUIET --> AM[Amaranth 孤独杠杆]
+  LTCM -->|押韵| AM
+  AM --> CANARY[金丝雀信号]
+  CANARY --> ENDING[镀金时代尾声]
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer>
+      《乱世华尔街》· 渔阳 · 第六章故事导读（原创改写）·
+      <a href="SOURCES.md">SOURCES.md</a> ·
+      <a href="../../index.html">返回目录</a>
+    </footer>
+  </div>
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
+  </script>
+
+</body>
+</html>
