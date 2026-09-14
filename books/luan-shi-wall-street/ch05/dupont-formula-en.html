@@ -16,7 +16,7 @@
   <div class="box" id="status">Loading chapter…</div>
   <script>
   (async function () {
-    const parts = ["parts/en-part-0.txt", "parts/en-part-1.txt", "parts/en-part-2.txt", "parts/en-part-3.txt", "parts/en-part-4.txt", "parts/en-part-5.txt"];
+    const parts = ["parts/en-part-0.txt", "parts/en-part-1.txt", "parts/en-part-2.txt", "parts/en-part-3.txt", "parts/en-part-4.txt", "parts/en-part-5.txt", "parts/en-part-6.txt", "parts/en-part-7.txt"];
     const status = document.getElementById('status');
     try {
       const texts = await Promise.all(parts.map(p => fetch(p).then(r => {
