@@ -1,0 +1,22 @@
+        Double tops can lie; decoupling can lie; only when you touch skin, bone, and organs together do you know if the body is faking recovery.
+      </div>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ BRIC “decoupling” (2007)</strong>
+          Mid-2000s BRIC branding and talk that emerging growth could run relatively independent of advanced economies peaked as U.S. and some EM equities hit highs together in autumn 2007—feeding hopes that U.S. credit stress was “local.” Later synchronized trade, dollar-funding, and risk-appetite collapses showed coupling ran far deeper than the slogan.
+          <div class="why">Why it matters here: explains why October’s global equity carnival could mask U.S. shadow-bank injury.</div>
+          <div class="src">Sources: contemporaneous decoupling commentary; post-crisis IMF/academic retrospectives</div>
+        </div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ Equities vs. credit: surface vs. systemic risk</strong>
+          Equity indexes price earnings and risk appetite; credit spreads, AB gauges, bank wholesale funding, and repo haircuts better show whether intermediary chains can still roll. Autumn 2007 often showed “strong stocks / stressed credit”: new equity highs beside pressure in subprime/structured credit, money markets, and interbank spreads. Systemic risk usually writes first on credit and bank organs, then on skin (prices).
+          <div class="why">Why it matters here: the chapter’s diagnostic tool—don’t let a skin check replace an organ exam.</div>
+          <div class="src">Sources: crisis histories on ABX / LIBOR–OIS / bank CDS divergences from equities</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s7">Tennessee housing bonds: a coin-flip warning</h2>
