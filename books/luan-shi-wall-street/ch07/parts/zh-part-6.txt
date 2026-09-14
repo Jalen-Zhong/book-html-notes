@@ -1,0 +1,38 @@
+      <p>原料有瑕疵怎么办？华尔街的答案是分层（tranching）<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a>：把一池贷款的违约假设压在一个「看起来可控」的数字上——公开叙事里常见大约 5% 量级的损失想象——再切成优先（senior）、夹层（mezzanine）与股权（equity）。优先档被做成 AAA，卖给养老金、保险等「只能买安全」的口袋；股权与高收益夹层卖给对冲基金与自营；切不干净、卖不掉的残余，则留在投行自己的账上。</p>
+      <p>作者把这套桌子比作华尔街百家乐：荷官洗牌，客人选座位，庄家偶尔也得自己坐一坐。只要房价继续涨，损失假设就继续「看起来合理」。</p>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ 分层（tranching）与担保债务凭证（CDO）</strong>
+          分层把资产池的现金流按损失吸收顺序切开：股权最先亏、优先最后亏，从而把同一池异质风险重塑成不同评级的债券。CDO（collateralized debt obligation）常以按揭证券、贷款或其他债务为抵押，再做一次分层。评级、模型与「历史违约率」共同支撑了优先档的 AAA 叙事——直到相关违约与评级下调同时到来。
+          <div class="why">为何重要：本章「连环计」的技术内核——风险被切开、改名、再卖，而不是消失。</div>
+          <div class="src">来源：结构化信用教材与危机后公开复盘对 tranching / CDO 的标准解释</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s4">连环计：赤壁连环船与东风何在</h2>
+      <p>书名落到这一章的意象，来自《三国演义》里的连环计：把战船锁在一起，甲板变平稳，却也把火灾变成系统性事件。次级贷款、MBS、CDO、再保险与融资管道彼此拴牢——房价上涨时，大家庆祝「船稳」；没人急着问：冬天若来，东风在哪里？</p>
+      <p>系统风险与传染被口头上提起，又被「房价趋势」轻轻按下去。锁链越结实，单船起火时越难各自逃生。</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Red_Cliffs.jpg" alt="赤壁之战相关图像" loading="lazy" />
+        <figcaption>赤壁意象——连环船在顺风里像优势，在火攻里像灾难的放大器。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        「东风」在金融里不是诗意：它是流动性、再融资出口与房价同时转向时的那一阵风。
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">剂量问题：有用的药，过量的链</h2>
+      <p>作者用剂量打比方：证券化本身像药——适度能把信用风险分散给更能承担的人；过量则把同一风险反复打包、再打包。CDO 的平方（CDOs-squared）把已经切过层的薄片再切一层，距离原始借款人更远，模型却仍报出「可接受」的违约相关性<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a>。</p>
+      <p>链条不止产品：投行、评级、保险公司、货币市场基金与跨境买家一起入局。全球金融变成互相抵押的甲板——稳的时候人人夸工程，晃的时候才发现螺丝是同一根。</p>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ CDO 的平方（CDOs-squared / CDO²）</strong>
