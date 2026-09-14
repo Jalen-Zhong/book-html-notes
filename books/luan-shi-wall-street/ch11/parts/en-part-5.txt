@@ -1,0 +1,21 @@
+      <p>The Greek hero Achilles was nearly invulnerable—except at the heel his mother held when she dipped him in the Styx.<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a> The author aims that metaphor at Wall Street: Greek-letter risk models glitter on every screen—VaR, correlations, stress tests—yet the lethal addiction is to <strong>short-term funding</strong>. When overnight and ultra-short cash vanishes, the finest model is only embroidery on armor.</p>
+      <p>Chapter 10 pushed core-bank writedowns onto the stage; this chapter digs one layer deeper: writedowns wound capital, but the heel wound is whether you can <strong>roll funding every morning</strong>.</p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">Chapter anchors · late 2007 → spring 2008</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">Pre-crisis</div><div class="ev">Low haircuts · ABCP/SIV/TOB rolling like repo</div></div>
+          <div class="event-card"><div class="yr">Early 2008</div><div class="ev">Haircut tiering · Europe plunge · Fed emergency cut</div></div>
+          <div class="event-card"><div class="yr">January</div><div class="ev">Kerviel / SocGen ~€50B futures · ~€4.9B loss</div></div>
+          <div class="event-card"><div class="yr">February</div><div class="ev">ARS Dutch-auction freeze · author builds ~$2B book</div></div>
+        </div>
+      </div>
+
+      <div class="scene">
+        Models can price Greek letters; the wound in the heel only shows when liquidity ebbs.
+      </div>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ Achilles’ heel metaphor</strong>

@@ -1,0 +1,24 @@
+        A chronological retelling of the author’s desk experience from late 2007 into early 2008, in original phrasing for study—not a verbatim dump of the book. Footnotes, figures, and diagrams add public off-book context. Names such as “Lucy Bank” are literary stand-ins. Read the official edition for the full text.
+      </div>
+      <nav class="toc" aria-label="Section guide">
+        In this chapter
+        <ul>
+          <li><a href="#s1">Achilles’ heel: addiction to short-term funding</a></li>
+          <li><a href="#s2">Money markets and repo: the blood circulation</a></li>
+          <li><a href="#s3">Pre-crisis: low haircuts and pass-the-parcel</a></li>
+          <li><a href="#s4">Early 2008: differentiated haircuts and Kerviel</a></li>
+          <li><a href="#s5">Flight to safety: conduit runs onto the balance sheet</a></li>
+          <li><a href="#s6">ARS freeze: a new poker game and basis 210</a></li>
+          <li><a href="#diagrams">Maps / timeline / knowledge graph</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER ELEVEN · Achilles’ Heel of Wall Street</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Achilles_in_Skyros_fresco.jpg" alt="Classical Achilles imagery" loading="lazy" />
+        <figcaption>Achilles imagery—armored almost everywhere, vulnerable at the heel; Wall Street’s heel is short-term funding dependence. Source: Wikimedia Commons (classical theme)</figcaption>
+      </figure>
+
+      <h2 id="s1">Achilles’ heel: addiction to short-term funding</h2>
