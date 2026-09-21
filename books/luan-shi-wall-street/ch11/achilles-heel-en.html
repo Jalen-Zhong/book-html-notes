@@ -3,35 +3,492 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Achilles’ Heel of Wall Street · loading</title>
+  <title>Chaos on Wall Street · Ch.11: Achilles’ Heel of Wall Street</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <style>
-    body { margin:0; font-family: system-ui, sans-serif; background:#0b1220; color:#e8eef9;
-      display:flex; min-height:100vh; align-items:center; justify-content:center; }
-    .box { max-width:420px; padding:24px; border:1px solid rgba(212,175,55,.28);
-      border-radius:16px; background:#121a2b; line-height:1.6; text-align:center; }
-    a { color:#f0d78c; }
+    :root {
+      --bg: #0b1220;
+      --panel: #121a2b;
+      --panel-2: #182235;
+      --gold: #d4af37;
+      --gold-soft: #f0d78c;
+      --text: #e8eef9;
+      --muted: #9aa8c1;
+      --line: rgba(212, 175, 55, 0.28);
+      --accent: #3d8bfd;
+      --accent-soft: rgba(61, 139, 253, 0.12);
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+      --fn-bg: rgba(240, 215, 140, 0.06);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(212,175,55,0.12), transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, rgba(61,139,253,0.12), transparent 50%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 40px 20px 80px; }
+    .lang-switch {
+      display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap;
+    }
+    .lang-switch a {
+      display: inline-flex; align-items: center;
+      padding: 5px 12px; border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--muted); text-decoration: none; font-size: 13px;
+      background: rgba(255,255,255,0.03);
+    }
+    .lang-switch a.active {
+      color: var(--gold-soft);
+      border-color: var(--line);
+      background: rgba(212,175,55,0.1);
+    }
+    .lang-switch a:hover { color: var(--gold-soft); }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px;
+      color: var(--gold-soft); font-size: 13px; letter-spacing: 0.06em;
+      background: rgba(212,175,55,0.08);
+    }
+    h1 {
+      margin: 18px 0 8px;
+      font-size: clamp(28px, 5vw, 40px);
+      line-height: 1.28; font-weight: 700;
+    }
+    .subtitle { margin: 0 0 24px; color: var(--muted); font-size: 15px; }
+    .hero {
+      position: relative; overflow: hidden;
+      border: 1px solid var(--line); border-radius: 22px;
+      background:
+        linear-gradient(135deg, rgba(212,175,55,0.12), transparent 40%),
+        linear-gradient(180deg, var(--panel), var(--panel-2));
+      box-shadow: var(--shadow); padding: 28px; margin-bottom: 28px;
+    }
+    .note {
+      margin-top: 16px; padding: 12px 14px;
+      border-left: 3px solid var(--gold);
+      background: rgba(212,175,55,0.08);
+      border-radius: 0 12px 12px 0;
+      color: var(--muted); font-size: 13px;
+    }
+    .toc {
+      margin: 20px 0 0; padding: 14px 16px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px; font-size: 14px; color: var(--muted);
+    }
+    .toc a { color: var(--gold-soft); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    .toc ul { margin: 8px 0 0; padding-left: 18px; }
+    .toc li { margin: 4px 0; }
+    article.story {
+      background: linear-gradient(180deg, var(--panel), var(--panel-2));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 20px; padding: 28px 28px 20px;
+      box-shadow: var(--shadow);
+    }
+    .chapter-mark {
+      color: var(--gold-soft); font-size: 13px;
+      letter-spacing: 0.12em; margin-bottom: 18px;
+    }
+    h2 {
+      margin: 28px 0 12px; font-size: 20px;
+      color: var(--gold-soft); font-weight: 650;
+      scroll-margin-top: 24px;
+    }
+    h2:first-of-type { margin-top: 8px; }
+    h3.panel-title {
+      margin: 0 0 10px; font-size: 15px;
+      color: var(--accent); font-weight: 600;
+    }
+    p { margin: 0 0 16px; color: #d7deec; font-size: 16px; }
+    .scene {
+      margin: 8px 0 20px; padding: 16px 18px;
+      border-radius: 14px;
+      background: rgba(61,139,253,0.07);
+      border: 1px solid rgba(61,139,253,0.18);
+      color: #c9dbff; font-size: 15px;
+    }
+    .divider {
+      height: 1px; margin: 28px 0;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+      border: 0;
+    }
+    sup.fn {
+      font-size: 11px; color: var(--gold);
+      font-weight: 700; cursor: pointer;
+      margin-left: 1px; text-decoration: none;
+    }
+    a.fn-link { color: inherit; text-decoration: none; }
+    .figure {
+      margin: 18px 0 22px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: #0a101c;
+    }
+    .figure img {
+      display: block; width: 100%; height: auto;
+      max-height: 420px; object-fit: cover;
+    }
+    .figure figcaption {
+      padding: 10px 14px 12px;
+      font-size: 12px; color: var(--muted);
+      line-height: 1.55;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .footnotes {
+      margin: 8px 0 24px;
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: var(--fn-bg);
+      border: 1px solid rgba(212,175,55,0.22);
+    }
+    .footnotes .fn-head {
+      font-size: 13px; color: var(--gold-soft);
+      letter-spacing: 0.08em; margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .fn-item {
+      margin-bottom: 14px; padding-bottom: 14px;
+      border-bottom: 1px dashed rgba(212,175,55,0.18);
+      font-size: 13.5px; color: #c5d0e4; line-height: 1.7;
+    }
+    .fn-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+    .fn-item strong {
+      display: block; color: var(--gold-soft);
+      font-size: 14px; margin-bottom: 4px;
+    }
+    .fn-item .why {
+      margin-top: 6px; color: #a8b8d4;
+      font-style: italic;
+    }
+    .fn-item .src {
+      margin-top: 4px; color: #7f8eaa; font-size: 12px;
+    }
+    .side-panel {
+      margin: 18px 0 22px;
+      padding: 18px;
+      border-radius: 16px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(61,139,253,0.22);
+    }
+    .mermaid-wrap {
+      margin: 18px 0 22px;
+      padding: 16px;
+      border-radius: 16px;
+      background: #0e1626;
+      border: 1px solid rgba(255,255,255,0.08);
+      overflow-x: auto;
+    }
+    .mermaid-wrap .caption {
+      font-size: 12px; color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .mermaid { background: transparent !important; }
+    .event-timeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin: 16px 0 22px;
+    }
+    .event-card {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+    .event-card .yr { color: var(--gold); font-weight: 700; font-size: 14px; }
+    .event-card .ev { color: #c9d4e8; font-size: 13px; margin-top: 4px; line-height: 1.5; }
+    .diagrams-section {
+      margin-top: 32px;
+      padding-top: 8px;
+    }
+    footer {
+      margin-top: 28px; color: var(--muted);
+      font-size: 13px; text-align: center;
+    }
+    footer a { color: var(--gold-soft); }
+    @media (max-width: 560px) {
+      article.story { padding: 20px 16px 12px; }
+      .wrap { padding: 24px 14px 60px; }
+    }
+
   </style>
 </head>
 <body>
-  <div class="box" id="status">Loading chapter…</div>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="lang-switch" aria-label="Language">
+        <a href="achilles-heel-zh.html">中文</a>
+        <a class="active" href="achilles-heel-en.html">English</a>
+      
+        <a href="../../../index.html">Back to home</a>
+      </div>
+      <div class="badge">Story guide · public-source rewrite · off-book research</div>
+      <h1>Achilles’ Heel of Wall Street</h1>
+      <p class="subtitle"><em>Chaos on Wall Street</em> · Chapter 11 · Yuyang · retelling + footnote research</p>
+      <div class="note">
+        A chronological retelling of the author’s desk experience from late 2007 into early 2008, in original phrasing for study—not a verbatim dump of the book. Footnotes, figures, and diagrams add public off-book context. Names such as “Lucy Bank” are literary stand-ins. Read the official edition for the full text.
+      </div>
+      <nav class="toc" aria-label="Section guide">
+        In this chapter
+        <ul>
+          <li><a href="#s1">Achilles’ heel: addiction to short-term funding</a></li>
+          <li><a href="#s2">Money markets and repo: the blood circulation</a></li>
+          <li><a href="#s3">Pre-crisis: low haircuts and pass-the-parcel</a></li>
+          <li><a href="#s4">Early 2008: differentiated haircuts and Kerviel</a></li>
+          <li><a href="#s5">Flight to safety: conduit runs onto the balance sheet</a></li>
+          <li><a href="#s6">ARS freeze: a new poker game and basis 210</a></li>
+          <li><a href="#diagrams">Maps / timeline / knowledge graph</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER ELEVEN · Achilles’ Heel of Wall Street</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Achilles_in_Skyros_fresco.jpg" alt="Classical Achilles imagery" loading="lazy" />
+        <figcaption>Achilles imagery—armored almost everywhere, vulnerable at the heel; Wall Street’s heel is short-term funding dependence. Source: Wikimedia Commons (classical theme)</figcaption>
+      </figure>
+
+      <h2 id="s1">Achilles’ heel: addiction to short-term funding</h2>
+      <p>The Greek hero Achilles was nearly invulnerable—except at the heel his mother held when she dipped him in the Styx.<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a> The author aims that metaphor at Wall Street: Greek-letter risk models glitter on every screen—VaR, correlations, stress tests—yet the lethal addiction is to <strong>short-term funding</strong>. When overnight and ultra-short cash vanishes, the finest model is only embroidery on armor.</p>
+      <p>Chapter 10 pushed core-bank writedowns onto the stage; this chapter digs one layer deeper: writedowns wound capital, but the heel wound is whether you can <strong>roll funding every morning</strong>.</p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">Chapter anchors · late 2007 → spring 2008</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">Pre-crisis</div><div class="ev">Low haircuts · ABCP/SIV/TOB rolling like repo</div></div>
+          <div class="event-card"><div class="yr">Early 2008</div><div class="ev">Haircut tiering · Europe plunge · Fed emergency cut</div></div>
+          <div class="event-card"><div class="yr">January</div><div class="ev">Kerviel / SocGen ~€50B futures · ~€4.9B loss</div></div>
+          <div class="event-card"><div class="yr">February</div><div class="ev">ARS Dutch-auction freeze · author builds ~$2B book</div></div>
+        </div>
+      </div>
+
+      <div class="scene">
+        Models can price Greek letters; the wound in the heel only shows when liquidity ebbs.
+      </div>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ Achilles’ heel metaphor</strong>
+          In Greek myth, Thetis dipped Achilles in the river Styx to make him invulnerable, holding him by the heel—the one spot left dry. An arrow later found that spot. “Achilles’ heel” became the English idiom for a fatal, hidden weakness in an otherwise strong system. This chapter maps it onto Wall Street: Greek-letter risk models as armor; wholesale short-term funding dependence as the heel.
+          <div class="why">Why it matters: separates “sophisticated risk management” from “must refinance every day”—the latter snaps first in a crisis.</div>
+          <div class="src">Sources: classical myth tradition and English idiom usage; crisis literature on wholesale funding fragility</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">Money markets and repo: the blood circulation</h2>
+      <p>Money-market funds were sold as cash-first products: protect principal, stay liquid, skim a little yield.<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a> They bought commercial paper, repo, and short paper, pumping household and corporate cash into the wholesale machine. Repo was Wall Street’s blood circulation: securities for cash today, reverse tomorrow; the <strong>haircut</strong> set how much cushion the cash lender demanded.<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a></p>
+      <p>On the Lucy Bank desk, a live example: counterparties hiked haircuts and pushed funding toward federal funds plus about 20 basis points. Small number, cold tone—“blank-check” relationships were tightening. The overlooked repo desk that used to joke about “lots of cash on the sidelines” suddenly found <strong>no cash on the sidelines</strong>.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/New_York_Stock_Exchange_2003.jpg" alt="New York Stock Exchange exterior" loading="lazy" />
+        <figcaption>Near the New York Stock Exchange—under the public roar, repo and money markets roll overnight life-support. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        When the repo desk is ignored, everyone laughs that cash is plentiful; when it matters, the joke has already expired.
+      </div>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn2">
+          <strong>² Money-market funds</strong>
+          Open-end funds that invest mainly in high-quality, short-duration instruments (Treasuries, commercial paper, repo, etc.), aiming for stable NAV, cash-like liquidity, and a yield edge over deposits. In 2007–08 some funds strained on ABCP and related paper; the September 2008 Reserve Primary Fund “break the buck” episode later became a confidence landmark (slightly after this chapter’s core window, same mechanism).
+          <div class="why">Why it matters: they are the pipes that look like cash—when the pipes clog, wholesale funding loses oxygen.</div>
+          <div class="src">Sources: SEC / ICI explainers on money-market funds; crisis histories of 2007–08 short-end runs</div>
+        </div>
+        <div class="fn-item" id="fn3">
+          <strong>³ Repo haircuts</strong>
+          In a repurchase agreement, the cash lender typically advances less than the collateral’s face or market value; the percentage gap is the haircut. Higher haircuts mean less cash against the same bonds—forced de-leveraging. In the crisis, on-the-run Treasuries often kept easier terms while housing-related collateral saw haircuts explode or bids refused—the same “bloodstream” sorted by collateral quality and expelled the weak.
+          <div class="why">Why it matters: haircuts are the invisible leverage dial—tightening them kills positions faster than a downgrade.</div>
+          <div class="src">Sources: New York Fed explainers on tri-party repo and haircuts; crisis accounts of 2007–08 haircut differentiation</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">Pre-crisis: low haircuts and pass-the-parcel</h2>
+      <p>Before the break, markets were trained on optimism: even weaker collateral could clear at thin haircuts. Structured short-term funding—asset-backed commercial paper (ABCP), structured investment vehicles (SIVs), and municipal tender-option-bond (TOB) structures—worked like repo in spirit: short money rolling long assets, surviving on continuous rollover and the appearance of safety.<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a></p>
+      <p>The author frames those months as pass-the-parcel: everyone assumed the next hand would take the package; when the music stopped, whoever held the paper discovered they were not a passer-by but an owner.</p>
+
+      <div class="scene">
+        Low haircuts were the bull market’s hymn; pass-the-parcel was its etiquette—both assumed tomorrow’s liquidity would still show up.
+      </div>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ ABCP / SIV / TOB: repo-like structured short funding</strong>
+          <em>ABCP</em> is short paper issued by conduits against loans, receivables, or securitized assets; <em>SIVs</em> funded longer credit assets with short debt/ABCP and lived on rollover; <em>TOB</em> structures split long municipal bonds into floating-rate certificates and residual pieces, with the short end dependent on liquidity and bank support. In 2007–08, when buyers stepped away or demanded wider spreads, these pipes contracted and risk returned to sponsor banks’ balance sheets.
+          <div class="why">Why it matters: proves “short funding long assets” was not only classic repo—the heel wound was a whole short-funding web.</div>
+          <div class="src">Sources: standard crisis histories of ABCP/SIV runs; municipal-finance explainers on TOB structures</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s4">Early 2008: differentiated haircuts and Kerviel</h2>
+      <p>By early 2008, haircuts sorted by pedigree: on-the-run Treasuries still financed relatively easily; MBS worsened; hedge-fund “elephants” might still negotiate ~20% haircuts, while the shrimp were simply refused.</p>
+      <p>In January, European equities fell on the order of ~6% in a day and S&amp;P futures flirted with limit-down atmosphere; the Fed answered with an <strong>emergency cut</strong>—the book’s narrative often compresses this to ~50 bp, while the public record shows a <strong>75</strong> bp intermeeting cut on January 22, then another <strong>50</strong> bp at the month-end meeting.<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a></p>
+      <p>Then came Jérôme Kerviel and Société Générale: unauthorized European index-futures positions on the order of ~€50 billion notional, a net loss near €4.9 billion after unwind.<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a> The author notes that the Fed was briefly fooled by the surface story of a “macro crash”—demons appear when liquidity ebbs.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Marriner_S._Eccles_Federal_Reserve_Board_Building.jpg" alt="Federal Reserve Eccles Building" loading="lazy" />
+        <figcaption>The Federal Reserve (Washington)—January 2008’s emergency easing answered a global equity and short-end scare. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        Haircut tiering is a silent rating; Kerviel reminds us that a “macro” tape can be one hidden ticket tape.
+      </div>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ Kerviel / Société Générale (January 2008)</strong>
+          In mid-to-late January 2008, Société Générale uncovered trader Jérôme Kerviel’s concealed directional European equity-index futures positions totaling roughly €50 billion notional (hidden via fictitious hedges). The bank unwound around January 21–23 and announced on January 24 a net loss of about €4.9 billion. The unwind overlapped a violent global equity move, making it hard to separate “macro panic” from “one bank’s forced liquidation”—the chapter’s “Fed fooled by appearances” points at that confusion.
+          <div class="why">Why it matters: grounds “demons appear when liquidity ebbs” in a checkable event—forced selling can masquerade as a macro crash.</div>
+          <div class="src">Sources: Société Générale official notes and inspection-report summaries; 24 Jan 2008 announcement; contemporaneous Risk.net / financial press</div>
+        </div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ Fed emergency cut, January 2008</strong>
+          Amid global equity plunges, the FOMC held an emergency call on January 21–22 and on January 22 cut the federal funds target by <strong>75</strong> basis points to 3.5% (discount rate moved in parallel)—the first intermeeting funds-rate move in years. At the January 29–30 scheduled meeting it cut another <strong>50</strong> basis points to 3%. The book’s “emergency ~50 bp” may compress the second cut or the month’s easing; the footnote separates the two public actions.
+          <div class="why">Why it matters: marks the heel wound traveling from trading desks to the central bank—short end and equities flashing together.</div>
+          <div class="src">Sources: Federal Reserve FOMC statements 22 Jan and 30 Jan 2008; FRB Monetary Policy Report narrative</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">Flight to safety: conduit runs onto the balance sheet</h2>
+      <p>Investors fled to safety. When ABCP, SIV, and TOB-style conduits faced runs or failed rollovers, sponsors such as Citigroup and Merrill Lynch had to pull assets <strong>back onto their own balance sheets</strong>—the off-balance game ended, and the heel wound became open capital burn.</p>
+      <p>Money-market promises of “cash first” collided, in the same weeks, with wholesale reality of “cash scarce.”</p>
+
+      <div class="scene">
+        Flight to safety is not a moral choice; it is arithmetic: when the rollover window shuts, conduit assets come home.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">ARS freeze: a new poker game and basis 210</h2>
+      <p>In February 2008 the auction-rate securities (ARS) market froze: long-dated munis and similar paper that reset via periodic <strong>Dutch auctions</strong>, marketed as near-short liquidity. When banks stopped supporting bids, auctions failed en masse; retail holders discovered that “cash-like” product would not cash out.<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a></p>
+      <p>Lucy Bank saw a game: buy ARS at distressed levels, finance them in repo, and print ROE north of 200%—poker’s “new game.” The author built an ARS book on the order of ~$2 billion. Joy muted fast: related basis blew out toward ~210 basis points—discount capture while the hedge and funding cracks widened.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wall_Street_Sign_New_York_2005.jpg" alt="Wall Street street sign" loading="lazy" />
+        <figcaption>Wall Street sign—the ARS freeze smashed the retail cash illusion on the same street. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        A new game can pencil &gt;200% ROE; when basis hits 210, the calculator reminds you the heel is still bleeding.
+      </div>
+
+      <div class="footnotes" id="fn-block-5">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ Auction-rate securities (ARS) and Dutch auctions</strong>
+          ARS are typically long municipal bonds, corporates, or preferreds whose rates reset in periodic Dutch auctions: buyers bid the lowest rate they will accept; the clearing rate becomes the reset for holders and ownership turns over. Broker-dealers historically backstopped auctions with proprietary bids; from mid-February 2008 major firms withdrew support, auctions failed widely, holders could not exit as expected, and some municipal issuers faced penalty rates. Later buyback settlements with regulators followed.
+          <div class="why">Why it matters: ARS is the retail version of “long asset pretending to be short cash”—same family as repo and ABCP.</div>
+          <div class="src">Sources: CRS / Chicago Fed / Wikipedia summaries of the Feb 2008 ARS freeze; SEC and state AG settlement coverage</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <section class="diagrams-section" id="diagrams">
+        <h2>Maps / timeline / knowledge graph</h2>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Map: short-funding addiction → haircut tiering → conduit onboarding → ARS poker</div>
+          <div class="mermaid">
+flowchart LR
+  HEEL[Achilles heel metaphor] --> ST[Short wholesale funding addiction]
+  ST --> MMF[Money-market funds]
+  ST --> REPO[Repo blood circulation]
+  REPO --> HC[Haircut]
+  ST --> PIPE[ABCP/SIV/TOB]
+  PIPE --> PASS[Pass-the-parcel]
+  HC --> DIFF[Early-2008 haircut tiering]
+  DIFF --> JAN[Europe plunge · Fed emergency cut]
+  JAN --> KER[Kerviel/SocGen unwind]
+  PIPE --> RUN[Conduit runs on-balance]
+  RUN --> CITI[Citi/Merrill onboarding]
+  DIFF --> ARS[ARS Dutch-auction freeze]
+  ARS --> LUCY[Lucy opportunistic poker ROE&gt;200%]
+  LUCY --> BOOK[~2B ARS book]
+  BOOK --> BASIS[Basis blows to ~210]
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Timeline: Achilles’ Heel of Wall Street (late 2007–spring 2008)</div>
+          <div class="mermaid">
+timeline
+  title Achilles Heel of Wall Street
+  Pre-crisis : Low haircuts even on weaker collateral
+            : ABCP/SIV/TOB rolling like repo
+            : Pass-the-parcel still playing
+  Early 2008 : Haircut tiering: OTR easy · MBS hard
+             : HF elephant ~20% · shrimp refused
+  2008-01 : Europe ~-6% · futures limit-down feel
+          : Fed emergency cut (75bp + meeting 50bp)
+          : Kerviel ~€50B / loss ~€4.9B
+  2008-02 : ARS auctions fail widely
+          : Retail redemption horror stories
+          : Lucy ARS+repo high-ROE game
+          : Author ~$2B book · basis ~210
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Knowledge graph: heel mechanics—short cash, haircuts, conduits, auctions</div>
+          <div class="mermaid">
+flowchart TB
+  CASH[Cash-looking money] --> MMF[Money-market funds]
+  CASH --> ARS[ARS cash illusion]
+  MMF --> ABCP[ABCP / CP]
+  REPO[Repo] --> HC[Haircut dial]
+  HC --> LEV[Leverage up/down]
+  ABCP --> SIV[SIV rollover short debt]
+  SIV --> SPON[Sponsor bank onboarding]
+  ARS --> DUTCH[Dutch auction backstop]
+  DUTCH --> FAIL[Feb 2008 backstop withdrawn]
+  FAIL --> ILLIQ[Retail freeze]
+  KER[Kerviel unwind] --> MASK[Masked as macro crash]
+  FED[Fed emergency cut] --> RESP[Policy answer to short-end panic]
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer>
+      <em>Chaos on Wall Street</em> · Yuyang · Chapter 11 story guide (original retelling) ·
+      <a href="SOURCES.md">SOURCES.md</a> ·
+      <a href="../../../index.html">Back to home</a>
+    </footer>
+  </div>
+
   <script>
-  (async function () {
-    const parts = ["parts/en-part-0.txt", "parts/en-part-1.txt", "parts/en-part-2.txt", "parts/en-part-3.txt", "parts/en-part-4.txt", "parts/en-part-5.txt", "parts/en-part-6.txt", "parts/en-part-7.txt", "parts/en-part-8.txt", "parts/en-part-9.txt", "parts/en-part-10.txt", "parts/en-part-11.txt", "parts/en-part-12.txt", "parts/en-part-13.txt", "parts/en-part-14.txt"];
-    const status = document.getElementById('status');
-    try {
-      const texts = await Promise.all(parts.map(p => fetch(p).then(r => {
-        if (!r.ok) throw new Error(p + ' ' + r.status);
-        return r.text();
-      })));
-      const html = texts.join('');
-      document.open();
-      document.write(html);
-      document.close();
-    } catch (e) {
-      status.innerHTML = 'Failed to assemble page: ' + e +
-        '<br><br><a href="achilles-heel-zh.html">Other language</a>';
-    }
-  })();
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
   </script>
+
 </body>
 </html>
