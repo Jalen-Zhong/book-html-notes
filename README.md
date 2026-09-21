@@ -11,6 +11,10 @@ https://jalen-zhong.github.io/book-html-notes/
 - 《乱世华尔街》 / `luan-shi-wall-street` (in progress — more chapters landing soon)
   - [ch01 赌场到华尔街 · 中文](books/luan-shi-wall-street/ch01/gilded-age-casino-to-wall-street.html)
 
+- 《置身事内》 / `zhishen-shinei` (in progress)
+  - [ch01 地方政府的权力与事务 · 中文](books/zhishen-shinei/ch01/local-gov-power-zh.html)
+  - [ch01 Local Government Power and Affairs · English](books/zhishen-shinei/ch01/local-gov-power-en.html)
+
 ## Contribute
 
 Community guidelines: [COMMUNITY.md](./COMMUNITY.md)  
