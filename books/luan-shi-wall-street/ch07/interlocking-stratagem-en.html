@@ -3,35 +3,517 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Interlocking Stratagem · loading</title>
+  <title>Wall Street in Chaos · Ch.7: The Interlocking Stratagem</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <style>
-    body { margin:0; font-family: system-ui, sans-serif; background:#0b1220; color:#e8eef9;
-      display:flex; min-height:100vh; align-items:center; justify-content:center; }
-    .box { max-width:420px; padding:24px; border:1px solid rgba(212,175,55,.28);
-      border-radius:16px; background:#121a2b; line-height:1.6; text-align:center; }
-    a { color:#f0d78c; }
+    :root {
+      --bg: #0b1220;
+      --panel: #121a2b;
+      --panel-2: #182235;
+      --gold: #d4af37;
+      --gold-soft: #f0d78c;
+      --text: #e8eef9;
+      --muted: #9aa8c1;
+      --line: rgba(212, 175, 55, 0.28);
+      --accent: #3d8bfd;
+      --accent-soft: rgba(61, 139, 253, 0.12);
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+      --fn-bg: rgba(240, 215, 140, 0.06);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(212,175,55,0.12), transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, rgba(61,139,253,0.12), transparent 50%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 40px 20px 80px; }
+    .lang-switch {
+      display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap;
+    }
+    .lang-switch a {
+      display: inline-flex; align-items: center;
+      padding: 5px 12px; border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--muted); text-decoration: none; font-size: 13px;
+      background: rgba(255,255,255,0.03);
+    }
+    .lang-switch a.active {
+      color: var(--gold-soft);
+      border-color: var(--line);
+      background: rgba(212,175,55,0.1);
+    }
+    .lang-switch a:hover { color: var(--gold-soft); }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px;
+      color: var(--gold-soft); font-size: 13px; letter-spacing: 0.06em;
+      background: rgba(212,175,55,0.08);
+    }
+    h1 {
+      margin: 18px 0 8px;
+      font-size: clamp(28px, 5vw, 40px);
+      line-height: 1.28; font-weight: 700;
+    }
+    .subtitle { margin: 0 0 24px; color: var(--muted); font-size: 15px; }
+    .hero {
+      position: relative; overflow: hidden;
+      border: 1px solid var(--line); border-radius: 22px;
+      background:
+        linear-gradient(135deg, rgba(212,175,55,0.12), transparent 40%),
+        linear-gradient(180deg, var(--panel), var(--panel-2));
+      box-shadow: var(--shadow); padding: 28px; margin-bottom: 28px;
+    }
+    .note {
+      margin-top: 16px; padding: 12px 14px;
+      border-left: 3px solid var(--gold);
+      background: rgba(212,175,55,0.08);
+      border-radius: 0 12px 12px 0;
+      color: var(--muted); font-size: 13px;
+    }
+    .toc {
+      margin: 20px 0 0; padding: 14px 16px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px; font-size: 14px; color: var(--muted);
+    }
+    .toc a { color: var(--gold-soft); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    .toc ul { margin: 8px 0 0; padding-left: 18px; }
+    .toc li { margin: 4px 0; }
+    article.story {
+      background: linear-gradient(180deg, var(--panel), var(--panel-2));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 20px; padding: 28px 28px 20px;
+      box-shadow: var(--shadow);
+    }
+    .chapter-mark {
+      color: var(--gold-soft); font-size: 13px;
+      letter-spacing: 0.12em; margin-bottom: 18px;
+    }
+    h2 {
+      margin: 28px 0 12px; font-size: 20px;
+      color: var(--gold-soft); font-weight: 650;
+      scroll-margin-top: 24px;
+    }
+    h2:first-of-type { margin-top: 8px; }
+    h3.panel-title {
+      margin: 0 0 10px; font-size: 15px;
+      color: var(--accent); font-weight: 600;
+    }
+    p { margin: 0 0 16px; color: #d7deec; font-size: 16px; }
+    .scene {
+      margin: 8px 0 20px; padding: 16px 18px;
+      border-radius: 14px;
+      background: rgba(61,139,253,0.07);
+      border: 1px solid rgba(61,139,253,0.18);
+      color: #c9dbff; font-size: 15px;
+    }
+    .divider {
+      height: 1px; margin: 28px 0;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+      border: 0;
+    }
+    sup.fn {
+      font-size: 11px; color: var(--gold);
+      font-weight: 700; cursor: pointer;
+      margin-left: 1px; text-decoration: none;
+    }
+    a.fn-link { color: inherit; text-decoration: none; }
+    .figure {
+      margin: 18px 0 22px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: #0a101c;
+    }
+    .figure img {
+      display: block; width: 100%; height: auto;
+      max-height: 420px; object-fit: cover;
+    }
+    .figure figcaption {
+      padding: 10px 14px 12px;
+      font-size: 12px; color: var(--muted);
+      line-height: 1.55;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .footnotes {
+      margin: 8px 0 24px;
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: var(--fn-bg);
+      border: 1px solid rgba(212,175,55,0.22);
+    }
+    .footnotes .fn-head {
+      font-size: 13px; color: var(--gold-soft);
+      letter-spacing: 0.08em; margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .fn-item {
+      margin-bottom: 14px; padding-bottom: 14px;
+      border-bottom: 1px dashed rgba(212,175,55,0.18);
+      font-size: 13.5px; color: #c5d0e4; line-height: 1.7;
+    }
+    .fn-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+    .fn-item strong {
+      display: block; color: var(--gold-soft);
+      font-size: 14px; margin-bottom: 4px;
+    }
+    .fn-item .why {
+      margin-top: 6px; color: #a8b8d4;
+      font-style: italic;
+    }
+    .fn-item .src {
+      margin-top: 4px; color: #7f8eaa; font-size: 12px;
+    }
+    .side-panel {
+      margin: 18px 0 22px;
+      padding: 18px;
+      border-radius: 16px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(61,139,253,0.22);
+    }
+    .mermaid-wrap {
+      margin: 18px 0 22px;
+      padding: 16px;
+      border-radius: 16px;
+      background: #0e1626;
+      border: 1px solid rgba(255,255,255,0.08);
+      overflow-x: auto;
+    }
+    .mermaid-wrap .caption {
+      font-size: 12px; color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .mermaid { background: transparent !important; }
+    .event-timeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin: 16px 0 22px;
+    }
+    .event-card {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+    .event-card .yr { color: var(--gold); font-weight: 700; font-size: 14px; }
+    .event-card .ev { color: #c9d4e8; font-size: 13px; margin-top: 4px; line-height: 1.5; }
+    .diagrams-section {
+      margin-top: 32px;
+      padding-top: 8px;
+    }
+    footer {
+      margin-top: 28px; color: var(--muted);
+      font-size: 13px; text-align: center;
+    }
+    footer a { color: var(--gold-soft); }
+    @media (max-width: 560px) {
+      article.story { padding: 20px 16px 12px; }
+      .wrap { padding: 24px 14px 60px; }
+    }
+
   </style>
 </head>
 <body>
-  <div class="box" id="status">Loading chapter…</div>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="lang-switch" aria-label="Language">
+        <a href="interlocking-stratagem-zh.html">中文</a>
+        <a class="active" href="interlocking-stratagem-en.html">English</a>
+      
+        <a href="../../../index.html">Back to home</a>
+      </div>
+      <div class="badge">Story guide · retold from public trial-read beats · off-book research</div>
+      <h1>The Interlocking Stratagem</h1>
+      <p class="subtitle"><em>Wall Street in Chaos</em> · Chapter 7 · Yuyang · original retelling + footnotes</p>
+      <div class="note">
+        This page retells the chapter’s narrative arc in original wording for bilingual study—not a verbatim copy of the book. Footnotes, figures, and diagrams are off-book public research. Names such as “Lucy Bank” are book aliases. Read the licensed edition for the full text.
+      </div>
+      <nav class="toc" aria-label="Section navigation">
+        On this page
+        <ul>
+          <li><a href="#s1">Berkeley classmate, peasant vs landlord</a></li>
+          <li><a href="#s2">From prime success to subprime push</a></li>
+          <li><a href="#s3">Tranching alchemy: AAA, mezz, equity</a></li>
+          <li><a href="#s4">Interlocking ships: where is the east wind?</a></li>
+          <li><a href="#s5">Dose: useful securitization, excess chaining</a></li>
+          <li><a href="#s6">Christmas 2006: record bonuses, tiny price dip</a></li>
+          <li><a href="#s7">Early 2007 sparks: HSBC and New Century</a></li>
+          <li><a href="#s8">Liquidity rotates: energy, EM, mega-LBOs</a></li>
+          <li><a href="#s9">Collections in boom, gold in chaos</a></li>
+          <li><a href="#s10">Novel floaters: models price risk in bps</a></li>
+          <li><a href="#s11">First ship on fire: Bear’s related funds</a></li>
+          <li><a href="#diagrams">Map / timeline / knowledge graph</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER SEVEN · THE INTERLOCKING STRATAGEM</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wall_Street_Sign_New_York_2005.jpg" alt="Wall Street street sign" loading="lazy" />
+        <figcaption>Wall Street sign (2005) — banquet laughter and chained leverage share the same address. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">Berkeley classmate, peasant vs landlord</h2>
+      <p>At a late-2006 party the author ran into Parvin, a Berkeley classmate working on Lehman’s subprime-related desk. Shop talk slid into P&amp;L scale: the other department’s profits were spoken of near the billion-dollar mark, while the author’s municipal book still lived in the tens of millions. The feeling was blunt—peasant laboring at the landlord’s gate.</p>
+      <p>Nothing in the room smelled like blood. Subprime still looked like a proven franchise: rising houses, easy refis, open securitization pipes. Under party lights, risk seemed to belong on someone else’s balance sheet.</p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">Chapter anchors</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">Late 2006</div><div class="ev">Subprime feast · record bonuses</div></div>
+          <div class="event-card"><div class="yr">Feb 2007</div><div class="ev">HSBC Household provisioning alert</div></div>
+          <div class="event-card"><div class="yr">Apr 2007</div><div class="ev">New Century bankruptcy</div></div>
+          <div class="event-card"><div class="yr">Jun 2007</div><div class="ev">Bear-related funds in distress</div></div>
+        </div>
+      </div>
+
+      <div class="scene">
+        Same campus pedigree, same Street—and a profit scale that felt like a class divide. The interlocking stratagem opens as status whiplash.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">From prime success to subprime push</h2>
+      <p>Rewind to earlier victories: prime mortgages, the GSEs, and MBS had turned American homeownership into something ratable, tradable, and exportable<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a><a class="fn-link" href="#fn2"><sup class="fn">²</sup></a>. Once the pipe worked, politics and markets both wanted a wider aperture—thinner credit files, lower incomes—and subprime moved from fringe to entrée.</p>
+      <p>Product design echoed hedge-fund leverage in retail clothing: teaser rates made the first payments look affordable; cash-out refinances turned price appreciation into spendable cash. For borrowers it was leveraged consumption and speculation; for Wall Street it was feedstock for the securitization machine.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Fannie_Mae_headquarters.jpg" alt="Fannie Mae headquarters" loading="lazy" />
+        <figcaption>Fannie Mae headquarters — one institutional stage for wholesale housing credit via GSEs and MBS. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">Footnotes</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ Subprime vs prime mortgages</strong>
+          Prime loans typically go to borrowers with stronger credit, income, and documentation; subprime targets thinner credit, incomplete files, or heavier debt loads, usually at higher rates and fees. Mid-2000s structures—ARMs, teaser periods, second liens—amplified “get in now, refinance later” incentives. When house prices stalled, the refinance exit narrowed and defaults clustered.
+          <div class="why">Why it matters: shows how the same housing-finance machine slid from sturdy pipe to riskier feedstock.</div>
+          <div class="src">Sources: public housing-finance histories; standard post-crisis definitions of subprime</div>
+        </div>
+        <div class="fn-item" id="fn2">
+          <strong>² Fannie Mae / Freddie Mac (GSEs)</strong>
+          The government-sponsored enterprises long bought or guaranteed conforming mortgages and issued agency MBS, supplying liquidity and standardization to U.S. housing finance. They are not the whole subprime story, but they are core infrastructure for “mortgages as wholesale securities.” Political pressure to widen homeownership often traveled through GSE goals alongside private conduits.
+          <div class="why">Why it matters: links successful housing securitization to the later private-label overreach.</div>
+          <div class="src">Sources: public GSE explainers; crisis histories of housing-finance infrastructure</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">Tranching alchemy: AAA, mezz, equity</h2>
+      <p>When feedstock was flawed, Wall Street’s answer was tranching<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a>: assume pool defaults around a “manageable” number—public narratives often floated something like 5%—then slice senior, mezzanine, and equity. Senior paper was dressed as AAA for pensions and insurers who could only buy “safe”; equity and juicy mezz went to hedge funds and prop books; leftovers that would not clear stayed on investment-bank inventories.</p>
+      <p>The author likens the table to Wall Street baccarat: the house shuffles, guests pick seats, and sometimes the dealer must sit too. While house prices rose, loss assumptions kept looking “reasonable.”</p>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">Footnotes</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ Tranching and CDOs</strong>
+          Tranching reallocates a pool’s cash flows by loss-absorption order: equity burns first, seniors last, reshaping heterogeneous risk into differently rated bonds. Collateralized debt obligations (CDOs) often remortgage MBS, loans, or other debt and tranche again. Ratings, models, and “historical default rates” propped up the AAA story for senior slices—until correlated defaults and downgrades arrived together.
+          <div class="why">Why it matters: technical core of the “interlocking stratagem”—risk is renamed and resold, not erased.</div>
+          <div class="src">Sources: structured-credit primers; post-crisis public postmortems on tranching/CDOs</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s4">Interlocking ships: where is the east wind?</h2>
+      <p>The chapter’s title image comes from the Romance of the Three Kingdoms interlocking-ships stratagem: chain the fleet for steadier decks—and turn a single fire into a systemic blaze. Subprime loans, MBS, CDOs, wrappers, and funding pipes locked together. While prices rose, everyone praised the calm; few urgently asked: when winter comes, where is the east wind?</p>
+      <p>Systemic risk and contagion were named, then waved away by the house-price trend. The tighter the chains, the harder for any one ship to flee alone.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Red_Cliffs.jpg" alt="Image related to the Battle of Red Cliffs" loading="lazy" />
+        <figcaption>Red Cliffs imagery — chained ships look like strength in fair wind and like amplifiers in fire. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        In markets the “east wind” is not poetry: it is liquidity, refinance exits, and house prices turning at once.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">Dose: useful securitization, excess chaining</h2>
+      <p>The author reaches for a dose metaphor: securitization is medicine—useful in moderation to move credit risk to those who can bear it; toxic in excess when the same risk is repackaged again and again. CDOs-squared took already-sliced mezzanine and sliced it once more, farther from the original borrower, while models still printed “acceptable” default correlations<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a>.</p>
+      <p>The chain was institutional as well as product: banks, raters, insurers, money funds, and cross-border buyers on the same deck. Global finance became mutually collateralized planking—admired as engineering until the screws proved shared.</p>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">Footnotes</div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ CDOs-squared (CDO²)</strong>
+          CDOs collateralized by other CDO tranches (often mezzanine). They lengthen the distance from end-investor to original mortgage and are hypersensitive to default-correlation assumptions: when underlying defaults become correlated, multiple “senior” stories can fail together. Crisis literature treats them as a specimen of structured-credit over-engineering.
+          <div class="why">Why it matters: separates useful securitization from excess interlocking—medicine versus overdose.</div>
+          <div class="src">Sources: structured-credit crisis postmortems; standard definitions of CDO²</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">Christmas 2006: record bonuses, tiny price dip</h2>
+      <p>Around Christmas 2006 the Street bathed in record-pay headlines: New York State Comptroller estimates put the Wall Street bonus pool near $23.9 billion; Goldman’s full-year compensation and benefits ran about $16.4 billion, roughly $622k per employee; CEO bonus stories refreshed the screens in turn. Fireworks drowned a nearly invisible house-price wiggle—the first tiny dip barely registered as news.</p>
+      <p>The Gilded Age’s favorite trick: translate “doesn’t hurt yet” into “will never hurt.”</p>
+
+      <div class="scene">
+        A winter of record bonuses; house prices nod almost imperceptibly—few heard it as the east wind clearing its throat.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s7">Early 2007 sparks: HSBC and New Century</h2>
+      <p>Early 2007, smoke from the corners. HSBC raised impairment charges tied to its U.S. consumer/mortgage franchise (the Household / HSBC Finance lineage), putting subprime on a global bank’s P&amp;L in plain sight<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a>. Then independent subprime lender New Century hit fraud probes and a funding squeeze, filing for bankruptcy in April 2007<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a>.</p>
+      <p>Trading-floor complacency sounded like 1998 talk about Russia: a “small market.” If your book did not literally say subprime, the alarm could be filed under next door’s smoke.</p>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">Footnotes</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ HSBC / Household provisioning alert</strong>
+          In February 2007 HSBC issued a trading update on U.S. Mortgage Services, warning loan-impairment charges would run well above consensus, driven by deteriorating subprime and related ARM/second-lien books. Household International, bought in 2003, sat inside that U.S. consumer-finance footprint. Retrospectives often treat the alert as an early public signal that subprime had entered large-bank earnings.
+          <div class="why">Why it matters: nails party-chat “subprime” to a global bank’s disclosure.</div>
+          <div class="src">Sources: HSBC 8 Feb 2007 trading update; contemporary Reuters coverage</div>
+        </div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ New Century Financial</strong>
+          Once among the largest independent U.S. subprime originators. Early 2007 brought rising delinquencies, repurchase pressure, and fraud/accounting scrutiny; after warehouse lines tightened it filed for Chapter 11 on 2 April 2007, cut most lending, and became a highly visible break in the originate–securitize–repurchase chain—still easy for core Street desks to dismiss as peripheral.
+          <div class="why">Why it matters: originators fell first—mine-mouth smoke still labeled a “small market.”</div>
+          <div class="src">Sources: contemporary Reuters reports; bankruptcy examiner / BIS case studies</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s8">Liquidity rotates: energy, EM, mega-LBOs</h2>
+      <p>Money did not vanish; it changed lanes—energy, emerging markets, and bolder leveraged buyouts<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a>. Blackstone’s Equity Office takeout, KKR’s TXU-scale ambitions, bridge loans and “Triple Play”–style package financing let deals sprint before permanent capital arrived. China’s forming sovereign investor (later CIC) took roughly $3 billion of non-voting Blackstone IPO-related units—global spare cash with a proper noun<a class="fn-link" href="#fn8"><sup class="fn">⁸</sup></a>.</p>
+      <p>Irony shared the season: Sam Zell sold Equity Office near the CRE peak to Blackstone, then levered into Tribune—selling peak bricks, buying newspaper futures. In boom time, stories outran risk models.</p>
+
+      <div class="footnotes" id="fn-block-5">
+        <div class="fn-head">Footnotes</div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ LBOs and bridge loans</strong>
+          Leveraged buyouts finance acquisitions largely with debt, counting on cash flows and refinancing. Bridge loans are short-term underwriter financing that close a deal before high-yield bonds, loan syndications, or other takeouts land; in 2006–07 mega-PE deals, bridges and packaged commitments (market slang often bundled ideas like a “Triple Play”) parked underwriting risk on Street balance sheets. When bridges fail to take out, inventory and losses surface.
+          <div class="why">Why it matters: liquidity rotated rather than evaporated—into larger leverage games.</div>
+          <div class="src">Sources: contemporary coverage of EOP/TXU-scale LBOs; primers on acquisition bridge financing</div>
+        </div>
+        <div class="fn-item" id="fn8">
+          <strong>⁸ Blackstone and the CIC precursor stake</strong>
+          In May 2007 China’s forming state FX investment vehicle (later China Investment Corporation) agreed to invest about $3 billion for non-voting Blackstone common units tied to the IPO, keeping the stake under 10% with a multi-year hold. It became a landmark sovereign entry into a U.S. alternative-asset manager’s equity—and sat on the same liquidity map as Blackstone’s real-estate/PE expansion.
+          <div class="why">Why it matters: turns “too much global money” into a named ticket.</div>
+          <div class="src">Sources: Blackstone press release; CRS and other public CIC early-investment summaries</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s9">Collections in boom, gold in chaos</h2>
+      <p>Desk orders still said grow. The author reaches for a near-proverb: in prosperous times people collect art; in chaotic times they buy gold—chase stories in boom, cling to what stores value and clears in stress. His own moves were concrete: trading muni housing-related bonds, hunting price in the details.</p>
+      <p>Bear salesman Hu You’s Ohio bond anecdote was small—thin profit, hard to resell. A fallen leaf: not a storm, but a wind direction. Warnings need not roar; sometimes they are just a few basis points of lost liquidity.</p>
+
+      <div class="scene">
+        A leaf is not a tornado; when leaves drift one way, people in the tree should ask where the wind begins.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s10">Novel floaters: models price risk in bps</h2>
+      <p>Expansion kept inventing product: novel floating-rate structures, Merrill-linked muni CDOs. Models stayed gentle—showing “risk” that looked tiny against a few extra basis points. The author’s choice was distance: not a precise crash calendar, just ugly odds.</p>
+      <p>Meanwhile government-linked issuers paired floaters with swaps until balance-sheet management looked hedge-fundized. Borrowing was no longer only for bridges and schools; it was also curve and basis. Economy-wide leverage seeped from Street desks into public issuers’ toolkits.</p>
+
+      <hr class="divider" />
+
+      <h2 id="s11">First ship on fire: Bear’s related funds</h2>
+      <p>In June 2007, Bear Stearns–related high-grade structured-credit hedge funds hit the wall: subprime-linked holdings, leverage, and margin calls shredded the “high grade” story<a class="fn-link" href="#fn9"><sup class="fn">⁹</sup></a>. The parent pledged billions to slow a fire sale—on the interlocking fleet, one ship finally burned in public.</p>
+      <p>Chapter 7’s stratagem-within-stratagem lands cold: tranching does not cancel risk; it only reorders who burns first. When housing, funding, and correlation turn together, chained ships light together.</p>
+
+      <div class="footnotes" id="fn-block-6">
+        <div class="fn-head">Footnotes</div>
+        <div class="fn-item" id="fn9">
+          <strong>⁹ Bear Stearns related hedge-fund crisis (June 2007)</strong>
+          The Bear Stearns High-Grade Structured Credit Strategies Fund and its Enhanced Leverage sister held large CDO/mortgage structured-credit books funded partly via repo. In June 2007, falling subprime-related prices and creditor margin calls pushed the funds toward collapse; Bear ultimately pledged up to about $3.2 billion to rescue one fund while the other faced deeper liquidation. Histories treat this as a hinge from “originators/small market” stress into core Street funding and fund structures.
+          <div class="why">Why it matters: chapter landing—the interlocking fleet’s first open fire.</div>
+          <div class="src">Sources: NYT 23 Jun 2007 and peers; standard crisis narratives of the Bear funds</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <section class="diagrams-section" id="diagrams">
+        <h2>Map / timeline / knowledge graph</h2>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Map: subprime feedstock → tranching → institutions &amp; funds</div>
+          <div class="mermaid">
+flowchart LR
+  POL[Homeownership politics] --> SUB[Subprime origination]
+  GSE[GSE / MBS success] --> SUB
+  SUB --> POOL[Loan pools]
+  POOL --> TRANCHE[Tranching]
+  TRANCHE --> AAA[AAA to pensions etc.]
+  TRANCHE --> EQ[Equity/mezz to HF/prop]
+  TRANCHE --> BOOK[Residual on IB books]
+  BOOK --> CDO2[CDO / CDO²]
+  CDO2 --> BEAR[Bear-related funds Jun 2007]
+  HSBC[HSBC Household] -.-> SUB
+  NC[New Century] -.-> SUB
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Timeline: feast to first ship on fire</div>
+          <div class="mermaid">
+timeline
+  title Interlocking stratagem timeline
+  Late 2006 : Party contrast · record bonuses
+            : Tiny house-price dip barely noticed
+  2007-02 : HSBC Household provisioning alert
+  2007-04 : New Century bankruptcy
+  Spring-summer 2007 : Mega-LBOs / bridge financing
+                     : CIC precursor stake in Blackstone
+  2007-06 : Bear-related funds in distress
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Knowledge graph: dose, chains, east wind</div>
+          <div class="mermaid">
+flowchart TB
+  SEC[Securitization in moderation] --> USE[Disperse risk]
+  SEC --> OVER[Excess repackaging]
+  OVER --> CHAIN[CDO to CDO² to funding chain]
+  CHAIN --> SHIPS[Interlocking-ships metaphor]
+  PRICE[Rising house-price narrative] -->|suppresses| SYS[Systemic-risk talk]
+  SHIPS --> FIRE[One ship burns → contagion]
+  BRIDGE[LBO bridges / global liquidity] --> DISTRACT[Attention on mega-deals]
+  FIRE --> BEAR2[Bear HF open fire]
+  WIND[East wind = liquidity and refinance turn] --> FIRE
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer>
+      <em>Wall Street in Chaos</em> · Yuyang · Ch.7 story guide (original retelling) ·
+      <a href="SOURCES.md">SOURCES.md</a> ·
+      <a href="../../../index.html">Back to home</a>
+    </footer>
+  </div>
+
   <script>
-  (async function () {
-    const parts = ["parts/en-part-0.txt", "parts/en-part-1.txt", "parts/en-part-2.txt", "parts/en-part-3.txt", "parts/en-part-4.txt", "parts/en-part-5.txt", "parts/en-part-6.txt", "parts/en-part-7.txt", "parts/en-part-8.txt", "parts/en-part-9.txt", "parts/en-part-10.txt", "parts/en-part-11.txt", "parts/en-part-12.txt", "parts/en-part-13.txt", "parts/en-part-14.txt", "parts/en-part-15.txt", "parts/en-part-16.txt"];
-    const status = document.getElementById('status');
-    try {
-      const texts = await Promise.all(parts.map(p => fetch(p).then(r => {
-        if (!r.ok) throw new Error(p + ' ' + r.status);
-        return r.text();
-      })));
-      const html = texts.join('');
-      document.open();
-      document.write(html);
-      document.close();
-    } catch (e) {
-      status.innerHTML = 'Failed to assemble page: ' + e +
-        '<br><br><a href="interlocking-stratagem-zh.html">Other language</a>';
-    }
-  })();
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
   </script>
+
 </body>
 </html>

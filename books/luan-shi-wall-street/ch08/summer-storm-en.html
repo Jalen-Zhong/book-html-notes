@@ -3,35 +3,496 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Summer Storm · loading</title>
+  <title>Chaos on Wall Street · Ch.8: Summer Storm</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <style>
-    body { margin:0; font-family: system-ui, sans-serif; background:#0b1220; color:#e8eef9;
-      display:flex; min-height:100vh; align-items:center; justify-content:center; }
-    .box { max-width:420px; padding:24px; border:1px solid rgba(212,175,55,.28);
-      border-radius:16px; background:#121a2b; line-height:1.6; text-align:center; }
-    a { color:#f0d78c; }
+    :root {
+      --bg: #0b1220;
+      --panel: #121a2b;
+      --panel-2: #182235;
+      --gold: #d4af37;
+      --gold-soft: #f0d78c;
+      --text: #e8eef9;
+      --muted: #9aa8c1;
+      --line: rgba(212, 175, 55, 0.28);
+      --accent: #3d8bfd;
+      --accent-soft: rgba(61, 139, 253, 0.12);
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+      --fn-bg: rgba(240, 215, 140, 0.06);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(212,175,55,0.12), transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, rgba(61,139,253,0.12), transparent 50%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 40px 20px 80px; }
+    .lang-switch {
+      display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap;
+    }
+    .lang-switch a {
+      display: inline-flex; align-items: center;
+      padding: 5px 12px; border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--muted); text-decoration: none; font-size: 13px;
+      background: rgba(255,255,255,0.03);
+    }
+    .lang-switch a.active {
+      color: var(--gold-soft);
+      border-color: var(--line);
+      background: rgba(212,175,55,0.1);
+    }
+    .lang-switch a:hover { color: var(--gold-soft); }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px;
+      color: var(--gold-soft); font-size: 13px; letter-spacing: 0.06em;
+      background: rgba(212,175,55,0.08);
+    }
+    h1 {
+      margin: 18px 0 8px;
+      font-size: clamp(28px, 5vw, 40px);
+      line-height: 1.28; font-weight: 700;
+    }
+    .subtitle { margin: 0 0 24px; color: var(--muted); font-size: 15px; }
+    .hero {
+      position: relative; overflow: hidden;
+      border: 1px solid var(--line); border-radius: 22px;
+      background:
+        linear-gradient(135deg, rgba(212,175,55,0.12), transparent 40%),
+        linear-gradient(180deg, var(--panel), var(--panel-2));
+      box-shadow: var(--shadow); padding: 28px; margin-bottom: 28px;
+    }
+    .note {
+      margin-top: 16px; padding: 12px 14px;
+      border-left: 3px solid var(--gold);
+      background: rgba(212,175,55,0.08);
+      border-radius: 0 12px 12px 0;
+      color: var(--muted); font-size: 13px;
+    }
+    .toc {
+      margin: 20px 0 0; padding: 14px 16px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px; font-size: 14px; color: var(--muted);
+    }
+    .toc a { color: var(--gold-soft); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    .toc ul { margin: 8px 0 0; padding-left: 18px; }
+    .toc li { margin: 4px 0; }
+    article.story {
+      background: linear-gradient(180deg, var(--panel), var(--panel-2));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 20px; padding: 28px 28px 20px;
+      box-shadow: var(--shadow);
+    }
+    .chapter-mark {
+      color: var(--gold-soft); font-size: 13px;
+      letter-spacing: 0.12em; margin-bottom: 18px;
+    }
+    h2 {
+      margin: 28px 0 12px; font-size: 20px;
+      color: var(--gold-soft); font-weight: 650;
+      scroll-margin-top: 24px;
+    }
+    h2:first-of-type { margin-top: 8px; }
+    h3.panel-title {
+      margin: 0 0 10px; font-size: 15px;
+      color: var(--accent); font-weight: 600;
+    }
+    p { margin: 0 0 16px; color: #d7deec; font-size: 16px; }
+    .scene {
+      margin: 8px 0 20px; padding: 16px 18px;
+      border-radius: 14px;
+      background: rgba(61,139,253,0.07);
+      border: 1px solid rgba(61,139,253,0.18);
+      color: #c9dbff; font-size: 15px;
+    }
+    .divider {
+      height: 1px; margin: 28px 0;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+      border: 0;
+    }
+    sup.fn {
+      font-size: 11px; color: var(--gold);
+      font-weight: 700; cursor: pointer;
+      margin-left: 1px; text-decoration: none;
+    }
+    a.fn-link { color: inherit; text-decoration: none; }
+    .figure {
+      margin: 18px 0 22px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: #0a101c;
+    }
+    .figure img {
+      display: block; width: 100%; height: auto;
+      max-height: 420px; object-fit: cover;
+    }
+    .figure figcaption {
+      padding: 10px 14px 12px;
+      font-size: 12px; color: var(--muted);
+      line-height: 1.55;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .footnotes {
+      margin: 8px 0 24px;
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: var(--fn-bg);
+      border: 1px solid rgba(212,175,55,0.22);
+    }
+    .footnotes .fn-head {
+      font-size: 13px; color: var(--gold-soft);
+      letter-spacing: 0.08em; margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .fn-item {
+      margin-bottom: 14px; padding-bottom: 14px;
+      border-bottom: 1px dashed rgba(212,175,55,0.18);
+      font-size: 13.5px; color: #c5d0e4; line-height: 1.7;
+    }
+    .fn-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+    .fn-item strong {
+      display: block; color: var(--gold-soft);
+      font-size: 14px; margin-bottom: 4px;
+    }
+    .fn-item .why {
+      margin-top: 6px; color: #a8b8d4;
+      font-style: italic;
+    }
+    .fn-item .src {
+      margin-top: 4px; color: #7f8eaa; font-size: 12px;
+    }
+    .side-panel {
+      margin: 18px 0 22px;
+      padding: 18px;
+      border-radius: 16px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(61,139,253,0.22);
+    }
+    .mermaid-wrap {
+      margin: 18px 0 22px;
+      padding: 16px;
+      border-radius: 16px;
+      background: #0e1626;
+      border: 1px solid rgba(255,255,255,0.08);
+      overflow-x: auto;
+    }
+    .mermaid-wrap .caption {
+      font-size: 12px; color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .mermaid { background: transparent !important; }
+    .event-timeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin: 16px 0 22px;
+    }
+    .event-card {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+    .event-card .yr { color: var(--gold); font-weight: 700; font-size: 14px; }
+    .event-card .ev { color: #c9d4e8; font-size: 13px; margin-top: 4px; line-height: 1.5; }
+    .diagrams-section {
+      margin-top: 32px;
+      padding-top: 8px;
+    }
+    footer {
+      margin-top: 28px; color: var(--muted);
+      font-size: 13px; text-align: center;
+    }
+    footer a { color: var(--gold-soft); }
+    @media (max-width: 560px) {
+      article.story { padding: 20px 16px 12px; }
+      .wrap { padding: 24px 14px 60px; }
+    }
+
   </style>
 </head>
 <body>
-  <div class="box" id="status">Loading chapter…</div>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="lang-switch" aria-label="Language">
+        <a href="summer-storm-zh.html">中文</a>
+        <a class="active" href="summer-storm-en.html">English</a>
+      
+        <a href="../../../index.html">Back to home</a>
+      </div>
+      <div class="badge">Story guide · rewritten from public trial reads · off-book research</div>
+      <h1>Summer Storm</h1>
+      <p class="subtitle"><em>Chaos on Wall Street</em> · Chapter 8 · Yuyang · retelling + footnote research</p>
+      <div class="note">
+        The narrative below follows the author’s desk experience and the summer-2007 market timeline in original phrasing for study — not a verbatim copy of the book. Footnotes, figures, and diagrams are off-book public research. Names such as “Lucy Bank” are anonymized in the source. Please support the official edition for the full text.
+      </div>
+      <nav class="toc" aria-label="Section navigation">
+        In this chapter
+        <ul>
+          <li><a href="#s1">Why a tiny Bear fund scared the Street</a></li>
+          <li><a href="#s2">Strategy: AAA paper, CDS, and leverage</a></li>
+          <li><a href="#s3">Cayne’s injection, Merrill’s auction threat, ABX smash</a></li>
+          <li><a href="#s4">Fire crosses the Atlantic: BNP freezes three funds</a></li>
+          <li><a href="#s5">Contagion: money-market pullback and multi-strategy deleveraging</a></li>
+          <li><a href="#s6">Muni-desk summer storm: basis and the SIFMA ratio</a></li>
+          <li><a href="#s7">Top of the chart ≠ top of the market</a></li>
+          <li><a href="#s8">No bids, a “court martial,” and Street-wide deleveraging</a></li>
+          <li><a href="#diagrams">Map / timeline / knowledge graph</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER EIGHT · SUMMER STORM</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal-reserve-33-liberty.jpg" alt="Federal Reserve Bank of New York" loading="lazy" />
+        <figcaption>Federal Reserve Bank of New York at 33 Liberty (July 2007) — when shadow-bank load-bearing walls wobble, liquidity arguments eventually run back toward these pipes. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">Why a tiny Bear fund scared the Street</h2>
+      <p>On paper the Bear Stearns structured-credit hedge funds were not “large”: net asset value sat around the $1.6 billion mark. In Street terms that should have been corner noise.<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a></p>
+      <p>What scared people was leverage — assets scaled into the tens of billions — and the lenders who took the collateral. If that collateral was haircut harder or auctioned into a thin market, losses traveled along the financing chain onto desks that thought they were unrelated. In the shadow-banking building, these funds were load-bearing walls: not huge rooms, but walls whose failure redistributes the whole load.<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a></p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">Chapter anchors · Summer 2007</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">June</div><div class="ev">Bear HF distress · Merrill auction threat</div></div>
+          <div class="event-card"><div class="yr">Late Jun–Jul</div><div class="ev">Cayne facility · Sowood · fund bankruptcies</div></div>
+          <div class="event-card"><div class="yr">Aug 9</div><div class="ev">BNP freezes three funds</div></div>
+          <div class="event-card"><div class="yr">High summer</div><div class="ev">Muni basis storm · Street-wide deleveraging</div></div>
+        </div>
+      </div>
+
+      <div class="scene">
+        A $1.6B NAV levered into tens of billions of assets and a chain of secured lenders — panic is priced in “who shares the wall,” not “how big the fund looks.”
+      </div>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ Bear Stearns hedge funds (2007)</strong>
+          The High-Grade Structured Credit Strategies Fund and its Enhanced Leverage sister held leveraged structured-credit exposure tied to subprime and financed heavily in repo-style markets. In June 2007 they faced redemptions and margin calls; Bear later committed roughly a $1.6B collateralized repo facility to the High-Grade fund (around June 26). By month-end, Enhanced Leverage had effectively no investor value left and High-Grade very little; the funds moved toward bankruptcy/wind-down by late July.
+          <div class="why">Why it matters here: the first thunderclap of the chapter — a “small” fund as a system wall.</div>
+          <div class="src">Sources: contemporary NYT/Reuters coverage; public excerpts of Cayne/BSAM investor updates</div>
+        </div>
+        <div class="fn-item" id="fn2">
+          <strong>² Collateralized lending / repo</strong>
+          Hedge funds and dealers commonly finance inventory via repurchase agreements: securities are posted as collateral against cash, subject to a haircut. When prices fall or haircuts rise, borrowers face margin calls or forced liquidation. If creditors auction seized collateral, private marks become public prices — the bite behind Merrill’s auction threat later in the chapter.
+          <div class="why">Why it matters here: explains how modest NAV can still shock Street-wide funding and marks.</div>
+          <div class="src">Sources: public repo-market primers; crisis histories of HF–prime-broker financing chains</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">Strategy: AAA paper, CDS, and leverage</h2>
+      <p>The pitch had once been elegant: buy seemingly AAA structured paper, overlay credit-default-swap hedges, add leverage, and turn a few basis points of spread into tidy monthly returns. As spreads compressed, keeping the return required worse collateral and incomplete hedges — models still said “high grade,” while the book grew brittle.</p>
+      <p>It was Chapter 7’s interlocking stratagem continued: tranching renamed risk, leverage scaled the name into size, and incomplete hedges left gaps for a summer wind to find.</p>
+
+      <div class="scene">
+        The term sheet promised AAA and hedges; high summer asked how much the hedges really covered — and what the collateral fetched under an auction hammer.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">Cayne’s injection, Merrill’s auction threat, ABX smash</h2>
+      <p>CEO Jimmy Cayne reluctantly backed a roughly $1.6 billion collateralized funding backstop for the High-Grade fund — the parent putting its own balance sheet in front of a liquidation.<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a></p>
+      <p>Creditors were unconvinced. Merrill Lynch threatened a public auction of about $800 million of CDO collateral: one thin-market print could become the mark-to-market window paper everyone else had to respect.<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a><a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a> Panic smashed through the ABX complex; Sowood and others showed stress in the same weather; by late July the Bear funds were headed into bankruptcy.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wall_Street_panorama_vc.jpg" alt="Wall Street panorama 2007" loading="lazy" />
+        <figcaption>Wall Street panorama (December 2007) — months earlier, auction threats had already forced private marks into public prices. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ The ABX index</strong>
+          ABX.HE and related indices track CDS pricing on baskets of subprime RMBS and became a public thermometer for “how sick is subprime” in 2007. Funds and prop desks used them to hedge or speculate; sharp declines both reflected fear and amplified it through marks and margin.
+          <div class="why">Why it matters here: links the auction “window paper” to a Street-visible subprime price.</div>
+          <div class="src">Sources: Markit ABX public descriptions; standard crisis narratives of the 2007 ABX collapse</div>
+        </div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ Mark-to-market</strong>
+          Valuing positions at recent observable market prices (or models anchored to comparables). In an illiquid market, one public auction or forced sale can manufacture the comparable that forces everyone else to write down — even holders who never intended to sell. That is why an auction threat alone can smash a whole layer of structured credit.
+          <div class="why">Why it matters here: explains the weaponized psychology of Merrill’s collateral sale threat.</div>
+          <div class="src">Sources: standard MTM definitions in trading/accounting; contemporary Bear HF coverage</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s4">Fire crosses the Atlantic: BNP freezes three funds</h2>
+      <p>On August 9 the fire jumped the ocean. BNP Paribas said that with liquidity in certain U.S. securitization segments “completely evaporating,” it could not fairly value underlying ABS and temporarily suspended NAV calculation and subscriptions/redemptions for three funds.<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a></p>
+      <p>The prose was technical; the implication was political: even “high-quality, high-rated” assets can become unpriceable when buyers vanish. European interbank markets tightened — the crisis story upgraded from “U.S. subprime corner” to “global liquidity event.”</p>
+
+      <div class="scene">
+        When a bank says “we cannot compute a NAV,” market language hears: the price of money is temporarily broken, and nobody wants to go first.
+      </div>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ BNP Paribas freezes three funds (9 Aug 2007)</strong>
+          BNP Paribas Investment Partners suspended NAV and dealing for Parvest Dynamic ABS, BNP Paribas ABS Euribor, and BNP Paribas ABS Eonia, citing evaporated liquidity in parts of the U.S. securitization market. Fund scale was on the order of ~€1.6B at the time. The date is widely treated as a public “Atlantic crossing” marker for the 2007 crisis; the ECB injected liquidity the same day.
+          <div class="why">Why it matters here: the summer storm’s open migration from New York financing desks to European money markets.</div>
+          <div class="src">Sources: BNP press release; CNBC/Bloomberg contemporaneous reports; FCIC archive PDF</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">Contagion: money-market pullback and multi-strategy deleveraging</h2>
+      <p>The transmission was not mysterious: money markets and funding desks pulled risk; multi-strategy hedge funds, facing redemptions and margin, sold whatever still had a bid — relative value, convertibles, and equity long/short got dragged together.</p>
+      <p>Goldman’s Global Alpha and similar quant/multi-strategy books became public exhibits that “smart money” can gap lower when everyone deleverages at once. Returns once credited as alpha partly reflected liquidity beta — a risk that looks like skill in crowded trades and like a trap in a scramble.<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a> Carhart-style factor models can speak to momentum, value, and size, yet often omit the dimension where financing liquidity suddenly gets expensive.</p>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ Global Alpha, Carhart, and liquidity beta</strong>
+          Goldman Sachs Global Alpha and peer quant/multi-strategy funds suffered sharp drawdowns around August 2007, contemporaneously linked to crowded factor/stat-arb books unwinding together. Carhart’s four-factor model extends Fama–French with momentum; classic equity factors do not directly price a sudden tightening of funding liquidity. Crisis writing therefore stresses that much apparent alpha, when leverage and crowding coexist, is exposure to liquidity beta.
+          <div class="why">Why it matters here: makes “everyone sold the same stuff” a mechanism, not just a mood.</div>
+          <div class="src">Sources: contemporary Global Alpha coverage; asset-pricing discussions of Carhart factors and liquidity risk</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">Muni-desk summer storm: basis and the SIFMA ratio</h2>
+      <p>The storm finally hit the author’s municipal desk. The summer plot turned on two technical-looking lines: the basis between cash munis and hedges, and ratio trades of the SIFMA municipal floating index versus LIBOR.<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a><a class="fn-link" href="#fn8"><sup class="fn">⁸</sup></a></p>
+      <p>The world had been “HF-ized”: formula medium-term notes (MTNs) embedded muni floating structures into structured product, tying a once-local market to the same global relative-value rope. Vince was on vacation and still anxious — ratios started jumping, and holiday became remote watch duty.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/NYC_NYSE.jpg" alt="New York Stock Exchange" loading="lazy" />
+        <figcaption>New York Stock Exchange façade — beyond the equity floor’s noise, fixed-income desks wrote the same summer storm in basis points and ratios. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-5">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ SIFMA / LIBOR ratio</strong>
+          The SIFMA Municipal Swap Index (formerly BMA) reflects weekly reset rates on high-grade tax-exempt floating munis; traders watch its ratio to a taxable floating benchmark (then often LIBOR). Ratio arb and hedges assume a stable relationship; when risk aversion rises, tax-exempt buyers step back, or structured books deleverage, the ratio can gap and smash positions sized to a quiet historical band.
+          <div class="why">Why it matters here: the coordinate axis for the author’s personal trading lesson.</div>
+          <div class="src">Sources: SIFMA index public materials; muni-derivatives market practice summaries</div>
+        </div>
+        <div class="fn-item" id="fn8">
+          <strong>⁸ Municipal basis</strong>
+          Here, basis is the gap between cash muni exposure and hedge instruments (swaps, ratio locks, Treasury futures, etc.). In calm markets it trades in a band; in a liquidity crisis, cash bids vanish while derivatives still mark, and basis can gap wider (in the book’s telling, roughly 80 → 120 → 140), forcing desks to choose between cutting risk and eating margin.
+          <div class="why">Why it matters here: turns abstract “deleveraging” into a ruler on the muni P&amp;L.</div>
+          <div class="src">Sources: municipal fixed-income practice; public discussions of relative-value unwinds in 2007</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s7">Top of the chart ≠ top of the market</h2>
+      <p>As the ratio jumped, the author offered the 30-year ratio at 75¾ — and UBS lifted it. It felt like a win: selling the “top of the chart.” Ego blocked the stop. The next day, exiting meant lifting someone else’s offer — a lesson on the order of ~$300k.</p>
+      <p>One short line lasts a career: the top of the chart is not the top of the market. A technical extreme is only a coordinate on your screen; the market can still grind that coordinate into dust.</p>
+
+      <div class="scene">
+        “I sold the top” — until you learn there is always a higher top, and your risk is still on.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s8">No bids, a “court martial,” and Street-wide deleveraging</h2>
+      <p>Cash munis cascaded: bids disappeared into polite silence. Basis marched from about 80 toward 120 and then 140. London risk sent a SWAT-like team; something close to a court martial landed on the desk.</p>
+      <p>The author reversed earlier UBS-linked note hedges into a steeper curve, wider CDS, and higher vol — every Greek letter arguing with the book. He later reached for a Marines metaphor of advance and retreat: charge when you must, fall back when you must. He was cleared of misconduct, but the Street had already begun delevering in the same direction. The summer storm was no longer one fund’s obituary; it was a funding-ecosystem retreat order.</p>
+
+      <div class="scene">
+        A court martial asks whether you broke a rule; the market asks whether you can leave alive when there is no bid. Two questions — answers may differ.
+      </div>
+
+      <hr class="divider" />
+
+      <section class="diagrams-section" id="diagrams">
+        <h2>Map / timeline / knowledge graph</h2>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Relationship map: small fund → auction window paper → Atlantic contagion → muni desk</div>
+          <div class="mermaid">
+flowchart LR
+  BEAR[Bear HF ~1.6B NAV] -->|leverage| ASSETS[Tens of $B structured assets]
+  ASSETS --> LEND[Secured lenders]
+  LEND --> MER[Merrill auction threat]
+  MER --> MTM[Public mark-to-market]
+  MTM --> ABX[ABX smash]
+  ABX --> SOW[Sowood etc. stress]
+  BEAR --> BNP[BNP freezes 3 funds]
+  BNP --> MM[Money-market pullback]
+  MM --> MS[Multi-strategy deleveraging]
+  MS --> GA[Global Alpha et al.]
+  MS --> MUNI[Muni basis / SIFMA ratio]
+  MUNI --> DESK[Author's desk]
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Timeline: Summer Storm 2007</div>
+          <div class="mermaid">
+timeline
+  title Summer Storm timeline
+  2007-06 : Bear HF distress
+          : Merrill auction threat
+          : Cayne ~$1.6B facility
+  2007-07 : ABX / structured credit smash
+          : Sowood stress visible
+          : Bear funds bankrupt/wind-down
+  2007-08-09 : BNP freezes three ABS funds
+             : Fire crosses the Atlantic
+  High summer : Muni basis widens
+              : Ratio arb crushed
+              : Street-wide deleveraging
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">Knowledge graph: leverage, window paper, liquidity beta</div>
+          <div class="mermaid">
+flowchart TB
+  LEV[Leverage + AAA narrative] --> WALL[Shadow-bank load-bearing wall]
+  WALL --> AUC[Auction / MTM window paper]
+  AUC --> IDX[ABX and public prices]
+  IDX --> ATL[Atlantic liquidity evaporation]
+  ATL --> BETA[Liquidity-beta exposure]
+  BETA --> HF[Multi-strategy sync selling]
+  HF --> RATIO[SIFMA ratio jump]
+  RATIO --> BASIS[Muni basis 80→140]
+  BASIS --> LESSON[Chart top ≠ market top]
+  LESSON --> DELEV[Street-wide deleveraging]
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer>
+      <em>Chaos on Wall Street</em> · Yuyang · Chapter 8 story guide (original retelling) ·
+      <a href="SOURCES.md">SOURCES.md</a> ·
+      <a href="../../../index.html">Back to home</a>
+    </footer>
+  </div>
+
   <script>
-  (async function () {
-    const parts = ["parts/en-part-0.txt", "parts/en-part-1.txt", "parts/en-part-2.txt", "parts/en-part-3.txt", "parts/en-part-4.txt", "parts/en-part-5.txt", "parts/en-part-6.txt", "parts/en-part-7.txt", "parts/en-part-8.txt", "parts/en-part-9.txt", "parts/en-part-10.txt", "parts/en-part-11.txt", "parts/en-part-12.txt", "parts/en-part-13.txt", "parts/en-part-14.txt"];
-    const status = document.getElementById('status');
-    try {
-      const texts = await Promise.all(parts.map(p => fetch(p).then(r => {
-        if (!r.ok) throw new Error(p + ' ' + r.status);
-        return r.text();
-      })));
-      const html = texts.join('');
-      document.open();
-      document.write(html);
-      document.close();
-    } catch (e) {
-      status.innerHTML = 'Failed to assemble page: ' + e +
-        '<br><br><a href="summer-storm-zh.html">Other language</a>';
-    }
-  })();
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
   </script>
+
 </body>
 </html>

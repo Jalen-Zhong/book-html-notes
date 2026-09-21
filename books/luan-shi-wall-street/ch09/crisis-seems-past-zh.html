@@ -3,35 +3,502 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>危机似乎过去 · loading</title>
+  <title>《乱世华尔街》第9集：危机似乎过去</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <style>
-    body { margin:0; font-family: system-ui, sans-serif; background:#0b1220; color:#e8eef9;
-      display:flex; min-height:100vh; align-items:center; justify-content:center; }
-    .box { max-width:420px; padding:24px; border:1px solid rgba(212,175,55,.28);
-      border-radius:16px; background:#121a2b; line-height:1.6; text-align:center; }
-    a { color:#f0d78c; }
+    :root {
+      --bg: #0b1220;
+      --panel: #121a2b;
+      --panel-2: #182235;
+      --gold: #d4af37;
+      --gold-soft: #f0d78c;
+      --text: #e8eef9;
+      --muted: #9aa8c1;
+      --line: rgba(212, 175, 55, 0.28);
+      --accent: #3d8bfd;
+      --accent-soft: rgba(61, 139, 253, 0.12);
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+      --fn-bg: rgba(240, 215, 140, 0.06);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(212,175,55,0.12), transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, rgba(61,139,253,0.12), transparent 50%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 40px 20px 80px; }
+    .lang-switch {
+      display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap;
+    }
+    .lang-switch a {
+      display: inline-flex; align-items: center;
+      padding: 5px 12px; border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--muted); text-decoration: none; font-size: 13px;
+      background: rgba(255,255,255,0.03);
+    }
+    .lang-switch a.active {
+      color: var(--gold-soft);
+      border-color: var(--line);
+      background: rgba(212,175,55,0.1);
+    }
+    .lang-switch a:hover { color: var(--gold-soft); }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px;
+      color: var(--gold-soft); font-size: 13px; letter-spacing: 0.06em;
+      background: rgba(212,175,55,0.08);
+    }
+    h1 {
+      margin: 18px 0 8px;
+      font-size: clamp(28px, 5vw, 40px);
+      line-height: 1.28; font-weight: 700;
+    }
+    .subtitle { margin: 0 0 24px; color: var(--muted); font-size: 15px; }
+    .hero {
+      position: relative; overflow: hidden;
+      border: 1px solid var(--line); border-radius: 22px;
+      background:
+        linear-gradient(135deg, rgba(212,175,55,0.12), transparent 40%),
+        linear-gradient(180deg, var(--panel), var(--panel-2));
+      box-shadow: var(--shadow); padding: 28px; margin-bottom: 28px;
+    }
+    .note {
+      margin-top: 16px; padding: 12px 14px;
+      border-left: 3px solid var(--gold);
+      background: rgba(212,175,55,0.08);
+      border-radius: 0 12px 12px 0;
+      color: var(--muted); font-size: 13px;
+    }
+    .toc {
+      margin: 20px 0 0; padding: 14px 16px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px; font-size: 14px; color: var(--muted);
+    }
+    .toc a { color: var(--gold-soft); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    .toc ul { margin: 8px 0 0; padding-left: 18px; }
+    .toc li { margin: 4px 0; }
+    article.story {
+      background: linear-gradient(180deg, var(--panel), var(--panel-2));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 20px; padding: 28px 28px 20px;
+      box-shadow: var(--shadow);
+    }
+    .chapter-mark {
+      color: var(--gold-soft); font-size: 13px;
+      letter-spacing: 0.12em; margin-bottom: 18px;
+    }
+    h2 {
+      margin: 28px 0 12px; font-size: 20px;
+      color: var(--gold-soft); font-weight: 650;
+      scroll-margin-top: 24px;
+    }
+    h2:first-of-type { margin-top: 8px; }
+    h3.panel-title {
+      margin: 0 0 10px; font-size: 15px;
+      color: var(--accent); font-weight: 600;
+    }
+    p { margin: 0 0 16px; color: #d7deec; font-size: 16px; }
+    .scene {
+      margin: 8px 0 20px; padding: 16px 18px;
+      border-radius: 14px;
+      background: rgba(61,139,253,0.07);
+      border: 1px solid rgba(61,139,253,0.18);
+      color: #c9dbff; font-size: 15px;
+    }
+    .divider {
+      height: 1px; margin: 28px 0;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+      border: 0;
+    }
+    sup.fn {
+      font-size: 11px; color: var(--gold);
+      font-weight: 700; cursor: pointer;
+      margin-left: 1px; text-decoration: none;
+    }
+    a.fn-link { color: inherit; text-decoration: none; }
+    .figure {
+      margin: 18px 0 22px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: #0a101c;
+    }
+    .figure img {
+      display: block; width: 100%; height: auto;
+      max-height: 420px; object-fit: cover;
+    }
+    .figure figcaption {
+      padding: 10px 14px 12px;
+      font-size: 12px; color: var(--muted);
+      line-height: 1.55;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .footnotes {
+      margin: 8px 0 24px;
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: var(--fn-bg);
+      border: 1px solid rgba(212,175,55,0.22);
+    }
+    .footnotes .fn-head {
+      font-size: 13px; color: var(--gold-soft);
+      letter-spacing: 0.08em; margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .fn-item {
+      margin-bottom: 14px; padding-bottom: 14px;
+      border-bottom: 1px dashed rgba(212,175,55,0.18);
+      font-size: 13.5px; color: #c5d0e4; line-height: 1.7;
+    }
+    .fn-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+    .fn-item strong {
+      display: block; color: var(--gold-soft);
+      font-size: 14px; margin-bottom: 4px;
+    }
+    .fn-item .why {
+      margin-top: 6px; color: #a8b8d4;
+      font-style: italic;
+    }
+    .fn-item .src {
+      margin-top: 4px; color: #7f8eaa; font-size: 12px;
+    }
+    .side-panel {
+      margin: 18px 0 22px;
+      padding: 18px;
+      border-radius: 16px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(61,139,253,0.22);
+    }
+    .mermaid-wrap {
+      margin: 18px 0 22px;
+      padding: 16px;
+      border-radius: 16px;
+      background: #0e1626;
+      border: 1px solid rgba(255,255,255,0.08);
+      overflow-x: auto;
+    }
+    .mermaid-wrap .caption {
+      font-size: 12px; color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .mermaid { background: transparent !important; }
+    .event-timeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin: 16px 0 22px;
+    }
+    .event-card {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+    .event-card .yr { color: var(--gold); font-weight: 700; font-size: 14px; }
+    .event-card .ev { color: #c9d4e8; font-size: 13px; margin-top: 4px; line-height: 1.5; }
+    .diagrams-section {
+      margin-top: 32px;
+      padding-top: 8px;
+    }
+    footer {
+      margin-top: 28px; color: var(--muted);
+      font-size: 13px; text-align: center;
+    }
+    footer a { color: var(--gold-soft); }
+    @media (max-width: 560px) {
+      article.story { padding: 20px 16px 12px; }
+      .wrap { padding: 24px 14px 60px; }
+    }
+
   </style>
 </head>
 <body>
-  <div class="box" id="status">Loading chapter…</div>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="lang-switch" aria-label="语言">
+        <a class="active" href="crisis-seems-past-zh.html">中文</a>
+        <a href="crisis-seems-past-en.html">English</a>
+      
+        <a href="../../../index.html">返回首页</a>
+      </div>
+      <div class="badge">故事导读 · 据公开试读改写 · 场外研究补充</div>
+      <h1>危机似乎过去</h1>
+      <p class="subtitle">《乱世华尔街》第九章「危机似乎过去」· 渔阳 · 故事改写 + 脚注研究</p>
+      <div class="note">
+        下面按作者经历与 2007 年秋市时间线讲述本章故事，用自己的话改写，方便跟读；不是全书/全章原文照搬。脚注、配图与知识图谱为场外公开资料补充。「鲁西银行 / Lucy Bank」等为书中化名。完整内容请读正版。
+      </div>
+      <nav class="toc" aria-label="章节导航">
+        本节导览
+        <ul>
+          <li><a href="#s1">夏季风暴 = 银行挤兑</a></li>
+          <li><a href="#s2">1907 恐慌与美联储诞生</a></li>
+          <li><a href="#s3">8 月 17 日：贴现率信号</a></li>
+          <li><a href="#s4">强手接货：Citadel、美银与反弹</a></li>
+          <li><a href="#s5">道德风险：山姆大叔的靠山心理</a></li>
+          <li><a href="#s6">10 月 9 日：皮肤健康、骨头受伤</a></li>
+          <li><a href="#s7">田纳西住房债：掷硬币的警告</a></li>
+          <li><a href="#s8">战后平静 = 预备队耗尽</a></li>
+          <li><a href="#diagrams">人物关系 / 时间线 / 知识图谱</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER NINE · 危机似乎过去</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal-reserve-33-liberty.jpg" alt="纽约联储大楼" loading="lazy" />
+        <figcaption>纽约联储（33 Liberty）——夏季风暴之后，全市场都在看「银行的银行」会不会出手。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">夏季风暴 = 银行挤兑</h2>
+      <p>第八章的夏季风暴，若剥掉指数与缩写，骨子里就是一场现代版银行挤兑：不是储户在柜台前排长队，而是回购、商业票据与影子银行管道里的现金同时抽走。私人资产负债表互相抵押、互相打折，一旦抵押品不被信任，流动性会像潮水退走。<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a></p>
+      <p>作者在这一章点明：能真正向系统「注水」的，最终只有中央银行——美联储。私人强手可以接货、可以喊「抄底」，但把整个管道重新灌满，仍要看贴现窗口与公开市场操作。</p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">本章时间锚点 · 2007 秋</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">8.17</div><div class="ev">贴现率下调 50bp · 信号先于降息</div></div>
+          <div class="event-card"><div class="yr">8 末</div><div class="ev">市政反弹 · Citadel/Sowood · 美银注资 Countrywide</div></div>
+          <div class="event-card"><div class="yr">10.9</div><div class="ev">标普 1565 高点 · 双顶韵脚</div></div>
+          <div class="event-card"><div class="yr">秋</div><div class="ev">田纳西 AAA 住房债 · 「战后平静」</div></div>
+        </div>
+      </div>
+
+      <div class="scene">
+        挤兑的形状可以换——柜台、回购、票据——但逻辑不变：信任断裂时，只有能创造流动性的机构能改写终局。
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">1907 恐慌与美联储诞生</h2>
+      <p>要理解「为什么只有美联储能注水」，作者把镜头拉回 1907 年恐慌：信托公司挤兑、清算链断裂，摩根大通在自家图书馆里把华尔街大佬关在一起，用私人资本与个人权威做了一次临时央行。<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a></p>
+      <p>那次「图书馆救援」的教训写入了 1913 年《联邦储备法》：美联储是公私混合体——既是银行的银行，又背着双重使命（物价稳定与充分就业的现代表述）。它不是普通商业银行，却必须对整个银行体系的流动性负责。<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a></p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Morgan_Library_entrance_building_and_library_annex.jpg" alt="摩根图书馆外观" loading="lazy" />
+        <figcaption>摩根图书馆（纽约）——1907 恐慌中私人救援的舞台；六年后联邦储备体系立法诞生。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        1907 年用私人权威缝合裂缝；1913 年后，裂缝理论上该由制度性央行来缝——直到影子银行让裂缝再次长出制度外的形状。
+      </div>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ 1907 年恐慌（Panic of 1907）</strong>
+          1907 年秋，纽约信托公司与经纪行连环挤兑，股市与货币市场几乎停摆。J.P. 摩根在曼哈顿麦迪逊大道的私人图书馆召集银行家，组织流动性互助、协调停兑与注资，扮演了事实上的最后贷款人。事后改革呼声催生国民货币委员会，并最终导向 1913 年联邦储备体系立法。
+          <div class="why">为何重要：本章把「夏季风暴」与「央行起源故事」焊在一起——私人救援不够，才有制度性注水权。</div>
+          <div class="src">来源：Federal Reserve History；Britannica / 公开危机史概述</div>
+        </div>
+        <div class="fn-item" id="fn2">
+          <strong>² 美联储结构：公私混合与「银行的银行」</strong>
+          联邦储备体系由华盛顿的联邦储备理事会与十二家地区联储组成；会员银行持有地区联储股份，董事会结构混合公共任命与银行界代表。联储向存款机构提供贴现窗口与支付清算，并执行货币政策——故称「银行的银行」。现代「双重使命」指向充分就业与物价稳定；危机时最后贷款人职能同样关键。
+          <div class="why">为何重要：解释为何私人强手接货仍替代不了央行对系统流动性的最终承诺。</div>
+          <div class="src">来源：federalreserve.gov 体系说明；Fed 教育材料</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">8 月 17 日：贴现率信号</h2>
+      <p>2007 年 8 月 17 日，美联储没有立刻下调联邦基金目标利率，而是把初级信贷贴现率下调 50 个基点（至 5.75%），把贴现窗口与基金利率的利差收窄，并允许最长约 30 天的期限融资——这是「信号」先于「全面降息」：承认市场失灵，又不想立刻把通胀与银行业危机的两难一刀切。<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a></p>
+      <p>电话立刻响起来：对手方开始问「有没有券要出？」——流动性预期一变，卖方的胆量会先回来一点。市政债出现反弹；此前被压垮的信用价差开始喘口气。</p>
+
+      <div class="scene">
+        没有马上砍基金利率，却先把贴现窗口的门缝开大——市场听见的是：央行看见了挤兑，而不是「通胀目标已经投降」。
+      </div>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ 贴现率 vs 联邦基金利率（2007-08-17）</strong>
+          联邦基金目标利率是银行间隔夜准备金交易的政策锚；贴现窗口初级信贷利率通常高于基金目标，作为后备流动性通道。2007 年 8 月 17 日，联储理事会批准将初级信贷利率下调 50bp 至 5¾%，把相对基金目标（当时 5.25%）的利差收窄至 50bp，并允许最长 30 天、可展期的期限融资，同时继续接受较广抵押品。完整基金降息要到 9 月 18 日才开始。
+          <div class="why">为何重要：本章「信号而非全面降息」的制度含义——先修管道，再谈宽松周期。</div>
+          <div class="src">来源：Federal Reserve 2007-08-17 新闻稿 monetary20070817a</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s4">强手接货：Citadel、美银与反弹</h2>
+      <p>强手开始出现。Citadel 接走了 Sowood 几乎全部组合——七月信用暴跌后，那是「有胆量和资本的人」在极端价格上把风险搬到自己账上。<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a> 美银向 Countrywide 注入约 20 亿美元可转换优先股，给这家全国最大按揭发放商一剂「资产负债表镇定剂」。<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a></p>
+      <p>ABX 等次级指数出现反弹；市政基差从盛夏约 140 附近收窄到约 110——不是危机消失，而是最恐慌的那一刀暂时收回去了。作者这一代交易员的口头禅被重新念出：「所有危机都是买入机会」——储贷危机、俄罗斯违约、互联网泡沫，每一次「死人」之后都有人在废墟里发财。这一次，他们以为剧本又会重演。</p>
+
+      <div class="scene">
+        强手接货会让屏幕变绿；变绿不等于骨头愈合——只是有人愿意在更低的价格上，把别人不要的风险扛走。
+      </div>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ 美银 20 亿美元注资 Countrywide（2007-08-22）</strong>
+          Countrywide Financial 在 8 月中旬因短期融资困难动用约 115 亿美元信贷额度后，股价与信心重挫。8 月 22 日，美国银行（Bank of America）完成约 20 亿美元战略股权投资：购买 7.25% B 系列无投票权可转换优先股，转换价约 18 美元/股。肯·刘易斯称市场低估了 Countrywide 的运营与资产价值。该注资是「强手接货」叙事的公司金融版本；一年后美银最终收购 Countrywide。
+          <div class="why">为何重要：把「私人资本救援」与后文道德风险、器官隐喻连成一条线。</div>
+          <div class="src">来源：Countrywide / BofA 2007-08-22 新闻稿与 8-K；CNBC / NPR 当代报道</div>
+        </div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ Citadel 接盘 Sowood（2007-07-30）</strong>
+          Sowood Capital（杰弗里·拉森）旗下 Alpha 基金在 7 月信用暴跌中资产价值腰斩，面临保证金催缴与对冲失效。7 月 30 日投资者信称已将基金组合「几乎全部」出售给 Citadel Investment Group，以避免强制平仓；交易后 NAV 仍较月初大跌逾五成。肯尼思·格里芬称交易实现了「有序的风险转移」。这是夏季风暴里最清晰的「强手接货」案例之一。
+          <div class="why">为何重要：对照本章 8 月后的反弹心理——有人接货，不等于系统性风险已解。</div>
+          <div class="src">来源：Sowood 2007-07-30 投资者信（公开 PDF）；Reuters / MarketWatch 报道</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">道德风险：山姆大叔的靠山心理</h2>
+      <p>贴现窗口一开、强手一现身，市场上的潜台词很快变成：最坏的时候会有人兜底——联储、大型银行、 somehow 的「山姆大叔」。道德风险不是教科书里的抽象词，而是交易台的肌肉记忆：风险偏好被「不会真死」的预期悄悄抬高，杠杆与久期又开始往回加。</p>
+      <p>作者警惕的正是这种心理学：危机似乎过去，所以可以更冒险；而更冒险，正是下一场风暴的燃料。</p>
+
+      <div class="scene">
+        安全网越清晰，网外的人越敢走钢丝——直到钢丝本身成为系统风险。
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">10 月 9 日：皮肤健康、骨头受伤</h2>
+      <p>2007 年 10 月 9 日，标普 500 收在约 1565 的高点，与 2000 年前后的顶部形成双顶韵脚——图表看起来像「又一次牛市巅峰」。BRIC（巴西、俄罗斯、印度、中国）脱钩论正热：新兴市场可以自己长，不必跟美国信贷一起沉。<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a> 中国 A 股叙事冲向约 6092 点附近的高潮区（上证综指稍后在 10 月中旬见历史峰值）。</p>
+      <p>作者给出一个身体隐喻：股票是皮肤，信用是骨头，银行是器官。皮肤可以红润光泽，骨头已经裂纹，影子银行与批发融资管道这些器官则在内部渗血。<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a> 市场「看起来健康」，只是因为眼睛习惯盯着皮肤。</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/NYC_NYSE.jpg" alt="纽约证券交易所外观" loading="lazy" />
+        <figcaption>纽约证券交易所——10 月的股指高点像健康的皮肤；信用与银行管道的伤，要在更深处量。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="scene">
+        双顶可以骗人；脱钩论可以骗人；只有当你同时摸皮肤、骨头和器官，才知道身体有没有在假装康复。
+      </div>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ BRIC「脱钩」叙事（2007）</strong>
+          2000 年代中期，高盛等提出的 BRIC 概念与「新兴市场增长可相对独立于发达经济体」的脱钩（decoupling）讨论流行。2007 年秋美股与部分新兴股市同创新高，强化了「美国信贷问题本地化」的乐观。随后全球贸易、美元融资与风险偏好同步收缩，证明金融与贸易耦合远深于口号。
+          <div class="why">为何重要：解释为何 10 月的全球股市狂欢会掩盖美国影子银行的内伤。</div>
+          <div class="src">来源：当代财经评论对 decoupling 的综述；危机后 IMF / 学术回顾</div>
+        </div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ 股票 vs 信用：系统性风险的表层与深层</strong>
+          权益指数反映盈利预期与风险偏好；信用利差、AB 指数、银行批发融资与回购 haircut 更能刻画中介链条是否还能滚动。2007 年秋常见「股强债弱 / 股稳信乱」的分裂：权益创高的同时，次级与结构化信用、货币市场与银行间利差仍显示压力。系统性风险往往先写在信用与银行器官上，再传导到皮肤（股价）。
+          <div class="why">为何重要：本章核心认知工具——别用皮肤诊断替代器官检查。</div>
+          <div class="src">来源：危机史对 ABX / LIBOR–OIS / 银行 CDS 与股指背离的标准叙述</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s7">田纳西住房债：掷硬币的警告</h2>
+      <p>作者所在的交易台，任务没有换成「防守」：上头仍要他继续做大市政住房债盘子。10 月，市场上出现田纳西 AAA 住房相关债券的 bid-wanted，报价大约 4.50%。第一次像掷硬币——他没拿到；不久又有约 1000 万美元的同类券第二次出现，他买下了。</p>
+      <p>事后看，这笔券会一路骑过整场危机——当时像运气，也像警告：在「危机似乎过去」的月份里，仍有人愿意把长久期住房信用塞进资产负债表，而买方的「幸运」往往只是把风险多扛了一段时间。</p>
+
+      <div class="scene">
+        掷硬币输掉一次，再赢一次——台面上像执行力；账本上像把整场危机的门票提前买好了。
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s8">战后平静 = 预备队耗尽</h2>
+      <p>夏秋之交的平静，更像一仗打完后的短暂寂静：前线不再炮响，是因为预备队已经打光，不是因为敌人消失。作者借用 1942 年秋斯大林格勒的意象——巷战间隙里，包围圈其实正在合拢。<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a></p>
+      <p>贴现信号、强手接货、股指新高、住房债继续扩表：每一样都像「危机似乎过去」的证据；合在一起，却更像合围前的假象。下一章要回答的，不是皮肤何时再红润，而是骨头与器官何时公开断裂。</p>
+
+      <div class="scene">
+        战后的安静最危险：你会把弹药耗尽误读成胜利，把包围误读成休战。
+      </div>
+
+      <hr class="divider" />
+
+      <section class="diagrams-section" id="diagrams">
+        <h2>人物关系 / 时间线 / 知识图谱</h2>
+
+        <div class="mermaid-wrap">
+          <div class="caption">关系图：挤兑 → 联储信号 → 强手接货 → 皮肤/骨头分裂</div>
+          <div class="mermaid">
+flowchart LR
+  RUN[夏季风暴≈挤兑] --> FED[只有联储能注水]
+  FED --> ORIGIN[1907 图书馆 → 1913 Fed]
+  FED --> SIG[8.17 贴现率信号]
+  SIG --> PHONE[电话：有券要出吗]
+  PHONE --> MUNI[市政反弹]
+  SIG --> STRONG[强手接货]
+  STRONG --> CIT[Citadel←Sowood]
+  STRONG --> BAC[美银←Countrywide]
+  STRONG --> ABX[ABX 反弹 · 基差 140→110]
+  ABX --> MH[道德风险↑]
+  MH --> SPX[10.9 标普 1565]
+  SPX --> META[皮肤/骨头/器官]
+  META --> WARN[田纳西住房债]
+  WARN --> STAL[斯大林格勒式平静]
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">时间线：危机似乎过去（2007 夏末–秋）</div>
+          <div class="mermaid">
+timeline
+  title 危机似乎过去
+  1907-1913 : 恐慌与联储立法起源
+  2007-08-17 : 贴现率下调 50bp
+             : 基金利率暂不动
+  2007-08末 : 市政反弹 · 电话询券
+            : Citadel/Sowood 已接货
+            : 美银 20 亿注资 Countrywide
+            : 基差约 140→110
+  2007-10-09 : 标普约 1565 高点
+             : BRIC 脱钩论 · A 股高潮
+  2007秋 : 田纳西 AAA 住房债买入
+         : 「战后平静」= 预备队耗尽
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">知识图谱：信号、道德风险与身体隐喻</div>
+          <div class="mermaid">
+flowchart TB
+  LIQ[流动性挤兑] --> CB[央行最后贷款人]
+  CB --> DISC[贴现窗口信号]
+  DISC --> RELIEF[价差收窄 / 反弹]
+  RELIEF --> HANDS[强手接货]
+  HANDS --> MH[道德风险 / 靠山心理]
+  MH --> RISK[风险偏好回升]
+  RISK --> SKIN[股票=皮肤创新高]
+  RISK --> BONE[信用=骨头仍裂]
+  RISK --> ORG[银行/影子=器官渗血]
+  SKIN --> ILLUSION[危机似乎过去]
+  BONE --> ILLUSION
+  ORG --> ENCIRCLE[包围圈形成中]
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer>
+      《乱世华尔街》· 渔阳 · 第九章故事导读（原创改写）·
+      <a href="SOURCES.md">SOURCES.md</a> ·
+      <a href="../../../index.html">返回首页</a>
+    </footer>
+  </div>
+
   <script>
-  (async function () {
-    const parts = ["parts/zh-part-0.txt", "parts/zh-part-1.txt", "parts/zh-part-2.txt", "parts/zh-part-3.txt", "parts/zh-part-4.txt", "parts/zh-part-5.txt", "parts/zh-part-6.txt", "parts/zh-part-7.txt", "parts/zh-part-8.txt", "parts/zh-part-9.txt"];
-    const status = document.getElementById('status');
-    try {
-      const texts = await Promise.all(parts.map(p => fetch(p).then(r => {
-        if (!r.ok) throw new Error(p + ' ' + r.status);
-        return r.text();
-      })));
-      const html = texts.join('');
-      document.open();
-      document.write(html);
-      document.close();
-    } catch (e) {
-      status.innerHTML = 'Failed to assemble page: ' + e +
-        '<br><br><a href="crisis-seems-past-en.html">Other language</a>';
-    }
-  })();
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
   </script>
+
 </body>
 </html>
