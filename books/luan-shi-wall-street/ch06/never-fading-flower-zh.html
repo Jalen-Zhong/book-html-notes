@@ -3,35 +3,507 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>永不凋谢的花朵 · loading</title>
+  <title>《乱世华尔街》第6集：永不凋谢的花朵</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <style>
-    body { margin:0; font-family: system-ui, sans-serif; background:#0b1220; color:#e8eef9;
-      display:flex; min-height:100vh; align-items:center; justify-content:center; }
-    .box { max-width:420px; padding:24px; border:1px solid rgba(212,175,55,.28);
-      border-radius:16px; background:#121a2b; line-height:1.6; text-align:center; }
-    a { color:#f0d78c; }
+    :root {
+      --bg: #0b1220;
+      --panel: #121a2b;
+      --panel-2: #182235;
+      --gold: #d4af37;
+      --gold-soft: #f0d78c;
+      --text: #e8eef9;
+      --muted: #9aa8c1;
+      --line: rgba(212, 175, 55, 0.28);
+      --accent: #3d8bfd;
+      --accent-soft: rgba(61, 139, 253, 0.12);
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+      --fn-bg: rgba(240, 215, 140, 0.06);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(212,175,55,0.12), transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, rgba(61,139,253,0.12), transparent 50%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 40px 20px 80px; }
+    .lang-switch {
+      display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap;
+    }
+    .lang-switch a {
+      display: inline-flex; align-items: center;
+      padding: 5px 12px; border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--muted); text-decoration: none; font-size: 13px;
+      background: rgba(255,255,255,0.03);
+    }
+    .lang-switch a.active {
+      color: var(--gold-soft);
+      border-color: var(--line);
+      background: rgba(212,175,55,0.1);
+    }
+    .lang-switch a:hover { color: var(--gold-soft); }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px;
+      color: var(--gold-soft); font-size: 13px; letter-spacing: 0.06em;
+      background: rgba(212,175,55,0.08);
+    }
+    h1 {
+      margin: 18px 0 8px;
+      font-size: clamp(28px, 5vw, 40px);
+      line-height: 1.28; font-weight: 700;
+    }
+    .subtitle { margin: 0 0 24px; color: var(--muted); font-size: 15px; }
+    .hero {
+      position: relative; overflow: hidden;
+      border: 1px solid var(--line); border-radius: 22px;
+      background:
+        linear-gradient(135deg, rgba(212,175,55,0.12), transparent 40%),
+        linear-gradient(180deg, var(--panel), var(--panel-2));
+      box-shadow: var(--shadow); padding: 28px; margin-bottom: 28px;
+    }
+    .note {
+      margin-top: 16px; padding: 12px 14px;
+      border-left: 3px solid var(--gold);
+      background: rgba(212,175,55,0.08);
+      border-radius: 0 12px 12px 0;
+      color: var(--muted); font-size: 13px;
+    }
+    .toc {
+      margin: 20px 0 0; padding: 14px 16px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px; font-size: 14px; color: var(--muted);
+    }
+    .toc a { color: var(--gold-soft); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    .toc ul { margin: 8px 0 0; padding-left: 18px; }
+    .toc li { margin: 4px 0; }
+    article.story {
+      background: linear-gradient(180deg, var(--panel), var(--panel-2));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 20px; padding: 28px 28px 20px;
+      box-shadow: var(--shadow);
+    }
+    .chapter-mark {
+      color: var(--gold-soft); font-size: 13px;
+      letter-spacing: 0.12em; margin-bottom: 18px;
+    }
+    h2 {
+      margin: 28px 0 12px; font-size: 20px;
+      color: var(--gold-soft); font-weight: 650;
+      scroll-margin-top: 24px;
+    }
+    h2:first-of-type { margin-top: 8px; }
+    h3.panel-title {
+      margin: 0 0 10px; font-size: 15px;
+      color: var(--accent); font-weight: 600;
+    }
+    p { margin: 0 0 16px; color: #d7deec; font-size: 16px; }
+    .scene {
+      margin: 8px 0 20px; padding: 16px 18px;
+      border-radius: 14px;
+      background: rgba(61,139,253,0.07);
+      border: 1px solid rgba(61,139,253,0.18);
+      color: #c9dbff; font-size: 15px;
+    }
+    .divider {
+      height: 1px; margin: 28px 0;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+      border: 0;
+    }
+    sup.fn {
+      font-size: 11px; color: var(--gold);
+      font-weight: 700; cursor: pointer;
+      margin-left: 1px; text-decoration: none;
+    }
+    a.fn-link { color: inherit; text-decoration: none; }
+    .figure {
+      margin: 18px 0 22px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: #0a101c;
+    }
+    .figure img {
+      display: block; width: 100%; height: auto;
+      max-height: 420px; object-fit: cover;
+    }
+    .figure figcaption {
+      padding: 10px 14px 12px;
+      font-size: 12px; color: var(--muted);
+      line-height: 1.55;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .footnotes {
+      margin: 8px 0 24px;
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: var(--fn-bg);
+      border: 1px solid rgba(212,175,55,0.22);
+    }
+    .footnotes .fn-head {
+      font-size: 13px; color: var(--gold-soft);
+      letter-spacing: 0.08em; margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .fn-item {
+      margin-bottom: 14px; padding-bottom: 14px;
+      border-bottom: 1px dashed rgba(212,175,55,0.18);
+      font-size: 13.5px; color: #c5d0e4; line-height: 1.7;
+    }
+    .fn-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+    .fn-item strong {
+      display: block; color: var(--gold-soft);
+      font-size: 14px; margin-bottom: 4px;
+    }
+    .fn-item .why {
+      margin-top: 6px; color: #a8b8d4;
+      font-style: italic;
+    }
+    .fn-item .src {
+      margin-top: 4px; color: #7f8eaa; font-size: 12px;
+    }
+    .side-panel {
+      margin: 18px 0 22px;
+      padding: 18px;
+      border-radius: 16px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(61,139,253,0.22);
+    }
+    .mermaid-wrap {
+      margin: 18px 0 22px;
+      padding: 16px;
+      border-radius: 16px;
+      background: #0e1626;
+      border: 1px solid rgba(255,255,255,0.08);
+      overflow-x: auto;
+    }
+    .mermaid-wrap .caption {
+      font-size: 12px; color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .mermaid { background: transparent !important; }
+    .event-timeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin: 16px 0 22px;
+    }
+    .event-card {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+    .event-card .yr { color: var(--gold); font-weight: 700; font-size: 14px; }
+    .event-card .ev { color: #c9d4e8; font-size: 13px; margin-top: 4px; line-height: 1.5; }
+    .diagrams-section {
+      margin-top: 32px;
+      padding-top: 8px;
+    }
+    footer {
+      margin-top: 28px; color: var(--muted);
+      font-size: 13px; text-align: center;
+    }
+    footer a { color: var(--gold-soft); }
+    @media (max-width: 560px) {
+      article.story { padding: 20px 16px 12px; }
+      .wrap { padding: 24px 14px 60px; }
+    }
+
   </style>
 </head>
 <body>
-  <div class="box" id="status">Loading chapter…</div>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="lang-switch" aria-label="语言">
+        <a class="active" href="never-fading-flower-zh.html">中文</a>
+        <a href="never-fading-flower-en.html">English</a>
+      
+        <a href="../../../index.html">返回首页</a>
+      </div>
+      <div class="badge">故事导读 · 据公开试读改写 · 场外研究补充</div>
+      <h1>永不凋谢的花朵</h1>
+      <p class="subtitle">《乱世华尔街》第六章「永不凋谢的花朵」· 渔阳 · 故事改写 + 脚注研究</p>
+      <div class="note">
+        下面按作者经历与历史回声顺序讲述本章故事，用自己的话改写，方便跟读；不是全书/全章原文照搬。脚注、配图与知识图谱为场外公开资料补充。「鲁西银行 / Lucy Bank」等为书中化名。完整内容请读正版。
+      </div>
+      <nav class="toc" aria-label="章节导航">
+        本节导览
+        <ul>
+          <li><a href="#s1">循环史观遇上直线乐观</a></li>
+          <li><a href="#s2">彩排：1998 年的 LTCM</a></li>
+          <li><a href="#s3">利差、杠杆与「天才」们</a></li>
+          <li><a href="#s4">俄罗斯违约：相关系数冲向 1</a></li>
+          <li><a href="#s5">模型失灵：人不是布朗粒子</a></li>
+          <li><a href="#s6">历史押韵：永不凋谢的苋菜花</a></li>
+          <li><a href="#s7">Hunter 的天然气豪赌</a></li>
+          <li><a href="#s8">加息潮退：孤独的杠杆暴露</a></li>
+          <li><a href="#s9">Vince 的生存术 vs 英雄叙事</a></li>
+          <li><a href="#s10">基础货币、乘数与影子杠杆</a></li>
+          <li><a href="#s11">金丝雀：镀金时代要谢幕了</a></li>
+          <li><a href="#diagrams">人物关系 / 时间线 / 知识图谱</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER SIX · 永不凋谢的花朵</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Amaranthus_caudatus0.jpg" alt="尾穗苋（Amaranth）花序" loading="lazy" />
+        <figcaption>尾穗苋（Amaranthus）——英文名 Amaranth 常被译作「不凋之花」。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">循环史观遇上直线乐观</h2>
+      <p>作者带着中国式的周期感走进华尔街：王朝兴衰、牛熊轮回，仿佛历史本身会弯回来咬自己的尾巴。对面美国同事的默认设定却更像一条向右上方的射线——技术、制度与市场会把世界推得越来越好，回撤只是插曲。</p>
+      <p>2006 年的表面仍旧平静：利差紧、笑声大、奖金故事继续写。可他总觉得空气里有旧年的味道——不是某一张盘面突然变红，而是「乱世」像潮水，正从远处重新涌回来。</p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">本章时间与概念锚点</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">1998</div><div class="ev">LTCM 彩排 · 俄债冲击</div></div>
+          <div class="event-card"><div class="yr">2004–06</div><div class="ev">联储连加 17 次至 5.25%</div></div>
+          <div class="event-card"><div class="yr">2005</div><div class="ev">卡特里娜 · 气市暴利</div></div>
+          <div class="event-card"><div class="yr">2006.9</div><div class="ev">Amaranth 崩塌 · 金丝雀</div></div>
+        </div>
+      </div>
+
+      <div class="scene">
+        一边是「周期会回来」的肌肉记忆，一边是「这次不一样」的直线乐观——本章的紧张感，就卡在这两种时间观之间。
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">彩排：1998 年的 LTCM</h2>
+      <p>要听懂 2006，作者先把磁带倒回 1998：长期资本管理公司（LTCM）像一场提前彩排的灾难剧<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a>。创始人 John Meriwether 带着所罗门兄弟套利台的血统；身边站着 Myron Scholes、Robert Merton 等期权定价的明星名字，还有前联储副主席 David Mullins——名片叠在一起，几乎把「理性」写成了公司 logo。</p>
+      <p>早期回报亮得刺眼：波动似乎被驯服，利差策略像一台精密钟表。外界把他们当成证明：市场可以被公式驯服。</p>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ LTCM（Long-Term Capital Management）</strong>
+          1994 年成立于康涅狄格的对冲基金，以固定收益相对价值/收敛交易闻名。1998 年近乎破产，触发华尔街大型对手方在美联储纽约分行协调下的私人救助安排。它不是政府直接注资的「国有化」，却让监管与市场第一次集中看见：一家基金也可以大到「退场困难」。
+          <div class="why">为何重要：本章把 LTCM 当作 2006 Amaranth 的历史回声——同一出戏的预演。</div>
+          <div class="src">来源：公开危机史记述；Roger Lowenstein《When Genius Failed》等二手叙事</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">利差、杠杆与「天才」们</h2>
+      <p>LTCM 的核心剧本并不神秘：押注相关债券/工具之间的价差会收敛，用融资与衍生品把薄利放大成可观回报<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a><a class="fn-link" href="#fn3"><sup class="fn">³</sup></a>。问题在于成功会自我摧毁——模仿者涌入，利差被压薄；要维持同样的利润，只能加杠杆。公开复盘常提到账面杠杆可到约 25 倍量级，衍生品名义敞口更把「看不见的杠杆」推得更高。</p>
+      <p>天才越多，空间越小；模型越自信，容错越薄。</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal_Reserve_Bank_of_New_York.jpg" alt="纽约联储大楼" loading="lazy" />
+        <figcaption>纽约联邦储备银行——1998 年 LTCM 私人救助协调发生的制度舞台。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn2">
+          <strong>² 《When Genius Failed》（《天才倒下的时候》）</strong>
+          记者 Roger Lowenstein 对 LTCM 兴衰的经典叙事读物：从所罗门套利文化、明星合伙人，写到俄罗斯冲击、相关性崩溃与华尔街救援。它不是监管报告，却塑造了大众对「量化天才也可能集体翻车」的记忆框架。
+          <div class="why">为何重要：作者与读者共享的「彩排剧本」多半经由这类公开叙事进入汉语世界。</div>
+          <div class="src">来源：Lowenstein, When Genius Failed (2000)；公开书评与危机史引用</div>
+        </div>
+        <div class="fn-item" id="fn3">
+          <strong>³ Black–Scholes–Merton 期权定价</strong>
+          Fischer Black、Myron Scholes 与 Robert Merton 发展的连续时间期权定价框架，把衍生工具估值推进到可用无风险对冲与偏微分方程描述的世界。Scholes 与 Merton 因此获 1997 年诺贝尔经济学奖。框架假设里常见「连续交易、对数正态、布朗运动式噪声」等理想化条件——市场一出现流动性断裂与群体踩踏，这些假设就最先碎掉。
+          <div class="why">为何重要：LTCM 的「科学光环」与后文「人不是布朗粒子」形成对照。</div>
+          <div class="src">来源：诺贝尔奖官方介绍；期权定价教材对 BSM 假设的标准陈述</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s4">俄罗斯违约：相关系数冲向 1</h2>
+      <p>1998 年 8 月，俄罗斯主权债务危机与卢布动荡把「分散」这个词撕开了口子<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a>。平时看起来不相关的仓位，在恐慌里一起往同一个方向倒——相关系数像被拧到接近 1。LTCM 仓位太大，想退也退不干净：卖出本身就是价格的一部分。</p>
+      <p>随后是华尔街主要对手方在纽约联储协调下的私人救助——不是为了怜悯天才，而是为了挡住可能的连锁清算。彩排的尾声写着一行残酷字幕：当所有人同时需要流动性，模型里的「均值回归」可能暂时失联。</p>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ 1998 年俄罗斯金融危机</strong>
+          1998 年 8 月，俄罗斯宣布卢布贬值并实质违约/重组部分国债（GKOs 等），触发新兴市场与全球风险资产的剧烈抛售。对依赖融资与收敛交易的基金而言，冲击不只是「俄债亏钱」，更是全球利差、波动与融资条件同时恶化——相关性结构一夜改写。
+          <div class="why">为何重要：它是 LTCM 崩溃的外部扳机，也是「黑天鹅式宏观冲击」的教学标本。</div>
+          <div class="src">来源：IMF / 公开经济史对 1998 Russia crisis 的记述；LTCM 文献交叉引用</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">模型失灵：人不是布朗粒子</h2>
+      <p>作者借牛顿那句几乎成了金融谚语的感慨收束彩排：他能计算天体的运动，却算不准人类的疯狂。市场里的「粒子」会模仿、会恐慌、会同时冲向同一扇门——它们不是互相独立的布朗运动噪点。</p>
+      <p>教训写在黑板上：历史会押韵。1998 的韵脚，很快就要在天然气期货簿上再次响起。</p>
+
+      <div class="scene">
+        公式把人当成可积分的噪声；危机把人还原成会踩踏的动物。彩排结束，正戏开场。
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">历史押韵：永不凋谢的苋菜花</h2>
+      <p>花名是 Amaranth——苋属植物，西语词源里带着「不凋谢」的意思。2006 年，同名对冲基金 Amaranth Advisors 管理着约 90 亿美元量级的资产，把自己活成了一则反讽寓言<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a>：名字承诺永不凋谢，账本却在几周内枯萎。</p>
+      <p>对作者来说，这不是遥远八卦，而是「乱世又回来了」的现场证据：镀金的平静，可以被一朵花的凋谢撕开。</p>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ Amaranth Advisors / Brian Hunter / 卡特里娜</strong>
+          康涅狄格州格林尼治的多策略对冲基金。能源交易主管 Brian Hunter（卡尔加里）在 2005 年飓风卡特里娜冲击天然气市场时获得巨额利润；2006 年继续加大天然气日历价差等方向性押注。当年 9 月，基金因天然气衍生品巨亏（公开报道量级约数十亿美元、NAV 大幅回撤），并将能源仓位转让给摩根大通与 Citadel 等以缓解保证金与违约风险。基金名取自「不凋之花」意象，与结局形成刺眼对照。
+          <div class="why">为何重要：本章标题与核心事件——把 1998 的韵脚落到 2006 的气市。</div>
+          <div class="src">来源：当代财经报道（WSJ / NGI 等）；公开投资者信函转述；CFTC/FERC 后续执法背景</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s7">Hunter 的天然气豪赌</h2>
+      <p>剧本很「华尔街」：先有 2005 年飓风季的暴利记忆，再有 2006 年对季节价差的加倍信念——典型叙事里常提到押注 3 月与 4 月合约价差走阔。仓位越堆越高；当市场反走，模仿者先逃，秃鹫反而加码挤压。保证金电话像催命符，退出本身变成价格的一部分。</p>
+      <p>最终能源账本被打包交给更能消化风险的对手——公开报道指向摩根大通与 Citadel。英雄叙事在强平单面前，变成一地碎花瓣。</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wall_Street_Sign_New_York_2005.jpg" alt="华尔街路牌" loading="lazy" />
+        <figcaption>华尔街路牌（2005）——英雄叙事与强平电话共享的同一条街。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <hr class="divider" />
+
+      <h2 id="s8">加息潮退：孤独的杠杆暴露</h2>
+      <p>背景板是联储的加息长卷：自 2004 年中起连续十七次上调联邦基金目标利率，从 1% 走到 2006 年中的 5.25%<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a>。利率上升像潮水缓缓退去；沙滩上最先暴露的，往往是那些把自己钉在单一、高杠杆赌注上的人。</p>
+      <p>Amaranth 的天然气簿，成了「潮退之后谁在裸泳」的刺眼标本。</p>
+
+      <div class="footnotes" id="fn-block-5">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ 联邦基金利率路径（2004–2006）</strong>
+          2004 年 6 月 30 日起，FOMC 以每次 25 个基点的节奏连续加息 17 次，把联邦基金目标利率从 1.00% 抬至 2006 年 6 月 29 日的 5.25%，并在此后数月维持该水平。这是危机前「有序紧缩」的教科书段落：政策利率上升，但风险偏好与影子融资未必同步降温。
+          <div class="why">为何重要：解释为何 2006 仍看起来「平静」，却已在抽走廉价杠杆的燃料。</div>
+          <div class="src">来源：Federal Reserve FOMC 历史；FRED 联邦基金目标利率序列</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s9">Vince 的生存术 vs 英雄叙事</h2>
+      <p>台子上的对照更私人：Vince 做天然气相关业务时，风格像生存主义——控制敞口、尊重尾部、把活下来当成第一 KPI。Hunter 的公众形象则是英雄式的方向豪赌：赢的时候像神话，输的时候拖垮整朵「不凋之花」。</p>
+      <p>作者把这两种气质并置，不是为了道德说教，而是为了问：在杠杆市场上，你到底是在交易观点，还是在拿整家机构的存亡下注？</p>
+
+      <div class="scene">
+        生存术看起来不够酷；英雄叙事在顺风局里最好看。潮水一退，好看与活着，常常不是同一件事。
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s10">基础货币、乘数与影子杠杆</h2>
+      <p>镜头再拉远：央行能直接拧的，多半是基础货币与政策利率；真正在繁荣里膨胀的，是银行与影子银行体系的信用乘数<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a>。回购市场上的 haircut（折扣率）像一只未充分监管的杠杆旋钮——折扣一松，同样的抵押品就能撬起更大名义仓位<a class="fn-link" href="#fn8"><sup class="fn">⁸</sup></a>。</p>
+      <p>更麻烦的是时滞：加息之后，风险偏好仍可能亢奋一段时间，流动性「体感」不会立刻变冷。于是出现错位——政策在收，市场还在加；直到某一笔孤独的杠杆赌注爆掉，大家才承认潮水已经退了。</p>
+
+      <div class="footnotes" id="fn-block-6">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ 货币乘数（money multiplier）</strong>
+          教科书里，广义货币 ≈ 基础货币 × 乘数；乘数反映银行体系如何把准备金转化为存款与信贷。危机研究提醒：影子银行、证券化与表外管道会让「有效乘数」更复杂——信用可以在回购与资产支持商业票据里扩张，而不必出现在传统存款统计的中心。
+          <div class="why">为何重要：把「联储加息」与「市场上仍觉得钱很多」之间的裂缝说清楚。</div>
+          <div class="src">来源：货币银行学教材；危机后对影子信用扩张的公开讨论</div>
+        </div>
+        <div class="fn-item" id="fn8">
+          <strong>⁸ 影子银行 / 回购与 haircut</strong>
+          回购（repo）以证券为抵押做短期融资；haircut 是抵押品市值与借款额之间的折扣。Haircut 下降等于杠杆上升，上升则逼仓。Gorton、Metrick 等研究强调：危机中的「挤兑」大量发生在回购与类存款的批发融资上。对冲基金与交易台的「看不见的杠杆」，常常就藏在这些每日续作的合同里。
+          <div class="why">为何重要：衔接前章杜邦/ROE 杠杆故事，并解释为何单笔商品赌注也能抽干整家基金的流动性。</div>
+          <div class="src">来源：NY Fed 回购市场说明；Gorton &amp; Metrick 等对 repo run 的研究</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s11">金丝雀：镀金时代要谢幕了</h2>
+      <p>Amaranth 在作者笔下不只是一家倒霉的基金，更像矿井里的金丝雀：气市可以先死一朵花，信用与融资管道里更大的裂痕还在后面。2006 的平静不是安全证明，而是镀金时代接近尾声时最容易骗人的布景。</p>
+      <p>循环史观在这一刻不再像乡愁，而像预警：直线乐观仍在讲「永不凋谢」，花瓣已经开始掉了。</p>
+
+      <hr class="divider" />
+
+      <section class="diagrams-section" id="diagrams">
+        <h2>人物关系 / 时间线 / 知识图谱</h2>
+
+        <div class="mermaid-wrap">
+          <div class="caption">关系图：彩排班子 → 2006 气市主角 → 交易台对照</div>
+          <div class="mermaid">
+flowchart LR
+  MW[Meriwether / 所罗门血统] --> LTCM[LTCM 1998]
+  SM[Scholes / Merton] --> LTCM
+  DM[Mullins] --> LTCM
+  RU[俄罗斯违约] --> LTCM
+  LTCM -->|历史押韵| AM[Amaranth 2006]
+  BH[Brian Hunter] --> AM
+  KATRINA[卡特里娜暴利记忆] --> BH
+  AM -->|仓位转让| JPM[JPM / Citadel]
+  FED[联储加息 17 次] -.-> AM
+  VINCE[Vince 生存术] -.->|对照| BH
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">时间线：从 LTCM 彩排到 Amaranth 金丝雀</div>
+          <div class="mermaid">
+timeline
+  title 乱世回声
+  1998-08 : 俄债冲击
+           : LTCM 危机与私人救助协调
+  2004-06 : 联储开始连续加息
+  2005    : 卡特里娜 · 气市暴利
+  2006-06 : 联邦基金目标利率至 5.25%
+  2006-09 : Amaranth 巨亏并转让能源仓
+  2006末  : 镀金平静仍在 · 金丝雀已叫
+          </div>
+        </div>
+
+        <div class="mermaid-wrap">
+          <div class="caption">知识图谱：杠杆、流动性与模型幻觉</div>
+          <div class="mermaid">
+flowchart TB
+  BASE[基础货币 / 政策利率] --> MULT[银行与影子乘数]
+  MULT --> REPO[回购 / haircut 杠杆]
+  REPO --> RISK[风险偏好时滞]
+  RISK --> QUIET[2006 表面平静]
+  MODEL[BSM / 布朗假设] --> BLIND[低估踩踏与相关性→1]
+  BLIND --> LTCM
+  QUIET --> AM[Amaranth 孤独杠杆]
+  LTCM -->|押韵| AM
+  AM --> CANARY[金丝雀信号]
+  CANARY --> ENDING[镀金时代尾声]
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer>
+      《乱世华尔街》· 渔阳 · 第六章故事导读（原创改写）·
+      <a href="SOURCES.md">SOURCES.md</a> ·
+      <a href="../../../index.html">返回首页</a>
+    </footer>
+  </div>
+
   <script>
-  (async function () {
-    const parts = ["parts/zh-part-0.txt", "parts/zh-part-1.txt", "parts/zh-part-2.txt", "parts/zh-part-3.txt", "parts/zh-part-4.txt", "parts/zh-part-5.txt", "parts/zh-part-6.txt", "parts/zh-part-7.txt", "parts/zh-part-8.txt", "parts/zh-part-9.txt"];
-    const status = document.getElementById('status');
-    try {
-      const texts = await Promise.all(parts.map(p => fetch(p).then(r => {
-        if (!r.ok) throw new Error(p + ' ' + r.status);
-        return r.text();
-      })));
-      const html = texts.join('');
-      document.open();
-      document.write(html);
-      document.close();
-    } catch (e) {
-      status.innerHTML = 'Failed to assemble page: ' + e +
-        '<br><br><a href="never-fading-flower-en.html">Other language</a>';
-    }
-  })();
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
   </script>
+
 </body>
 </html>

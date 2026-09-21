@@ -3,35 +3,577 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The DuPont Formula · loading</title>
+  <title>Chaos on Wall Street Ch.5: The DuPont Formula</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <style>
-    body { margin:0; font-family: system-ui, sans-serif; background:#0b1220; color:#e8eef9;
-      display:flex; min-height:100vh; align-items:center; justify-content:center; }
-    .box { max-width:420px; padding:24px; border:1px solid rgba(212,175,55,.28);
-      border-radius:16px; background:#121a2b; line-height:1.6; text-align:center; }
-    a { color:#f0d78c; }
+    :root {
+      --bg: #0b1220;
+      --panel: #121a2b;
+      --panel-2: #182235;
+      --gold: #d4af37;
+      --gold-soft: #f0d78c;
+      --text: #e8eef9;
+      --muted: #9aa8c1;
+      --line: rgba(212, 175, 55, 0.28);
+      --accent: #3d8bfd;
+      --accent-soft: rgba(61, 139, 253, 0.12);
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+      --fn-bg: rgba(240, 215, 140, 0.06);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(212,175,55,0.12), transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, rgba(61,139,253,0.12), transparent 50%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 40px 20px 80px; }
+    .lang-switch {
+      display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap;
+    }
+    .lang-switch a {
+      display: inline-flex; align-items: center;
+      padding: 5px 12px; border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--muted); text-decoration: none; font-size: 13px;
+      background: rgba(255,255,255,0.03);
+    }
+    .lang-switch a.active {
+      color: var(--gold-soft);
+      border-color: var(--line);
+      background: rgba(212,175,55,0.1);
+    }
+    .lang-switch a:hover { color: var(--gold-soft); }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px;
+      color: var(--gold-soft); font-size: 13px; letter-spacing: 0.06em;
+      background: rgba(212,175,55,0.08);
+    }
+    h1 {
+      margin: 18px 0 8px;
+      font-size: clamp(28px, 5vw, 40px);
+      line-height: 1.28; font-weight: 700;
+    }
+    .subtitle { margin: 0 0 24px; color: var(--muted); font-size: 15px; }
+    .hero {
+      position: relative; overflow: hidden;
+      border: 1px solid var(--line); border-radius: 22px;
+      background:
+        linear-gradient(135deg, rgba(212,175,55,0.12), transparent 40%),
+        linear-gradient(180deg, var(--panel), var(--panel-2));
+      box-shadow: var(--shadow); padding: 28px; margin-bottom: 28px;
+    }
+    .note {
+      margin-top: 16px; padding: 12px 14px;
+      border-left: 3px solid var(--gold);
+      background: rgba(212,175,55,0.08);
+      border-radius: 0 12px 12px 0;
+      color: var(--muted); font-size: 13px;
+    }
+    .toc {
+      margin: 20px 0 0; padding: 14px 16px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px; font-size: 14px; color: var(--muted);
+    }
+    .toc a { color: var(--gold-soft); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    .toc ul { margin: 8px 0 0; padding-left: 18px; }
+    .toc li { margin: 4px 0; }
+    article.story {
+      background: linear-gradient(180deg, var(--panel), var(--panel-2));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 20px; padding: 28px 28px 20px;
+      box-shadow: var(--shadow);
+    }
+    .chapter-mark {
+      color: var(--gold-soft); font-size: 13px;
+      letter-spacing: 0.12em; margin-bottom: 18px;
+    }
+    h2 {
+      margin: 28px 0 12px; font-size: 20px;
+      color: var(--gold-soft); font-weight: 650;
+      scroll-margin-top: 24px;
+    }
+    h2:first-of-type { margin-top: 8px; }
+    h3.panel-title {
+      margin: 0 0 10px; font-size: 15px;
+      color: var(--accent); font-weight: 600;
+    }
+    p { margin: 0 0 16px; color: #d7deec; font-size: 16px; }
+    .scene {
+      margin: 8px 0 20px; padding: 16px 18px;
+      border-radius: 14px;
+      background: rgba(61,139,253,0.07);
+      border: 1px solid rgba(61,139,253,0.18);
+      color: #c9dbff; font-size: 15px;
+    }
+    .divider {
+      height: 1px; margin: 28px 0;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+      border: 0;
+    }
+    sup.fn {
+      font-size: 11px; color: var(--gold);
+      font-weight: 700; cursor: pointer;
+      margin-left: 1px; text-decoration: none;
+    }
+    a.fn-link { color: inherit; text-decoration: none; }
+    .figure {
+      margin: 18px 0 22px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: #0a101c;
+    }
+    .figure img {
+      display: block; width: 100%; height: auto;
+      max-height: 420px; object-fit: cover;
+    }
+    .figure figcaption {
+      padding: 10px 14px 12px;
+      font-size: 12px; color: var(--muted);
+      line-height: 1.55;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .footnotes {
+      margin: 8px 0 24px;
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: var(--fn-bg);
+      border: 1px solid rgba(212,175,55,0.22);
+    }
+    .footnotes .fn-head {
+      font-size: 13px; color: var(--gold-soft);
+      letter-spacing: 0.08em; margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .fn-item {
+      margin-bottom: 14px; padding-bottom: 14px;
+      border-bottom: 1px dashed rgba(212,175,55,0.18);
+      font-size: 13.5px; color: #c5d0e4; line-height: 1.7;
+    }
+    .fn-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+    .fn-item strong {
+      display: block; color: var(--gold-soft);
+      font-size: 14px; margin-bottom: 4px;
+    }
+    .fn-item .why {
+      margin-top: 6px; color: #a8b8d4;
+      font-style: italic;
+    }
+    .fn-item .src {
+      margin-top: 4px; color: #7f8eaa; font-size: 12px;
+    }
+    .side-panel {
+      margin: 18px 0 22px;
+      padding: 18px;
+      border-radius: 16px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(61,139,253,0.22);
+    }
+    .mermaid-wrap {
+      margin: 18px 0 22px;
+      padding: 16px;
+      border-radius: 16px;
+      background: #0e1626;
+      border: 1px solid rgba(255,255,255,0.08);
+      overflow-x: auto;
+    }
+    .mermaid-wrap .caption {
+      font-size: 12px; color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .mermaid { background: transparent !important; }
+    .event-timeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin: 16px 0 22px;
+    }
+    .event-card {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+    .event-card .yr { color: var(--gold); font-weight: 700; font-size: 14px; }
+    .event-card .ev { color: #c9d4e8; font-size: 13px; margin-top: 4px; line-height: 1.5; }
+    .diagrams-section {
+      margin-top: 32px;
+      padding-top: 8px;
+    }
+    footer {
+      margin-top: 28px; color: var(--muted);
+      font-size: 13px; text-align: center;
+    }
+    footer a { color: var(--gold-soft); }
+    @media (max-width: 560px) {
+      article.story { padding: 20px 16px 12px; }
+      .wrap { padding: 24px 14px 60px; }
+    }
+
   </style>
 </head>
 <body>
-  <div class="box" id="status">Loading chapter…</div>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="lang-switch" aria-label="Language">
+        <a href="dupont-formula-zh.html">中文</a>
+        <a class="active" href="dupont-formula-en.html">English</a>
+      
+        <a href="../../../index.html">Back to home</a>
+      </div>
+      <div class="badge">Story guide · retold from public trial text · off-book research</div>
+      <h1>The DuPont Formula</h1>
+      <p class="subtitle">Chaos on Wall Street · Ch.5 “The DuPont Formula” · Yuyang · retelling + footnotes</p>
+      <div class="note">
+        The narrative below follows the chapter’s lived scenes and allegory in original wording for study — not a verbatim copy of the book. Footnotes, figures, and diagrams are off-book public research. “Lucy Bank,” “Hyper Goldman / 超盛,” and similar names are book aliases or fables. Support the licensed edition for the full text.
+      </div>
+      <nav class="toc" aria-label="Chapter navigation">
+        In this chapter
+        <ul>
+          <li><a href="#s1">2006: muni-desk carnival and the apprentice’s dream</a></li>
+          <li><a href="#s2">How can three traders make so much?</a></li>
+          <li><a href="#s3">Allegory: Hyper Goldman’s board</a></li>
+          <li><a href="#s4">DuPont on the blackboard</a></li>
+          <li><a href="#s5">Microsoft mode: high-margin people businesses</a></li>
+          <li><a href="#s6">Walmart mode: ABS/CDO warehouse turnover</a></li>
+          <li><a href="#s7">Wall Street mode: leverage toward 20% ROE</a></li>
+          <li><a href="#s8">The ROE arms race and the “giant hedge fund” thesis</a></li>
+          <li><a href="#s9">Greenspan, cheap liquidity, bonus myopia</a></li>
+          <li><a href="#s10">A ~$1B muni book on overnight repo</a></li>
+          <li><a href="#s11">Short-term structures, hedges, blackjack echo</a></li>
+          <li><a href="#s12">Model illusion and compressed CDS premia</a></li>
+          <li><a href="#s13">Calm seas: CDX IG 33–40 bps</a></li>
+          <li><a href="#diagrams">People / timeline / knowledge graph</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER FIVE · THE DUPONT FORMULA</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/New_York_Stock_Exchange_July_2011.jpg" alt="New York Stock Exchange exterior" loading="lazy" />
+        <figcaption>NYSE exterior — the city stage where investment banks speak fluent ROE to their boards. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">2006: muni-desk carnival and the apprentice’s dream</h2>
+      <p>In 2006, Lucy Bank’s municipal desk did not feel like a three-person cottage shop. In the author’s scale of telling, the book could print millions of dollars a month. Vince and Roger celebrated as if they had just won a campaign; the apprentice beside them silently rehearsed another play — one day the senior seat, the screens, the limits, and the bonus curve would carry his name.</p>
+      <p>The air was still gilded: tight credit spreads, cheap funding, structured products that sold. Laughter on the floor still drowned the freeze that would arrive two years later. The apprentice’s first hard question was not “will a crisis come?” but something sharper and simpler: <em>how can three traders make this much?</em></p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">Anchors for this chapter</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">2006</div><div class="ev">Hot muni P&amp;L · apprentice watching</div></div>
+          <div class="event-card"><div class="yr">DuPont</div><div class="ev">ROE = margin × turnover × leverage</div></div>
+          <div class="event-card"><div class="yr">Three modes</div><div class="ev">Microsoft / Walmart / Wall Street</div></div>
+          <div class="event-card"><div class="yr">Foreshadow</div><div class="ev">Overnight repo · crushed spreads</div></div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">How can three traders make so much?</h2>
+      <p>The answer is not “three geniuses.” It is the investment bank’s revenue mix: traditional IB (M&amp;A advisory, ECM/DCM underwriting), market-making and sales &amp; trading, plus shadow-banking securitization pipelines, plus a growing pile of principal / proprietary investing<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a><a class="fn-link" href="#fn2"><sup class="fn">²</sup></a>.</p>
+      <p>The muni desk is one cut of that pie. It drinks cheap liabilities, inventory spreads, and sometimes the turnover speed tangled up with structuring and repo finance. Three heads look small; behind them sit the firm’s balance sheet, sales franchise, and funding pipes.</p>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ IB revenue mix: IB + market-making + securitization + prop</strong>
+          Pre-crisis bulge-bracket P&amp;L was rarely a single engine: advisory and underwriting, sales &amp; trading / market-making, securitization and structured credit, and principal/prop books. Public filings split the lines; desk life often blends them — leftover underwriting bonds enter inventory, inventory is repo-levered, warehouses accelerate turnover into ROE.
+          <div class="why">Why it matters: “three people, huge P&amp;L” is the balance sheet talking, not a magic trick.</div>
+          <div class="src">Source: pre-crisis bank segment disclosures; S&amp;T / securitization primers</div>
+        </div>
+        <div class="fn-item" id="fn2">
+          <strong>² Shadow banking</strong>
+          Shadow banking intermediates credit outside the classic deposit–loan model — via securitization, repo, money-market funds, SIVs, and similar short-term funding. It can boost turnover and leverage while parking liquidity risk in “must-roll-every-night” finance. Much of 2007–08’s run happened in repo and ABCP pipes, not teller lines.
+          <div class="why">Why it matters: warehouses, SIVs, and overnight repo later in the chapter ride this track.</div>
+          <div class="src">Source: NY Fed / FSB definitions and crisis retrospectives</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">Allegory: Hyper Goldman’s board</h2>
+      <p>To make ROE human, the author stages a Wall Street animal fable: “Hyper Goldman Securities” (超盛). CEO Ox runs the firm; advisor Pig claims to be great at math — and mostly means arithmetic. Around them: the IB lead, capital markets, a securitization star, a prop-investing chief, and traders who, once big enough, leave for hedge funds.</p>
+      <p>The board does not grade Ox on storytelling. The ruler is ROE. Pig therefore walks to the blackboard.</p>
+
+      <div class="scene">
+        Hyper Goldman is not a courtroom transcript of one real bank; it is theater — Pig’s arithmetic for laughs, the board’s ROE obsession for the sting.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s4">DuPont on the blackboard</h2>
+      <p>Pig writes the DuPont breakdown: take “are we earning enough on equity?” and factor it into three manageable multiplications — profit margin × asset turnover × financial leverage<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a><a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a>. Raise any factor, and ROE rises; the industry’s arms race is really a race over which factor still has room.</p>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ ROE (Return on Equity)</strong>
+          ROE = net income / shareholders’ equity — accounting profit per unit of book equity. Banks and dealers treat it as a peer benchmark, bonus-pool input, and strategy slogan. High ROE can mean real operating edge — or thin capital plus a friendly cycle. When the numerator looks good and the denominator is levered down, the ratio flatters.
+          <div class="why">Why it matters: every “mode” in the chapter answers the board’s demand to lift ROE.</div>
+          <div class="src">Source: corporate-finance textbooks; bank KPI disclosures</div>
+        </div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ DuPont identity</strong>
+          Classic three-factor DuPont: ROE = (net income/sales) × (sales/assets) × (assets/equity) = profit margin × asset turnover × financial leverage. It does not create profit; it diagnoses which lever management is pulling. The framework spread from DuPont’s internal analysis into standard ratio analysis.
+          <div class="why">Why it matters: Pig’s blackboard is the skeleton of Microsoft / Walmart / Wall Street modes.</div>
+          <div class="src">Source: DuPont analysis in corporate-finance texts; public ratio-analysis primers</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">Microsoft mode: high-margin people businesses</h2>
+      <p>Pig’s first play: lift margin. The dream trade looks like software monopoly — thin cost, fat price. Mapped onto a dealer, that means high-margin “people businesses”: M&amp;A advisory, underwriting, and client/market-making franchises with pricing power. Call it “Microsoft mode” — earn on unit economics before you stretch the balance sheet to the limit<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a>.</p>
+      <p>People businesses saturate. Advisory fees and underwriting wallets are not infinite; when every Hyper Goldman tries to be Microsoft, competition chews the margin down.</p>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ Prop vs agency, again</strong>
+          High-margin client/advisory work is closer to selling brains and licenses: capital use can stay contained. Prop puts capital directly into price risk. Pre-crisis firms ran both; “Microsoft mode” says: skim thick fee businesses first, then hunt DuPont’s other two factors when margins fade.
+          <div class="why">Why it matters: lands the fable’s “Microsoft” on recognizable IB business types.</div>
+          <div class="src">Source: public IB fee vs prop contrasts; continuity with prior chapter notes</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">Walmart mode: ABS/CDO warehouse turnover</h2>
+      <p>When margin is not enough, chase turnover. Pig points to “Walmart mode”: thin margin, furious volume — assets should not linger. Pre-crisis, that often meant ABS/CDO warehouse pipelines: aggregate loans or bonds, tranche them, sell them; keep unsold stubs on book for traders to “manage” and work out<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a>.</p>
+      <p>Fast turnover can flattering ROE even with mediocre margins — if the downstream bid and short-term funding stay open. When the pipe clogs, turnover becomes inventory.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal_Reserve_Board_Building.jpg" alt="Federal Reserve Board building" loading="lazy" />
+        <figcaption>Federal Reserve Board (Eccles) Building — institutional backdrop for cheap liquidity and the leverage climate. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ ABS/CDO warehouses</strong>
+          A securitization warehouse is the interim account where an arranger warehouses collateral on short-term funding before a CDO/ABS prints. Warehouses boost fees and turnover — and leave pipeline risk on or near the balance sheet if the issuance window shuts. Crisis histories treat warehouses and unsold tranches as key transmission points in structured credit.
+          <div class="why">Why it matters: turns “Walmart turnover” from a retail metaphor into a checkable pipe.</div>
+          <div class="src">Source: FCIC and structured-credit primers on CDO pipelines/warehouses</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s7">Wall Street mode: leverage toward 20% ROE</h2>
+      <p>The board wants hedge-fund-like ~20% ROE. Pig’s third play: “Wall Street mode” — gear up. His arithmetic is blunt: ~5% asset yield, ~3% funding cost, ~20× leverage, and the gross return jumps into a board-friendly zone; after pay, shareholder ROE can still clear 20%. Firms such as Merrill and Bear were widely discussed pre-crisis at 30×-plus leverage (depending on accounting perimeter)<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a>.</p>
+      <p>Prop desks boom. An IB veteran sighs: the firm is becoming a hedge fund — leveraging shareholder capital for spread, not living only on client franchise.</p>
+
+      <div class="scene">
+        Five minus three looks like a small carry; times twenty, it becomes the ROE slide the board applauds. The arithmetic is fine. The error is treating rollable overnight funding as a law of nature.
+      </div>
+
+      <div class="footnotes" id="fn-block-5">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ Pre-crisis broker-dealer leverage</strong>
+          Crisis post-mortems often note that standalone dealers’ assets-to-equity ratios rose sharply before 2007; Merrill, Bear, Lehman and peers are frequently cited around ~30× (metrics vary with accounting and off-balance items). High leverage flatters ROE in the up-cycle and leaves little buffer when funding tightens — delevering itself then knocks prices.
+          <div class="why">Why it matters: pins Pig’s “20× is only the start; they run 30×” gag to a historical order of magnitude.</div>
+          <div class="src">Source: SEC / GAO / FCIC leverage discussions; Duffie on dealer fragility</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s8">The ROE arms race and the “giant hedge fund” thesis</h2>
+      <p>When peers race on ROE, innovation and prop get drafted into the arms race: whoever finds a new margin, a new turnover pipe, or a new leverage posture leads for a quarter. The author also floats a carefully restated thesis — an authorial frame, not an official finding — that if an economy’s financing pattern looks, in metaphor, like debt capital in and equity capital out, it can rhyme with a leveraged macro “book.” In DuPont language: a return story driven from the liability side<a class="fn-link" href="#fn8"><sup class="fn">⁸</sup></a>.</p>
+      <p>Calling a country a “giant hedge fund” is rhetoric, not an audited balance sheet. Its use here is to mirror micro leverage obsession with macro funding structure — read it as the author’s thesis, not a tradable macro model.</p>
+
+      <div class="footnotes" id="fn-block-6">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn8">
+          <strong>⁸ Author’s thesis: ROE contest and macro metaphor</strong>
+          The chapter juxtaposes Street ROE contests with broader financing/capital-flow observations, using hedge-fund imagery for leverage-and-spread thinking at scale. Treat the national metaphor as interpretive: helpful for “why everyone geared up,” not as a substitute for balance-of-payments statistics. Desk DuPont arithmetic is checkable; the country-as-HF image is thesis-shaped.
+          <div class="why">Why it matters: restates the China/US critique carefully, as requested, without laundering rhetoric into “proven fact.”</div>
+          <div class="src">Source: public trial-read narrative points; BOP/capital-flow literacy for contrast</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s9">Greenspan, cheap liquidity, bonus myopia</h2>
+      <p>On the backdrop: the Greenspan-era path of relatively low policy rates — cheap money → abundant liquidity → leverage that “pencils” → a fiercer peer race to gear up<a class="fn-link" href="#fn9"><sup class="fn">⁹</sup></a>. Layer firm incentives: bonuses clear annually; risks clear on a cycle. Myopia is not only a moral insult — it is the pay calendar written into DuPont’s third factor.</p>
+
+      <div class="footnotes" id="fn-block-7">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn9">
+          <strong>⁹ Greenspan-era low rates</strong>
+          After the 2001 recession, the Fed cut the funds rate to a postwar low and held it down for an extended period before hiking in 2004–06. Crisis literature widely discusses how long low rates and Great Moderation expectations fed housing credit, securitization, and leverage. That is fuel for an arms race — not a single-villain theory of the crisis.
+          <div class="why">Why it matters: plugs the Hyper Goldman boardroom back into a checkable policy timeline.</div>
+          <div class="src">Source: FRED federal funds series; Fed minutes and crisis chronologies</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s10">A ~$1B muni book on overnight repo</h2>
+      <p>Cut back to Lucy: in the telling, the muni book runs on the order of a billion dollars, mostly financed by rolling overnight repo; dealers haircut the collateral, cash arrives, and tomorrow you roll again<a class="fn-link" href="#fn10"><sup class="fn">¹⁰</sup></a>. In calm weather, carry and turnover feel like free lunch. If the repo market refuses to roll — haircuts jump, eligible collateral narrows — a billion of inventory becomes a stone with nowhere to fund.</p>
+      <p>This is the chapter’s clearest crisis foreshadow: not a date for house prices, but a map of where the ROE machine’s power cord plugs in — a socket that must be reinserted every night.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wall_Street_Sign_New_York_2005.jpg" alt="Wall Street street sign" loading="lazy" />
+        <figcaption>Wall Street sign — overnight funding and daytime myth share one street name. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-8">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn10">
+          <strong>¹⁰ Repo and haircuts</strong>
+          A repurchase agreement sells securities with a promise to buy them back — economically, secured short-term borrowing. The haircut is the gap between collateral market value and cash advanced, buffering price moves; rising haircuts in stress equal forced delevering. Dealers depend on rolling short repo; Gorton and others describe 2007–08 partly as a run on repo.
+          <div class="why">Why it matters: turns the “billion-dollar book” from a brag into a breakable funding structure.</div>
+          <div class="src">Source: NY Fed repo explainers; Gorton &amp; Metrick on the run on repo</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s11">Short-term structures, hedges, blackjack echo</h2>
+      <p>Desks also run SIV- and muni TOB-style short-term structures: short liabilities against longer or more complex assets, harvesting carry and turnover. Rate risk is often swapped away — hedges damp volatility, so models and managers conclude they can “safely” add leverage<a class="fn-link" href="#fn11"><sup class="fn">¹¹</sup></a>.</p>
+      <p>The author echoes Chapter 1’s blackjack / standard-deviation intuition: you think you cut volatility; you may only have resized the chips inside the same game. A hedge reshapes risk; it does not make DuPont’s third factor free.</p>
+
+      <div class="footnotes" id="fn-block-9">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn11">
+          <strong>¹¹ SIVs and TOB-style short structures</strong>
+          SIVs typically funded longer, higher-yielding assets with ABCP and similar short liabilities; when 2007 funding windows shut, many were restructured or pulled onto bank balance sheets. Municipal tender-option-bond structures similarly use short puttable liabilities to lever tax-exempt exposure. Shared premise: pretty carry needs the short end to stay open.
+          <div class="why">Why it matters: shows how “hedge + short liabilities” can lift turnover and leverage on the same slide.</div>
+          <div class="src">Source: FCIC / press on SIV consolidations; muni TOB market-structure primers</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s12">Model illusion and compressed CDS premia</h2>
+      <p>Designing hedges and models, the author briefly enjoys the scientist’s illusion: markets as an orderly lab — clean inputs, tidy outputs. In 2006’s greedy air, CDS and CDX investment-grade protection premia were crushed thin — default felt like a homework problem<a class="fn-link" href="#fn12"><sup class="fn">¹²</sup></a>.</p>
+      <p>The more confident the model, the more righteous the leverage; the tighter the spread, the more Walmart and Wall Street modes look like “steady money.” The chapter’s edge: calm itself is treated as evidence of safety.</p>
+
+      <div class="footnotes" id="fn-block-10">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn12">
+          <strong>¹² CDS and CDX</strong>
+          A credit-default swap pays the buyer for protection after a credit event. Indices such as CDX.NA.IG standardize a basket of investment-grade names into a credit thermometer. Dealer materials from late 2006 show CDX.NA.IG around the mid-30s bps — the same order of magnitude as the book’s “33–40 bps” calm-sea image.
+          <div class="why">Why it matters: gives “premia compressed” a market tick, not only a mood adjective.</div>
+          <div class="src">Source: Markit/Nomura Dec 2006 CDO/CDS update (FCIC archive); CDX primers</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s13">Calm seas: CDX IG 33–40 bps</h2>
+      <p>Day-to-day trading grows thin and boring: client RFQs are competitive scraps; spreads are chewed to nothing. The author would rather be cover bid often — fewer wins, fewer regrets, less drama. Calm seas make sailors soft. CDX IG drifts in a ~33–40 bp band like a flag that says nothing is happening.</p>
+      <p>Readers already know the sequel: the “nothing happening” flag can be the color of the hour before the gale. But on the 2006 desk, DuPont’s three factors still glowed, bonus calendars still flipped, and the apprentice’s dream still ran hot — the next chapter will tear at the “never-fading” illusion.</p>
+
+      <div class="scene">
+        When cover is safer than winning every RFQ, and tight spreads pass for dead risk, DuPont has taught how to raise ROE — not which factor can go to zero overnight.
+      </div>
+
+      <div class="diagrams-section" id="diagrams">
+        <h2>People · timeline · knowledge graph</h2>
+        <p style="color:var(--muted);font-size:14px;">Mermaid diagrams linking the fable, three modes, and repo foreshadow (not from the book).</p>
+        <div class="mermaid-wrap">
+          <div class="caption">Fig A · Narrative timeline: carnival → DuPont trio → repo foreshadow → calm seas</div>
+          <pre class="mermaid">
+timeline
+    title Yuyang path (this chapter)
+    section Floor
+      2006 muni desk : millions per month scale
+      Vince and Roger celebrate : apprentice eyes senior seat
+    section Hyper Goldman
+      Board grades ROE : Pig writes DuPont
+      Microsoft mode : high-margin people biz
+      Walmart mode : ABS/CDO warehouse
+      Wall Street mode : 20x toward 20% ROE
+    section Macro and pay
+      ROE arms race : prop innovation
+      Greenspan low rates : bonus-year myopia
+    section Back to Lucy
+      ~1B muni book : overnight repo and haircuts
+      SIV/TOB shorts : swaps hedge then lever
+      Model illusion : CDS/CDX compressed
+      CDX IG 33-40bp : cover bid boredom
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">Fig B · Hyper Goldman cast / Lucy desk map</div>
+          <pre class="mermaid">
+flowchart TD
+    BOARD["Board
+grades ROE"] --> OX["CEO Ox"]
+    OX --> PIG["Advisor Pig
+arithmetic DuPont"]
+    PIG --> M1["Microsoft mode
+margin"]
+    PIG --> M2["Walmart mode
+turnover"]
+    PIG --> M3["Wall Street mode
+leverage"]
+    OX --> IB["IB lead"]
+    OX --> SEC["Securitization star"]
+    OX --> PROP["Prop investing lead"]
+    PROP --> HF["Traders leave for HF"]
+    REAL["Lucy muni desk"] --> V["Vince"]
+    REAL --> R["Roger"]
+    REAL --> A["Author/apprentice"]
+    REAL --> REPO["Overnight repo funding"]
+    M3 -.->|"isomorphic"| REPO
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">Fig C · Knowledge graph: DuPont factors and pre-crisis pipes</div>
+          <pre class="mermaid">
+flowchart LR
+    ROE["ROE"] --> PM["Margin"]
+    ROE --> AT["Turnover"]
+    ROE --> LEV["Leverage"]
+    PM --> IBFEES["IB/M&amp;A/underwriting"]
+    AT --> WH["ABS/CDO warehouse"]
+    LEV --> REPO["Repo + haircut"]
+    LEV --> BD["Dealer ~30x"]
+    WH --> SHADOW["Shadow banking"]
+    REPO --> SIV["SIV/TOB short end"]
+    HEDGE["Swap hedges"] --> LEV
+    CDS["CDS/CDX"] --> CALM["33-40bp calm"]
+    GREEN["Low policy rates"] --> LEV
+    PROP2["Prop"] --> ROE
+    AG["Agency"] --> PM
+          </pre>
+        </div>
+      </div>
+    </article>
+    <footer>
+      Story guide · Chaos on Wall Street (Yuyang) Ch.5 “The DuPont Formula”<br />
+      Retold from public trial text — not verbatim; footnotes are off-book research; Lucy Bank / Hyper Goldman are aliases or fable<br />
+      Support the licensed edition · images in SOURCES.md ·
+      <a href="dupont-formula-zh.html">中文版</a>
+      · <a href="../ch04/center-of-universe-en.html">← Chapter 4</a> · <a href="../../../index.html">Back to home</a>
+    </footer>
+  </div>
+
   <script>
-  (async function () {
-    const parts = ["parts/en-part-0.txt", "parts/en-part-1.txt", "parts/en-part-2.txt", "parts/en-part-3.txt", "parts/en-part-4.txt", "parts/en-part-5.txt", "parts/en-part-6.txt", "parts/en-part-7.txt", "parts/en-part-8.txt", "parts/en-part-9.txt", "parts/en-part-10.txt", "parts/en-part-11.txt", "parts/en-part-12.txt", "parts/en-part-13.txt", "parts/en-part-14.txt", "parts/en-part-15.txt", "parts/en-part-16.txt", "parts/en-part-17.txt"];
-    const status = document.getElementById('status');
-    try {
-      const texts = await Promise.all(parts.map(p => fetch(p).then(r => {
-        if (!r.ok) throw new Error(p + ' ' + r.status);
-        return r.text();
-      })));
-      const html = texts.join('');
-      document.open();
-      document.write(html);
-      document.close();
-    } catch (e) {
-      status.innerHTML = 'Failed to assemble page: ' + e +
-        '<br><br><a href="dupont-formula-zh.html">Other language</a>';
-    }
-  })();
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
   </script>
+
 </body>
 </html>
