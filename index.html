@@ -41,53 +41,79 @@
     .sub { color: var(--muted); margin: 0 0 28px; }
     .card {
       margin-bottom: 16px;
-      padding: 22px;
       border: 1px solid rgba(255, 255, 255, 0.06);
       border-radius: 18px;
       background: linear-gradient(180deg, var(--panel), var(--panel-soft));
     }
+    .book-card { overflow: hidden; }
+    .book-summary {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 22px;
+      cursor: pointer;
+      list-style: none;
+      transition: background 0.2s;
+    }
+    .book-summary::-webkit-details-marker { display: none; }
+    .book-summary:hover { background: rgba(212, 175, 55, 0.06); }
+    .book-summary:focus-visible, a:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 2px;
+    }
+    .chevron {
+      flex: 0 0 auto;
+      margin-top: 2px;
+      color: var(--gold);
+      font-size: 16px;
+      transition: transform 0.2s ease;
+    }
+    .book-card[open] .chevron { transform: rotate(90deg); }
+    .summary-copy { min-width: 0; flex: 1; }
     .book-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
     .card h2 { margin: 0; color: var(--gold-soft); font-size: 20px; }
     .count { padding: 2px 9px; font-size: 12px; }
-    .card p { margin: 7px 0 16px; color: #d7deec; font-size: 15px; }
-    .chapter-picker { margin-top: 4px; }
-    .chapter-picker label {
-      display: block; margin-bottom: 7px; color: var(--muted); font-size: 13px;
+    .author { margin: 7px 0 0; color: #d7deec; font-size: 15px; }
+    .chapters {
+      padding: 6px 22px 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
     }
-    select {
-      display: block;
-      width: 100%;
-      min-height: 44px;
-      padding: 9px 12px;
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      border-radius: 10px;
-      color: var(--text);
-      background: #0f1727;
-      font: inherit;
-      cursor: pointer;
+    .chapter-list { margin: 0; padding: 0; list-style: none; }
+    .chapter-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 14px;
+      padding: 11px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     }
-    select:focus, a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
-    .langs { display: flex; gap: 10px; margin-top: 12px; }
+    .chapter-row:last-child { border-bottom: 0; }
+    .chapter-title { min-width: 0; color: var(--text); }
+    .chapter-links { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
     .lang-link, a.link {
       display: inline-block;
-      padding: 8px 14px;
+      padding: 6px 11px;
       border: 1px solid var(--line);
-      border-radius: 10px;
+      border-radius: 9px;
       color: var(--gold-soft);
       text-decoration: none;
       background: rgba(212, 175, 55, 0.08);
-      transition: border-color 0.2s, background 0.2s, opacity 0.2s;
+      transition: border-color 0.2s, background 0.2s;
+      white-space: nowrap;
     }
     .lang-link:hover, a.link:hover { border-color: var(--gold); background: rgba(212, 175, 55, 0.16); }
-    .lang-link[aria-disabled="true"] { opacity: 0.42; cursor: not-allowed; }
+    .contribute { padding: 22px; }
+    .contribute p { margin: 7px 0 16px; color: #d7deec; font-size: 15px; }
     .contribute a.link { display: block; margin-top: 10px; }
     footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center; }
     footer a { color: var(--gold-soft); }
-    @media (max-width: 480px) {
+    @media (max-width: 560px) {
       .wrap { padding: 30px 14px 56px; }
-      .card { padding: 18px; }
-      .langs { flex-direction: column; }
-      .lang-link { text-align: center; }
+      .book-summary, .contribute { padding: 18px; }
+      .chapters { padding: 6px 18px 18px; }
+      .chapter-row { grid-template-columns: 1fr; gap: 8px; }
+      .chapter-links { justify-content: flex-start; }
+      .lang-link { flex: 1; text-align: center; }
     }
   </style>
 </head>
@@ -97,76 +123,74 @@
     <h1>书章阅读笔记</h1>
     <p class="sub">中英双语 · 故事向导读 + 场外脚注与图谱。欢迎按社区规范贡献更多书。</p>
 
-    <section class="card book-card" data-book="luan-shi-wall-street">
-      <div class="book-head">
-        <h2>《乱世华尔街》</h2>
-        <span class="count">25 章 · 已完结</span>
+    <details class="card book-card" data-book="luan-shi-wall-street">
+      <summary class="book-summary">
+        <span class="chevron" aria-hidden="true">▶</span>
+        <span class="summary-copy">
+          <span class="book-head">
+            <h2>《乱世华尔街》</h2>
+            <span class="count">25 章 · 已完结</span>
+          </span>
+          <span class="author">渔阳 · 一位华人交易员的经历</span>
+        </span>
+      </summary>
+      <div class="chapters">
+        <ul class="chapter-list" aria-label="《乱世华尔街》章节">
+          <li class="chapter-row"><span class="chapter-title">§1 · 镀金时代 · 从赌场走进华尔街</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch01/casino-to-wall-street-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch01/casino-to-wall-street-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§2 · 高盛实习</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch02/goldman-internship-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch02/goldman-internship-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§3 · 鲁西银行（Lucy Bank）</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch03/lucy-bank-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch03/lucy-bank-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§4 · 宇宙的中心</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch04/center-of-universe-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch04/center-of-universe-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§5 · 杜邦公式</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch05/dupont-formula-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch05/dupont-formula-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§6 · 永不凋谢的花朵</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch06/never-fading-flower-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch06/never-fading-flower-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§7 · 连环计</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch07/interlocking-stratagem-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch07/interlocking-stratagem-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§8 · 夏季风暴</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch08/summer-storm-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch08/summer-storm-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§9 · 危机似乎过去</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch09/crisis-seems-past-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch09/crisis-seems-past-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§10 · 十面埋伏</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch10/ambush-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch10/ambush-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§11 · 华尔街之踵</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch11/achilles-heel-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch11/achilles-heel-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§12 · 乱世枭雄</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch12/warlords-of-chaos-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch12/warlords-of-chaos-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§13 · 小阳春</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch13/false-spring-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch13/false-spring-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§14 · 二美落难</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch14/two-beauties-fallen-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch14/two-beauties-fallen-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§15 · 沙中的红线</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch15/red-line-in-sand-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch15/red-line-in-sand-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§16 · 潘多拉的盒子</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch16/pandoras-box-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch16/pandoras-box-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§17 · 保尔森计划</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch17/paulson-plan-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch17/paulson-plan-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§18 · 最黑暗的时刻</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch18/darkest-hour-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch18/darkest-hour-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§19 · 曙光初现</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch19/dawn-appears-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch19/dawn-appears-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§20 · 圣经故事</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch20/bible-stories-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch20/bible-stories-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§21 · 善败者不乱</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch21/skilled-defeat-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch21/skilled-defeat-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§22 · 新市场，新思维</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch22/new-markets-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch22/new-markets-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§23 · 关系学</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch23/relationships-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch23/relationships-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§24 · 分久必合，合久必分</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/ch24/unite-divide-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/ch24/unite-divide-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">后记 · Epilogue / Afterword</span><span class="chapter-links"><a class="lang-link" href="books/luan-shi-wall-street/epilogue/afterword-zh.html">中文</a><a class="lang-link" href="books/luan-shi-wall-street/epilogue/afterword-en.html">English</a></span></li>
+        </ul>
       </div>
-      <p>渔阳 · 一位华人交易员的经历</p>
-      <div class="chapter-picker">
-        <label for="chapters-wall-street">选择章节</label>
-        <select id="chapters-wall-street" aria-label="选择《乱世华尔街》章节">
-          <option value="">选择章节…</option>
-          <option value="ch01" data-zh="books/luan-shi-wall-street/ch01/casino-to-wall-street-zh.html" data-en="books/luan-shi-wall-street/ch01/casino-to-wall-street-en.html">§1 · 镀金时代 · 从赌场走进华尔街</option>
-          <option value="ch02" data-zh="books/luan-shi-wall-street/ch02/goldman-internship-zh.html" data-en="books/luan-shi-wall-street/ch02/goldman-internship-en.html">§2 · 高盛实习</option>
-          <option value="ch03" data-zh="books/luan-shi-wall-street/ch03/lucy-bank-zh.html" data-en="books/luan-shi-wall-street/ch03/lucy-bank-en.html">§3 · 鲁西银行（Lucy Bank）</option>
-          <option value="ch04" data-zh="books/luan-shi-wall-street/ch04/center-of-universe-zh.html" data-en="books/luan-shi-wall-street/ch04/center-of-universe-en.html">§4 · 宇宙的中心</option>
-          <option value="ch05" data-zh="books/luan-shi-wall-street/ch05/dupont-formula-zh.html" data-en="books/luan-shi-wall-street/ch05/dupont-formula-en.html">§5 · 杜邦公式</option>
-          <option value="ch06" data-zh="books/luan-shi-wall-street/ch06/never-fading-flower-zh.html" data-en="books/luan-shi-wall-street/ch06/never-fading-flower-en.html">§6 · 永不凋谢的花朵</option>
-          <option value="ch07" data-zh="books/luan-shi-wall-street/ch07/interlocking-stratagem-zh.html" data-en="books/luan-shi-wall-street/ch07/interlocking-stratagem-en.html">§7 · 连环计</option>
-          <option value="ch08" data-zh="books/luan-shi-wall-street/ch08/summer-storm-zh.html" data-en="books/luan-shi-wall-street/ch08/summer-storm-en.html">§8 · 夏季风暴</option>
-          <option value="ch09" data-zh="books/luan-shi-wall-street/ch09/crisis-seems-past-zh.html" data-en="books/luan-shi-wall-street/ch09/crisis-seems-past-en.html">§9 · 危机似乎过去</option>
-          <option value="ch10" data-zh="books/luan-shi-wall-street/ch10/ambush-zh.html" data-en="books/luan-shi-wall-street/ch10/ambush-en.html">§10 · 十面埋伏</option>
-          <option value="ch11" data-zh="books/luan-shi-wall-street/ch11/achilles-heel-zh.html" data-en="books/luan-shi-wall-street/ch11/achilles-heel-en.html">§11 · 华尔街之踵</option>
-          <option value="ch12" data-zh="books/luan-shi-wall-street/ch12/warlords-of-chaos-zh.html" data-en="books/luan-shi-wall-street/ch12/warlords-of-chaos-en.html">§12 · 乱世枭雄</option>
-          <option value="ch13" data-zh="books/luan-shi-wall-street/ch13/false-spring-zh.html" data-en="books/luan-shi-wall-street/ch13/false-spring-en.html">§13 · 小阳春</option>
-          <option value="ch14" data-zh="books/luan-shi-wall-street/ch14/two-beauties-fallen-zh.html" data-en="books/luan-shi-wall-street/ch14/two-beauties-fallen-en.html">§14 · 二美落难</option>
-          <option value="ch15" data-zh="books/luan-shi-wall-street/ch15/red-line-in-sand-zh.html" data-en="books/luan-shi-wall-street/ch15/red-line-in-sand-en.html">§15 · 沙中的红线</option>
-          <option value="ch16" data-zh="books/luan-shi-wall-street/ch16/pandoras-box-zh.html" data-en="books/luan-shi-wall-street/ch16/pandoras-box-en.html">§16 · 潘多拉的盒子</option>
-          <option value="ch17" data-zh="books/luan-shi-wall-street/ch17/paulson-plan-zh.html" data-en="books/luan-shi-wall-street/ch17/paulson-plan-en.html">§17 · 保尔森计划</option>
-          <option value="ch18" data-zh="books/luan-shi-wall-street/ch18/darkest-hour-zh.html" data-en="books/luan-shi-wall-street/ch18/darkest-hour-en.html">§18 · 最黑暗的时刻</option>
-          <option value="ch19" data-zh="books/luan-shi-wall-street/ch19/dawn-appears-zh.html" data-en="books/luan-shi-wall-street/ch19/dawn-appears-en.html">§19 · 曙光初现</option>
-          <option value="ch20" data-zh="books/luan-shi-wall-street/ch20/bible-stories-zh.html" data-en="books/luan-shi-wall-street/ch20/bible-stories-en.html">§20 · 圣经故事</option>
-          <option value="ch21" data-zh="books/luan-shi-wall-street/ch21/skilled-defeat-zh.html" data-en="books/luan-shi-wall-street/ch21/skilled-defeat-en.html">§21 · 善败者不乱</option>
-          <option value="ch22" data-zh="books/luan-shi-wall-street/ch22/new-markets-zh.html" data-en="books/luan-shi-wall-street/ch22/new-markets-en.html">§22 · 新市场，新思维</option>
-          <option value="ch23" data-zh="books/luan-shi-wall-street/ch23/relationships-zh.html" data-en="books/luan-shi-wall-street/ch23/relationships-en.html">§23 · 关系学</option>
-          <option value="ch24" data-zh="books/luan-shi-wall-street/ch24/unite-divide-zh.html" data-en="books/luan-shi-wall-street/ch24/unite-divide-en.html">§24 · 分久必合，合久必分</option>
-          <option value="epilogue" data-zh="books/luan-shi-wall-street/epilogue/afterword-zh.html" data-en="books/luan-shi-wall-street/epilogue/afterword-en.html">后记 · Epilogue / Afterword</option>
-        </select>
-        <div class="langs" aria-label="打开所选章节">
-          <a class="lang-link" data-lang="zh" href="#" aria-disabled="true">中文</a>
-          <a class="lang-link" data-lang="en" href="#" aria-disabled="true">English</a>
-        </div>
-      </div>
-    </section>
+    </details>
 
-    <section class="card book-card" data-book="zhishen-shinei">
-      <div class="book-head">
-        <h2>《置身事内》</h2>
-        <span class="count">10 章 · 已完结</span>
+    <details class="card book-card" data-book="zhishen-shinei">
+      <summary class="book-summary">
+        <span class="chevron" aria-hidden="true">▶</span>
+        <span class="summary-copy">
+          <span class="book-head">
+            <h2>《置身事内》</h2>
+            <span class="count">10 章 · 已完结</span>
+          </span>
+          <span class="author">兰小欢 · 中国政府与经济发展（上海人民出版社，2021）</span>
+        </span>
+      </summary>
+      <div class="chapters">
+        <ul class="chapter-list" aria-label="《置身事内》章节">
+          <li class="chapter-row"><span class="chapter-title">前言 · 从了解现状开始</span><span class="chapter-links"><a class="lang-link" href="books/zhishen-shinei/preface/from-status-quo-zh.html">中文</a><a class="lang-link" href="books/zhishen-shinei/preface/from-status-quo-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§1 · 地方政府的权力与事务</span><span class="chapter-links"><a class="lang-link" href="books/zhishen-shinei/ch01/local-gov-power-zh.html">中文</a><a class="lang-link" href="books/zhishen-shinei/ch01/local-gov-power-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§2 · 财税与政府行为</span><span class="chapter-links"><a class="lang-link" href="books/zhishen-shinei/ch02/fiscal-tax-zh.html">中文</a><a class="lang-link" href="books/zhishen-shinei/ch02/fiscal-tax-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§3 · 政府投融资与债务</span><span class="chapter-links"><a class="lang-link" href="books/zhishen-shinei/ch03/gov-finance-debt-zh.html">中文</a><a class="lang-link" href="books/zhishen-shinei/ch03/gov-finance-debt-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§4 · 工业化中的政府角色</span><span class="chapter-links"><a class="lang-link" href="books/zhishen-shinei/ch04/industrialization-zh.html">中文</a><a class="lang-link" href="books/zhishen-shinei/ch04/industrialization-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§5 · 城市化与不平衡</span><span class="chapter-links"><a class="lang-link" href="books/zhishen-shinei/ch05/urbanization-zh.html">中文</a><a class="lang-link" href="books/zhishen-shinei/ch05/urbanization-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§6 · 债务与风险</span><span class="chapter-links"><a class="lang-link" href="books/zhishen-shinei/ch06/debt-risk-zh.html">中文</a><a class="lang-link" href="books/zhishen-shinei/ch06/debt-risk-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§7 · 国内国际失衡</span><span class="chapter-links"><a class="lang-link" href="books/zhishen-shinei/ch07/imbalance-zh.html">中文</a><a class="lang-link" href="books/zhishen-shinei/ch07/imbalance-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§8 · 总结：政府与经济发展</span><span class="chapter-links"><a class="lang-link" href="books/zhishen-shinei/ch08/gov-development-zh.html">中文</a><a class="lang-link" href="books/zhishen-shinei/ch08/gov-development-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">结束语 · Closing Remarks</span><span class="chapter-links"><a class="lang-link" href="books/zhishen-shinei/closing/closing-remarks-zh.html">中文</a><a class="lang-link" href="books/zhishen-shinei/closing/closing-remarks-en.html">English</a></span></li>
+        </ul>
       </div>
-      <p>兰小欢 · 中国政府与经济发展（上海人民出版社，2021）</p>
-      <div class="chapter-picker">
-        <label for="chapters-zhishen-shinei">选择章节</label>
-        <select id="chapters-zhishen-shinei" aria-label="选择《置身事内》章节">
-          <option value="">选择章节…</option>
-          <option value="preface" data-zh="books/zhishen-shinei/preface/from-status-quo-zh.html" data-en="books/zhishen-shinei/preface/from-status-quo-en.html">前言 · 从了解现状开始</option>
-          <option value="ch01" data-zh="books/zhishen-shinei/ch01/local-gov-power-zh.html" data-en="books/zhishen-shinei/ch01/local-gov-power-en.html">§1 · 地方政府的权力与事务</option>
-          <option value="ch02" data-zh="books/zhishen-shinei/ch02/fiscal-tax-zh.html" data-en="books/zhishen-shinei/ch02/fiscal-tax-en.html">§2 · 财税与政府行为</option>
-          <option value="ch03" data-zh="books/zhishen-shinei/ch03/gov-finance-debt-zh.html" data-en="books/zhishen-shinei/ch03/gov-finance-debt-en.html">§3 · 政府投融资与债务</option>
-          <option value="ch04" data-zh="books/zhishen-shinei/ch04/industrialization-zh.html" data-en="books/zhishen-shinei/ch04/industrialization-en.html">§4 · 工业化中的政府角色</option>
-          <option value="ch05" data-zh="books/zhishen-shinei/ch05/urbanization-zh.html" data-en="books/zhishen-shinei/ch05/urbanization-en.html">§5 · 城市化与不平衡</option>
-          <option value="ch06" data-zh="books/zhishen-shinei/ch06/debt-risk-zh.html" data-en="books/zhishen-shinei/ch06/debt-risk-en.html">§6 · 债务与风险</option>
-          <option value="ch07" data-zh="books/zhishen-shinei/ch07/imbalance-zh.html" data-en="books/zhishen-shinei/ch07/imbalance-en.html">§7 · 国内国际失衡</option>
-          <option value="ch08" data-zh="books/zhishen-shinei/ch08/gov-development-zh.html" data-en="books/zhishen-shinei/ch08/gov-development-en.html">§8 · 总结：政府与经济发展</option>
-          <option value="closing" data-zh="books/zhishen-shinei/closing/closing-remarks-zh.html" data-en="books/zhishen-shinei/closing/closing-remarks-en.html">结束语 · Closing Remarks</option>
-        </select>
-        <div class="langs" aria-label="打开所选章节">
-          <a class="lang-link" data-lang="zh" href="#" aria-disabled="true">中文</a>
-          <a class="lang-link" data-lang="en" href="#" aria-disabled="true">English</a>
-        </div>
-      </div>
-    </section>
+    </details>
 
     <section class="card contribute">
       <h2>参与贡献</h2>
@@ -182,36 +206,13 @@
     </footer>
   </main>
   <script>
-    document.querySelectorAll('.book-card').forEach(function (card) {
-      var book = card.dataset.book;
-      var select = card.querySelector('select');
-      var links = card.querySelectorAll('.lang-link');
-      var storageKey = 'book-html-notes:' + book;
-
-      function updateLinks() {
-        var option = select.options[select.selectedIndex];
-        links.forEach(function (link) {
-          var href = option && option.dataset[link.dataset.lang];
-          var disabled = !href;
-          link.href = disabled ? '#' : href;
-          link.setAttribute('aria-disabled', disabled ? 'true' : 'false');
-          link.tabIndex = disabled ? -1 : 0;
-        });
-      }
-
+    document.querySelectorAll('.book-card').forEach(function (book) {
+      var storageKey = 'book-html-notes:open:' + book.dataset.book;
       try {
-        var saved = localStorage.getItem(storageKey);
-        if (saved && select.querySelector('option[value="' + saved + '"]')) select.value = saved;
+        if (localStorage.getItem(storageKey) === 'true') book.open = true;
       } catch (error) {}
-      updateLinks();
-      select.addEventListener('change', function () {
-        try { localStorage.setItem(storageKey, select.value); } catch (error) {}
-        updateLinks();
-      });
-      links.forEach(function (link) {
-        link.addEventListener('click', function (event) {
-          if (link.getAttribute('aria-disabled') === 'true') event.preventDefault();
-        });
+      book.addEventListener('toggle', function () {
+        try { localStorage.setItem(storageKey, String(book.open)); } catch (error) {}
       });
     });
   </script>
