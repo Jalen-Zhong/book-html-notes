@@ -8,12 +8,12 @@ https://jalen-zhong.github.io/book-html-notes/
 
 ## Current books
 
-- 《乱世华尔街》 / `luan-shi-wall-street` (in progress — more chapters landing soon)
-  - [ch01 赌场到华尔街 · 中文](books/luan-shi-wall-street/ch01/gilded-age-casino-to-wall-street.html)
+- 《乱世华尔街》 / `luan-shi-wall-street`（渔阳 · 一位华人交易员的经历）
+  - Chapters §1–§24 + 后记 on Pages — see [index](https://jalen-zhong.github.io/book-html-notes/)
 
-- 《置身事内》 / `zhishen-shinei` (in progress)
-  - [ch01 地方政府的权力与事务 · 中文](books/zhishen-shinei/ch01/local-gov-power-zh.html)
-  - [ch01 Local Government Power and Affairs · English](books/zhishen-shinei/ch01/local-gov-power-en.html)
+- 《置身事内》 / `zhishen-shinei`（兰小欢 · 中国政府与经济发展，上海人民出版社 2021）
+  - 前言 + §1–§8 + **结束语** complete on Pages — see [index](https://jalen-zhong.github.io/book-html-notes/)
+  - Closing: [结束语 · 中文](books/zhishen-shinei/closing/closing-remarks-zh.html) · [Closing Remarks · English](books/zhishen-shinei/closing/closing-remarks-en.html)
 
 ## Contribute
 
@@ -32,6 +32,7 @@ Pipeline skills:
 books/<book-slug>/chNN/*-zh.html
 books/<book-slug>/chNN/*-en.html
 books/<book-slug>/chNN/SOURCES.md
+books/<book-slug>/closing/   # optional book closing (e.g. 结束语)
 ```
 
 ## License
