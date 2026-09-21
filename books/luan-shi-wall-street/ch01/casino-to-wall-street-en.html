@@ -3,35 +3,526 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Casino to Wall Street · loading</title>
+  <title>Wall Street in Chaos — Ch.1: The Gilded Age · From Casino to Wall Street</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <style>
-    body { margin:0; font-family: system-ui, sans-serif; background:#0b1220; color:#e8eef9;
-      display:flex; min-height:100vh; align-items:center; justify-content:center; }
-    .box { max-width:420px; padding:24px; border:1px solid rgba(212,175,55,.28);
-      border-radius:16px; background:#121a2b; line-height:1.6; text-align:center; }
-    a { color:#f0d78c; }
+    :root {
+      --bg: #0b1220;
+      --panel: #121a2b;
+      --panel-2: #182235;
+      --gold: #d4af37;
+      --gold-soft: #f0d78c;
+      --text: #e8eef9;
+      --muted: #9aa8c1;
+      --line: rgba(212, 175, 55, 0.28);
+      --accent: #3d8bfd;
+      --accent-soft: rgba(61, 139, 253, 0.12);
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+      --fn-bg: rgba(240, 215, 140, 0.06);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Helvetica Neue", system-ui, -apple-system, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(212,175,55,0.12), transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, rgba(61,139,253,0.12), transparent 50%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 40px 20px 80px; }
+    .lang-switch {
+      display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap;
+    }
+    .lang-switch a {
+      display: inline-flex; align-items: center;
+      padding: 5px 12px; border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--muted); text-decoration: none; font-size: 13px;
+      background: rgba(255,255,255,0.03);
+    }
+    .lang-switch a.active {
+      color: var(--gold-soft);
+      border-color: var(--line);
+      background: rgba(212,175,55,0.1);
+    }
+    .lang-switch a:hover { color: var(--gold-soft); }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px;
+      color: var(--gold-soft); font-size: 13px; letter-spacing: 0.06em;
+      background: rgba(212,175,55,0.08);
+    }
+    h1 {
+      margin: 18px 0 8px;
+      font-size: clamp(28px, 5vw, 40px);
+      line-height: 1.28; font-weight: 700;
+    }
+    .subtitle { margin: 0 0 24px; color: var(--muted); font-size: 15px; }
+    .hero {
+      position: relative; overflow: hidden;
+      border: 1px solid var(--line); border-radius: 22px;
+      background:
+        linear-gradient(135deg, rgba(212,175,55,0.12), transparent 40%),
+        linear-gradient(180deg, var(--panel), var(--panel-2));
+      box-shadow: var(--shadow); padding: 28px; margin-bottom: 28px;
+    }
+    .note {
+      margin-top: 16px; padding: 12px 14px;
+      border-left: 3px solid var(--gold);
+      background: rgba(212,175,55,0.08);
+      border-radius: 0 12px 12px 0;
+      color: var(--muted); font-size: 13px;
+    }
+    .toc {
+      margin: 20px 0 0; padding: 14px 16px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px; font-size: 14px; color: var(--muted);
+    }
+    .toc a { color: var(--gold-soft); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    .toc ul { margin: 8px 0 0; padding-left: 18px; }
+    .toc li { margin: 4px 0; }
+    article.story {
+      background: linear-gradient(180deg, var(--panel), var(--panel-2));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 20px; padding: 28px 28px 20px;
+      box-shadow: var(--shadow);
+    }
+    .chapter-mark {
+      color: var(--gold-soft); font-size: 13px;
+      letter-spacing: 0.12em; margin-bottom: 18px;
+    }
+    h2 {
+      margin: 28px 0 12px; font-size: 20px;
+      color: var(--gold-soft); font-weight: 650;
+      scroll-margin-top: 24px;
+    }
+    h2:first-of-type { margin-top: 8px; }
+    h3.panel-title {
+      margin: 0 0 10px; font-size: 15px;
+      color: var(--accent); font-weight: 600;
+    }
+    p { margin: 0 0 16px; color: #d7deec; font-size: 16px; }
+    .scene {
+      margin: 8px 0 20px; padding: 16px 18px;
+      border-radius: 14px;
+      background: rgba(61,139,253,0.07);
+      border: 1px solid rgba(61,139,253,0.18);
+      color: #c9dbff; font-size: 15px;
+    }
+    .divider {
+      height: 1px; margin: 28px 0;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+      border: 0;
+    }
+    sup.fn {
+      font-size: 11px; color: var(--gold);
+      font-weight: 700; cursor: pointer;
+      margin-left: 1px; text-decoration: none;
+    }
+    a.fn-link { color: inherit; text-decoration: none; }
+    .figure {
+      margin: 18px 0 22px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: #0a101c;
+    }
+    .figure img {
+      display: block; width: 100%; height: auto;
+      max-height: 420px; object-fit: cover;
+    }
+    .figure figcaption {
+      padding: 10px 14px 12px;
+      font-size: 12px; color: var(--muted);
+      line-height: 1.55;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .footnotes {
+      margin: 8px 0 24px;
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: var(--fn-bg);
+      border: 1px solid rgba(212,175,55,0.22);
+    }
+    .footnotes .fn-head {
+      font-size: 13px; color: var(--gold-soft);
+      letter-spacing: 0.08em; margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .fn-item {
+      margin-bottom: 14px; padding-bottom: 14px;
+      border-bottom: 1px dashed rgba(212,175,55,0.18);
+      font-size: 13.5px; color: #c5d0e4; line-height: 1.7;
+    }
+    .fn-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+    .fn-item strong {
+      display: block; color: var(--gold-soft);
+      font-size: 14px; margin-bottom: 4px;
+    }
+    .fn-item .why {
+      margin-top: 6px; color: #a8b8d4;
+      font-style: italic;
+    }
+    .fn-item .src {
+      margin-top: 4px; color: #7f8eaa; font-size: 12px;
+    }
+    .side-panel {
+      margin: 18px 0 22px;
+      padding: 18px;
+      border-radius: 16px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(61,139,253,0.22);
+    }
+    .mermaid-wrap {
+      margin: 18px 0 22px;
+      padding: 16px;
+      border-radius: 16px;
+      background: #0e1626;
+      border: 1px solid rgba(255,255,255,0.08);
+      overflow-x: auto;
+    }
+    .mermaid-wrap .caption {
+      font-size: 12px; color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .mermaid { background: transparent !important; }
+    .event-timeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin: 16px 0 22px;
+    }
+    .event-card {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+    .event-card .yr { color: var(--gold); font-weight: 700; font-size: 14px; }
+    .event-card .ev { color: #c9d4e8; font-size: 13px; margin-top: 4px; line-height: 1.5; }
+    .diagrams-section { margin-top: 32px; padding-top: 8px; }
+    footer {
+      margin-top: 28px; color: var(--muted);
+      font-size: 13px; text-align: center;
+    }
+    @media (max-width: 560px) {
+      article.story { padding: 20px 16px 12px; }
+      .wrap { padding: 24px 14px 60px; }
+    }
   </style>
 </head>
 <body>
-  <div class="box" id="status">Loading chapter…</div>
+  <div class="wrap">
+    <div class="hero">
+      <div class="lang-switch" aria-label="Language">
+        <a href="casino-to-wall-street-zh.html">中文</a>
+        <a class="active" href="casino-to-wall-street-en.html">English</a>
+      
+        <a href="../../../index.html">Back to home</a>
+      </div>
+      <div class="badge">Story guide · Retold from public trial-read beats · Off-book research notes</div>
+      <h1>The Gilded Age<br />From the Casino Floor to Wall Street</h1>
+      <p class="subtitle"><em>Wall Street in Chaos</em> (《乱世华尔街》) · Chapter 1 “Casino to Wall Street” · Yuyang · story retelling + footnote research</p>
+      <div class="note">
+        Below is a story-first retelling in the author’s chronological order — original paraphrase for reading along, not a verbatim copy of the book. Footnotes, images, and knowledge graphs are public off-book supplements for background the chapter only brushes past. Please support the official edition for the full text.
+      </div>
+      <nav class="toc" aria-label="Section notes">
+        Section notes
+        <ul>
+          <li><a href="#s1">The road to Wall Street begins in a casino</a></li>
+          <li><a href="#s2">On Wall Street — but not at the table</a></li>
+          <li><a href="#s3">Las Vegas: a week of blackjack “street sweeps”</a></li>
+          <li><a href="#s4">Texas Hold’em: outthinking other people</a></li>
+          <li><a href="#s5">Berkeley: a one-year MFE</a></li>
+          <li><a href="#s6">Professor Rubinstein and Black Monday</a></li>
+          <li><a href="#s7">A cold start on the job hunt</a></li>
+          <li><a href="#s8">Goldman interviews and emerging-market bonds</a></li>
+          <li><a href="#diagrams">People / timeline / knowledge graph</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER ONE · CASINO TO WALL STREET</div>
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/New_York_Stock_Exchange_Exterior.jpg" alt="New York Stock Exchange exterior" loading="lazy" />
+        <figcaption>New York Stock Exchange exterior on Broad Street — Wall Street’s public face. Source: Wikimedia Commons (Kidfly182, CC BY-SA 4.0)</figcaption>
+      </figure>
+      <h2 id="s1">The road to Wall Street begins in a casino</h2>
+      <p>Looking back, the author finds an unglamorous starting point: years earlier he was still sitting in American casinos, counting red and green chips for pocket money; years later he was running trading books in the hundreds of millions and generating tens of millions in profit a year for a bank. The span sounds huge; to him it did not feel that far — both sides were gambling, only the stakes had changed<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a>.</p>
+      <p>He jokes about a gambling gene — a great-grandfather who loved to gamble, another who ran a mahjong house. Growing up in New China, that impulse was suppressed for years, which somehow fed a passion for math and a place at Peking University. After four years he had mainly learned one thing: real mathematics was deep; what he was good at was arithmetic. He joined the wave of students going abroad, switched to computer science, aimed at Silicon Valley — and somehow landed in an investment bank’s IT group instead.</p>
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ From the felt to the trading desk: the same mental model</strong>
+          Edward Thorp first showed in <em>Beat the Dealer</em> that card counting can beat blackjack, then carried the same probabilistic thinking into convertible bonds and quantitative trading. Treating the casino as “Wall Street prep” is a personal version of that historical thread: practice expected value and position size in repeatable small games, then migrate the same language to markets.
+          <div class="why">Why it matters: “Both sides are gambling” is not cynicism — it seeds later hedge-fund talk of expected value, volatility, and leverage.</div>
+          <div class="src">Source: Edward O. Thorp site / Beat the Dealer; public notes on A Man for All Markets</div>
+        </div>
+      </div>
+      <h2 id="s2">On Wall Street — but not at the table</h2>
+      <p>At first he barely knew what an investment bank did — only that living next to markets sounded cool. Once inside, he learned he was in the “back office”<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a>. Front office raises capital and places real bets; back office keeps the machine running. Compensation felt like wartime: the fighters get the glory and the bigger bonus pool; support gets the leftover care packages.</p>
+      <p>After a while he wanted the front. Money was one reason; more than that, he wanted the feeling of surfing the market and putting his arithmetic to the edge. Moving from back to front is notoriously hard. A common path is the “second pass”: a brand-name business school, then re-enter for a revenue seat. He had wanted that route early, but a green-card wait dragged on for years. He did not sit idle — he went to the casino and gave himself a course in Wall Street prep.</p>
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn2">
+          <strong>² Front office vs back office</strong>
+          In an investment bank, “front office” usually means revenue lines: sales &amp; trading, investment banking (IPO, M&amp;A advisory), prop or market-making. “Middle office” covers risk, compliance, product control. “Back office” covers clearing/settlement, tech ops, finance operations, IT support. In the 2000s, front-office bonus pools dwarfed the back — and the status gap often stung more than the dollar gap.
+          <div class="why">Why it matters: the anxiety of being “on Wall Street but not at the table” drives the whole chapter’s pivot toward MFE and Goldman.</div>
+          <div class="src">Source: public explainers on front/middle/back office (e.g. Investopedia-style overviews)</div>
+        </div>
+      </div>
+      <hr class="divider" />
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Las_Vegas_Strip_at_night.jpg" alt="Las Vegas Strip at night" loading="lazy" />
+        <figcaption>Las Vegas Strip at night — the stage for a week of blackjack “street sweeps.” Source: Wikimedia Commons</figcaption>
+      </figure>
+      <h2 id="s3">Las Vegas: a week of blackjack “street sweeps”</h2>
+      <p>American casinos looked to him like Ali Baba’s cave: chips sliding, slots ringing, money seemingly everywhere. Most games, though, are “play long enough and you lose.” He first mastered one rule: never bet without an edge.</p>
+      <p>The crack in the house wall was blackjack<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a>. Skilled counters can beat the casino; many Wall Street elders had done it young. House edge is already small; with basic strategy it is roughly half a percent, and it drifts with the mix of remaining high and low cards. The secret is simple and hard: bet small when the house has the edge, bet big when the player does.</p>
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/DelLagoCasinoBlackjackTable.jpg" alt="Casino blackjack table" loading="lazy" />
+        <figcaption>A casino blackjack table. Counters track remaining-card composition to adjust bets and plays. Source: Wikimedia Commons (DanielPenfield, CC BY-SA 4.0)</figcaption>
+      </figure>
+      <p>A chance pamphlet on beating blackjack sent him into late-night study. Feeling “ready,” he raided Las Vegas. It was a glorious week: sweeping casino after casino, flying back to New York with hundred-dollar bills stuffed in both pockets. For a moment he thought blackjack could be an ATM — later he understood Lady Luck had merely smiled once.</p>
+      <div class="scene">
+        Afterward he could still win on average, but the ride was violent; no more win-every-session streak. Mathematically he saw it: risk was huge relative to reward. To make about twenty dollars an hour on average, you might endure swings of roughly a thousand — in market language, a terrible Sharpe ratio<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a>. Bet small and you never get rich; bet big and you can go broke. Blackjack became a game that “couldn’t make real money.” Inside those twists already sit the three hedge-fund keywords of later chapters: risk, return, leverage.
+      </div>
+      <p>When casinos changed the rules, counting blackjack almost died. Texas Hold’em was rising across America, so he switched tables.</p>
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ Card counting, Thorp, and the casino arms race</strong>
+          In 1962 MIT mathematician Edward Thorp published <em>Beat the Dealer</em>, bringing a computer-verified point-count system to the public: when remaining cards are rich in tens and aces, player expectation turns positive and bets should rise. Casinos answered with multi-deck shoes, early shuffles, limits on doubles and splits, bet-spread surveillance, and simply asking winners to leave. Nevada briefly changed rules in 1964, then reversed after traffic collapsed — the tension between “beatable” and “casino business” never went away.
+          <div class="why">Why it matters: the thrill of a “week of street sweeps” sits on half a century of math-vs-house warfare — and explains why a rule change kills the ATM narrative overnight.</div>
+          <div class="src">Source: edwardothorp.com; UCI Thorp exhibit; Las Vegas Review-Journal coverage of Thorp</div>
+        </div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ Sharpe ratio in one line</strong>
+          Sharpe ≈ (average excess return) ÷ (standard deviation of returns). Numerator: how much extra you earned. Denominator: how hard you shook. A low ratio means poor return per unit of risk — even a positive long-run expectation may not be survivable psychologically or in capital terms. “Want $20/hour but endure ±$1,000 swings” is exactly that intuition.
+          <div class="why">Why it matters: first translation of casino experience into hedge-fund language; later talk of leverage, sizing, and drawdowns all orbits return-per-unit-risk.</div>
+          <div class="src">Source: traditional reading of William F. Sharpe; CFA / investments textbooks</div>
+        </div>
+      </div>
+      <h2 id="s4">Texas Hold’em: outthinking other people</h2>
+      <p>Compared with blackjack’s mechanical tactics, Texas Hold’em is more like chess against other minds<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a>. You do not need the best cards — only worse opponents. You cannot stare only at your own hand; you must guess theirs. You cannot always bluff or always play honest — roughly seven parts substance, three parts bluff. Beginners bet their cards; advanced players bet the range and psychology of the opponent.</p>
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Two_poker_cards_and_poker_chips_20170611.jpg" alt="Poker cards and chips" loading="lazy" />
+        <figcaption>Cards and chips — visual shorthand for the mid-2000s online poker boom. Source: Wikimedia Commons (Santeri Viinamäki, CC BY-SA 4.0)</figcaption>
+      </figure>
+      <p>Online rooms and TV broadcasts made poker a national craze. He got hooked enough to consider quitting for a pro-player life. Poker taught a principle he reused forever: money is easiest in a <em>new</em> game — study the strategy before others wake up; move while they still hesitate.</p>
+      <p>When online casinos rolled out no-limit, many still played with limit-hold’em habits — easy money for a while; then competition sharpened. Next came single-table tournaments: ten players, fixed chips, bust and leave, top three paid. That is math. While most people were still guessing, he distilled a simple method, multi-tabled five or six games to raise hourly rate, and harvested before the crowd leveled up.</p>
+      <p>He also trained himself to read people: recreational players with strong hands often play too tight, terrified of letting a cooked duck fly; when losing, they press bets trying to get even, ignoring stops. He forced the opposite: never risk what he could not afford to lose; leave at a loss limit; judge process over single outcomes; trust skill, probability, and risk control — not luck.</p>
+      <p>After enough gambling — and enough biographies of star traders and fund managers — he concluded: people who can truly beat casinos should usually walk away. The same brain, applied to a real profession, usually builds more. The highest form of gambling is not gambling. His green card finally arrived; he washed his hands and applied to business school.</p>
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ Mid-2000s Texas Hold’em / online poker boom</strong>
+          Around 2003, WSOP TV with hole-card cameras entered living rooms; stories like Chris Moneymaker’s amateur win flooded PartyPoker, Full Tilt, and peers with new players. No-limit Hold’em and Sit &amp; Go tournaments iterated fast; early grasp of ICM and multi-table efficiency bought a brief information edge. After the U.S. UIGEA (2006), the dollar-player ecosystem shrank sharply and the boom shifted.
+          <div class="why">Why it matters: “easiest money in a new game” maps onto markets’ new products and regulatory vacuums — learn-while-playing windows close fast.</div>
+          <div class="src">Source: public WSOP / online-poker histories; UIGEA 2006 background</div>
+        </div>
+      </div>
+      <hr class="divider" />
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sather_tower-Berkeley-cropped.jpg" alt="Sather Tower, UC Berkeley" loading="lazy" />
+        <figcaption>Sather Tower (Campanile) at UC Berkeley — campus landmark with Bay Area views. Source: Wikimedia Commons (CC BY-SA 4.0)</figcaption>
+      </figure>
+      <h2 id="s5">Berkeley: a one-year financial engineering master’s</h2>
+      <p>Those years, mathematical models were fashionable in finance; “financial engineering” became the crossroads of finance, math, and computing. UC Berkeley’s program billed itself as the nation’s best, a master’s in one year — ideal for career switchers<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a>. It was his first choice.</p>
+      <p>The degree sat in the business school, so the GMAT mattered<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a>. Standardized tests suited him: one option is right; combine context with the examiner’s psychology — easier than Hold’em. After the last question, the screen showed 790. Stacked with CFA Level III already passed, he felt Berkeley was nearly certain.</p>
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/GoldenGateBridge-001.jpg" alt="Golden Gate Bridge" loading="lazy" />
+        <figcaption>Golden Gate Bridge — the Bay image often visible from Berkeley’s hillside campus. Source: Wikimedia Commons</figcaption>
+      </figure>
+      <p>The campus sits on a coastal hillside; the campanile looks toward the Golden Gate and the Pacific. Fresh from New York noise, he felt dropped into a sanctuary. It was a Nobel-dense university and a strongly left-leaning place: fewer Stars and Stripes, more anti-war, anti-Bush, and green marches, plus a nearby People’s Park. The business school was the suit-and-tie enclave — future mainstream professionals rushing past with notebooks and buzzwords. He studied hard between classrooms and the library.</p>
+      <div class="footnotes" id="fn-block-5">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ Berkeley MFE: a quant fast lane inside a business school</strong>
+          Haas’s Master of Financial Engineering (MFE) launched around 2001 — among the earlier U.S. MFE degrees fully housed in a business school (organizers included David Pyle, Linda Kreitzman, Gifford Fong, and others). Roughly one intense year: stochastic calculus, derivatives, programming, internships and placement toward quant research, risk, trading support, and fintech. For applicants with work experience who need a quick front-office pivot, the short duration is itself the product.
+          <div class="why">Why it matters: he chose one year over a two-year MBA because the green-card delay had already burned so much opportunity cost.</div>
+          <div class="src">Source: UC Berkeley News (2000-11-15); Haas MFE site; Poets&amp;Quants interview with Linda Kreitzman</div>
+        </div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ GMAT and CFA: two different ability signals</strong>
+          The GMAT is the common business-school entrance exam (verbal, quant, analysis, writing); high scores are hard currency for admissions. The CFA is a professional path — three levels covering ethics, portfolio management, fixed income, equities, derivatives, and more. Slow, but it signals to employers: “I actually studied investments.” Showing a 790 GMAT plus CFA III is a test-strong applicant speaking two languages at once: schools hear GMAT; Wall Street hears CFA.
+          <div class="why">Why it matters: explains the “near-certain admit” confidence — on a quant career-switch track, that stack is strong.</div>
+          <div class="src">Source: public GMAT / CFA Institute descriptions</div>
+        </div>
+      </div>
+      <h2 id="s6">Professor Rubinstein — and the last promise</h2>
+      <p>Finance opened by putting star professor Mark Rubinstein on “financial products.” Young, he had helped popularize binomial option pricing; without a mid-career commercial stumble, a Nobel conversation might have been closer. In the mid-1980s Wall Street raced through innovation. Rubinstein and two other professors founded a firm and sold “portfolio insurance” rooted in option theory<a class="fn-link" href="#fn8"><sup class="fn">⁸</sup></a>: use index futures to synthesize a protective put — ride bulls without missing them, cap losses in bears. The strategy boomed. Then came October 1987’s Black Monday: the Dow fell about 22% in a day; believers dumped futures into the slide and amplified the crash. Congressional scrutiny followed. They were not cast as villains of the state, but reputations darkened; Rubinstein returned to Berkeley teaching. The author highlights the episode because similar model failures recur in later crises.</p>
+      <p>After that history, the professor had little appetite for teaching mid-career “speculators.” Lectures often circled old grievances or aged notes whose freshest examples stopped in 1987. Students skipped; he answered with pop quizzes. Two terms passed in that tug-of-war. Before the final class he kindly warned: there <em>would</em> be a quiz next time. Bleary classmates arrived on time. No quiz. When they accused him of breaking his word, he smiled and delivered the most useful line of both semesters:</p>
+      <div class="scene">
+        “The last promise, is the only one you can break.”
+      </div>
+      <p>It hit hard: on the bright side, business needs trust — break it once and people walk; on the dark side, someone who spends years building credibility for a final grab… he had heard Chinese merchants burn that way too. Worth remembering.</p>
+      <div class="side-panel">
+        <h3 class="panel-title">Macro waypoints mentioned in the chapter</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">Oct 1987</div><div class="ev">Black Monday: Dow ~−22%; portfolio insurance under fire</div></div>
+          <div class="event-card"><div class="yr">Aug 1998</div><div class="ev">Russia default &amp; ruble crisis; EM debt crushed</div></div>
+          <div class="event-card"><div class="yr">2001–02</div><div class="ev">Argentina sovereign default; currency board collapse</div></div>
+          <div class="event-card"><div class="yr">Jul 2005</div><div class="ev">RMB reform: ~8.28 → 8.11, basket reference</div></div>
+        </div>
+      </div>
+      <div class="footnotes" id="fn-block-6">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn8">
+          <strong>⁸ Rubinstein, portfolio insurance, and Black Monday</strong>
+          Mark Rubinstein, Hayne Leland, and John O’Brien founded LOR, turning option-replication ideas into portfolio insurance: sell equity-index futures as markets fall; reduce hedges as they rise. On 19 Oct 1987 liquidity vanished and prices gapped; dynamic-hedging assumptions failed. Post-crash inquiries (including the Brady Commission) argued portfolio-insurance selling amplified the drop — not the sole cause. Rubinstein later reflected in the <em>Financial Analysts Journal</em> that low transaction costs and continuous prices both failed that day.
+          <div class="why">Why it matters: the classroom character plants “models break under stress” in chapter one — a trailer for the book’s crisis arc.</div>
+          <div class="src">Source: Hayne Leland / Brady Report overviews; Rubinstein, FAJ 1988; LA Times / SFGate historical reporting</div>
+        </div>
+      </div>
+      <hr class="divider" />
+      <h2 id="s7">A cold start — and a headhunter’s ice water</h2>
+      <p>Most classmates came to Berkeley to land jobs. The most beloved figure was Debbie, who ran financial-engineering placement: tireless, treating employment as priority one, even carving three internship months into a one-year calendar. She networked hard; students trusted she could package them into Wall Street.</p>
+      <p>One day she invited a senior headhunter who had traded at Salomon Brothers<a class="fn-link" href="#fn9"><sup class="fn">⁹</sup></a> — catchphrase: “when I was at Salomon…” After the talk, classmates lined up for résumé reviews. The author’s turn: zero relevant finance experience, big talk about becoming a trader. She left one line — it would take many years before anyone let him touch money. The tone felt like old privilege dismissing an upstart.</p>
+      <p>It proved true: seven or eight banks and funds recruited on campus; none invited him to interview. Discouraged, he complained in Debbie’s office and begged for any placement. She was more confident than he was, eyes bright: opportunities come — when one does, grab it.</p>
+      <div class="footnotes" id="fn-block-7">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn9">
+          <strong>⁹ Salomon Brothers: afterglow of a bond-trading myth</strong>
+          Salomon was once Wall Street’s legendary bond house — mortgages, Treasury auctions, trading-floor culture immortalized in Michael Lewis’s <em>Liar’s Poker</em>. The 1991 Treasury auction scandal damaged the franchise; later Travelers / Citigroup mergers dissolved the independent brand. By the mid-2000s, “when I was at Salomon” was both résumé glow and a badge of a vanished era.
+          <div class="why">Why it matters: explains why one word — Salomon — could dominate a room, and how light a résumé without that pedigree felt to old aristocracy.</div>
+          <div class="src">Source: public Salomon / Citigroup merger histories; cultural impact of Liar’s Poker</div>
+        </div>
+      </div>
+      <hr class="divider" />
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/200_West_Street.jpg" alt="Goldman Sachs headquarters exterior" loading="lazy" />
+        <figcaption>Goldman Sachs headquarters exterior at 200 West Street, Manhattan (a late-2000s landmark). Source: Wikimedia Commons</figcaption>
+      </figure>
+      <h2 id="s8">Goldman arrives: open-net interviews</h2>
+      <p>The first campus interview invite came from — of all places — Goldman Sachs<a class="fn-link" href="#fn10"><sup class="fn">¹⁰</sup></a>. He thought it was a mistake. Why would the firm care about someone with no experience? Debbie explained: two people from Goldman strategies would interview nearly thirty classmates — almost a dragnet. Only later did he grasp Goldman’s approach: cast a wide net. Give a chance to anyone with a spark; whether an offer follows is another question.</p>
+      <p>He went last that day. Interviewer Keen, a Harvard grad, had already grilled people for seven or eight hours and looked exhausted. Half an hour of math, stats, finance, coding, and puzzles. Finally a thin smile: you were the only one who got every question right — wait for the phone round.</p>
+      <p>The phone interview lasted forty-five minutes; one slip and you hang. He prepared: reshuffled the résumé so option-pricing projects sat up front and set a trap. The interviewer walked into the rate model he had rehearsed. He moved from formulas to finance meaning, from strengths to limits, sounding like he truly knew it. That round passed too.</p>
+      <h2>New York HQ: a two-day marathon</h2>
+      <p>The final battle was at Goldman’s New York headquarters. Fixed Income Strategies and Investment Banking Strategies would each put him through a full day with nine-plus interviewers<a class="fn-link" href="#fn11"><sup class="fn">¹¹</sup></a>. Classic bank style: skills and chemistry. Goldman especially prizes teamwork; a new hire must feel “comfortable” to work with.</p>
+      <p>Day one with Fixed Income Strategies went smoothly. Beyond financial math: lots of probability. Peking University training plus casino miles made coin flips, dice, and cards feel like home forms. There were riddles too — on an island, four identical-looking pills mixed, how do you guarantee one A and one B each day? Answer: quarter every pill; eat one quarter of each daily.</p>
+      <p>Day two was IB Strategies — Keen’s group. Morning flowed. At lunch Keen chatted while sizing him up, then warned kindly: morning looked good; the first afternoon interviewer was senior MD Nick — clear that hurdle and you were basically in.</p>
+      <p>Nick, a professor-turned-banker with a warm smile, wandered topics, then asked: what looks like a good investment now? Open question. Equities felt too ordinary; he needed something fresher. He remembered an emerging-market bond fund he had bought and argued: EM sovereign bonds looked attractive — after the Russia crisis and Argentina’s default<a class="fn-link" href="#fn12"><sup class="fn">¹²</sup></a>, investors were still scared, prices low and yields high; yet the world had shifted, China’s rise lifting commodity prices, resource exporters’ balances improving, debt service easing; commodity investment also brought capital inflows and possible FX upside; recent RMB appreciation was another catalyst<a class="fn-link" href="#fn13"><sup class="fn">¹³</sup></a>. Buy now and you might harvest coupon, price, and currency together.</p>
+      <p>Nick lit up; they debated eagerly. The author guessed Goldman wanted people who could make almost any case coherent. He thought both desks might want him; Fixed Income was closer to the trader dream, IB Strategies’ storytelling not bad either.</p>
+      <h2>Ending: assigned to IB Strategies</h2>
+      <p>Back in California, Debbie was glowing: Goldman Strategies had taken several Berkeley students — unprecedented — and he was wanted by both Fixed Income and IB. Then the formal note: after internal coordination, he was “assigned” to Investment Banking Strategies.</p>
+      <p>Excitement mixed with a little disappointment — abandon the trader ideal to become an investment banker’s strategist? Debbie’s bright eyes held him; he knew there was no choice but to accept the assignment. The Gilded Age opening freezes on that first true step into Goldman’s front-office world.</p>
+      <div class="footnotes" id="fn-block-8">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn10">
+          <strong>¹⁰ Goldman recruiting culture (public view)</strong>
+          Outsiders often describe Goldman as obsessed with cultural fit and “one firm” collaboration: campus coverage can be broad (the author’s “cast a wide net”), but the funnel is steep — technical rounds, cases, behavioral interviews, and Superday cross-checks. Public reporting and alumni talk repeat keywords: smart, hungry, teamwork, and whether colleagues would want to pull an all-nighter with you.
+          <div class="why">Why it matters: “no experience yet still in the open net” is not a contradiction — wide casting is the filter; the real door sits later.</div>
+          <div class="src">Source: public business press on Goldman recruiting culture (no internal documents)</div>
+        </div>
+        <div class="fn-item" id="fn11">
+          <strong>¹¹ Fixed Income Strategies vs Investment Banking Strategies</strong>
+          Fixed Income Strategies / Strats usually sit near rates, credit, and bond trading desks: pricing models, relative-value research, market-making and position support — more quant, closer to a trader’s self-image. IB Strategies more often serves equity and M&amp;A coverage: valuation, industry research, deal structuring — heavier on narrative, clients, and communication. Same word “Strategies,” different tables: one faces markets; the other faces deals and client stories.
+          <div class="why">Why it matters: the sting of being assigned to IB Strategies comes from that occupational smell difference — same badge, different felt.</div>
+          <div class="src">Source: public sell-side Quant / Strats role descriptions</div>
+        </div>
+        <div class="fn-item" id="fn12">
+          <strong>¹² Russia 1998 and Argentina 2001–02: how fear is priced</strong>
+          In August 1998 Russia restructured domestic GKOs, loosened the ruble, and constrained external debt — sparking EM contagion; high-yield Russian and related risk assets cratered. In late 2001 Argentina defaulted under recession and currency-board stress; the 2002 peso collapse left multi-year scars on Latin and “EM credit” memory. Long after crises, spreads can stay fat — the historical base of the interview pitch: fear lags fundamental repair.
+          <div class="why">Why it matters: without those two crises, “cheap, high-yielding, still feared” would not land with Nick.</div>
+          <div class="src">Source: IMF public overviews of Russia / Argentina crises; EM sovereign debt research</div>
+        </div>
+        <div class="fn-item" id="fn13">
+          <strong>¹³ July 2005 RMB reform: 8.28 → about 8.11</strong>
+          On 21 July 2005 the PBOC announced a managed float referenced to a basket instead of a hard dollar peg. From 19:00 that day the USD/CNY central parity moved to 8.11 (from a long ~8.28 level), a roughly 2.1% one-time appreciation, with a daily band. In EM narratives, RMB appreciation expectations often tie to China demand, commodities, and capital flows into resource exporters — one link in the author’s “triple harvest” interview logic.
+          <div class="why">Why it matters: one of the few chapter dates that pins to a precise policy moment, anchoring a personal interview story in real macro time.</div>
+          <div class="src">Source: PBOC announcement 2005-07-21; FRBSF economic letter overview</div>
+        </div>
+      </div>
+      <div class="diagrams-section" id="diagrams">
+        <h2>People · Timeline · Knowledge graph</h2>
+        <p style="color:var(--muted);font-size:14px;">Mermaid diagrams below stitch chapter people, the author’s path, and core ideas (not from the book).</p>
+        <div class="mermaid-wrap">
+          <div class="caption">Figure A · Journey timeline: casino → back office → Berkeley → Goldman</div>
+          <pre class="mermaid">
+timeline
+    title Yuyang path (this chapter)
+    section Casino prep
+      Blackjack counting sweeps : Learn EV and volatility
+      Texas Hold'em boom : Seize new-game windows
+    section Wall Street back office
+      Bank IT / operations : See front-office bonus gap
+      Green-card wait : Decide on business school reboot
+    section Berkeley MFE
+      GMAT and CFA : One-year financial engineering
+      Rubinstein class : Portfolio insurance and 1987
+    section Into the front
+      Goldman open-net interviews : FI Strats vs IB Strats
+      Assigned to IB Strategies : Gilded Age opening
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">Figure B · People / institutions map</div>
+          <pre class="mermaid">
+flowchart TD
+    A["Author Yuyang"] --> B["Debbie\nMFE career lead"]
+    A --> C["Casino / tables"]
+    A --> D["Berkeley MFE"]
+    D --> E["Prof. Rubinstein\nOptions &amp; portfolio insurance"]
+    B --> F["Headhunter\nex-Salomon trader"]
+    F -.->|"Ice water"| A
+    B --> G["Goldman campus recruiting"]
+    G --> H["Keen\nIB Strategies interviewer"]
+    G --> I["Fixed Income Strategies"]
+    G --> J["IB Strategies"]
+    H --> J
+    J --> K["Nick MD\nOpen Q: investment ideas"]
+    K --> L["EM bond thesis"]
+    I -.->|"Both desks interested"| A
+    J -->|"Final assignment"| A
+    E -.->|"Black Monday lesson"| D
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">Figure C · Knowledge graph: risk / return / leverage / Sharpe / counting / poker</div>
+          <pre class="mermaid">
+flowchart LR
+    R["Risk"] --- RET["Return"]
+    R --- LEV["Leverage"]
+    RET --- LEV
+    SH["Sharpe ratio\nreturn ÷ vol"] --> R
+    SH --> RET
+    BJ["Blackjack counting"] --> EV["Expected value"]
+    BJ --> BET["Bet bigger when edge is up"]
+    EV --> SH
+    PK["Hold'em game theory"] --> INFO["Info-edge window"]
+    PK --> BLUFF["Bluff mix / reading people"]
+    INFO --> EDGE["Transferable edge"]
+    BLUFF --> EDGE
+    EDGE --> WS["Trading &amp; investment decisions"]
+    SH --> WS
+    LEV --> WS
+    PI["Portfolio insurance"] --> FAIL["Liquidity assumptions fail"]
+    FAIL --> R
+          </pre>
+        </div>
+      </div>
+    </article>
+    <footer>
+      Story guide · <em>Wall Street in Chaos</em> (Yuyang) · Chapter 1 “Casino to Wall Street”<br />
+      Retold from public trial-read beats — not verbatim; footnotes are off-book research<br />
+      Please support the official edition · Images: see SOURCES.md ·
+      <a href="casino-to-wall-street-zh.html" style="color:var(--gold-soft)">中文版</a> · <a href="../../../index.html">Back to home</a>
+    </footer>
+  </div>
   <script>
-  (async function () {
-    const parts = ["parts/en-part-0.txt", "parts/en-part-1.txt", "parts/en-part-2.txt", "parts/en-part-3.txt", "parts/en-part-4.txt", "parts/en-part-5.txt", "parts/en-part-6.txt"];
-    const status = document.getElementById('status');
-    try {
-      const texts = await Promise.all(parts.map(p => fetch(p).then(r => {
-        if (!r.ok) throw new Error(p + ' ' + r.status);
-        return r.text();
-      })));
-      const html = texts.join('');
-      document.open();
-      document.write(html);
-      document.close();
-    } catch (e) {
-      status.innerHTML = 'Failed to assemble page: ' + e +
-        '<br><br><a href="casino-to-wall-street-zh.html">中文</a>';
-    }
-  })();
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
   </script>
 </body>
 </html>

@@ -3,34 +3,498 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>高盛实习 · loading</title>
+  <title>《乱世华尔街》第2集：高盛实习</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <style>
-    body { margin:0; font-family: system-ui, sans-serif; background:#0b1220; color:#e8eef9;
-      display:flex; min-height:100vh; align-items:center; justify-content:center; }
-    .box { max-width:420px; padding:24px; border:1px solid rgba(212,175,55,.28);
-      border-radius:16px; background:#121a2b; line-height:1.6; text-align:center; }
-    a { color:#f0d78c; }
+    :root {
+      --bg: #0b1220;
+      --panel: #121a2b;
+      --panel-2: #182235;
+      --gold: #d4af37;
+      --gold-soft: #f0d78c;
+      --text: #e8eef9;
+      --muted: #9aa8c1;
+      --line: rgba(212, 175, 55, 0.28);
+      --accent: #3d8bfd;
+      --accent-soft: rgba(61, 139, 253, 0.12);
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+      --fn-bg: rgba(240, 215, 140, 0.06);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(212,175,55,0.12), transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, rgba(61,139,253,0.12), transparent 50%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 40px 20px 80px; }
+    .lang-switch {
+      display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap;
+    }
+    .lang-switch a {
+      display: inline-flex; align-items: center;
+      padding: 5px 12px; border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--muted); text-decoration: none; font-size: 13px;
+      background: rgba(255,255,255,0.03);
+    }
+    .lang-switch a.active {
+      color: var(--gold-soft);
+      border-color: var(--line);
+      background: rgba(212,175,55,0.1);
+    }
+    .lang-switch a:hover { color: var(--gold-soft); }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px;
+      color: var(--gold-soft); font-size: 13px; letter-spacing: 0.06em;
+      background: rgba(212,175,55,0.08);
+    }
+    h1 {
+      margin: 18px 0 8px;
+      font-size: clamp(28px, 5vw, 40px);
+      line-height: 1.28; font-weight: 700;
+    }
+    .subtitle { margin: 0 0 24px; color: var(--muted); font-size: 15px; }
+    .hero {
+      position: relative; overflow: hidden;
+      border: 1px solid var(--line); border-radius: 22px;
+      background:
+        linear-gradient(135deg, rgba(212,175,55,0.12), transparent 40%),
+        linear-gradient(180deg, var(--panel), var(--panel-2));
+      box-shadow: var(--shadow); padding: 28px; margin-bottom: 28px;
+    }
+    .note {
+      margin-top: 16px; padding: 12px 14px;
+      border-left: 3px solid var(--gold);
+      background: rgba(212,175,55,0.08);
+      border-radius: 0 12px 12px 0;
+      color: var(--muted); font-size: 13px;
+    }
+    .toc {
+      margin: 20px 0 0; padding: 14px 16px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px; font-size: 14px; color: var(--muted);
+    }
+    .toc a { color: var(--gold-soft); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    .toc ul { margin: 8px 0 0; padding-left: 18px; }
+    .toc li { margin: 4px 0; }
+    article.story {
+      background: linear-gradient(180deg, var(--panel), var(--panel-2));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 20px; padding: 28px 28px 20px;
+      box-shadow: var(--shadow);
+    }
+    .chapter-mark {
+      color: var(--gold-soft); font-size: 13px;
+      letter-spacing: 0.12em; margin-bottom: 18px;
+    }
+    h2 {
+      margin: 28px 0 12px; font-size: 20px;
+      color: var(--gold-soft); font-weight: 650;
+      scroll-margin-top: 24px;
+    }
+    h2:first-of-type { margin-top: 8px; }
+    h3.panel-title {
+      margin: 0 0 10px; font-size: 15px;
+      color: var(--accent); font-weight: 600;
+    }
+    p { margin: 0 0 16px; color: #d7deec; font-size: 16px; }
+    .scene {
+      margin: 8px 0 20px; padding: 16px 18px;
+      border-radius: 14px;
+      background: rgba(61,139,253,0.07);
+      border: 1px solid rgba(61,139,253,0.18);
+      color: #c9dbff; font-size: 15px;
+    }
+    .divider {
+      height: 1px; margin: 28px 0;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+      border: 0;
+    }
+    sup.fn {
+      font-size: 11px; color: var(--gold);
+      font-weight: 700; cursor: pointer;
+      margin-left: 1px; text-decoration: none;
+    }
+    a.fn-link { color: inherit; text-decoration: none; }
+    .figure {
+      margin: 18px 0 22px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: #0a101c;
+    }
+    .figure img {
+      display: block; width: 100%; height: auto;
+      max-height: 420px; object-fit: cover;
+    }
+    .figure figcaption {
+      padding: 10px 14px 12px;
+      font-size: 12px; color: var(--muted);
+      line-height: 1.55;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .footnotes {
+      margin: 8px 0 24px;
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: var(--fn-bg);
+      border: 1px solid rgba(212,175,55,0.22);
+    }
+    .footnotes .fn-head {
+      font-size: 13px; color: var(--gold-soft);
+      letter-spacing: 0.08em; margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .fn-item {
+      margin-bottom: 14px; padding-bottom: 14px;
+      border-bottom: 1px dashed rgba(212,175,55,0.18);
+      font-size: 13.5px; color: #c5d0e4; line-height: 1.7;
+    }
+    .fn-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+    .fn-item strong {
+      display: block; color: var(--gold-soft);
+      font-size: 14px; margin-bottom: 4px;
+    }
+    .fn-item .why {
+      margin-top: 6px; color: #a8b8d4;
+      font-style: italic;
+    }
+    .fn-item .src {
+      margin-top: 4px; color: #7f8eaa; font-size: 12px;
+    }
+    .side-panel {
+      margin: 18px 0 22px;
+      padding: 18px;
+      border-radius: 16px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(61,139,253,0.22);
+    }
+    .mermaid-wrap {
+      margin: 18px 0 22px;
+      padding: 16px;
+      border-radius: 16px;
+      background: #0e1626;
+      border: 1px solid rgba(255,255,255,0.08);
+      overflow-x: auto;
+    }
+    .mermaid-wrap .caption {
+      font-size: 12px; color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .mermaid { background: transparent !important; }
+    .event-timeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin: 16px 0 22px;
+    }
+    .event-card {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+    .event-card .yr { color: var(--gold); font-weight: 700; font-size: 14px; }
+    .event-card .ev { color: #c9d4e8; font-size: 13px; margin-top: 4px; line-height: 1.5; }
+    .diagrams-section {
+      margin-top: 32px;
+      padding-top: 8px;
+    }
+    footer {
+      margin-top: 28px; color: var(--muted);
+      font-size: 13px; text-align: center;
+    }
+    footer a { color: var(--gold-soft); }
+    @media (max-width: 560px) {
+      article.story { padding: 20px 16px 12px; }
+      .wrap { padding: 24px 14px 60px; }
+    }
+
   </style>
 </head>
 <body>
-  <div class="box" id="status">Loading chapter…</div>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="lang-switch" aria-label="语言">
+        <a class="active" href="goldman-internship-zh.html">中文</a>
+        <a href="goldman-internship-en.html">English</a>
+      
+        <a href="../../../index.html">返回首页</a>
+      </div>
+      <div class="badge">故事导读 · 据公开试读改写 · 场外研究补充</div>
+      <h1>高盛实习</h1>
+      <p class="subtitle">《乱世华尔街》第二章「高盛实习」· 渔阳 · 故事改写 + 脚注研究</p>
+      <div class="note">
+        下面按作者经历顺序讲述本章故事，用自己的话改写，方便跟读；不是全书/全章原文照搬。脚注、配图与知识图谱为场外公开资料补充，帮助理解书中一带而过的背景。完整内容请读正版。
+      </div>
+      <nav class="toc" aria-label="章节导航">
+        本节导览
+        <ul>
+          <li><a href="#s1">特种部队气质：秋日走进 IBD Strategies</a></li>
+          <li><a href="#s2">因为我们是高盛：奖金与末位淘汰</a></li>
+          <li><a href="#s3">实习生的活：SecDB、叙事与 Jerry</a></li>
+          <li><a href="#s4">电梯八卦与内幕交易课</a></li>
+          <li><a href="#s5">基恩的后来：别跟着走</a></li>
+          <li><a href="#s6">2005 奖金季、圣诞派对与 NYU 招聘会</a></li>
+          <li><a href="#s7">遇见 Rick：「露西银行」自营利率台</a></li>
+          <li><a href="#diagrams">人物关系 / 时间线 / 知识图谱</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER TWO · 高盛实习</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/200_West_Street.jpg" alt="高盛曼哈顿总部外观" loading="lazy" />
+        <figcaption>高盛位于曼哈顿 200 West Street 的总部外观——实习生眼里「特种部队」的门面。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">特种部队气质：秋日走进 IBD Strategies</h2>
+      <p>2005 年秋天，作者踏进高盛投资银行部的 Strategies（策略）组实习。这里的文化不像普通大公司：节奏像特种部队，人人被要求又聪明又饿、又肯扛事。部门气质上，很多人追溯到 J. Aron——高盛 1981 年收购的大宗商品与外汇老行，培养出一整代爱交易、敢承担风险的人脉<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a>。劳埃德·布兰克费恩（Lloyd Blankfein）正是从这条线走上来的：先在 J. Aron 卖贵金属，后来管货币与商品，再升到公司高层；到 2006 年他将成为董事长兼 CEO，而 2005 年前后，整家公司对风险的胃口，正被交易与商品这股血统抬得很高<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a>。</p>
+      <p>对一个刚从伯克利金融工程项目出来、第一次真正坐在前台侧的人来说，这种文化既刺激又压迫：你不是来「体验职场」的，你是来证明自己配不配留在牌桌上的。</p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">相关公开节点（本章背景）</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">1981</div><div class="ev">高盛收购 J. Aron，切入商品与外汇</div></div>
+          <div class="event-card"><div class="yr">1999.05</div><div class="ev">高盛 IPO：合伙制 → 上市公司</div></div>
+          <div class="event-card"><div class="yr">2005 秋</div><div class="ev">作者 IBD Strategies 实习</div></div>
+          <div class="event-card"><div class="yr">2005–06</div><div class="ev">NYSE–Archipelago 合并争议期</div></div>
+          <div class="event-card"><div class="yr">2006</div><div class="ev">Blankfein 接任 CEO；ICBC 战略入股公开</div></div>
+        </div>
+      </div>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ J. Aron：高盛的商品与外汇血统</strong>
+          1981 年，高盛收购客户 J. Aron &amp; Company——一家源于新奥尔良、起家于咖啡贸易、后扩展至贵金属与外汇的家族大宗商品行。公开史料称此举意在强化高盛在商品与外汇市场的国际布局。收购后，J. Aron 的交易文化与人才网络逐渐渗入高盛，成为日后 FICC（固定收益、货币与商品）强大的历史根。
+          <div class="why">为何重要：书中「特种部队」与风险胃口，不是口号，而是可对表到 1981 收购与 Blankfein 升迁线的制度记忆。</div>
+          <div class="src">来源：Goldman Sachs 史志「1981 J. Aron」；《纽约时报》1981-10-30 收购报道</div>
+        </div>
+        <div class="fn-item" id="fn2">
+          <strong>² Blankfein：从贵金属销售到 CEO</strong>
+          劳埃德·布兰克费恩 1982 年加入已被高盛收购的 J. Aron，任贵金属销售；1988 年成为合伙人，后主导外汇与商品业务，2003–04 年起任总裁兼 COO，2006 年在保尔森（Hank Paulson）入阁后接任董事长兼 CEO。公开叙事里，他代表的是「交易员出身」对高盛风险偏好与利润结构的深刻重塑。
+          <div class="why">为何重要：作者实习那年，正是交易血统即将登上权力顶峰的前夜——文化上的「敢赌」有具体的人事背景。</div>
+          <div class="src">来源：Goldman Sachs 史志「2006 Blankfein」；Wikipedia / NYT DealBook 公开履历综述</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s2">因为我们是高盛：奖金与末位淘汰</h2>
+      <p>高盛给人的第一课，往往不是模型，而是补偿结构。公开报道里，2005 年是创纪录的一年：公司薪酬福利合计约 117 亿美元量级，人均（粗算）可达五十万美元上下——当然，这是全公司平均，交易台与合伙人那一端要高得多，实习生那一端则另当别论<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a>。钱之外，还有残酷的一面：末位约 5% 会被推出去。留下的人互相打气时，常挂一句近乎信仰的话：Because we are Goldman——因为我们是高盛。</p>
+      <p>这套激励与恐惧并置的系统，和 1999 年合伙制改上市公司之后的「仍叫合伙人、却已是公众公司」身份叠在一起：头衔仍有圣杯感，资本结构却早已换代<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a>。对实习生而言，眼前的奖金神话与身后的淘汰刀，同时在教室里晃。</p>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn3">
+          <strong>³ 2005：公开报道中的「创纪录」薪酬年</strong>
+          高盛 2005 年业绩披露中，薪酬与福利（compensation and benefits）约 116.9 亿美元，约占净收入 47%；当年员工约 2.2 万人量级。同期媒体热议年底奖金池，董事总经理年薪加奖金可达数百万美元量级。这些数字解释了为何「高盛」三个字对求职者有磁铁般的拉力——也解释了末位淘汰为何仍能维持高压。
+          <div class="why">为何重要：本章后文「奖金季」与圣诞派对的情绪，必须放在这个宏观薪酬泡沫里读。</div>
+          <div class="src">来源：高盛 2005 业绩新闻稿 / SEC EX-99.1；eFinancialCareers 2006-02 报道</div>
+        </div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ 1999 IPO：合伙圣杯变公众公司</strong>
+          1999 年 5 月 4 日，高盛以每股 53 美元上市（代码 GS），募资约 36.6 亿美元，是当时美国金融史上最大 IPO 之一。招股说明书列出三大动机：永久资本、员工股权分享、用公开股票做收购货币。此前数十年合伙制辩论激烈——担心文化稀释。上市后，仍保留「合伙人 / 董事总经理」晋升阶梯与文化仪式，但法律形态已是 The Goldman Sachs Group, Inc.。
+          <div class="why">为何重要：书中「冲合伙人轨道」的野心，是在公众公司外壳下争夺旧合伙制的地位徽章。</div>
+          <div class="src">来源：Goldman Sachs 史志「1999 IPO」；CNN Money 1999-05-03；SEC 招股文件综述</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Roasted_coffee_beans.jpg" alt="咖啡豆特写" loading="lazy" />
+        <figcaption>咖啡豆——J. Aron 起家于咖啡贸易的视觉提示（非交易室实拍）。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s3">实习生的活：SecDB、叙事与 Jerry</h2>
+      <p>日常并不全是光鲜客户晚宴。作者做大量财务分析，并摸到公司内部工具链上的名字：SecDB，以及书中提到的 UFO、YAMS 一类系统代号——外人听来像黑话，对策略组却是干活的桌面<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a>。真正把模型翻译成客户能听懂的故事，往往落在那些「教授改行的 MD」肩上：他们既懂公式，又擅长把数字写成投行叙事。</p>
+      <p>组里有一位 Jerry——履历挂着 J. Aron 线、人在合伙人晋升轨道上——把「交付物文化」钉得很死：材料要准时、版本要干净、数字要对得起下一次客户会议。对实习生，这比任何文化口号都更具体：你的价值等于你今晚能不能把那一页幻灯片修到可上桌。</p>
+
+      <div class="scene">
+        策略组的分工像一条隐形流水线：量化脑子负责算清楚，叙事脑子负责讲清楚，MD 负责把故事卖给客户。实习生夹在中间，两边都要伺候。
+      </div>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ SecDB：公开史料里的「证券数据库」</strong>
+          Securities Database（SecDB）是高盛 1990 年代初在 J. Aron 外汇与商品业务上发展起来的专有定价与风险管理平台，约 1992–93 年成形，后扩展到股票与固收，成为全公司聚合风险的骨干。公开报道称其长期被视为内部「秘密武器」；2010 年代起部分能力通过 Marquee 等客户端向机构客户开放。书中顺带提到的 UFO、YAMS 等名称，属作者实习语境中的内部工具/流程代号，公开百科几乎无独立条目——此处只作「桌面工具链」理解，不臆造技术细节。
+          <div class="why">为何重要：解释为何 Strategies 实习生的「技术气味」这么重——高盛前台长期把软件当交易武器，而不只是 IT 支持。</div>
+          <div class="src">来源：Goldman Sachs 史志「1993 SecDB」；Fortune / WSJ 对 Marquee 与 SecDB 的公开报道；Michael Dubno / SecDB 公开概述</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/New_York_Stock_Exchange_Exterior.jpg" alt="纽约证券交易所外立面" loading="lazy" />
+        <figcaption>纽约证券交易所 Broad Street 外立面——NYSE–Archipelago 合并争议的地理舞台。来源：Wikimedia Commons（Kidfly182，CC BY-SA 4.0）</figcaption>
+      </figure>
+
+      <h2 id="s4">电梯八卦与内幕交易课</h2>
+      <p>某一天，电梯里飘来未公开交易的八卦。事后，合规与同事教育来得很快：什么能听、什么绝不能做、信息一旦变成「重大非公开信息」（MNPI），就可能踩进内幕交易的红线<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a>。同一时期，市场上正吵嚷 NYSE 与电子盘 Archipelago 的合并：高盛同时扮演双边顾问、又持有 Archipelago 股份、还与交易所高管有历史联系——公开诉讼与法官意见里，这种「多边身份」被骂得很凶<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a>。</p>
+      <p>公司给人的实务忠告很华尔街：敏感话题，电话优于电子邮件——邮件会留下证据链，电话至少少一条可被转发的纸面轨迹。对新人，这不是教你「钻空子」，而是教你：这个行业的信息边界，比学校伦理课锋利得多。</p>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ 内幕交易与 MNPI：新人必修的边界课</strong>
+          美国证券法下，利用重大非公开信息交易或「泄密换利益」可构成内幕交易；投行、律师、会计师等「临时内部人」同样受约束。合规培训通常强调：墙（Chinese wall）、观察名单、限制名单、以及「听到了也要报告、不能交易、不能提示亲友」。电梯八卦之所以危险，正因为信息来源非正式，却仍可能被认定为 MNPI。
+          <div class="why">为何重要：本章把「听八卦」写成职业伦理的生死线——后文基恩的结局，正是这条线的反面教材。</div>
+          <div class="src">来源：SEC / 美国内幕交易通识；投行合规公开培训材料综述</div>
+        </div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ 2005 NYSE–Archipelago：双边顾问争议</strong>
+          2005 年 4 月，纽交所宣布与电子交易平台 Archipelago 合并，迈向公众公司化。高盛公开角色复杂：同时协助双方、持有 Archipelago 约 15% 量级股份、并拥有 NYSE 席位；时任 NYSE CEO 约翰·塞恩（John Thain）亦出自高盛。席位持有人起诉指控利益冲突；纽约州法官后来在批准相关和解时，仍严厉批评高盛的多重角色。合并最终推进，但「投行能否同时服务交易双方」成了那年华尔街公开课。
+          <div class="why">为何重要：书中用这笔交易当案例，说明「聪明」与「干净」在公众目光下如何撕裂——实习生听到的，是整个行业的信誉压力测试。</div>
+          <div class="src">来源：NBC / LA Times / NY Post 2005 报道；Archipelago SEC 8-K；Higgins 相关诉讼公开意见综述</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">基恩的后来：别跟着走</h2>
+      <p>第一章里在伯克利海选他、累到半死还把所有题答对的面试官基恩（Keen），后来卷入内幕交易圈子。作者写下这段，语气近乎警告：那条捷径看起来像「信息优势」，终点却是监管与牢狱。对读者，这是把电梯八卦课从「规章」拉到「真人下场」——不要跟着走。</p>
+      <div class="scene">
+        实习教你两套武器：一套是 SecDB 与模型，一套是对信息边界的敬畏。缺了后一套，前一套只会害得更快。
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">2005 奖金季、圣诞派对与 NYU 招聘会</h2>
+      <p>年底，整个华尔街沉浸在 2005 创纪录奖金的气氛里。高盛内部也有 SSG、Triple Play 一类业务或项目代号在酒会上被提起——对实习生，专有名词像烟花：亮一下，未必能立刻看懂全部结构。圣诞派对金碧辉煌，觥筹交错之间，作者却清楚感到自己「火力不足」：周围全是更资深、更会讲故事、更贴近收入账户的人。</p>
+      <p>于是他去了纽约大学（NYU）的招聘会——不是放弃高盛光环，而是给自己多开一扇窗：如果正式 offer 不在策略组这条线上，交易台、自营、利率相关的座位，也许更接近他从赌场时代就想坐的那张牌桌。</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rockefeller_Center_christmas_tree.jpg" alt="洛克菲勒中心圣诞树" loading="lazy" />
+        <figcaption>洛克菲勒中心圣诞树——曼哈顿年末季节的公共意象（派对气氛的城市布景）。来源：Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-6">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn8">
+          <strong>⁸ 中国银行股改与高盛—工行线（同期公开事实）</strong>
+          2005–06 年恰是中资大行股改与引进战略投资者高峰。公开资料显示，2006 年 1 月，高盛牵头的国际财团（含安联、美国运通）与工商银行签署战略投资协议，财团出资约 37.8 亿美元认购约 8.45% 股份，其中高盛自身持股约 5.75% 量级，并协助治理、风控与投行能力建设，为随后工行上市铺路。对在高盛实习的华人观察者，这类交易是「中国与华尔街互相需要」的现场教材——哪怕本章主线是个人求职，时代背景里已有巨额跨境股权故事。
+          <div class="why">为何重要：把个人圣诞派对的渺小感，钉在同一年亚洲金融改革的大桌上——镀金不只发生在酒杯里。</div>
+          <div class="src">来源：工行英文新闻稿（2006-01 / 战略投资）；Wharton 相关案例公开 PDF 综述</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s7">遇见 Rick：「露西银行」自营利率台</h2>
+      <p>在 NYU 招聘会上，他遇见 Rick——来自书中化名「露西银行」（Lucy Bank）的自营交易 / 利率相关团队。Rick 聊债券、聊利率，也聊 CFA：特许金融分析师那条路，对固收与组合管理是通行的能力信号<a class="fn-link" href="#fn9"><sup class="fn">⁹</sup></a>。作者简历上赫然印着 Goldman intern——在 2005 年的招聘市场上，这四个音节本身就是敲门砖。</p>
+      <p>自营台（prop desk）当时仍是银行里相对自由的「用自己的钱赌博」角落：利润提成高、自主权大，也尚未被日后的沃尔克规则彻底重塑<a class="fn-link" href="#fn10"><sup class="fn">¹⁰</sup></a>。对一个从 21 点与德州扑克里练出期望值直觉的人，这种座位闻起来比写客户叙事更像「真牌桌」。本章收在他被这条线吸引的瞬间——高盛实习打开了门，下一张桌子，也许不在同一栋楼。</p>
+
+      <div class="footnotes" id="fn-block-7">
+        <div class="fn-head">本节脚注</div>
+        <div class="fn-item" id="fn9">
+          <strong>⁹ CFA：三级考试的「投资学通行证」</strong>
+          特许金融分析师（CFA）由 CFA Institute 主办，通常分三级：一级夯实术语与工具，二级强调资产估值应用，三级侧重组合管理与实务整合（近年三级还引入不同专业路径）。通过考试、满足工作经验后可成为特许持证人。对买债、利率、组合岗位，CFA 常被当作「我认真啃过投资学」的外部信号——作者在伯克利阶段已考过三级，与 Rick 的债券话题正好同频。
+          <div class="why">为何重要：解释为何招聘会上「CFA + 债券」能迅速建立共同语言；也回扣第一章的能力信号叙事。</div>
+          <div class="src">来源：CFA Institute 项目公开介绍</div>
+        </div>
+        <div class="fn-item" id="fn10">
+          <strong>¹⁰ 2005 年前后的银行自营交易</strong>
+          金融危机前，大型投行与商业银行普遍设有自营交易台：用银行资本做方向性或相对价值交易，成功交易员可按利润分成拿到高额奖金，台子相对独立。2005 年招聘市场仍把 prop 视为「聪明人的游乐场」。2008 年后监管收紧，美国《多德—弗兰克》下的沃尔克规则显著限制存款机构自营交易，许多 prop 台迁往对冲基金或关闭。读本章时要记住：作者遇见的「露西银行」自营座位，属于前沃尔克时代的物种。
+          <div class="why">为何重要：没有这个时代坐标，就读不懂他为何觉得自营比策略组更像「从赌场升维的正业」。</div>
+          <div class="src">来源：eFinancialCareers 2004–05 自营薪酬/文化报道；沃尔克规则通识背景</div>
+        </div>
+      </div>
+
+      <div class="diagrams-section" id="diagrams">
+        <h2>人物 · 时间线 · 知识图谱</h2>
+        <p style="color:var(--muted);font-size:14px;">以下图表用 Mermaid 渲染，帮助把本章人物关系、作者路径与核心概念串起来（非书中原图）。</p>
+        <div class="mermaid-wrap">
+          <div class="caption">图 A · 作者旅程：高盛实习 → 合规震撼 → NYU → 自营吸引</div>
+          <pre class="mermaid">
+timeline
+    title 渔阳路径（本章叙事）
+    section 入职高盛
+      2005秋 IBD Strategies : 特种部队文化与 J.Aron 血统
+      工具与交付 : SecDB / 叙事 / Jerry
+    section 信息边界
+      电梯八卦事件 : MNPI 与合规教育
+      Archipelago 争议 : 双边顾问公开课
+      基恩后来 : 内幕交易反面教材
+    section 年末转向
+      奖金季与圣诞派对 : 感到火力不足
+      NYU 招聘会 : 遇见 Rick 与露西银行
+      自营利率吸引 : CFA 与债券共同语言
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">图 B · 人物 / 机构关系图</div>
+          <pre class="mermaid">
+flowchart TD
+    A["作者 渔阳"] --> B["高盛 IBD Strategies"]
+    B --> C["Jerry\nJ.Aron 线 / 合伙人轨道"]
+    B --> D["教授出身 MD\n客户叙事"]
+    B --> E["SecDB / 内部工具"]
+    A --> F["基恩 Keen\n伯克利面试官"]
+    F -.->|"后来涉内幕交易"| W["警告：别跟着走"]
+    B --> G["合规教育\n电梯八卦"]
+    H["NYSE–Archipelago\n双边顾问争议"] -.->|"公开课"| G
+    A --> I["NYU 招聘会"]
+    I --> J["Rick\n露西银行自营/利率"]
+    J --> K["CFA / 债券共同语言"]
+    J --> L["Prop desk 吸引"]
+    M["Blankfein / J.Aron 血统"] -.->|"风险胃口"| B
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">图 C · 知识图谱：文化 / 工具 / 合规 / 职业分叉</div>
+          <pre class="mermaid">
+flowchart LR
+    CULT["Because we are Goldman"] --> BONUS["创纪录奖金"]
+    CULT --> CUT["末位约5%"]
+    PART["1999 IPO 后合伙人阶梯"] --> CULT
+    SEED["SecDB"] --> RISK["定价与风险聚合"]
+    NAR["客户叙事"] --> IBD["投行交付物"]
+    MNPI["重大非公开信息"] --> COMP["合规边界"]
+    COMP --> PHONE["电话优于邮件"]
+    ARCH["双边顾问冲突"] --> COMP
+    PROP["2005自营台"] --> EDGE["用银行资本交易"]
+    CFA["CFA 固收信号"] --> PROP
+    INTERN["高盛实习光环"] --> DOOR["下一张牌桌的门票"]
+    DOOR --> PROP
+    DOOR --> IBD
+          </pre>
+        </div>
+      </div>
+    </article>
+    <footer>
+      故事导读 · 《乱世华尔街》（渔阳）第二章「高盛实习」<br />
+      据公开试读改写，非原文照搬；脚注为场外研究补充<br />
+      完整原文请支持正版 · 配图见 SOURCES.md ·
+      <a href="goldman-internship-en.html">English edition</a>
+      · <a href="../ch01/casino-to-wall-street-zh.html">← 第一章</a> · <a href="../../../index.html">返回首页</a>
+    </footer>
+  </div>
+
+
   <script>
-  (async function () {
-    const parts = ["parts/zh-part-0.txt", "parts/zh-part-1.txt", "parts/zh-part-2.txt", "parts/zh-part-3.txt", "parts/zh-part-4.txt"];
-    const status = document.getElementById('status');
-    try {
-      const texts = await Promise.all(parts.map(p => fetch(p).then(r => {
-        if (!r.ok) throw new Error(p + ' ' + r.status);
-        return r.text();
-      })));
-      document.open();
-      document.write(texts.join(''));
-      document.close();
-    } catch (e) {
-      status.innerHTML = 'Failed to assemble page: ' + e +
-        '<br><br><a href="goldman-internship-en.html">English</a>';
-    }
-  })();
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
   </script>
+
 </body>
 </html>

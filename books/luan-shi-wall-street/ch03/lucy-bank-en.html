@@ -3,35 +3,502 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lucy Bank · loading</title>
+  <title>Chaos on Wall Street · Ch.3: Lucy Bank</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <style>
-    body { margin:0; font-family: system-ui, sans-serif; background:#0b1220; color:#e8eef9;
-      display:flex; min-height:100vh; align-items:center; justify-content:center; }
-    .box { max-width:420px; padding:24px; border:1px solid rgba(212,175,55,.28);
-      border-radius:16px; background:#121a2b; line-height:1.6; text-align:center; }
-    a { color:#f0d78c; }
+    :root {
+      --bg: #0b1220;
+      --panel: #121a2b;
+      --panel-2: #182235;
+      --gold: #d4af37;
+      --gold-soft: #f0d78c;
+      --text: #e8eef9;
+      --muted: #9aa8c1;
+      --line: rgba(212, 175, 55, 0.28);
+      --accent: #3d8bfd;
+      --accent-soft: rgba(61, 139, 253, 0.12);
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+      --fn-bg: rgba(240, 215, 140, 0.06);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", "Noto Serif", system-ui, serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(212,175,55,0.12), transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, rgba(61,139,253,0.12), transparent 50%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 40px 20px 80px; }
+    .lang-switch {
+      display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap;
+    }
+    .lang-switch a {
+      display: inline-flex; align-items: center;
+      padding: 5px 12px; border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--muted); text-decoration: none; font-size: 13px;
+      background: rgba(255,255,255,0.03);
+    }
+    .lang-switch a.active {
+      color: var(--gold-soft);
+      border-color: var(--line);
+      background: rgba(212,175,55,0.1);
+    }
+    .lang-switch a:hover { color: var(--gold-soft); }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px;
+      color: var(--gold-soft); font-size: 13px; letter-spacing: 0.06em;
+      background: rgba(212,175,55,0.08);
+    }
+    h1 {
+      margin: 18px 0 8px;
+      font-size: clamp(28px, 5vw, 40px);
+      line-height: 1.28; font-weight: 700;
+    }
+    .subtitle { margin: 0 0 24px; color: var(--muted); font-size: 15px; }
+    .hero {
+      position: relative; overflow: hidden;
+      border: 1px solid var(--line); border-radius: 22px;
+      background:
+        linear-gradient(135deg, rgba(212,175,55,0.12), transparent 40%),
+        linear-gradient(180deg, var(--panel), var(--panel-2));
+      box-shadow: var(--shadow); padding: 28px; margin-bottom: 28px;
+    }
+    .note {
+      margin-top: 16px; padding: 12px 14px;
+      border-left: 3px solid var(--gold);
+      background: rgba(212,175,55,0.08);
+      border-radius: 0 12px 12px 0;
+      color: var(--muted); font-size: 13px;
+    }
+    .toc {
+      margin: 20px 0 0; padding: 14px 16px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px; font-size: 14px; color: var(--muted);
+    }
+    .toc a { color: var(--gold-soft); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    .toc ul { margin: 8px 0 0; padding-left: 18px; }
+    .toc li { margin: 4px 0; }
+    article.story {
+      background: linear-gradient(180deg, var(--panel), var(--panel-2));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 20px; padding: 28px 28px 20px;
+      box-shadow: var(--shadow);
+    }
+    .chapter-mark {
+      color: var(--gold-soft); font-size: 13px;
+      letter-spacing: 0.12em; margin-bottom: 18px;
+    }
+    h2 {
+      margin: 28px 0 12px; font-size: 20px;
+      color: var(--gold-soft); font-weight: 650;
+      scroll-margin-top: 24px;
+    }
+    h2:first-of-type { margin-top: 8px; }
+    h3.panel-title {
+      margin: 0 0 10px; font-size: 15px;
+      color: var(--accent); font-weight: 600;
+    }
+    p { margin: 0 0 16px; color: #d7deec; font-size: 16px; }
+    .scene {
+      margin: 8px 0 20px; padding: 16px 18px;
+      border-radius: 14px;
+      background: rgba(61,139,253,0.07);
+      border: 1px solid rgba(61,139,253,0.18);
+      color: #c9dbff; font-size: 15px;
+    }
+    .divider {
+      height: 1px; margin: 28px 0;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+      border: 0;
+    }
+    sup.fn {
+      font-size: 11px; color: var(--gold);
+      font-weight: 700; cursor: pointer;
+      margin-left: 1px; text-decoration: none;
+    }
+    a.fn-link { color: inherit; text-decoration: none; }
+    .figure {
+      margin: 18px 0 22px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: #0a101c;
+    }
+    .figure img {
+      display: block; width: 100%; height: auto;
+      max-height: 420px; object-fit: cover;
+    }
+    .figure figcaption {
+      padding: 10px 14px 12px;
+      font-size: 12px; color: var(--muted);
+      line-height: 1.55;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .footnotes {
+      margin: 8px 0 24px;
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: var(--fn-bg);
+      border: 1px solid rgba(212,175,55,0.22);
+    }
+    .footnotes .fn-head {
+      font-size: 13px; color: var(--gold-soft);
+      letter-spacing: 0.08em; margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .fn-item {
+      margin-bottom: 14px; padding-bottom: 14px;
+      border-bottom: 1px dashed rgba(212,175,55,0.18);
+      font-size: 13.5px; color: #c5d0e4; line-height: 1.7;
+    }
+    .fn-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+    .fn-item strong {
+      display: block; color: var(--gold-soft);
+      font-size: 14px; margin-bottom: 4px;
+    }
+    .fn-item .why {
+      margin-top: 6px; color: #a8b8d4;
+      font-style: italic;
+    }
+    .fn-item .src {
+      margin-top: 4px; color: #7f8eaa; font-size: 12px;
+    }
+    .side-panel {
+      margin: 18px 0 22px;
+      padding: 18px;
+      border-radius: 16px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(61,139,253,0.22);
+    }
+    .mermaid-wrap {
+      margin: 18px 0 22px;
+      padding: 16px;
+      border-radius: 16px;
+      background: #0e1626;
+      border: 1px solid rgba(255,255,255,0.08);
+      overflow-x: auto;
+    }
+    .mermaid-wrap .caption {
+      font-size: 12px; color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .mermaid { background: transparent !important; }
+    .event-timeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin: 16px 0 22px;
+    }
+    .event-card {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+    .event-card .yr { color: var(--gold); font-weight: 700; font-size: 14px; }
+    .event-card .ev { color: #c9d4e8; font-size: 13px; margin-top: 4px; line-height: 1.5; }
+    .diagrams-section {
+      margin-top: 32px;
+      padding-top: 8px;
+    }
+    footer {
+      margin-top: 28px; color: var(--muted);
+      font-size: 13px; text-align: center;
+    }
+    footer a { color: var(--gold-soft); }
+    @media (max-width: 560px) {
+      article.story { padding: 20px 16px 12px; }
+      .wrap { padding: 24px 14px 60px; }
+    }
+
   </style>
 </head>
 <body>
-  <div class="box" id="status">Loading chapter…</div>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="lang-switch" aria-label="Language">
+        <a href="lucy-bank-zh.html">中文</a>
+        <a class="active" href="lucy-bank-en.html">English</a>
+      
+        <a href="../../../index.html">Back to home</a>
+      </div>
+      <div class="badge">Story guide · Retold from public trial read · Off-book research</div>
+      <h1>Lucy Bank</h1>
+      <p class="subtitle"><em>Chaos on Wall Street</em> · Chapter 3 “Lucy Bank” (alias) · Yuyang · narrative rewrite + footnotes</p>
+      <div class="note">
+        The pages below retell this chapter’s events in original phrasing for easy following — not a verbatim dump of the book. Footnotes, figures, and diagrams are off-book public research. “Lucy Bank” is the book’s alias for the employer. Please support the official edition for the full work.
+      </div>
+      <nav class="toc" aria-label="Section navigation">
+        In this chapter
+        <ul>
+          <li><a href="#s1">Classmate shock: why a commercial bank</a></li>
+          <li><a href="#s2">Interview marathon: Mark, free salad, “40 under 40”</a></li>
+          <li><a href="#s3">Apple guy and the French quant boss</a></li>
+          <li><a href="#s4">Vince enters: munis and a church organ</a></li>
+          <li><a href="#s5">Trader qualities: risk, discipline, observation</a></li>
+          <li><a href="#s6">I DO: the muni seat and Roger</a></li>
+          <li><a href="#s7">Formal offer and Goldman’s retention pitch</a></li>
+          <li><a href="#diagrams">People / timeline / knowledge graph</a></li>
+        </ul>
+      </nav>
+    </div>
+    <article class="story">
+      <div class="chapter-mark">CHAPTER THREE · LUCY BANK</div>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal_Hall_National_Memorial,_Wall_Street,_Manhattan,_New_York_(7236982206).jpg" alt="Federal Hall on Wall Street" loading="lazy" />
+        <figcaption>Federal Hall on Wall Street — public landmark of Manhattan’s financial district, the city backdrop for leaving the pure-IB halo for a commercial-bank trading seat. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s1">Classmate shock: why a commercial bank</h2>
+      <p>Berkeley classmate Frank nearly froze when he heard the author was interviewing at a commercial bank: you already had Goldman on the résumé — why step onto the “deposit-and-loan” track that sounded less glamorous than a pure investment bank<a class="fn-link" href="#fn1"><sup class="fn">¹</sup></a>? Frank’s own next stop was Lehman Brothers — still, in 2005–06, a top-table name on Wall Street league lists, especially loud in fixed-income research and trading, the sort of brand that “sounded right” to peers<a class="fn-link" href="#fn2"><sup class="fn">²</sup></a>.</p>
+      <p>The author kept a different ruler. He did not want another tour as a strategy staff officer; he wanted a trading seat. He would rather trade pork-belly futures first — a contract that sounded like a wet market yet ticked with real P&amp;L — than keep polishing client slides<a class="fn-link" href="#fn3"><sup class="fn">³</sup></a>. The IB business card was fragrant; the pilot’s chair kept him awake.</p>
+
+      <div class="side-panel">
+        <h3 class="panel-title">Public timeline anchors (chapter background)</h3>
+        <div class="event-timeline">
+          <div class="event-card"><div class="yr">1933 / 1999</div><div class="ev">Glass-Steagall split → partial GLBA repeal</div></div>
+          <div class="event-card"><div class="yr">2005–06</div><div class="ev">Lehman still near the IB top table</div></div>
+          <div class="event-card"><div class="yr">1961–2011</div><div class="ev">CME pork-belly futures life cycle</div></div>
+          <div class="event-card"><div class="yr">This chapter</div><div class="ev">Post-Goldman job search · Lucy Bank interviews</div></div>
+        </div>
+      </div>
+
+      <div class="footnotes" id="fn-block-1">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn1">
+          <strong>¹ Commercial banks vs pure investment banks</strong>
+          In the classic split, commercial banks take deposits, make loans, and run payments; investment banks underwrite, broker, trade, and advise on M&amp;A — generally without retail deposits. The 1933 Glass-Steagall Act hard-separated the two; the 1999 Gramm-Leach-Bliley Act repealed parts of that wall so financial holding companies could own both, yet culture and law still often treat “the bank” and “the securities firm” as different animals. In 2005 campus talk, “going to a commercial bank” often meant: not a pure Goldman/Morgan Stanley brand, but a balance-sheet giant — half a rung lower on the prestige ladder in a classmate’s ear.
+          <div class="why">Why it matters: Frank’s shock is the chapter’s first drumbeat of prestige versus a real seat.</div>
+          <div class="src">Sources: CRS R44349 / R41181; St. Louis Fed primers on the commercial–investment split</div>
+        </div>
+        <div class="fn-item" id="fn2">
+          <strong>² Lehman’s halo in 2005–06</strong>
+          On public league tables Lehman routinely sat near the front of U.S. investment-grade debt and M&amp;A advisory — e.g. about sixth in 2005 U.S. IG bookrunning (~7% share) and around eighth in 2006 global M&amp;A volume. Research prestige was even louder: Institutional Investor’s All-America polls crowned Lehman #1 in equity and fixed-income research for consecutive years. For graduates then, “I’m going to Lehman” was the explainable Wall Street sentence; “a commercial bank” was harder to sell at dinner.
+          <div class="why">Why it matters: only against those rankings does the author’s Lucy Bank detour look properly contrarian.</div>
+          <div class="src">Sources: Euromoney / Dealogic 2005–06 tables; Institutional Investor 2005 All-America Research; Lehman 2006 results release</div>
+        </div>
+        <div class="fn-item" id="fn3">
+          <strong>³ Pork-belly futures: unglamorous, real trading</strong>
+          CME launched frozen pork-belly futures in 1961 — among the earliest frozen-meat storage contracts — roughly 40,000 pounds per contract, long a hedge-and-speculation arena for the bacon chain. As the industry shifted to fresh processing and volume collapsed, CME delisted the contract on 15 July 2011. In trader folklore, “pork bellies” became shorthand for getting on a tape that actually moves — wet-market branding, pit-desk reality.
+          <div class="why">Why it matters: “I’d rather trade pork bellies” is not a joke; it is the extreme form of “give me a seat, not a staff job.”</div>
+          <div class="src">Sources: Reuters / NPR / MarketsWiki on the CME delisting; historical CME contract specs</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cme_building_aerial_view.jpg" alt="Chicago Mercantile Exchange building aerial view" loading="lazy" />
+        <figcaption>Chicago Mercantile Exchange building — geographic home of the pork-belly futures legend. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <h2 id="s2">Interview marathon: Mark, free salad, “40 under 40”</h2>
+      <p>Lucy Bank’s interviews felt like an endurance event. Rates boss Mark walked in and took a free salad — the casual perk of Wall Street interview rooms, and a quiet status test. After the résumé, his warmth cooled: almost no traditional finance work experience. Contests and models could not erase the frown of “you haven’t lived in the money pile.”</p>
+      <p>The author scrambled with flattery: he’d heard Mark had made a “40 under 40” style list — the media badge that packages sub-forty rising stars as industry royalty<a class="fn-link" href="#fn4"><sup class="fn">⁴</sup></a>. The room thawed a notch. Mark tossed off his own story: roughly $5 million of first-year trading profit against a bonus expectation that might have been around $50,000 — a slap of gap numbers that doubled as a recruiting poster.</p>
+
+      <div class="scene">
+        Free salad, résumé frown, “40 under 40” flattery, five million versus fifty thousand — power was on the table before munis were.
+      </div>
+
+      <div class="footnotes" id="fn-block-2">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn4">
+          <strong>⁴ “40 under 40”: Wall Street’s age badge</strong>
+          “40 Under 40” is a staple list format across Fortune, Institutional Investor, and trade press: honor the under-forty cohort. A listing is not proof of trading skill, but it is useful stagecraft — candidates deploy it as deference; bosses hear confirmation they are still “seen.” Prestige economy hardware, not a risk model.
+          <div class="why">Why it matters: explains the rescue compliment after the résumé chill — trading honor language for speaking rights.</div>
+          <div class="src">Sources: Fortune / Institutional Investor public “40 Under 40” list formats</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s3">Apple guy and the French quant boss</h2>
+      <p>Next came the swap trader colleagues called “Apple guy” — he grabbed a free apple, then lobbed math questions while chewing. Interest-rate swaps are the vernacular of rates derivatives: one side pays fixed, the other floating, to hedge or express a view on the path of rates<a class="fn-link" href="#fn5"><sup class="fn">⁵</sup></a>. The questions were not sadistic, but the tone was lukewarm — filtering out people who cannot compute, not hunting a partner.</p>
+      <p>Then the French quant boss: a joking Bonjour, a Mandarin pun landing like “stupid pig” (笨猪), then hard quant problems. The author felt outmatched — not because he could not do arithmetic, but because the density and desk context yanked him from “exam ace” back to “hasn’t lived on the curve yet.”</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Federal_Reserve_Bank_of_New_York,_Manhattan,_New_York_(7237032812).jpg" alt="Federal Reserve Bank of New York" loading="lazy" />
+        <figcaption>Federal Reserve Bank of New York — a landmark of the dollar rates world; swaps and curve talk ultimately orbit money markets and policy. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-3">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn5">
+          <strong>⁵ Interest-rate swaps: rates-desk vernacular</strong>
+          In a plain-vanilla IRS, counterparties exchange fixed versus floating payments on a notional (historically often LIBOR-linked; later SOFR and other RFRs). Corporates, banks, and municipal issuers use swaps to lock funding costs or reshape duration; traders work spreads, flies, and relative value on the swap curve. For an “Apple guy” interviewer, math is the ticket — standing in cash-flow and curve language is the job.
+          <div class="why">Why it matters: explains the math-plus-aura screen, and foreshadows munis’ link to rates-curve models.</div>
+          <div class="src">Sources: ISDA / Fed market primers on IRS; LIBOR→SOFR transition background</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s4">Vince enters: munis and a church organ</h2>
+      <p>By then despair was near: the free-food interviewers had been polite and distant, confirming “you’re not our people.” Then Vince walked in — head of the municipal desk. He took no free food. Small talk surfaced a hobby: church organ. The room cut from salad-and-apple power games to a human corner.</p>
+      <p>Municipal bonds finance states, cities, school districts, and public agencies, often with federal tax-exempt interest, fragmented issuers, fiddly credit and tax clauses, and liquidity nothing like Treasuries<a class="fn-link" href="#fn6"><sup class="fn">⁶</sup></a>. In the mid-2000s fashion parade of subprime, CDS, and exotics, a muni seat did not sound trendy — yet it sat at a real junction of rates and credit.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pipe_organ.jpg" alt="Pipe organ" loading="lazy" />
+        <figcaption>A pipe organ — visual nod to Vince’s church-organ hobby (not a portrait). Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-4">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn6">
+          <strong>⁶ Municipal bond market basics</strong>
+          U.S. munis fund local public projects — schools, roads, utilities. Much interest is federally tax-exempt (sometimes state-exempt too), which attracts higher-tax-bracket buyers. Thousands of issuers, uneven liquidity, and credit work that inspects tax bases, project revenues, insurance, and structures. For a bank desk, munis are a three-dimensional board of rates, credit, and tax — not headline exotics, but a durable balance-sheet market.
+          <div class="why">Why it matters: without this map, the author’s “not trendy enough” hesitation and Vince’s real offer both float free of context.</div>
+          <div class="src">Sources: MSRB / Investopedia / asset-manager public muni primers</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s5">Trader qualities: risk, discipline, observation</h2>
+      <p>Vince asked what makes a good trader. The author skipped “I love markets” porridge and answered three battlefield rules: control risk — models are not enough; there is still exposure, liquidity, and human error; self-discipline under fire — execute the rules when the tape humiliates you, instead of revenge-sizing; observe and adapt — curves and order flow change; dogma dies first.</p>
+      <div class="scene">
+        Those three demote “can calculate” to a ticket and promote “leave the table alive” to the main course — exactly a desk head’s palate.
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s6">I DO: the muni seat and Roger</h2>
+      <p>Vince offered a municipal trading seat on the spot. Hesitation flickered: munis were less trendy than subprime, CDS, or exotics. It lasted one beat — then he heard himself say I DO. He wanted the seat, not the magazine cover.</p>
+      <p>On the desk was Roger: senior trader, Chicago Booth, ex-Goldman muni prop. He partnered with Vince and needed someone who could talk to the quants — rates-curve models and relative-value frames were the financial-engineering interface the author could actually plug into<a class="fn-link" href="#fn7"><sup class="fn">⁷</sup></a>. Not a pure yell-and-fill seat; a middleware job between trading gut and model shop.</p>
+
+      <div class="footnotes" id="fn-block-6">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn7">
+          <strong>⁷ Prop trading meets curve models</strong>
+          Pre-crisis, banks ran proprietary desks on firm capital — directional or relative-value books with profit shares and wide autonomy. Muni prop often braided yield-curve models, credit spreads, and tax effects; quants shipped factors and prices, traders owned risk budgets and execution. The author’s role — “trading-side person who can speak quant” — was a classic hole on those pre-Volcker desks.
+          <div class="why">Why it matters: explains why Roger needed him, and why “years before you touch money” could collapse into a six-month offer.</div>
+          <div class="src">Sources: eFinancialCareers 2004–05 prop culture; rates relative-value primers; Volcker Rule contrast</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <h2 id="s7">Formal offer and Goldman’s retention pitch</h2>
+      <p>The second round was friendlier. The formal offer landed on the muni trading seat inside rates — about six months after the line “it will be years before you touch money.” Apprenticeship mythology met desk scarcity: not seniority theater, but filling a hole.</p>
+      <p>Goldman tried to retain him: other strat groups, FI strat again, even a tour with a Princeton PhD partner. He declined. In a near song-metaphor he cast himself as wanting to be the pilot, not the staff officer — hands on the yoke, not only lines on the map<a class="fn-link" href="#fn8"><sup class="fn">⁸</sup></a>. Behind the Lucy Bank alias sat an unglamorous table that would let him actually trade.</p>
+
+      <figure class="figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/200_West_Street.jpg" alt="Goldman Sachs headquarters" loading="lazy" />
+        <figcaption>Goldman at 200 West Street — symbolic landmark of the retention pitch; he left the halo for a commercial-bank seat. Source: Wikimedia Commons</figcaption>
+      </figure>
+
+      <div class="footnotes" id="fn-block-7">
+        <div class="fn-head">Section notes</div>
+        <div class="fn-item" id="fn8">
+          <strong>⁸ Goldman’s retention culture</strong>
+          Elite banks retain high-potential interns and analysts with internal rotations, cross-group intros, and partner time — turning “exit” into “you haven’t finished the map.” Public campus narratives cast Goldman as elite filter plus internal mobility: stayers thicken the “Because we are Goldman” glue; leavers carry the halo to the next table. The grander the retention, the clearer his choice: not “failed to get Goldman,” but “refused the staff chair.”
+          <div class="why">Why it matters: closes the chapter’s theme — prestige path (Frank / Lehman / Goldman retain) versus trading path (Vince / munis / I DO).</div>
+          <div class="src">Sources: Goldman public culture and recruiting narratives; read against Chapter 2’s internship bonus/culture frame</div>
+        </div>
+        <div class="fn-item" id="fn9">
+          <strong>⁹ Munis inside the rates org chart</strong>
+          On bank FICC trees, muni desks often sit near rates or public-finance lines: sharing curves, repo, and hedges while keeping tax-and-credit specialty. An offer for “muni trading in rates” means daily language is rates, dialect is muni — exactly why Roger needed a curve-model translator.
+          <div class="why">Why it matters: places “munis” from a niche label back into a concrete ward of the rates empire.</div>
+          <div class="src">Sources: public FICC business overviews; rates–muni crossover primers</div>
+        </div>
+      </div>
+
+      <div class="diagrams-section" id="diagrams">
+        <h2>People · timeline · knowledge graph</h2>
+        <p style="color:var(--muted);font-size:14px;">Mermaid diagrams below wire people, path, and concepts for this chapter (not figures from the book).</p>
+        <div class="mermaid-wrap">
+          <div class="caption">Figure A · Job-search timeline: classmate fork → interview gauntlet → I DO → retention refused</div>
+          <pre class="mermaid">
+timeline
+    title Yuyang path (this chapter)
+    section Fork
+      Classmate Frank shocked : why a commercial bank
+      Frank toward Lehman : 2005-06 IB halo
+      Author prefers pork bellies : wants a trading seat
+    section Interview marathon
+      Mark free salad : résumé chill and 40 under 40
+      Apple guy swap math : lukewarm
+      French quant Bonjour : feels outmatched
+    section Turn
+      Vince no free food : organ hobby and munis
+      Three trader qualities : risk discipline observation
+      I DO : accepts muni seat
+    section Landing
+      Roger gap : talk to quants and curves
+      Formal offer : money in about six months
+      Refuse Goldman retain : pilot not staff officer
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">Figure B · People / institution map</div>
+          <pre class="mermaid">
+flowchart TD
+    A["Author Yuyang"] --> F["Classmate Frank"]
+    F --> L["Lehman Brothers\nIB prestige path"]
+    A --> G["Goldman\nintern halo / retention"]
+    A --> B["Lucy Bank\nalias commercial bank"]
+    B --> M["Mark\nrates boss / free salad"]
+    B --> AP["Apple guy\nswap trader"]
+    B --> Q["French quant boss\nBonjour / pig pun"]
+    B --> V["Vince\nmuni desk head"]
+    V --> R["Roger\nBooth / ex-Goldman muni prop"]
+    V --> SEAT["Muni trading seat"]
+    R --> SEAT
+    A -->|"I DO"| SEAT
+    G -.->|"other strat / FI strat / partner tour"| A
+    A -->|"refuse: be the pilot"| SEAT
+          </pre>
+        </div>
+        <div class="mermaid-wrap">
+          <div class="caption">Figure C · Knowledge graph: prestige / products / trader qualities / fork</div>
+          <pre class="mermaid">
+flowchart LR
+    PREST["IB prestige"] --> LEH["Lehman 2005-06"]
+    PREST --> GS["Goldman retention"]
+    COMM["Commercial-bank label"] --> LUCY["Lucy Bank interviews"]
+    PB["Pork-belly metaphor"] --> TRADE["Want a trading seat"]
+    IRS["Interest-rate swaps"] --> DESK["Rates ecosystem"]
+    MUNI["Municipal bonds"] --> DESK
+    PROP["Prop / curve models"] --> MUNI
+    RISK["Control risk"] --> QUAL["Trader qualities"]
+    DISC["Discipline under fire"] --> QUAL
+    OBS["Observe and adapt"] --> QUAL
+    QUAL --> SEAT["I DO seat"]
+    PILOT["Pilot metaphor"] --> SEAT
+    STAFF["Staff officer"] --> GS
+          </pre>
+        </div>
+      </div>
+    </article>
+    <footer>
+      Story guide · <em>Chaos on Wall Street</em> (Yuyang) · Chapter 3 “Lucy Bank”<br />
+      Retold from public trial-read arc; footnotes are off-book research; Lucy Bank is the book’s alias<br />
+      Support the official edition · See SOURCES.md ·
+      <a href="lucy-bank-zh.html">中文版</a>
+      · <a href="../ch02/goldman-internship-en.html">← Chapter 2</a> · <a href="../../../index.html">Back to home</a>
+    </footer>
+  </div>
+
+
   <script>
-  (async function () {
-    const parts = ["parts/en-part-0.txt", "parts/en-part-1.txt", "parts/en-part-2.txt", "parts/en-part-3.txt", "parts/en-part-4.txt"];
-    const status = document.getElementById('status');
-    try {
-      const texts = await Promise.all(parts.map(p => fetch(p).then(r => {
-        if (!r.ok) throw new Error(p + ' ' + r.status);
-        return r.text();
-      })));
-      const html = texts.join('');
-      document.open();
-      document.write(html);
-      document.close();
-    } catch (e) {
-      status.innerHTML = 'Failed to assemble page: ' + e +
-        '<br><br><a href="lucy-bank-zh.html">中文</a>';
-    }
-  })();
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      timeline: { useMaxWidth: true },
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" }
+    });
   </script>
+
 </body>
 </html>
