@@ -54,7 +54,7 @@ Story prose is an original retelling based on the user’s beat list and publicl
 ## Bilingual pages (ch07)
 
 | File | Language |
-|---|---|---|
+|---|---|
 | `interlocking-stratagem-zh.html` | Chinese story guide (on GitHub: thin loader assembling `parts/zh-part-*.txt`) |
 | `interlocking-stratagem-en.html` | English parallel edition (on GitHub: thin loader assembling `parts/en-part-*.txt`) |
 | `SOURCES.md` | This file |

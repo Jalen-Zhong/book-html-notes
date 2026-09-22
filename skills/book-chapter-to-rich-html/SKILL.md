@@ -5,7 +5,7 @@ description: >-
   rich HTML reading pages: story-style narrative, section footnotes with
   researched background and term explanations, images, knowledge graphs,
   character maps, timelines — delivered as two self-contained HTML files
-  (Chinese edition + English edition) they can open directly.
+  (Chinese edition + English edition) they can open directly. Include end-of-chapter chapter-nav (prev/next/home/language twin).
 ---
 # Book chapter → rich HTML reading pages (ZH + EN)
 
@@ -26,6 +26,24 @@ Both editions must cover the **same chapter beats**, figures, diagrams, and foot
 - **Delivery:** two **standalone HTML** files with images embedded as `data:` URIs (not a zip/tar unless asked). Also keep a working folder with shared `assets/` + non-embedded `…-zh.html` / `…-en.html` + one `SOURCES.md` for iteration.
 - **Language:** Chinese edition fully in Chinese; English edition fully in English (including hero, TOC, footnote headings, figure captions, footer). Mirror structure section-for-section.
 - **Copyright note** in each hero: story is a rewrite/guide; footnotes are outside research; full text → support the official edition.
+- **Home link (required when publishing under `books/<slug>/chNN/`):** in both the **hero** (near language switch) and **footer**, add:
+  - ZH: `返回首页` → `../../../index.html`
+  - EN: `Back to home` → `../../../index.html`
+  - Never use `../../index.html` (that resolves to nonexistent `books/index.html`).
+- **End-of-chapter navigation (required):** at the **end of each chapter page** (inside `<footer>`, below the short attribution line), include a unified button row:
+  ```html
+  <nav class="chapter-nav" aria-label="Chapter navigation">
+    <a class="nav-btn" href="…">上一章 / Previous</a>
+    <a class="nav-btn" href="…">下一章 / Next</a>
+    <a class="nav-btn" href="../../../index.html">返回首页 / Back to home</a>
+    <a class="nav-btn" href="…-en.html or …-zh.html">English edition / 中文版</a>
+  </nav>
+  ```
+  - **Labels:** ZH → `上一章` `下一章` `返回首页` `English edition`; EN → `Previous` `Next` `Back to home` `中文版`.
+  - **Order source of truth:** the book’s leaf reading order from root `index.html` hrefs (for nested books like `big-debt-crises`, walk leaf pages: overview → early → bubble → …, not only top-level § numbers).
+  - **Prev/next** use **relative** paths to the previous/next leaf in that language’s sequence. First leaf: disable/hide 上一章/Previous (`aria-disabled="true"`, no broken link). Last leaf: same for 下一章/Next.
+  - **Language twin:** same basename with `-zh.html` ↔ `-en.html` (e.g. `goldman-internship-en.html`).
+  - **CSS:** add `.chapter-nav` / `.nav-btn` rules (dark/gold, flex-wrap, mobile-friendly). If the page links `chapter.css`, put rules there; if styles are embedded in `<style>`, add the same rules in that block. Keep short attribution above the nav; do not leave old partial `←第一章` footer links.
 
 ## Workflow
 
@@ -65,11 +83,11 @@ Aim for roughly **8+ footnotes** on a dense chapter unless the user asks for lig
 
 ### 6. Page design
 Each HTML, dark readable theme, max-width ~720–920px:
-- Hero: badge, title, subtitle, copyright/research note (`lang="zh-CN"` vs `lang="en"`)
+- Hero: language switch + **返回首页 / Back to home**, badge, title, subtitle, copyright/research note (`lang="zh-CN"` vs `lang="en"`)
 - Optional TOC chips linking to story sections
 - Story sections → figures → section footnote blocks (`本节脚注` / `Section notes`)
 - Diagram panels with short captions
-- Footer with book attribution
+- Footer with book attribution + **chapter-nav** (prev / next / home / language twin)
 
 ### 7. Package for the user
 1. Build folder HTMLs with relative `assets/` paths: `…-zh.html`, `…-en.html`.

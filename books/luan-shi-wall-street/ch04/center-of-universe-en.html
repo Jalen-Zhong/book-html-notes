@@ -219,7 +219,42 @@
       .wrap { padding: 24px 14px 60px; }
     }
 
-  </style>
+  
+    /* chapter end navigation */
+    .chapter-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin: 22px 0 10px;
+    }
+    .chapter-nav .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--line, rgba(212, 175, 55, 0.28));
+      background: rgba(212, 175, 55, 0.1);
+      color: var(--gold-soft, #f0d78c);
+      text-decoration: none;
+      font-size: 14px;
+      flex: 1 1 140px;
+      max-width: 220px;
+      text-align: center;
+      min-height: 42px;
+      box-sizing: border-box;
+    }
+    .chapter-nav .nav-btn:hover {
+      background: rgba(212, 175, 55, 0.2);
+      border-color: var(--gold, #d4af37);
+    }
+    .chapter-nav .nav-btn[aria-disabled="true"] {
+      opacity: 0.38;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+</style>
 </head>
 <body>
 
@@ -527,9 +562,13 @@ flowchart LR
     <footer>
       Story guide · Chaos on Wall Street (Yuyang) Ch.4 “Center of the Universe”<br />
       Retold from public trial text — not verbatim; footnotes are off-book research; Lucy Bank is a book alias<br />
-      Support the licensed edition · images in SOURCES.md ·
-      <a href="center-of-universe-zh.html">中文版</a>
-      · <a href="../ch03/lucy-bank-en.html">← Chapter 3</a> · <a href="../../../index.html">Back to home</a>
+      Support the licensed edition · images in SOURCES.md
+    <nav class="chapter-nav" aria-label="Chapter navigation">
+      <a class="nav-btn" href="../ch03/lucy-bank-en.html">Previous</a>
+      <a class="nav-btn" href="../ch05/dupont-formula-en.html">Next</a>
+      <a class="nav-btn" href="../../../index.html">Back to home</a>
+      <a class="nav-btn" href="center-of-universe-zh.html">中文版</a>
+    </nav>
     </footer>
   </div>
 

@@ -219,7 +219,42 @@
       .wrap { padding: 24px 14px 60px; }
     }
 
-  </style>
+  
+    /* chapter end navigation */
+    .chapter-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin: 22px 0 10px;
+    }
+    .chapter-nav .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--line, rgba(212, 175, 55, 0.28));
+      background: rgba(212, 175, 55, 0.1);
+      color: var(--gold-soft, #f0d78c);
+      text-decoration: none;
+      font-size: 14px;
+      flex: 1 1 140px;
+      max-width: 220px;
+      text-align: center;
+      min-height: 42px;
+      box-sizing: border-box;
+    }
+    .chapter-nav .nav-btn:hover {
+      background: rgba(212, 175, 55, 0.2);
+      border-color: var(--gold, #d4af37);
+    }
+    .chapter-nav .nav-btn[aria-disabled="true"] {
+      opacity: 0.38;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+</style>
 </head>
 <body>
 
@@ -490,8 +525,13 @@ flowchart TB
 
     <footer>
       《乱世华尔街》· 渔阳 · 第六章故事导读（原创改写）·
-      <a href="SOURCES.md">SOURCES.md</a> ·
-      <a href="../../../index.html">返回首页</a>
+      <a href="SOURCES.md">SOURCES.md</a>
+    <nav class="chapter-nav" aria-label="Chapter navigation">
+      <a class="nav-btn" href="../ch05/dupont-formula-zh.html">上一章</a>
+      <a class="nav-btn" href="../ch07/interlocking-stratagem-zh.html">下一章</a>
+      <a class="nav-btn" href="../../../index.html">返回首页</a>
+      <a class="nav-btn" href="never-fading-flower-en.html">English edition</a>
+    </nav>
     </footer>
   </div>
 

@@ -214,7 +214,42 @@
       article.story { padding: 20px 16px 12px; }
       .wrap { padding: 24px 14px 60px; }
     }
-  </style>
+  
+    /* chapter end navigation */
+    .chapter-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin: 22px 0 10px;
+    }
+    .chapter-nav .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--line, rgba(212, 175, 55, 0.28));
+      background: rgba(212, 175, 55, 0.1);
+      color: var(--gold-soft, #f0d78c);
+      text-decoration: none;
+      font-size: 14px;
+      flex: 1 1 140px;
+      max-width: 220px;
+      text-align: center;
+      min-height: 42px;
+      box-sizing: border-box;
+    }
+    .chapter-nav .nav-btn:hover {
+      background: rgba(212, 175, 55, 0.2);
+      border-color: var(--gold, #d4af37);
+    }
+    .chapter-nav .nav-btn[aria-disabled="true"] {
+      opacity: 0.38;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+</style>
 </head>
 <body>
   <div class="wrap">
@@ -511,8 +546,13 @@ flowchart LR
     <footer>
       Story guide · <em>Wall Street in Chaos</em> (Yuyang) · Chapter 1 “Casino to Wall Street”<br />
       Retold from public trial-read beats — not verbatim; footnotes are off-book research<br />
-      Please support the official edition · Images: see SOURCES.md ·
-      <a href="casino-to-wall-street-zh.html" style="color:var(--gold-soft)">中文版</a> · <a href="../../../index.html">Back to home</a>
+      Please support the official edition · Images: see SOURCES.md
+    <nav class="chapter-nav" aria-label="Chapter navigation">
+      <a class="nav-btn" href="#" aria-disabled="true" tabindex="-1">Previous</a>
+      <a class="nav-btn" href="../ch02/goldman-internship-en.html">Next</a>
+      <a class="nav-btn" href="../../../index.html">Back to home</a>
+      <a class="nav-btn" href="casino-to-wall-street-zh.html">中文版</a>
+    </nav>
     </footer>
   </div>
   <script>
