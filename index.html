@@ -115,6 +115,33 @@
       .chapter-links { justify-content: flex-start; }
       .lang-link { flex: 1; text-align: center; }
     }
+
+    .chapter-nest {
+      margin: 4px 0 10px;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      background: rgba(0,0,0,0.15);
+      overflow: hidden;
+    }
+    .chapter-nest > summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 11px 14px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+    }
+    .chapter-nest > summary::-webkit-details-marker { display: none; }
+    .chapter-nest > summary:hover { background: rgba(212,175,55,0.06); }
+    .chapter-nest .nest-chevron {
+      color: var(--gold); margin-right: 8px; display: inline-block;
+      transition: transform 0.2s ease; font-size: 12px;
+    }
+    .chapter-nest[open] .nest-chevron { transform: rotate(90deg); }
+    .chapter-nest .sub-list { list-style: none; margin: 0; padding: 0 14px 12px 28px; }
+    .chapter-nest .sub-list .chapter-row { border-bottom-color: rgba(255,255,255,0.04); }
+    .chapter-nest .sub-list .chapter-title { color: #c5d0e4; font-size: 14px; }
   </style>
 </head>
 <body>
@@ -188,6 +215,44 @@
           <li class="chapter-row"><span class="chapter-title">§7 · 国内国际失衡</span><span class="chapter-links"><a class="lang-link" href="books/zhishen-shinei/ch07/imbalance-zh.html">中文</a><a class="lang-link" href="books/zhishen-shinei/ch07/imbalance-en.html">English</a></span></li>
           <li class="chapter-row"><span class="chapter-title">§8 · 总结：政府与经济发展</span><span class="chapter-links"><a class="lang-link" href="books/zhishen-shinei/ch08/gov-development-zh.html">中文</a><a class="lang-link" href="books/zhishen-shinei/ch08/gov-development-en.html">English</a></span></li>
           <li class="chapter-row"><span class="chapter-title">结束语 · Closing Remarks</span><span class="chapter-links"><a class="lang-link" href="books/zhishen-shinei/closing/closing-remarks-zh.html">中文</a><a class="lang-link" href="books/zhishen-shinei/closing/closing-remarks-en.html">English</a></span></li>
+        </ul>
+      </div>
+    </details>
+
+
+    <details class="card book-card" data-book="big-debt-crises">
+      <summary class="book-summary">
+        <span class="chevron" aria-hidden="true">▶</span>
+        <span class="summary-copy">
+          <span class="book-head">
+            <h2>《债务危机》</h2>
+            <span class="count">4 / 13 章 · 更新中</span>
+          </span>
+          <span class="author">瑞·达利欧（Ray Dalio）· Bridgewater, 2018</span>
+        </span>
+      </summary>
+      <div class="chapters">
+        <ul class="chapter-list" aria-label="《债务危机》章节">
+          <li class="chapter-row"><span class="chapter-title">导论 · Introduction</span><span class="chapter-links"><a class="lang-link" href="books/big-debt-crises/intro/introduction-zh.html">中文</a><a class="lang-link" href="books/big-debt-crises/intro/introduction-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§1 · 如何理解信用与债务</span><span class="chapter-links"><a class="lang-link" href="books/big-debt-crises/ch01/credit-and-debt-zh.html">中文</a><a class="lang-link" href="books/big-debt-crises/ch01/credit-and-debt-en.html">English</a></span></li>
+          <li class="chapter-row"><span class="chapter-title">§2 · 典型长期大债周期模板</span><span class="chapter-links"><a class="lang-link" href="books/big-debt-crises/ch02/archetypal-cycle-zh.html">中文</a><a class="lang-link" href="books/big-debt-crises/ch02/archetypal-cycle-en.html">English</a></span></li>
+          <li>
+            <details class="chapter-nest">
+              <summary>
+                <span class="chapter-title"><span class="nest-chevron" aria-hidden="true">▶</span>§3 · 通缩型债务周期各阶段</span>
+                <span class="chapter-links"><a class="lang-link" href="books/big-debt-crises/ch03/overview-zh.html">总览</a><a class="lang-link" href="books/big-debt-crises/ch03/overview-en.html">Overview</a></span>
+              </summary>
+              <ul class="sub-list" aria-label="§3 子章节">
+                <li class="chapter-row"><span class="chapter-title">§3.1 · 周期早期（金发姑娘）</span><span class="chapter-links"><a class="lang-link" href="books/big-debt-crises/ch03/early-cycle-zh.html">中文</a><a class="lang-link" href="books/big-debt-crises/ch03/early-cycle-en.html">English</a></span></li>
+                <li class="chapter-row"><span class="chapter-title">§3.2 · 泡沫</span><span class="chapter-links"><a class="lang-link" href="books/big-debt-crises/ch03/bubble-zh.html">中文</a><a class="lang-link" href="books/big-debt-crises/ch03/bubble-en.html">English</a></span></li>
+                <li class="chapter-row"><span class="chapter-title">§3.3 · 顶部</span><span class="chapter-links"><a class="lang-link" href="books/big-debt-crises/ch03/top-zh.html">中文</a><a class="lang-link" href="books/big-debt-crises/ch03/top-en.html">English</a></span></li>
+                <li class="chapter-row"><span class="chapter-title">§3.4 · 萧条</span><span class="chapter-links"><a class="lang-link" href="books/big-debt-crises/ch03/depression-zh.html">中文</a><a class="lang-link" href="books/big-debt-crises/ch03/depression-en.html">English</a></span></li>
+                <li class="chapter-row"><span class="chapter-title">§3.5 · 美丽去杠杆</span><span class="chapter-links"><a class="lang-link" href="books/big-debt-crises/ch03/beautiful-deleveraging-zh.html">中文</a><a class="lang-link" href="books/big-debt-crises/ch03/beautiful-deleveraging-en.html">English</a></span></li>
+                <li class="chapter-row"><span class="chapter-title">§3.6 · 「推绳子」</span><span class="chapter-links"><a class="lang-link" href="books/big-debt-crises/ch03/pushing-on-string-zh.html">中文</a><a class="lang-link" href="books/big-debt-crises/ch03/pushing-on-string-en.html">English</a></span></li>
+                <li class="chapter-row"><span class="chapter-title">§3.7 · 正常化</span><span class="chapter-links"><a class="lang-link" href="books/big-debt-crises/ch03/normalization-zh.html">中文</a><a class="lang-link" href="books/big-debt-crises/ch03/normalization-en.html">English</a></span></li>
+              </ul>
+            </details>
+          </li>
         </ul>
       </div>
     </details>

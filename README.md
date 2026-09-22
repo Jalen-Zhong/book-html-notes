@@ -15,6 +15,11 @@ https://jalen-zhong.github.io/book-html-notes/
   - 前言 + §1–§8 + **结束语** complete on Pages — see [index](https://jalen-zhong.github.io/book-html-notes/)
   - Closing: [结束语 · 中文](books/zhishen-shinei/closing/closing-remarks-zh.html) · [Closing Remarks · English](books/zhishen-shinei/closing/closing-remarks-en.html)
 
+
+- 《债务危机》 / `big-debt-crises`（瑞·达利欧 Ray Dalio · Bridgewater, 2018）
+  - **更新中**：导论 + §1 信用与债务 + §2 典型模板 + §3 通缩型七阶段（含子章）已上线；全书计划约 13 单元（含通胀型、战争、三国案例、48案简编、术语与宏观审慎等）
+  - §3 子章：总览 · 早期 · 泡沫 · 顶部 · 萧条 · 美丽去杠杆 · 推绳子 · 正常化 — see [index](https://jalen-zhong.github.io/book-html-notes/)
+
 ## Contribute
 
 Community guidelines: [COMMUNITY.md](./COMMUNITY.md)  
