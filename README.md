@@ -17,10 +17,10 @@ https://jalen-zhong.github.io/book-html-notes/
 
 
 - 《债务危机》 / `big-debt-crises`（瑞·达利欧 Ray Dalio · Bridgewater, 2018）
-  - **更新中**：导论 + §1–§9 已上线（含 §3/§4/§7/§8/§9 嵌套子章）；全书计划约 13 单元（下一批 §10 起汇编/术语/附录）
-  - §3 通缩型子章：总览 · 早期 · 泡沫 · 顶部 · 萧条 · 美丽去杠杆 · 推绳子 · 正常化
-  - §4 通胀型子章：总览 · 早期 · 泡沫 · 顶部与护汇 · 萧条 · 正常化 · 恶性通胀螺旋
-  - §5 战时经济 · §6 第一部分总结 — see [index](https://jalen-zhong.github.io/book-html-notes/)
+  - **已完结（13 / 13）**：导论 + §1–§12 全上线（含 §3/§4/§7/§8/§9/§10/§12 嵌套子章）
+  - Pages：[index](https://jalen-zhong.github.io/book-html-notes/) · [§10 共性总览](https://jalen-zhong.github.io/book-html-notes/books/big-debt-crises/ch10/overview-zh.html) · [§11 术语](https://jalen-zhong.github.io/book-html-notes/books/big-debt-crises/ch11/glossary-zh.html) · [§12 宏观审慎](https://jalen-zhong.github.io/book-html-notes/books/big-debt-crises/ch12/overview-zh.html)
+  - §3 通缩型 · §4 通胀型 · §5 战时 · §6 Part1 总结 · §7 德国 · §8 美 1928–37 · §9 美 2007–11
+  - §10 48 案共性（本币/外币）· §11 关键术语要点 · §12 宏观审慎附录（工具箱 + 美国史要点）
 
 ## Contribute
 
