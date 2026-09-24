@@ -1,6 +1,8 @@
 # Sources — Changing World Order · Chapter 2
 
-Story-first rewrite aligned to public structure/argument beats from user EPUB extracts. Not verbatim copyrighted text.
+Story-first rewrite aligned to public structure/argument beats from user EPUB extracts.
+Body paragraphs carry paraphrased book cases and figures (named empires, wars, reforms, magnitudes).
+Not verbatim copyrighted text. Footnotes are off-book background only.
 
 ## Images
 - Wikimedia Commons / Special:FilePath as cited in figcaptions
