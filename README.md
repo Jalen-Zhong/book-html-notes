@@ -22,6 +22,11 @@ https://jalen-zhong.github.io/book-html-notes/
   - §3 通缩型 · §4 通胀型 · §5 战时 · §6 Part1 总结 · §7 德国 · §8 美 1928–37 · §9 美 2007–11
   - §10 48 案共性（本币/外币）· §11 关键术语要点 · §12 宏观审慎附录（工具箱 + 美国史要点）
 
+
+- 《原则：应对变化中的世界秩序》 / `changing-world-order`（瑞·达利欧 Ray Dalio · Simon & Schuster, 2021）
+  - **进行中（5 / 17）**：如何读 + 导论 + §1–§3（含嵌套子章）
+  - Pages：[index](https://jalen-zhong.github.io/book-html-notes/) · [如何读](https://jalen-zhong.github.io/book-html-notes/books/changing-world-order/how-to-read/how-to-read-zh.html) · [§1 总览](https://jalen-zhong.github.io/book-html-notes/books/changing-world-order/ch01/overview-zh.html)
+
 ## Contribute
 
 Community guidelines: [COMMUNITY.md](./COMMUNITY.md)  
