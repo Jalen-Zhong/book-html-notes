@@ -24,8 +24,8 @@ https://jalen-zhong.github.io/book-html-notes/
 
 
 - 《原则：应对变化中的世界秩序》 / `changing-world-order`（瑞·达利欧 Ray Dalio · Simon & Schuster, 2021）
-  - **进行中（5 / 17）**：如何读 + 导论 + §1–§3（含嵌套子章）
-  - Pages：[index](https://jalen-zhong.github.io/book-html-notes/) · [如何读](https://jalen-zhong.github.io/book-html-notes/books/changing-world-order/how-to-read/how-to-read-zh.html) · [§1 总览](https://jalen-zhong.github.io/book-html-notes/books/changing-world-order/ch01/overview-zh.html)
+  - **进行中（9 / 17）**：如何读 + 导论 + §1–§7（Part I 完；含嵌套子章）
+  - Pages：[index](https://jalen-zhong.github.io/book-html-notes/) · [如何读](https://jalen-zhong.github.io/book-html-notes/books/changing-world-order/how-to-read/how-to-read-zh.html) · [§5 总览](https://jalen-zhong.github.io/book-html-notes/books/changing-world-order/ch05/overview-zh.html) · [§7 总览](https://jalen-zhong.github.io/book-html-notes/books/changing-world-order/ch07/overview-zh.html)
 
 ## Contribute
 
