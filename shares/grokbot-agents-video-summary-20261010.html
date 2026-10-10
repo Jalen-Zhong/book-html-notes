@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta name="color-scheme" content="light dark"/>
+<title>怎么把对编程 Agent 的信任爬上去：验证闭环、技能与硬约束</title>
+<style>
+:root {
+  --bg:#0f1419; --card:#1a2332; --text:#e7ecf3; --muted:#9aa7b8;
+  --accent:#3b82f6; --line:#2a3548; --pad: max(16px, env(safe-area-inset-left));
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg:#f6f8fb; --card:#fff; --text:#15202b; --muted:#5b6b7c; --line:#e6ebf2; }
+}
+* { box-sizing:border-box; }
+body {
+  margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Noto Sans SC",sans-serif;
+  background:var(--bg); color:var(--text); line-height:1.65; font-size:16px;
+  padding:12px var(--pad) 48px; max-width:720px; margin-inline:auto;
+}
+header { margin:8px 0 20px; }
+h1 { font-size:1.35rem; line-height:1.35; margin:0 0 8px; }
+.one { font-size:1.05rem; color:var(--muted); margin:0; }
+.meta { font-size:.85rem; color:var(--muted); margin-top:10px; }
+.meta a { color:var(--accent); word-break:break-all; }
+section { margin:22px 0; }
+h2 { font-size:1.1rem; margin:0 0 10px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+.card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px; margin:10px 0; }
+.card h3 { margin:0 0 8px; font-size:1rem; }
+.card p { margin:6px 0; }
+ul { padding-left:1.15em; margin:8px 0; }
+li { margin:6px 0; }
+.chap { display:flex; gap:12px; padding:10px 0; border-bottom:1px solid var(--line); }
+.chap .t { flex:0 0 4.2em; color:var(--accent); font-variant-numeric:tabular-nums; font-size:.9rem; }
+.chap p { margin:4px 0 0; color:var(--muted); font-size:.92rem; }
+.muted { color:var(--muted); }
+footer { margin-top:28px; font-size:.8rem; color:var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <h1>怎么把对编程 Agent 的信任爬上去：验证闭环、技能与硬约束</h1>
+  <p class="one">Cursor 工程师 Lauren 分享：别急着开一百个 Agent；先建「能自己跑起来验对错」的技能与护栏，信任上去了，才能并行、上云，甚至让 Agent 自动合并 PR。</p>
+  <p class="meta">来源：<a href="https://x.com/nereasolenne/status/2108509024941482338">https://x.com/nereasolenne/status/2108509024941482338</a><br/>作者 @nereasolenne · 约 55 分钟英文访谈视频；西语推广文案称 SpaceXAI 工程师运行 20+ GrokBot Agent。正文主线是 Cursor 工程师 Lauren 讲 Agent 信任曲线、验证技能、P-Stack、云端 Benny、以及 GrokBot/Dune 硬约束。摘要基于 /workspace/reports/wechat-video-20261010/transcript.txt 与 transcript.timed.txt，未编造未出现的事实。</p>
+</header>
+
+<section>
+  <h2>讲者与场景</h2>
+  <div class="card"><p>这是一场约 55 分钟的英文访谈/分享（主持人 Colin）。讲者 Lauren 大约五个月前加入 Cursor，先参与 Agent Window（内部代号 Glass，React 应用）的性能与交付，后来也谈到自家新产品 GrokBot 以及一套偏「给 Agent 写代码」的架构（代号 Dune）。现场有屏幕分享：信任曲线图、验证技能、feature map、Bug 复现 Agent「Benny」、以及 GrokBot/CI 相关界面。X 上西班牙文宣传写「SpaceXAI 工程师带 20+ GrokBot Agent」——视频正文主要讲的是 Cursor 侧工程实践与信任曲线；讲者在问答里提到 Cursor 与 SpaceX AI 在「成本–智能」权衡上的优化，但并未展开个人是否运行「20+ Agent」的细节。</p></div>
+</section>
+
+<section>
+  <h2>核心论点</h2>
+  <ul><li>AI 最好当结对编程伙伴，而不是外包思考或盲目「vibe coding」冲产量。</li><li>核心问题不是「会不会写代码」，而是「你信不信它」：不信任就会变成人肉微管理，省下的写码时间全花在审查与纠错上。</li><li>信任曲线要爬：先紧盯少量本地 Agent → 验证闭环稳住正确性 → 再扩到云端并行与自动化；没有捷径，跳级只会烧 token。</li><li>工具箱里最重要的是 verification（验证）：让 Agent 自己真正跑应用、打性能追踪、开模拟器等，闭环测「对不对」，不等于保证「写得好」，但能先保证「写对了」。</li><li>把失败模式沉淀成 skill（技能，多为 Markdown 指令）：观察工具调用与思考过程，看到幻觉就立刻补一条「别猜、去搜代码」类规则。</li><li>要大规模自动化，还得改造代码库：用硬约束（CI/静态分析/架构约定）把「最短捷径」变成「正确捷径」，软规则（rules/Bugbot）只能当辅层。</li><li>GrokBot 这类产品把 Agent 做成「像 iMessage 里的人」，让产品/设计/GTM 也能在硬护栏下直接改功能、修 bug。</li></ul>
+</section>
+
+<section>
+  <h2>信任曲线（为什么→所以）</h2>
+  <div class="card"><p>刚开始用不熟的 Agent 时，你几乎不信它，因为你会看到它乱猜、幻觉、自信地指错病因；所以你会盯着每一个输出、自己当验证器（打开本地构建、贴截图、贴报错），于是人成为瓶颈，几乎没法并行——因为连一个都不信，就更不敢开一百个。后来 Lauren 花约五个月，把「验证技能 + feature map + eval（评测）+ 硬 CI」叠上去：因为 Agent 能自己复现、自己验、技能也用 eval 测过，所以你才敢把工作放到云端（例如 Benny 自动复现用户反馈），再往上甚至允许 Agent 自动合并 PR，人早上起来在 main 上抽查。因为信任是个人工程品味的累积，所以不能从「本地盯梢」直接跳到「上千云 Agent」——那样又贵又乱。</p></div>
+</section>
+
+<section>
+  <h2>可复用做法</h2>
+  <article class='card'><h3>Verification 技能（让 Agent 自己验）</h3><p><strong>为什么：</strong>没有它时，人是唯一验证器，Agent 写完你还要本地跑、贴截图，无法并行。</p><p><strong>怎么做：</strong>教 Agent 用 Chrome DevTools Protocol、iOS 模拟器等真正打开应用、跑性能 trace/heap snapshot，像用户一样操作并确认是否修好。</p><p><strong>视频例子：</strong>为 Agent Window（Glass）做的 Control Glass 技能：Agent 能拉起窗口并采性能追踪，而不只靠你贴火焰图截图瞎猜。</p></article><article class='card'><h3>Feature map（功能地图）</h3><p><strong>为什么：</strong>光会「操控 UI」不够；Agent 不知道侧栏、PR 页等功能在哪，就会在界面上乱点、空转。</p><p><strong>怎么做：</strong>维护一份地图：用户视角怎么走到每个功能、快捷键、以及用 CDP 选中 DOM 的属性；并有创建/Maintain verification skill 保持更新。</p><p><strong>视频例子：</strong>Slack 里常有「一张截图 + 三个问号」的烂反馈；有 feature map 后，Agent 更容易把模糊报告映射到具体界面路径。</p></article><article class='card'><h3>P-Stack（PSTAC）插件与增量技能</h3><p><strong>为什么：</strong>技能不是一开始就写全的；要从真实失败模式里长出来。</p><p><strong>怎么做：</strong>名字梗来自 Gary Tan 的 G-Stack（讲者姓氏也类似，自称 Potato Stack）；从 Control Glass、HAL（逼 Agent 真读代码、用子 Agent、别猜）等一点点加；可用插件里的 create verification skill 帮你搭类似体系。</p><p><strong>视频例子：</strong>早期 Agent 自信「就是这个 bug」，但工具调用显示根本没读该读的文件——于是写成 HAL 类技能。</p></article><article class='card'><h3>Eval = 给技能做单元测试</h3><p><strong>为什么：</strong>产品在变，技能会过期；要知道改完的技能是否真的更好。</p><p><strong>怎么做：</strong>协调 Agent 写评分量表，生成子 Agent 任务（目录名故意不暴露「这是评测」，以免 Agent 改变行为）；跨多种模型跑；可用 slash loop 把分数「爬坡」到目标；另用不同模型当 judge 防偏。</p><p><strong>视频例子：</strong>P-Stack 的 potato mode 下有 eval playbook；每次改技能就跑一遍。</p></article><article class='card'><h3>先本地观察，再上云放大</h3><p><strong>为什么：</strong>本地看得见 Agent 怎么点界面、怎么调 API；云端适合把已信任的闭环扩成全员自动化。</p><p><strong>怎么做：</strong>验证技能先在本地盯行为；环境配好后，同一套技能给 Cloud Agent 用，整队受益。</p><p><strong>视频例子：</strong>Benny：接用户反馈 → 云桌面开 Cursor → 用同一套 control/verification 技能复现；有时发现「main 上已修好，只需发新版本」。</p></article><article class='card'><h3>Dune 架构：给 Agent 的硬护栏</h3><p><strong>为什么：</strong>纯 vibe 出来的绿野（greenfield）没有护栏，Agent 会专走捷径，代码库会失控；大厂那套「防最弱工程师」的约定反而适合 Agent。</p><p><strong>怎么做：</strong>功能按目录共置；Electron main/renderer 分目录并用依赖图 CI 禁止乱 import；禁用 React useEffect、甚至禁止多数代码注释（Agent 爱写过时/误解历史的注释）；原则是「最短路径 = 最佳路径」。软层 rules/skills/Bugbot 仍保留，但不单独依赖。</p><p><strong>视频例子：</strong>讲者称对 GrokBot 做了大量重构（提到约 600+ PR 量级的投入叙述），之后有时醒来已有约 20 个 PR 被 Agent 合入，人在 main 上复查；PR 大小从几十行到上千行不等，鼓励拆成原子 PR 方便回滚与读历史。</p></article><article class='card'><h3>把 Code Review 抱怨变成硬规则</h3><p><strong>为什么：</strong>靠人逐条评论维持不变量，是反模式；人一走开代码库就会烂。</p><p><strong>怎么做：</strong>每次想在 PR 上写「别这么做」，就问：能变成 lint、CI 失败，还是从架构上消灭这类问题？</p><p><strong>视频例子：</strong>Agent Window 仍常因进程隔离差导致重活跑进 renderer、掉帧；计划把 Dune 类学习迁回去。</p></article>
+</section>
+
+<section>
+  <h2>代理角色 / 舰队</h2>
+  <ul><li>本地结对写码的少量 Agent（早期高信任成本、人全程在环）</li><li>带 verification / Control Glass 的验证型 Agent（自己跑应用与性能）</li><li>协调 Agent + 评测子 Agent + 跨模型 Judge（维护技能质量）</li><li>云端 Benny：自动接反馈、复现 bug、对照 main 是否已修</li><li>可自动开 PR、在护栏足够时自动合并的编码 Agent</li><li>GrokBot 里带身份/名字的多个 Agent：可按账号或职责编排；PM 可用 Agent 汇总某人昨夜提交，非工程师也可在约束下修 bug/加功能</li></ul>
+</section>
+
+<section>
+  <h2>演示与界面</h2>
+  <ul><li>手绘/示意图：信任曲线——在环深度 vs 可并行 Agent 数量；并对照加入 Cursor 后贡献量上升</li><li>Agent Window（Glass）相关：Chrome 性能火焰图、验证技能与 feature map 文件结构</li><li>P-Stack 插件：create/maintain verification skill、eval playbook（potato mode）</li><li>Benny 云端复现用户报告的流程界面（含「已在 main 修复」类结论）</li><li>GrokBot / Dune：功能目录约定、Electron main vs renderer 分隔、严格 CI/Bugbot 层</li><li>PR 列表与合并节奏（讲者用「一早醒来已有多枚合入」举例）；主持人提醒勿让观众在屏幕上乱画标注</li></ul>
+</section>
+
+<section>
+  <h2>金句（意译）</h2>
+  <ul><li>最好的用法是结对编程，而不是外包你的思考。</li><li>不信任 Agent，就像不信任下属——你只会陷入微管理。</li><li>验证不保证写出「好代码」，但能先逼出「正确代码」。</li><li>你不能还不信任一个 Agent，就去开一百个。</li><li>技能像把高中生工程师教熟：用高质量指令把模型「拽」到更聪明的模式。</li><li>工程师越来越像主厨：搭厨房、分站、下任务，而不是每道菜亲自炒。</li><li>最短路径就该是最佳路径——因为 Agent 天生爱抄近路。</li><li>人肉 Code Review 维持的规矩，是代码异味；要把它变成硬失败。</li><li>GrokBot 像非技术同事的「Cursor 时刻」：界面像 iMessage，Agent 像一个个有名字的人。</li></ul>
+</section>
+
+<section>
+  <h2>你可以带走的行动</h2>
+  <ul><li>先做一件事：让 Agent 能自己把应用跑起来并验证结果，而不是只会生成补丁。</li><li>给产品写一份 feature map（怎么点到每个功能 + 选择器），再谈自动修 bug。</li><li>每次 Agent 翻车，记一条失败模式 → 写成 skill；用简单 eval 回归，别凭感觉改提示词。</li><li>信任够了再上云、再并行；别为了「看起来很 AI」空烧 token。</li><li>投资硬约束（lint/CI/架构边界）优先于再写一份风格指南；软规则只能叠在硬层上面。</li><li>绿野项目更危险也更值得提前立规矩；已有大厂级护栏的棕地反而更适合 Agent。</li><li>若你在做产品/设计：可试「聊天式多 Agent」工具，但交付仍应落在有 CI 护栏的仓库上。</li></ul>
+</section>
+
+<section>
+  <h2>局限与注意</h2>
+  <ul><li>讲者明确说自己在 AI 实验室有「近乎无限 token」——普通人应按 ROI 裁剪，不能原样复制吞吐数字。</li><li>「上千 PR / 自动合并」是讲者个人路径与仓库护栏成熟后的结果；视频也承认外人会合理质疑代码质量，关键在于你是否真的建好验证与硬约束。</li><li>Dune 被描述为原则与想法集合，讲者表示未必开源成完整框架；细节以现场示意为主。</li><li>ASR 转录有口误/错词（如 agents↔Asians、GrokBot↔GROC 等）；摘要已按语境校正，个别数字与专有名词若需对外引用请回听原片。</li><li>X 宣传文案与视频正文不完全等同：勿把宣传里的「20+ GrokBot Agent / SpaceXAI」未经核实写成视频已证明的事实。</li><li>本摘要不做投资建议；模型发布（如讲到的 Grok 4.6）仅作访谈中提及的产品信息。</li></ul>
+</section>
+
+<section>
+  <h2>时间线大纲</h2>
+  <div class='chap'><span class='t'>约00:00</span><div><strong>开场立场：结对，不外包思考</strong><p>反对为装懂 AI 而 vibe coding；写码变快但审查变重。</p></div></div><div class='chap'><span class='t'>约01:30</span><div><strong>主题：如何信任 Agent</strong><p>老工程师看见幻觉就会掉信任；类比微管理。</p></div></div><div class='chap'><span class='t'>约02:40</span><div><strong>信任曲线图</strong><p>高在环、低并行 → 五个月后可自动合并 PR；今早约 20 个已合入举例。</p></div></div><div class='chap'><span class='t'>约04:40</span><div><strong>产量曲线对照</strong><p>加入 Cursor 约五个月；提到上月约 1000 PR、本月中已近 800（讲者自述，强调靠 setup）。</p></div></div><div class='chap'><span class='t'>约06:00</span><div><strong>第一关键：Verification</strong><p>Agent 要能真跑应用/trace/模拟器；先求正确再谈优雅。</p></div></div><div class='chap'><span class='t'>约07:20</span><div><strong>Agent Window 入职故事</strong><p>一周上线压力下人肉看火焰图；人成瓶颈。</p></div></div><div class='chap'><span class='t'>约09:20</span><div><strong>Control Glass + Feature map</strong><p>能操控仍不够；地图教会怎么走到每个功能。</p></div></div><div class='chap'><span class='t'>约13:30</span><div><strong>P-Stack 从何而来</strong><p>Potato Stack 梗；技能从观察失败增量长出；HAL 反幻觉。</p></div></div><div class='chap'><span class='t'>约17:50</span><div><strong>用 Eval 维护技能</strong><p>技能单元测试、跨模型、防「知道在考试」；需品味与旁观。</p></div></div><div class='chap'><span class='t'>约22:40</span><div><strong>主厨类比与落地路径</strong><p>先本地观察再云端放大；Benny 自动复现反馈。</p></div></div><div class='chap'><span class='t'>约27:00</span><div><strong>主持人复盘旅程三步</strong><p>本地验证 → 云端接信号出 PR → 自动合并；无捷径。</p></div></div><div class='chap'><span class='t'>约29:40</span><div><strong>要不要重写？棕地 vs 绿野</strong><p>大厂护栏适合 Agent；纯 vibe 绿野最险也最有机会。</p></div></div><div class='chap'><span class='t'>约32:30</span><div><strong>GrokBot 与有机架构</strong><p>快速原型缺护栏会失控；投入重构后才能少看代码。</p></div></div><div class='chap'><span class='t'>约35:30</span><div><strong>PR 大小与 CI 严格度</strong><p>无硬上限但鼓励原子 PR；禁 useEffect/乱注释等。</p></div></div><div class='chap'><span class='t'>约40:00</span><div><strong>多层执法：架构 &gt; CI &gt; 软规则</strong><p>目录边界、依赖图、lint；人肉 review 当异味。</p></div></div><div class='chap'><span class='t'>约47:40</span><div><strong>问答：Token 与 ROI</strong><p>承认无限 token 不可复制；前期贵，换来整队能力与更小编制。</p></div></div><div class='chap'><span class='t'>约51:00</span><div><strong>模型成本–智能权衡</strong><p>提到 Grok 4.6 发布与同价更高智能的叙事；Cursor/SpaceX AI 优化 Pareto。</p></div></div><div class='chap'><span class='t'>约52:40</span><div><strong>产品侧如何跟上</strong><p>GrokBot 成非工种的 Agent 入口；PM/设计直接修 bug、加功能。</p></div></div><div class='chap'><span class='t'>约55:00</span><div><strong>收尾</strong><p>硬约束让非专家也能高水准贡献；团队计划继续快迭代。</p></div></div>
+</section>
+
+<footer>
+  本页由 Market Monitor Lead 根据视频语音转录整理，便于手机阅读；非投资建议。原视频约 55 分钟。
+</footer>
+</body>
+</html>
